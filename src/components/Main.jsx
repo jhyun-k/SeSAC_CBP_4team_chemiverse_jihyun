@@ -9,7 +9,7 @@ import Story from "./Story";
 import Mento from "./Mento";
 import Post from "./Post";
 import Mypage from "./Mypage";
-import Login from "./Login";
+import Login from "./Login/Login";
 import MainPage from "./MainPage";
 
 const Main = () => {
