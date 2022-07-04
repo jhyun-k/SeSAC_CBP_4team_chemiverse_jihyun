@@ -5,11 +5,10 @@ import Move from "./Move";
 import Guide from "./Guide";
 import Diagnosis from "./Diagnosis";
 import Learning from "./Learning";
-import Story from "./Story";
-import Mento from "./Mento";
 import Post from "./Post";
 import Mypage from "./Mypage";
 import Login from "./Login";
+import WhatIsChemiStory from './ChemiStory/WhatIsChemiStory';
 
 const Main = () => {
   const title = "expert";
@@ -21,8 +20,7 @@ const Main = () => {
         <Route path="/main/guide" element={<Guide />}></Route>
         <Route path="/main/diagnosis" element={<Diagnosis />}></Route>
         <Route path="/main/learning" element={<Learning />}></Route>
-        <Route path="/main/story" element={<Story />}></Route>
-        <Route path="/main/mento" element={<Mento />}></Route>
+        <Route path="/main/WhatIsChemiStory" element={<WhatIsChemiStory />}></Route>
         <Route path="/main/post" element={<Post />}></Route>
         <Route path="/main/mypage" element={<Mypage />}></Route>
         <Route path="/main/login" element={<Login />}></Route>
