@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const GuideNav = () => {
   const navList = [
-    { content: "공지사항", href: "." },
+    { content: "공지사항", href: "./notice" },
     { content: "시간표", href: "./timetable" },
     { content: "강사소개", href: "./teacher" },
   ];
