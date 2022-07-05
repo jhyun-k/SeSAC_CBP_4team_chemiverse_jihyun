@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const ChemiNav = () => {
   const chemiNavList = [
-    { content: "ChemiStory란?", href: "main/WhatIsChemiStory" },
-    { content: "ChemiStory 작성", href: "main/WriteChemiStory" },
-    { content: "성찰저널", href: "main/Journal" },
-    { content: "자기개발목표", href: "main/Goal" },
+    { content: "ChemiStory란?", href: "/main/chemiStory" },
+    { content: "ChemiStory 작성", href: "/main/chemiStory/writeChemiStory" },
+    { content: "성찰저널", href: "/main/chemiStory/Journal" },
+    { content: "자기개발목표", href: "/main/chemiStory/Goal" },
   ];
   return (
     <div>
