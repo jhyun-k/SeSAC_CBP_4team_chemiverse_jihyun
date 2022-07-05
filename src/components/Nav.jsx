@@ -13,6 +13,7 @@ const Nav = () => {
     { content: "마이페이지", href: "./mypage" },
     { content: "로그인", href: "./login" },
   ];
+
   return (
     <nav className="nav">
       <ul>
