@@ -5,12 +5,20 @@ import Goal from "./Goal";
 import ChemiNav from "./ChemiNav";
 import { Routes, Route } from "react-router-dom";
 import WhatIsChemiStory from "./WhatIsChemiStory";
+import index from "./css/index.css";
 
 const ChemiStory = () => {
   return (
-    <div>
-      <h1>Chemi Story</h1>
-      <h2>컨텐츠 설명글</h2>
+    <div className="chemistory">
+      <h1>
+        <img
+          className="chemi-img"
+          src={"/chemiverse_img/bg-gnb-noshadow.png"}
+          alt="bg-gnb-noshadow"
+        />
+        Chemi Story
+      </h1>
+      <h4>컨텐츠 설명글</h4>
       <ChemiNav />
       <Routes>
         <Route path="/" element={<WhatIsChemiStory />}></Route>
