@@ -9,10 +9,8 @@ const Guide = () => {
   return (
     <div className="guide">
       <GuideNav />
-      {false || <Notice />}
-
       <Routes>
-        {/*  <Route path="notice" element={<Notice />}></Route> */}
+        <Route path="/" element={<Notice />}></Route>
         <Route path="timetable" element={<TimeTable />}></Route>
         <Route path="teacher" element={<Teacher />}></Route>
       </Routes>

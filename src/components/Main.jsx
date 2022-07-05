@@ -18,7 +18,7 @@ const Main = () => {
     <div className="main">
       <Header title={title} />
       <Routes>
-        <Route path="." element={<MainPage />}></Route>
+        <Route path="/" element={<MainPage />}></Route>
         <Route path="move" element={<Move />}></Route>
         <Route path="guide/*" element={<Guide />}></Route>
         <Route path="diagnosis" element={<Diagnosis />}></Route>
