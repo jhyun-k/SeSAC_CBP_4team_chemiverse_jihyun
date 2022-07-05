@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const GuideNav = () => {
   const navList = [
-    { content: "공지사항", href: "/main/guide" },
-    { content: "시간표", href: "/main/guide/timetable" },
-    { content: "강사소개", href: "/main/guide/teacher" },
+    { content: "공지사항", href: "." },
+    { content: "시간표", href: "./timetable" },
+    { content: "강사소개", href: "./teacher" },
   ];
   return (
     <nav className="guideNav">
