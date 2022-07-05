@@ -12,22 +12,10 @@ const Learning = () => {
             <LearnNav />
             <h1>역량학습 페이지</h1>
             <Routes>
-                <Route
-                    path="/learning/understand"
-                    element={<Understand />}
-                ></Route>
-                <Route
-                    path="/learning/workskill"
-                    element={<WorkSkill />}
-                ></Route>
-                <Route
-                    path="/learning/peopleskill"
-                    element={<PeopleSkill />}
-                ></Route>
-                <Route
-                    path="/learning/selfmanage"
-                    element={<SelfManage />}
-                ></Route>
+                <Route path="/" element={<Understand />}></Route>
+                <Route path="workskill" element={<WorkSkill />}></Route>
+                <Route path="peopleskill" element={<PeopleSkill />}></Route>
+                <Route path="selfmanage" element={<SelfManage />}></Route>
             </Routes>
         </div>
     );

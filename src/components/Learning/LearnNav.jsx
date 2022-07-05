@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const LearnNav = () => {
     const navList = [
-        { content: "회사이해", href: "/main/learning/understand" },
-        { content: "워크스킬", href: "/main/learning/workskill" },
-        { content: "피플스킬", href: "/main/learning/peopleskill" },
-        { content: "자기관리", href: "/main/learning/selfmanage" },
+        { content: "회사이해", href: "." },
+        { content: "워크스킬", href: "./workskill" },
+        { content: "피플스킬", href: "./peopleskill" },
+        { content: "자기관리", href: "./selfmanage" },
     ];
     return (
         <nav className="learnNav">
