@@ -8,7 +8,8 @@ import Learning from "./Learning";
 import Post from "./Post";
 import Mypage from "./Mypage";
 import Login from "./Login";
-import WhatIsChemiStory from './ChemiStory/WhatIsChemiStory';
+import WhatIsChemiStory from "./ChemiStory/WhatIsChemiStory";
+import MainPage from "./MainPage";
 
 const Main = () => {
   const title = "expert";
@@ -21,7 +22,7 @@ const Main = () => {
         <Route path="/main/*" element={<Guide />}></Route>
         <Route path="/main/diagnosis" element={<Diagnosis />}></Route>
         <Route path="/main/learning" element={<Learning />}></Route>
-        <Route path="/main/WhatIsChemiStory" element={<WhatIsChemiStory />}></Route>
+        <Route path="/main/*" element={<WhatIsChemiStory />}></Route>
         <Route path="/main/post" element={<Post />}></Route>
         <Route path="/main/mypage" element={<Mypage />}></Route>
         <Route path="/main/login" element={<Login />}></Route>
