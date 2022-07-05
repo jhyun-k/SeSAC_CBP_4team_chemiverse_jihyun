@@ -10,9 +10,9 @@ const Guide = () => {
     <div className="guide">
       <GuideNav />
       <Routes>
-        <Route path="/guide" element={<Notice />}></Route>
-        <Route path="/guide/timetable" element={<TimeTable />}></Route>
-        <Route path="/guide/teacher" element={<Teacher />}></Route>
+        <Route path="/" element={<Notice />}></Route>
+        <Route path="timetable" element={<TimeTable />}></Route>
+        <Route path="teacher" element={<Teacher />}></Route>
       </Routes>
     </div>
   );
