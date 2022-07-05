@@ -7,7 +7,7 @@ const Nav = () => {
     { content: "교육안내", href: "./guide" },
     { content: "진단", href: "./diagnosis" },
     { content: "역량학습", href: "./learning" },
-    { content: "ChemiStory", href: "./story" },
+    { content: "ChemiStory", href: "./chemiStory" },
     { content: "멘토링", href: "./mento" },
     { content: "게시판", href: "./post" },
     { content: "마이페이지", href: "./mypage" },
