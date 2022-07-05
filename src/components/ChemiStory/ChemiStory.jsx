@@ -9,6 +9,8 @@ import WhatIsChemiStory from "./WhatIsChemiStory";
 const ChemiStory = () => {
   return (
     <div>
+      <h1>Chemi Story</h1>
+      <h2>컨텐츠 설명글</h2>
       <ChemiNav />
       <Routes>
         <Route path="/" element={<WhatIsChemiStory />}></Route>
