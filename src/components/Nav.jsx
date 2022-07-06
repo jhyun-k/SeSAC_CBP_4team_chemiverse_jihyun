@@ -39,6 +39,10 @@ const Nav = () => {
     { content: "계획서 작성", href: "./mentoring/writePlan" },
     { content: "활동내역 업로드", href: "./mentoring/upload" },
   ];
+  const postDetail = [
+    { content: "자유게시판", href: "./post" },
+    { content: "아이디어 제시", href: "./post/suggestIdea" },
+  ];
   return (
     <nav className="nav">
       <ul>
@@ -97,7 +101,13 @@ const Nav = () => {
           })}
         </ul>
         <ul>
-          <li></li>
+          {postDetail.map((element, index) => {
+            return (
+              <li key={index}>
+                <NavLink to={element.href}>{element.content}</NavLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>
