@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./Header";
 import { Routes, Route } from "react-router-dom";
-import Move from "./Move";
+import Move from "./Move/Move";
 import Guide from "./Guide/Guide";
-import Diagnosis from "./Diagnosis";
+import Diagnosis from "./Diagnosis/Diagnosis";
 import Learning from "./Learning/Learning";
 import Post from "./Post";
 import Mypage from "./Mypage";
@@ -21,7 +21,7 @@ const Main = () => {
                 <Route path="/" element={<MainPage />}></Route>
                 <Route path="move" element={<Move />}></Route>
                 <Route path="guide/*" element={<Guide />}></Route>
-                <Route path="diagnosis" element={<Diagnosis />}></Route>
+                <Route path="diagnosis/*" element={<Diagnosis />}></Route>
                 <Route path="learning/*" element={<Learning />}></Route>
                 <Route path="chemiStory/*" element={<ChemiStory />}></Route>
                 <Route path="mento" element={<Mento />}></Route>
