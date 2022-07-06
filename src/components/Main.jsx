@@ -1,36 +1,36 @@
 import React from "react";
 import Header from "./Header";
 import { Routes, Route } from "react-router-dom";
-import Move from "./Move/Move";
+import Move from "./Move";
 import Guide from "./Guide/Guide";
-import Diagnosis from "./Diagnosis/Diagnosis";
+import Diagnosis from "./Diagnosis";
 import Learning from "./Learning/Learning";
-import Post from "./Post";
 import Mypage from "./Mypage";
-import Login from "./Login";
-import ChemiStory from "./ChemiStory/ChemiStory";
+import Login from "./Login/Login";
 import MainPage from "./MainPage";
-import Mento from "./Mento/Mento";
+import Mentoring from "./Mentoring/Mentoring";
+import ChemiStory from "./ChemiStory/ChemiStory";
+import PostTab from "./Post/PostTab";
 
 const Main = () => {
-    const title = "expert";
-    return (
-        <div className="main">
-            <Header title={title} />
-            <Routes>
-                <Route path="/" element={<MainPage />}></Route>
-                <Route path="move" element={<Move />}></Route>
-                <Route path="guide/*" element={<Guide />}></Route>
-                <Route path="diagnosis/*" element={<Diagnosis />}></Route>
-                <Route path="learning/*" element={<Learning />}></Route>
-                <Route path="chemiStory/*" element={<ChemiStory />}></Route>
-                <Route path="mento" element={<Mento />}></Route>
-                <Route path="post" element={<Post />}></Route>
-                <Route path="mypage" element={<Mypage />}></Route>
-                <Route path="login" element={<Login />}></Route>
-            </Routes>
-        </div>
-    );
+  const title = "expert";
+  return (
+    <div className="main">
+      <Header title={title} />
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="move" element={<Move />}></Route>
+        <Route path="guide/*" element={<Guide />}></Route>
+        <Route path="diagnosis/*" element={<Diagnosis />}></Route>
+        <Route path="learning/*" element={<Learning />}></Route>
+        <Route path="chemiStory/*" element={<ChemiStory />}></Route>
+        <Route path="mentoring/*" element={<Mentoring />}></Route>
+        <Route path="post/*" element={<PostTab />}></Route>
+        <Route path="mypage" element={<Mypage />}></Route>
+        <Route path="login" element={<Login />}></Route>
+      </Routes>
+    </div>
+  );
 };
 
 export default Main;
