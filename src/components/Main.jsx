@@ -10,7 +10,7 @@ import Mypage from "./Mypage";
 import Login from "./Login";
 import ChemiStory from "./ChemiStory/ChemiStory";
 import MainPage from "./MainPage";
-import Mento from "./Mento/Mento";
+import Mentoring from "./Mentoring/Mentoring";
 
 const Main = () => {
   const title = "expert";
@@ -24,7 +24,7 @@ const Main = () => {
         <Route path="diagnosis" element={<Diagnosis />}></Route>
         <Route path="learning" element={<Learning />}></Route>
         <Route path="chemiStory/*" element={<ChemiStory />}></Route>
-        <Route path="mento" element={<Mento />}></Route>
+        <Route path="mentoring/*" element={<Mentoring />}></Route>
         <Route path="post" element={<Post />}></Route>
         <Route path="mypage" element={<Mypage />}></Route>
         <Route path="login" element={<Login />}></Route>

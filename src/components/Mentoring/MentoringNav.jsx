@@ -1,18 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const ChemiNav = () => {
-  const chemiNavList = [
-    { content: "ChemiStory란?", href: "." },
-    { content: "ChemiStory 작성", href: "./writeChemiStory" },
-    { content: "성찰저널", href: "./journal" },
-    { content: "자기개발목표", href: "./goal" },
+const MentoringNav = () => {
+  const mentorNavList = [
+    { content: "멘토링이란?", href: "." },
+    { content: "계획서 작성", href: "./writePlan" },
+    { content: "활동내역 업로드", href: "./upload" },
   ];
   return (
     <div>
       <nav className="nav">
         <ul>
-          {chemiNavList.map((element, index) => {
+          {mentorNavList.map((element, index) => {
             return (
               <li key={index}>
                 <NavLink to={element.href}>{element.content}</NavLink>
@@ -25,4 +24,4 @@ const ChemiNav = () => {
   );
 };
 
-export default ChemiNav;
+export default MentoringNav;
