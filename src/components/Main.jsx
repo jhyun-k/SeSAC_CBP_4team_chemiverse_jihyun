@@ -6,10 +6,10 @@ import Guide from "./Guide/Guide";
 import Diagnosis from "./Diagnosis";
 import Learning from "./Learning/Learning";
 import Mypage from "./Mypage";
-import Login from "./Login";
-import ChemiStory from "./ChemiStory/ChemiStory";
+import Login from "./Login/Login";
 import MainPage from "./MainPage";
 import Mentoring from "./Mentoring/Mentoring";
+import ChemiStory from "./ChemiStory/ChemiStory";
 import FreePost from "./Post/FreePost";
 
 const Main = () => {
