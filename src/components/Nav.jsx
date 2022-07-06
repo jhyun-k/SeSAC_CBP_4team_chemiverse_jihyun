@@ -18,6 +18,10 @@ const Nav = () => {
     { content: "시간표", href: "./guide/timetable" },
     { content: "강사소개", href: "./guide/teacher" },
   ];
+  const diagDetail = [
+    { content: "현재상태 점검하기", href: "./diagnosis" },
+    { content: "진단결과 보기", href: "./diagnosis/result" },
+  ];
   const learningDetail = [
     { content: "회사이해", href: "./learning" },
     { content: "워크스킬", href: "./learning/workskill" },
@@ -57,6 +61,15 @@ const Nav = () => {
           })}
         </ul>
         <ul>
+          {diagDetail.map((element, index) => {
+            return (
+              <li key={index}>
+                <NavLink to={element.href}>{element.content}</NavLink>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
           {learningDetail.map((element, index) => {
             return (
               <li key={index}>
@@ -82,9 +95,6 @@ const Nav = () => {
               </li>
             );
           })}
-        </ul>
-        <ul>
-          <li></li>
         </ul>
         <ul>
           <li></li>

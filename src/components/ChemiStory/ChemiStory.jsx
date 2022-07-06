@@ -5,7 +5,6 @@ import Goal from "./Goal";
 import ChemiNav from "./ChemiNav";
 import { Routes, Route } from "react-router-dom";
 import WhatIsChemiStory from "./WhatIsChemiStory";
-import index from "./css/index.css";
 
 const ChemiStory = () => {
   return (
