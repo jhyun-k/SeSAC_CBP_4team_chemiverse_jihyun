@@ -1,0 +1,21 @@
+.freePostList {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: auto;
+}
+
+.freePost {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+}
+
+.freePost span {
+  display: block;
+}
+
+.postTitle {
+  width: 800px;
+}
