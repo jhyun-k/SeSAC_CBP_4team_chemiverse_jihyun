@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Move from "./Move";
 import Guide from "./Guide/Guide";
 import Diagnosis from "./Diagnosis";
-import Learning from "./Learning";
+import Learning from "./Learning/Learning";
 import Post from "./Post";
 import Mypage from "./Mypage";
 import Login from "./Login";

@@ -24,6 +24,17 @@ const Nav = () => {
     { content: "피플스킬", href: "./learning/peopleskill" },
     { content: "자기관리", href: "./learning/selfmanage" },
   ];
+  const chemiDetail = [
+    { content: "ChemiStory란?", href: "./chemiStory" },
+    { content: "ChemiStory 작성", href: "./chemiStory/writeChemiStory" },
+    { content: "성찰저널", href: "./chemiStory/journal" },
+    { content: "자기개발목표", href: "./chemiStory/goal" },
+  ];
+  const mentorDetail = [
+    { content: "멘토링이란?", href: "./mentoring" },
+    { content: "계획서 작성", href: "./mentoring/writePlan" },
+    { content: "활동내역 업로드", href: "./mentoring/upload" },
+  ];
   return (
     <nav className="nav">
       <ul>
@@ -55,10 +66,22 @@ const Nav = () => {
           })}
         </ul>
         <ul>
-          <li></li>
+          {chemiDetail.map((element, index) => {
+            return (
+              <li key={index}>
+                <NavLink to={element.href}>{element.content}</NavLink>
+              </li>
+            );
+          })}
         </ul>
         <ul>
-          <li></li>
+          {mentorDetail.map((element, index) => {
+            return (
+              <li key={index}>
+                <NavLink to={element.href}>{element.content}</NavLink>
+              </li>
+            );
+          })}
         </ul>
         <ul>
           <li></li>
