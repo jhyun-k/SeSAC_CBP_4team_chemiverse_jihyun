@@ -21,11 +21,11 @@ const Main = () => {
         <Route path="/" element={<MainPage />}></Route>
         <Route path="move" element={<Move />}></Route>
         <Route path="guide/*" element={<Guide />}></Route>
-        <Route path="diagnosis" element={<Diagnosis />}></Route>
-        <Route path="learning" element={<Learning />}></Route>
+        <Route path="diagnosis/*" element={<Diagnosis />}></Route>
+        <Route path="learning/*" element={<Learning />}></Route>
         <Route path="chemiStory/*" element={<ChemiStory />}></Route>
-        <Route path="mentoring" element={<Mentoring />}></Route>
-        <Route path="post" element={<FreePost />}></Route>
+        <Route path="mentoring/*" element={<Mentoring />}></Route>
+        <Route path="post/*" element={<FreePost />}></Route>
         <Route path="mypage" element={<Mypage />}></Route>
         <Route path="login" element={<Login />}></Route>
       </Routes>
