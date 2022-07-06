@@ -2,7 +2,7 @@ import React from 'react';
 
 import './css/postList.css';
 
-const PostList = ({ lists, startNum, endNum }) => {
+const FreePostList = ({ lists, startNum, endNum }) => {
   return (
     <ul className='freePostList'>
       {lists
@@ -24,4 +24,4 @@ const PostList = ({ lists, startNum, endNum }) => {
   );
 };
 
-export default PostList;
+export default FreePostList;

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import PostList from './PostList';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
 import data from '../../data/postData.json';
+import FreePostList from './FreePostList';
 
 const FreePost = () => {
   const [lists, setLists] = useState([]);
@@ -19,7 +19,7 @@ const FreePost = () => {
     <div className='post'>
       <h1>자유게시판</h1>
       <SearchBar />
-      <PostList lists={lists} startNum={startNum} endNum={endNum} />
+      <FreePostList lists={lists} startNum={startNum} endNum={endNum} />
       <Pagination
         total={lists.length}
         page={page}
