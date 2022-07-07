@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
-import data from '../../data/postData.json';
+
 import FreePostList from './FreePostList';
 
-const FreePost = () => {
+const FreePost = ({ postIndex, setPostIndex, data }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 10;
   const [page, setPage] = useState(1);
@@ -13,13 +13,20 @@ const FreePost = () => {
 
   useEffect(() => {
     setLists(data);
-  }, []);
+  }, [data]);
 
   return (
     <div className='post'>
       <h1>자유게시판</h1>
       <SearchBar />
-      <FreePostList lists={lists} startNum={startNum} endNum={endNum} />
+      <p>총 게시물 {lists.length}개</p>
+      <FreePostList
+        lists={lists}
+        startNum={startNum}
+        endNum={endNum}
+        postIndex={postIndex}
+        setPostIndex={setPostIndex}
+      />
       <Pagination
         total={lists.length}
         page={page}

@@ -8,8 +8,9 @@
 .freePost {
   display: flex;
   justify-content: space-between;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
 }
 
 .freePost span {
@@ -18,4 +19,4 @@
 
 .postTitle {
   width: 800px;
-}/*# sourceMappingURL=postList.css.map */
+} /*# sourceMappingURL=postList.css.map */
