@@ -1,17 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
-const PostDetail = ({ data, postIndex, setPostIndex }) => {
+const PostDetail = ({ data }) => {
   const { post } = useParams();
-  // if (post == ) {
-  //   console.log('true');
-  // }
-  useEffect(() => {
-    setPostIndex(post);
-  }, [post, setPostIndex]);
+  const selectedPost = data.find((x) => {
+    return x.id == post;
+  });
 
-  const selectedPost = data[postIndex];
-
+  console.log(selectedPost);
   return (
     <div>
       <h2>{selectedPost.title}</h2>

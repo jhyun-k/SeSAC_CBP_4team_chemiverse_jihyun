@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/postList.css';
 
-const FreePostList = ({ lists }) => {
+const FreePostList = ({ lists, startNum, endNum }) => {
   return (
     <ul className='freePostList'>
-      {lists.map((post, index) => {
+      {lists.slice(startNum, endNum).map((post, index) => {
         return (
           <li className='freePost' key={post.id}>
-            <span className='postIndex'>{index}</span>
-            <Link to={`./${index}`}>
+            <span className='postIndex'>{post.id}</span>
+            <Link to={`./${post.id}`}>
               <span className='postTitle'>{post.title}</span>
             </Link>
             <span>{post.userId}</span>
