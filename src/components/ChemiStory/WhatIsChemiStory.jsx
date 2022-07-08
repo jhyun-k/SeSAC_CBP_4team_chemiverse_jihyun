@@ -4,8 +4,8 @@ const WhatIsChemiStory = () => {
   return (
     <div className="WhatIsChemiStory">
       <div>
-        <h1>Chemi Story란?</h1>
-        <div>
+        <h1 className="title">Chemi Story란?</h1>
+        <div className="sub-title">
           <img
             className="chemi-img"
             src={"/chemiverse_img/bg-gnb-noshadow.png"}
@@ -14,7 +14,7 @@ const WhatIsChemiStory = () => {
           <h2>목적</h2>
           <div>콘텐츠 기획 후 삽입 예정</div>
         </div>
-        <div>
+        <div className="sub-title">
           <img
             className="chemi-img"
             src={"/chemiverse_img/bg-gnb-noshadow.png"}

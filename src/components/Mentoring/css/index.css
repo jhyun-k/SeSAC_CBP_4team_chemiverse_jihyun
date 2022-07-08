@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-.chemistory .main {
+.Mentoring .main {
   font-size: 40px;
 }
-.chemistory .chemi-img {
+.Mentoring .chemi-img {
   width: 100px;
   height: 100px;
 }
@@ -27,7 +27,7 @@
   padding-bottom: 10px;
 }
 
-.WhatIsChemiStory .sub-title h2 {
+.WhatIsMentoring .sub-title h2 {
   display: inline-block;
   border-bottom: 1px solid gray;
   width: 900px;
@@ -35,30 +35,27 @@
   padding-bottom: 10px;
   text-align: left;
 }
-.WhatIsChemiStory .sub-title div {
+.WhatIsMentoring .sub-title div {
   border: 1px solid gray;
   width: 800px;
-  height: 100px;
+  height: 200px;
   margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sub-title h1 {
-  display: inline-block;
-  width: 900px;
-  text-align: left;
-}
-.sub-title h2 {
-  display: block;
-  border-bottom: 1px solid gray;
-  width: 900px;
+.WritePlan div {
+  border: 1px solid gray;
+  width: 800px;
+  height: 200px;
   margin: 10px auto;
-  padding-bottom: 10px;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sub-title div {
+
+.Upload div {
   border: 1px solid gray;
   width: 800px;
   height: 200px;
@@ -71,14 +68,4 @@
 .btn {
   width: 100px;
   padding: 10px;
-}
-
-.Journal-goal div {
-  border: 1px solid gray;
-  width: 800px;
-  height: 200px;
-  margin: 10px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
