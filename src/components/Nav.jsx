@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./style/nav.css";
 
 const Nav = () => {
   const navList = [
@@ -19,8 +20,8 @@ const Nav = () => {
     { content: "강사소개", href: "./guide/teacher" },
   ];
   const diagDetail = [
-    { content: "현재상태 점검하기", href: "./diagnosis" },
-    { content: "진단결과 보기", href: "./diagnosis/result" },
+    { content: "현재상태점검", href: "./diagnosis" },
+    { content: "진단결과보기", href: "./diagnosis/result" },
   ];
   const learningDetail = [
     { content: "회사이해", href: "./learning" },
@@ -37,14 +38,18 @@ const Nav = () => {
   const mentorDetail = [
     { content: "멘토링이란?", href: "./mentoring" },
     { content: "계획서 작성", href: "./mentoring/writePlan" },
-    { content: "활동내역 업로드", href: "./mentoring/upload" },
+    { content: "활동내역", href: "./mentoring/upload" },
   ];
   const postDetail = [
     { content: "자유게시판", href: "./post" },
-    { content: "아이디어 제시", href: "./post/suggestIdea" },
+    { content: "아이디어제시", href: "./post/suggestIdea" },
   ];
+  const tabmenu = document.querySelectorAll(".nav ul");
+  const fncHover = () => {
+    tabmenu.style.display = "block";
+  };
   return (
-    <nav className="nav">
+    <nav className="nav" onMouseOver={fncHover}>
       <ul>
         {navList.map((element, index) => {
           return (
@@ -54,61 +59,63 @@ const Nav = () => {
           );
         })}
       </ul>
-      <div className="tabmenu">
-        <ul>
-          {guideDetail.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <ul>
-          {diagDetail.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <ul>
-          {learningDetail.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <ul>
-          {chemiDetail.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <ul>
-          {mentorDetail.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <ul>
-          {postDetail.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="tabmenu-box">
+        <div className="tabmenu">
+          <ul>
+            {guideDetail.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <ul>
+            {diagDetail.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <ul>
+            {learningDetail.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <ul>
+            {chemiDetail.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <ul>
+            {mentorDetail.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <ul>
+            {postDetail.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   );

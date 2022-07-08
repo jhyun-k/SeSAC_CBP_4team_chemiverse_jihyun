@@ -1,0 +1,35 @@
+nav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    // border: 1px solid black;
+    &:hover ~ .tabmenu-box {
+      display: flex;
+      position: fixed;
+      width: 100vw;
+      height: 200px;
+      left: 0;
+      top: 80px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 1px solid green;
+      .tabmenu {
+        display: flex;
+        z-index: 10;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.tabmenu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  display: none;
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
