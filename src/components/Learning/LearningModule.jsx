@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/learning.css";
 import { useParams } from "react-router-dom";
+import Modal from "./Modal";
 
 const LearningModule = (props) => {
     const { id } = useParams();
     const data = props.module[id - 1];
+    const [modalShown1, toggleModal1] = useState(false);
+    const [modalShown2, toggleModal2] = useState(false);
+    const [modalShown3, toggleModal3] = useState(false);
 
-    console.log(props);
     return (
         <div className="module-box">
             <h1>상세페이지</h1>
@@ -26,16 +29,60 @@ const LearningModule = (props) => {
                     className="learning-contents"
                     style={{ display: "flex", margin: "auto", width: "1000px" }}
                 >
-                    <div className="img-box">
+                    {/* 학습 - 1 */}
+                    <div
+                        className="img-box"
+                        onClick={() => {
+                            toggleModal1(true);
+                        }}
+                    >
                         <img
                             src={
                                 process.env.PUBLIC_URL +
-                                "/chemiverse_img/no-data.png"
+                                "/chemiverse_img/img-cardnews01.png"
                             }
                             alt=""
                         />
+
+                        <Modal
+                            shown={modalShown1}
+                            close={() => {
+                                toggleModal1(false);
+                            }}
+                        >
+                            {/* 모달 안의 내용을 children으로 넘겨준다 */}
+                            <div className="img-area">
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/chemiverse_img/img-cardnews01.png"
+                                    }
+                                    alt=""
+                                />
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/chemiverse_img/img-cardnews02.png"
+                                    }
+                                    alt=""
+                                />
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/chemiverse_img/img-cardnews03.png"
+                                    }
+                                    alt=""
+                                />
+                            </div>
+                        </Modal>
                     </div>
-                    <div className="img-box">
+                    {/* 학습 - 2 */}
+                    <div
+                        className="img-box"
+                        onClick={() => {
+                            toggleModal2(true);
+                        }}
+                    >
                         <img
                             src={
                                 process.env.PUBLIC_URL +
@@ -43,15 +90,37 @@ const LearningModule = (props) => {
                             }
                             alt=""
                         />
+                        <Modal
+                            shown={modalShown2}
+                            close={() => {
+                                toggleModal2(false);
+                            }}
+                        >
+                            <h1>2</h1>
+                        </Modal>
                     </div>
-                    <div className="img-box">
+                    {/* 학습 - 3 */}
+                    <div
+                        className="img-box"
+                        onClick={() => {
+                            toggleModal3(true);
+                        }}
+                    >
                         <img
                             src={
                                 process.env.PUBLIC_URL +
                                 "/chemiverse_img/no-data.png"
                             }
                             alt=""
-                        />
+                        />{" "}
+                        <Modal
+                            shown={modalShown3}
+                            close={() => {
+                                toggleModal3(false);
+                            }}
+                        >
+                            <h1>3</h1>
+                        </Modal>
                     </div>
                 </div>
             </section>
@@ -61,6 +130,7 @@ const LearningModule = (props) => {
                     오늘 배운 내용에 대해 Review하며 배운 점, 느낀 점, 성찰할 점
                     등에 대해 자유롭게 적어 봅시다.
                 </p>
+                {/* 글쓰기 components 추가해야됨 */}
             </section>
         </div>
     );
