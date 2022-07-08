@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import "./style/header.css";
 
+
 const Header = ({ title }) => {
   return (
     <header className="main-header-box">
