@@ -4,11 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import WhatIsMentoring from './WhatIsMentoring';
 import WritePlan from './WritePlan';
 import Upload from './Upload';
+import index from "./css/index.css"
 
 const Mentoring = () => {
   return (
-    <div>
-      <h1>
+    <div className='Mentoring'>
+      <h1 className="main">
         <img
           className="chemi-img"
           src={"/chemiverse_img/bg-gnb-noshadow.png"}

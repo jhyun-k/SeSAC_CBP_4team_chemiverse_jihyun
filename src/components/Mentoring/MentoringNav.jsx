@@ -13,7 +13,7 @@ const MentoringNav = () => {
         <ul>
           {mentorNavList.map((element, index) => {
             return (
-              <li key={index}>
+              <li className="navbtn" key={index}>
                 <NavLink to={element.href}>{element.content}</NavLink>
               </li>
             );
