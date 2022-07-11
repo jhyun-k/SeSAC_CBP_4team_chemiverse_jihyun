@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+.Mentoring{
+    .main{
+        font-size: 40px;
+    }
+    .chemi-img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.navbtn{
+    border: 1px solid gray;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.title{
+    border-bottom: 1px solid gray;
+    width: 1000px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+.WhatIsMentoring{
+    .sub-title{
+        h2{
+            display: inline-block;
+            border-bottom: 1px solid gray;
+            width: 900px;
+            margin: 10px auto;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        div{
+            border: 1px solid gray;
+            width: 800px;
+            height: 200px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.WritePlan{
+    div{
+        border: 1px solid gray;
+        width: 800px;
+        height: 200px;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.Upload{
+    div{
+        border: 1px solid gray;
+        width: 800px;
+        height: 200px;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.btn{
+    width: 100px;
+    padding: 10px;
+}
