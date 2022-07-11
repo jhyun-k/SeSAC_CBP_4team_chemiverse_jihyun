@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/postList.css';
+import styles from './css/FreePostList.module.css';
 
 const FreePostList = ({ lists, startNum, endNum }) => {
   return (
-    <ul className='freePostList'>
+    <ul className={styles.freePostList}>
       {lists.slice(startNum, endNum).map((post, index) => {
         return (
-          <li className='freePost' key={post.id}>
-            <span className='postIndex'>{post.id}</span>
+          <li className={styles.freePost} key={post.id}>
+            <span className={styles.postIndex}>{post.id}</span>
             <Link to={`./${post.id}`}>
-              <span className='postTitle'>{post.title}</span>
+              <span className={styles.postTitle}>{post.title}</span>
             </Link>
-            <span>{post.userId}</span>
-            <span>조회수</span>
-            <span>등록일</span>
+            <span className={styles.userName}>{post.userId}</span>
+            <span className={styles.view}>{post.view}</span>
+            <span className={styles.date}>{post.date}</span>
             <span>좋아요</span>
           </li>
         );
