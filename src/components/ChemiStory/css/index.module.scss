@@ -7,7 +7,7 @@
     .main{
         font-size: 40px;
     }
-    .chemi-img{
+    .chemiImg{
         width: 100px;
         height: 100px;
     }
@@ -33,7 +33,7 @@
 }
 
 .WhatIsChemiStory{
-    .sub-title{
+    .subTitle{
         h2{
             display: inline-block;
             border-bottom: 1px solid gray;
@@ -42,7 +42,7 @@
             padding-bottom: 10px;
             text-align: left;
         }
-        div{
+        .content{
             border: 1px solid gray;
             width: 800px;
             height: 100px;
@@ -54,7 +54,7 @@
     }
 }
 
-.sub-title{
+.subTitle{
     h1{
         display: inline-block;
         width: 900px;
@@ -62,13 +62,12 @@
     }
     h2{
         display: block;
-        border-bottom: 1px solid gray;
         width: 900px;
         margin: 10px auto;
         padding-bottom: 10px;
         text-align: left;
     }
-    div{
+    .content{
         border: 1px solid gray;
         width: 800px;
         height: 200px;
@@ -84,7 +83,7 @@
     padding: 10px;
 }
 
-.Journal-goal{
+.JournalGoal{
     div{
         border: 1px solid gray;
         width: 800px;
@@ -95,3 +94,4 @@
         justify-content: center;
     }
 }
+
