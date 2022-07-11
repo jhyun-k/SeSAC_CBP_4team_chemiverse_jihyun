@@ -1,15 +1,16 @@
 import React from "react";
+import styles from "./css/learning.module.css";
 
 const Modal = ({ children, shown, close }) => {
     return shown ? (
         <div
-            className="modal-backdrop"
+            className={styles.modalBackdrop}
             onClick={() => {
                 close();
             }}
         >
             <div
-                className="modal-content"
+                className={styles.modalContent}
                 onClick={(e) => {
                     e.stopPropagation();
                 }}

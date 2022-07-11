@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./css/learning.css";
+// import "./css/learning.css";
 import { useParams } from "react-router-dom";
 import Modal from "./Modal";
+import styles from "./css/learning.module.css";
 
 const LearningModule = (props) => {
     const { id } = useParams();
@@ -11,10 +12,10 @@ const LearningModule = (props) => {
     const [modalShown3, toggleModal3] = useState(false);
 
     return (
-        <div className="module-box">
+        <div className={styles.moduleBox}>
             <h1>상세페이지</h1>
             <section className="module-section module-desc">
-                <div className="img-box">
+                <div className={styles.imgBox}>
                     <img src={data.img} alt="" />
                 </div>
                 <div className="text-box">
@@ -31,7 +32,7 @@ const LearningModule = (props) => {
                 >
                     {/* 학습 - 1 */}
                     <div
-                        className="img-box"
+                        className={styles.imgBox}
                         onClick={() => {
                             toggleModal1(true);
                         }}
@@ -51,7 +52,7 @@ const LearningModule = (props) => {
                             }}
                         >
                             {/* 모달 안의 내용을 children으로 넘겨준다 */}
-                            <div className="img-area">
+                            <div className={styles.imgArea}>
                                 <img
                                     src={
                                         process.env.PUBLIC_URL +
@@ -78,7 +79,7 @@ const LearningModule = (props) => {
                     </div>
                     {/* 학습 - 2 */}
                     <div
-                        className="img-box"
+                        className={styles.imgBox}
                         onClick={() => {
                             toggleModal2(true);
                         }}
@@ -101,7 +102,7 @@ const LearningModule = (props) => {
                     </div>
                     {/* 학습 - 3 */}
                     <div
-                        className="img-box"
+                        className={styles.imgBox}
                         onClick={() => {
                             toggleModal3(true);
                         }}
@@ -112,7 +113,7 @@ const LearningModule = (props) => {
                                 "/chemiverse_img/no-data.png"
                             }
                             alt=""
-                        />{" "}
+                        />
                         <Modal
                             shown={modalShown3}
                             close={() => {

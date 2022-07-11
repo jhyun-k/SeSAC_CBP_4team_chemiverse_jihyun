@@ -1,30 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./css/learning.module.css";
 
 // 회사이해
 const Understand = ({ module }) => {
     return (
-        <div
-            className="module-area"
-            style={{
-                display: "flex",
-                margin: "auto",
-                width: "1000px",
-            }}
-        >
+        <div className={styles.moduleListArea}>
             {/* 모듈 목록  */}
             {module.map((ele) => {
                 console.log(ele);
                 return (
                     <Link to={`./${ele.id}`}>
-                        <div
-                            className="module"
-                            style={{
-                                width: "300px",
-                                overflow: "hidden",
-                                margin: "20px",
-                            }}
-                        >
+                        <div className={styles.moduleListItem}>
                             <img
                                 src={ele.img}
                                 className="App-logo"

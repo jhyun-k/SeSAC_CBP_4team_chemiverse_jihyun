@@ -111,7 +111,7 @@ const Learning = () => {
             ],
         },
     ];
-    console.log(module[3].selfmanage);
+
     return (
         <div className="learning">
             <LearnNav />
