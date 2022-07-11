@@ -2,9 +2,9 @@ import React from "react";
 
 const WhatIsMentoring = () => {
   return (
-    <div>
-      <h1>멘토링이란?</h1>
-      <div>
+    <div className="WhatIsMentoring">
+      <h1 className="title">멘토링이란?</h1>
+      <div className="sub-title">
         <img
           className="chemi-img"
           src={"/chemiverse_img/bg-gnb-noshadow.png"}
