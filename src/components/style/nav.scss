@@ -1,27 +1,27 @@
-nav {
-  ul {
+.nav-box:hover {
+  // border: 1px solid black;
+  .tabmenu-box {
     display: flex;
-    justify-content: space-between;
-    width: 80vw;
-    // border: 1px solid black;
-    &:hover ~ .tabmenu-box {
+    position: fixed;
+    width: 100vw;
+    height: 200px;
+    left: 0;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid green;
+    .tabmenu {
       display: flex;
-      position: fixed;
-      width: 100vw;
-      height: 200px;
-      left: 0;
-      top: 80px;
-      background-color: rgba(255, 255, 255, 0.95);
-      border: 1px solid green;
-      .tabmenu {
-        display: flex;
-        z-index: 10;
-        width: 70%;
-        margin: 0 auto;
-        font-size: 14px;
-      }
+      z-index: 10;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 14px;
     }
   }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
 }
 .tabmenu {
   display: flex;

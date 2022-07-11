@@ -49,8 +49,8 @@ const Nav = () => {
     tabmenu.style.display = "block";
   };
   return (
-    <nav className="nav" onMouseOver={fncHover}>
-      <ul>
+    <nav className="nav-box" onMouseOver={fncHover}>
+      <ul className="nav">
         {navList.map((element, index) => {
           return (
             <li key={index}>

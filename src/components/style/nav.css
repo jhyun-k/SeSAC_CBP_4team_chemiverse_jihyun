@@ -1,9 +1,4 @@
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 80vw;
-}
-nav ul:hover ~ .tabmenu-box {
+.nav-box:hover .tabmenu-box {
   display: flex;
   position: fixed;
   width: 100vw;
@@ -13,12 +8,18 @@ nav ul:hover ~ .tabmenu-box {
   background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid green;
 }
-nav ul:hover ~ .tabmenu-box .tabmenu {
+.nav-box:hover .tabmenu-box .tabmenu {
   display: flex;
   z-index: 10;
   width: 70%;
   margin: 0 auto;
   font-size: 14px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
 }
 
 .tabmenu {
