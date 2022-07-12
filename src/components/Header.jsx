@@ -15,15 +15,17 @@ const Header = ({ title }) => {
           <Link to="/">{title}</Link>
         </h1>
         <Nav />
-        <ul>
-          {headerList.map((element, index) => {
-            return (
-              <li key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
-              </li>
-            );
-          })}
-        </ul>
+        <div>
+          <ul>
+            {headerList.map((element, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={element.href}>{element.content}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </header>
   );
