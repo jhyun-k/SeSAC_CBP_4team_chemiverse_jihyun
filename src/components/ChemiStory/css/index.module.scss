@@ -26,7 +26,6 @@
 
 //all
 .title{
-    border-bottom: 1px solid gray;
     width: 1000px;
     margin: 10px auto;
     padding-bottom: 10px;
@@ -82,16 +81,3 @@
     width: 100px;
     padding: 10px;
 }
-
-.JournalGoal{
-    div{
-        border: 1px solid gray;
-        width: 800px;
-        height: 200px;
-        margin: 10px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
