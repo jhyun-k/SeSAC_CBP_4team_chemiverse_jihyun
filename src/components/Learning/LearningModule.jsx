@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Modal from "./Modal";
 import styles from "./css/learning.module.css";
+import Think from "./think/Think";
 
 const LearningModule = (props) => {
     const { id } = useParams();
@@ -131,7 +132,7 @@ const LearningModule = (props) => {
                     오늘 배운 내용에 대해 Review하며 배운 점, 느낀 점, 성찰할 점
                     등에 대해 자유롭게 적어 봅시다.
                 </p>
-                {/* 글쓰기 components 추가해야됨 */}
+                <Think />
             </section>
         </div>
     );
