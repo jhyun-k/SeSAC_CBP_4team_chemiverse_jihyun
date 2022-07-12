@@ -1,6 +1,6 @@
 import React from "react";
 import styles from"./css/index.module.css"
-import Diary from './Diary';
+import Diary from '../Diary/Diary';
 
 
 const Journal = () => {
