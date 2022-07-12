@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./style/nav.css";
+import navStyle from "./style/nav.module.css";
 
 const Nav = () => {
   const navList = [
@@ -11,8 +11,6 @@ const Nav = () => {
     { content: "ChemiStory", href: "./chemiStory" },
     { content: "멘토링", href: "./mentoring" },
     { content: "게시판", href: "./post" },
-    { content: "마이페이지", href: "./mypage" },
-    { content: "로그인", href: "./login" },
   ];
   const guideDetail = [
     { content: "공지사항", href: "./guide" },
@@ -49,8 +47,8 @@ const Nav = () => {
     tabmenu.style.display = "block";
   };
   return (
-    <nav className="nav-box" onMouseOver={fncHover}>
-      <ul className="nav">
+    <nav className={navStyle.navBox} onMouseOver={fncHover}>
+      <ul className={navStyle.nav}>
         {navList.map((element, index) => {
           return (
             <li key={index}>
@@ -59,8 +57,8 @@ const Nav = () => {
           );
         })}
       </ul>
-      <div className="tabmenu-box">
-        <div className="tabmenu">
+      <div className={navStyle.tabmenuBox}>
+        <div className={navStyle.tabmenu}>
           <ul>
             {guideDetail.map((element, index) => {
               return (

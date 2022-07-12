@@ -1,0 +1,61 @@
+.navBox {
+  .nav {
+    display: flex;
+    line-height: 19px;
+    // border: 1px solid green;
+    overflow: hidden;
+    height: 18px;
+  }
+  .tabmenuBox {
+    height: 0;
+    overflow: hidden;
+    .tabmenu {
+      display: flex;
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  /* .tabmenuBox {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    left: 0;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid green;
+    .tabmenu {
+      display: flex;
+      z-index: 10;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+  } */
+}
+
+.navBox:hover {
+  width: 396.25px;
+  .tabmenuBox {
+    height: 100px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* .tabmenu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  display: none;
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+} */
