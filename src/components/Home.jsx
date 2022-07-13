@@ -7,16 +7,13 @@ import HomeNotice from './HomeNotice';
 import { Routes,Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
-      
-
+const Home = () => {     
     const homeList = [
       { content: "환영인사", href: "welcome" },
       { content: "회사소개", href: "introduce" },
       { content: "입사 전 준비사항", href: "ready" },
       { content: "게시판", href: "homenotice" },
     ]
-
   return (
     <div className="home">
       <HomeHeader />

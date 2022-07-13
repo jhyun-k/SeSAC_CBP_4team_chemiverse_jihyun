@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+//ChemiStory
+.chemistory {
+    .main{
+        font-size: 40px;
+    }
+    .chemiImg{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+//ChemiNav
+.navbtn{
+    border: 1px solid gray;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+//all
+.title{
+    width: 1000px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+.WhatIsChemiStory{
+    .subTitle{
+        h2{
+            display: inline-block;
+            border-bottom: 1px solid gray;
+            width: 900px;
+            margin: 10px auto;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        .content{
+            border: 1px solid gray;
+            width: 800px;
+            height: 100px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.subTitle{
+    h1{
+        display: inline-block;
+        width: 900px;
+        text-align: left;
+    }
+    h2{
+        display: block;
+        width: 900px;
+        margin: 10px auto;
+        padding-bottom: 10px;
+        text-align: left;
+    }
+    .content{
+        border: 1px solid gray;
+        width: 800px;
+        height: 200px;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.btn{
+    width: 100px;
+    padding: 10px;
+}

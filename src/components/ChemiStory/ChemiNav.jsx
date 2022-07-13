@@ -9,12 +9,12 @@ const ChemiNav = () => {
     { content: "자기개발목표", href: "./goal" },
   ];
   return (
-    <div>
+    <div className="ChemiNav">
       <nav className="nav">
         <ul>
           {chemiNavList.map((element, index) => {
             return (
-              <li key={index}>
+              <li className="navbtn" key={index}>
                 <NavLink to={element.href}>{element.content}</NavLink>
               </li>
             );
