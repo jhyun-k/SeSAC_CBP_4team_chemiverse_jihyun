@@ -1,5 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import styles from './css/Pagination.module.css';
+import {
+  FaAngleRight,
+  FaAngleLeft,
+  FaAngleDoubleRight,
+  FaAngleDoubleLeft,
+} from 'react-icons/fa';
 
 const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
   const pagesNum = Math.ceil(total / LIST_PER_PAGE);
@@ -38,12 +45,12 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
   console.log(pagesArrStartNum, pagesArrEndNum, pagesNum);
 
   return (
-    <div>
+    <div className={styles.pagination}>
       <button onClick={handleFirstBtnClick} disabled={pagesArrStartNum === 0}>
-        처음
+        <FaAngleDoubleLeft />
       </button>
       <button onClick={handlePrevBtnClick} disabled={pagesArrStartNum == 0}>
-        이전
+        <FaAngleLeft />
       </button>
       {pagesNumArray
         .slice(pagesArrStartNum, pagesArrEndNum)
@@ -58,13 +65,13 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
         onClick={handleNextBtnClick}
         disabled={pagesArrEndNum >= pagesNum}
       >
-        이후
+        <FaAngleRight />
       </button>
       <button
         onClick={handleLastBtnClick}
         disabled={pagesArrEndNum >= pagesNum}
       >
-        끝
+        <FaAngleDoubleRight />
       </button>
     </div>
   );
