@@ -32,11 +32,8 @@ const Move = () => {
                   <p>교육시간 : <span>{classData.classRoomTime}</span></p>
                 </div>
                 <div className="itemTitleRight">
-                
                   <button className="classRoomButton">바로가기</button>
-                  <CopyToClipboard text={classData.classRoomURL} onCopy={ console.log("URL이 복사되었습니다. ") }>
                   <button className="classRoomButton">URL복사</button>
-                  </CopyToClipboard>
                 </div>
               </div>
             </div>

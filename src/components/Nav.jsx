@@ -54,6 +54,7 @@ const Nav = () => {
           );
         })}
       </ul>
+      {/* <input className='search' type="search" id="id" name="id" /> */}
       <div className="tabmenu">
         <ul>
           {guideDetail.map((element, index) => {
