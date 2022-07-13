@@ -1,5 +1,5 @@
 import React from "react";
-import Diary from './Diary';
+import Diary from '../Diary/Diary';
 import styles from"./css/index.module.css"
 
 
