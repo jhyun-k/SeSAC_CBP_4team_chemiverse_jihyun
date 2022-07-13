@@ -33,7 +33,7 @@ function Diary() {
   }
 
   return (
-    <div className='App'>
+    <div className={styles.App}>
       <DiaryEditor onCreate={onCreate}/>
       <DiaryList diaryList={data} onRemove={onRemove} onEdit={onEdit}/>
     </div>

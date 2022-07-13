@@ -6,7 +6,7 @@
     .main{
         font-size: 40px;
     }
-    .chemi-img{
+    .chemiImg{
         width: 100px;
         height: 100px;
     }
@@ -23,14 +23,13 @@
 }
 
 .title{
-    border-bottom: 1px solid gray;
     width: 1000px;
     margin: 10px auto;
     padding-bottom: 10px;
 }
 
 .WhatIsMentoring{
-    .sub-title{
+    .subTitle{
         h2{
             display: inline-block;
             border-bottom: 1px solid gray;
@@ -48,30 +47,6 @@
             align-items: center;
             justify-content: center;
         }
-    }
-}
-
-.WritePlan{
-    div{
-        border: 1px solid gray;
-        width: 800px;
-        height: 200px;
-        margin: 10px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.Upload{
-    div{
-        border: 1px solid gray;
-        width: 800px;
-        height: 200px;
-        margin: 10px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 

@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./css/index.module.css"
 
 const WhatIsMentoring = () => {
   return (
-    <div className="WhatIsMentoring">
-      <h1 className="title">멘토링이란?</h1>
-      <div className="sub-title">
+    <div className={styles.WhatIsMentoring}>
+      <h1 className={styles.title}>멘토링이란?</h1>
+      <div className={styles.subTitle}>
         <img
-          className="chemi-img"
+          className={styles.chemiImg}
           src={"/chemiverse_img/bg-gnb-noshadow.png"}
           alt="bg-gnb-noshadow"
         />
