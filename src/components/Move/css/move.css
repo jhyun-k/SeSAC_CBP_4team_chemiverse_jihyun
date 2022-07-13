@@ -1,0 +1,55 @@
+/* .titleArea{
+  width:100%;
+  height:303px;
+  background-color: #809CEA; }*/
+
+
+
+.itemBox{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.item{
+  width: 30%;
+  text-align: left;
+}
+.itemTitleBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px 0 0 10px;
+  box-sizing: border-box;
+}
+.classTitle{
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+.itemImg{
+  width: 100%;
+  height: 268px;
+  background-image: url(./../../../../public/chemiverse_img/no-data.png);
+  border-radius: 10px;
+}
+.classRoomButton{
+  display: block;
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #809CEA;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.classRoomButton:first-child{
+  margin-bottom: 5px;
+}

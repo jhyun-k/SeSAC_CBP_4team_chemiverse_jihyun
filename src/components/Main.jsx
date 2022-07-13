@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./Header";
 import { Routes, Route } from "react-router-dom";
-import Move from "./Move";
+import Move from "./Move/Move";
 import Guide from "./Guide/Guide";
-import Diagnosis from "./Diagnosis";
+import Diagnosis from "./Diagnosis/Diagnosis";
 import Learning from "./Learning/Learning";
 import Mypage from "./Mypage";
 import Login from "./Login/Login";
