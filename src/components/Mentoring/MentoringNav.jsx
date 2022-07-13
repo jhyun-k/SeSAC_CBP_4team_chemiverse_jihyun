@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styles from "./css/index.module.css"
+
 
 const MentoringNav = () => {
   const mentorNavList = [
@@ -9,11 +11,11 @@ const MentoringNav = () => {
   ];
   return (
     <div>
-      <nav className="nav">
+      <nav className={styles.nav}>
         <ul>
           {mentorNavList.map((element, index) => {
             return (
-              <li key={index}>
+              <li className={styles.navbtn} key={index}>
                 <NavLink to={element.href}>{element.content}</NavLink>
               </li>
             );

@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./css/index.module.css"
+import Diary from '../Diary/Diary';
 
 const WritePlan = () => {
   return (
-    <div>
-      <h2>계획서 작성</h2>
+    <div className={styles.WritePlan}>
+      <h2 className={styles.title}>계획서 작성</h2>
       <h3>계획서 작성 설명 글</h3>
-      <div>콘텐츠 기획 후 삽입 예정</div>
-      <button>작성하기</button>
+      <Diary />
     </div>
   );
 };
