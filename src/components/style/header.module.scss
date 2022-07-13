@@ -27,11 +27,14 @@
       align-items: center;
       justify-content: space-between;
       h1 {
-        width: 10.486vw;
-        height: 2.639vw;
-        background: url(../../../public/chemiverse_img/logo2.png) center;
-        background-size: cover;
         font-size: 0px;
+        a {
+          display: block;
+          width: 10.486vw;
+          height: 2.639vw;
+          background: url(../../../public/chemiverse_img/logo2.png) center;
+          background-size: cover;
+        }
       }
       .searchBox {
         display: flex;

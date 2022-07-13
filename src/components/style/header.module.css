@@ -29,11 +29,14 @@
   justify-content: space-between;
 }
 .mainHeaderBox .inner .mainHeader h1 {
+  font-size: 0px;
+}
+.mainHeaderBox .inner .mainHeader h1 a {
+  display: block;
   width: 10.486vw;
   height: 2.639vw;
   background: url(../../../public/chemiverse_img/logo2.png) center;
   background-size: cover;
-  font-size: 0px;
 }
 .mainHeaderBox .inner .mainHeader .searchBox {
   display: flex;
