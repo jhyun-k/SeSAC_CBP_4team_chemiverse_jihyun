@@ -3,21 +3,71 @@
 }
 
 .chemistory .main {
-  font-size: 40px;
+  padding-left: 6.944vw;
+  padding-right: 6.25vw;
+  margin-bottom: 3.472vw;
+  width: 100vw;
+  height: 11.806vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
 }
-.chemistory .chemiImg {
-  width: 100px;
-  height: 100px;
+.chemistory .mainTxt {
+  display: flex;
+  align-items: center;
+}
+.chemistory .mainTxt span {
+  display: inline-block;
+  color: #fff;
+}
+.chemistory .mainTxt span:first-child {
+  font-size: 3.333vw;
+  font-weight: 700;
+  margin-right: 2.083vw;
+}
+.chemistory .mainTxt span:last-child {
+  font-size: 0.833vw;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.chemistory .mainImg {
+  width: 15.833vw;
+  height: auto;
 }
 
-.navbtn {
-  border: 1px solid gray;
-  width: 130px;
-  height: 40px;
+.nav ul li {
+  color: #6F76C1;
+  border: 0.139vw solid #6F76C1;
+  margin-bottom: 50px;
+  width: 17.361vw;
+  height: 3.125vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  font-size: 1.181vw;
+  font-weight: 700;
+}
+.nav ul li:first-child {
+  border-top-left-radius: 0.347vw;
+  border-bottom-left-radius: 0.347vw;
+  border-right: none;
+}
+.nav ul li:nth-child(2) {
+  border-right: none;
+}
+.nav ul li:last-child {
+  border-top-right-radius: 0.347vw;
+  border-bottom-right-radius: 0.347vw;
+  border-left: none;
+}
+
+.navbtn.on {
+  color: #fff;
+  background-color: #6F76C1;
 }
 
 .title {
