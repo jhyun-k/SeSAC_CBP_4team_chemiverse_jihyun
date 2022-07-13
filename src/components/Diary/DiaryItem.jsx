@@ -32,7 +32,7 @@ const DiaryItem = ({
   const localContentInput = useRef();
 
   const handleRemove = () => {
-    if (window.confirm(`${id + 1}번째 일기를 삭제하시겠습니까?`)) {
+    if (window.confirm(`${id + 1}번째 작성글을 삭제하시겠습니까?`)) {
       onRemove(id);
     }
   };
@@ -49,7 +49,7 @@ const DiaryItem = ({
       return;
     }
 
-    if (window.confirm(`${id+1}번째 일기를 수정하시겠습니까?`)) {
+    if (window.confirm(`${id+1}번째 작성글을 수정하시겠습니까?`)) {
       onEdit(id,localContent);
       toggleIsEdit();
     }
