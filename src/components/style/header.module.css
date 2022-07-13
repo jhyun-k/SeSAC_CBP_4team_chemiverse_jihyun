@@ -1,0 +1,55 @@
+.mainHeaderBox {
+  width: 100vw;
+}
+.mainHeaderBox .inner {
+  width: 92.639vw;
+  margin: 0 auto;
+  height: 8.194vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+.mainHeaderBox .inner .login {
+  position: absolute;
+  top: 0.7vw;
+  right: 0.2vw;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.764vw;
+}
+.mainHeaderBox .inner .login li {
+  margin-left: 1vw;
+  color: #6c6c6c;
+}
+.mainHeaderBox .inner .mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeaderBox .inner .mainHeader h1 {
+  width: 10.486vw;
+  height: 2.639vw;
+  background: url(../../../public/chemiverse_img/logo2.png) center;
+  background-size: cover;
+  font-size: 0px;
+}
+.mainHeaderBox .inner .mainHeader .searchBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5vw;
+  background-color: #f3f3f3;
+  width: 15.625vw;
+  height: 2.083vw;
+  border-radius: 0.347vw;
+}
+.mainHeaderBox .inner .mainHeader .searchBox input {
+  font-size: 0.347vw;
+  background-color: #f3f3f3;
+  outline: none;
+}
+.mainHeaderBox .inner .mainHeader .searchBox button * {
+  color: #838383;
+}/*# sourceMappingURL=header.module.css.map */
