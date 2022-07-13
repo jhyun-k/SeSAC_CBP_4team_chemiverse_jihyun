@@ -5,13 +5,14 @@ import Goal from "./Goal";
 import ChemiNav from "./ChemiNav";
 import { Routes, Route } from "react-router-dom";
 import WhatIsChemiStory from "./WhatIsChemiStory";
+import styles from"./css/index.module.css"
 
 const ChemiStory = () => {
   return (
-    <div className="chemistory">
-      <h1>
+    <div className={styles.chemistory}>
+      <h1 className={styles.main}>
         <img
-          className="chemi-img"
+          className={styles.chemiImg}
           src={"/chemiverse_img/bg-gnb-noshadow.png"}
           alt="bg-gnb-noshadow"
         />
