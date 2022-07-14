@@ -42,12 +42,8 @@ const Nav = () => {
     { content: '자유게시판', href: 'post/freepost' },
     { content: '아이디어제시', href: 'post/suggestIdea' },
   ];
-  const tabmenu = document.querySelectorAll('.nav ul');
-  const fncHover = () => {
-    tabmenu.style.display = 'block';
-  };
   return (
-    <nav className={navStyle.navBox} onMouseOver={fncHover}>
+    <nav className={navStyle.navBox}>
       <ul className={navStyle.nav}>
         {navList.map((element, index) => {
           return (

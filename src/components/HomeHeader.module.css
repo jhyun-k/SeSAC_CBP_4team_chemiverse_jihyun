@@ -1,0 +1,45 @@
+.homeHeader {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.blacklogo {
+  background: url(/public/chemiverse_img/logo2.png);
+  width: 161px;
+  height: 41px;
+  text-indent: -9999px;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.homeNav {
+  width: auto;
+  margin: 0;
+}
+
+.homeNav > li {
+  margin: 0 10px;
+}
+
+.homeNav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.title {
+  color: #6f76c1;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.onup_btn {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+}/*# sourceMappingURL=HomeHeader.module.css.map */
