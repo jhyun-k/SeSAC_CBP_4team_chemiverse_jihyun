@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './HomeHeader.css';
+import styles from './HomeHeader.module.css';
 
 const HomeHeader = () => {
-
-
   const homeList = [
     { content: "환영인사", href: "welcome" },
     { content: "회사소개", href: "introduce" },
