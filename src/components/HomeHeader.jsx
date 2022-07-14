@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './HomeHeader.css'
+import styles from './HomeHeader.module.css'
 
 const HomeHeader = () => {
 
@@ -11,12 +11,12 @@ const HomeHeader = () => {
     { content: "게시판", href: "homenotice" },
   ]
   return (
-    <header className="homeHeader">
-        <div className='homeContainer'>
-            <div className='blacklogo'>
+    <header className={styles.homeHeader}>
+        <div className={styles.homeContainer}>
+            <div className={styles.blacklogo}>
               <Link to="/" >expert</Link>
             </div>
-            <div className='title'>Chemiverse Connect With</div>
+            <div className={styles.title}>Chemiverse Connect With</div>
             <ul className='homeNav'>
               {homeList.map((element, index) => {
                 return (
@@ -26,7 +26,7 @@ const HomeHeader = () => {
                 );
               })}
             </ul>
-            <button className='onup_btn'>
+            <button className={styles.onup_btn}>
               <Link to="/main">Chemiverse On & Up 바로가기</Link>
             </button>
         </div>
