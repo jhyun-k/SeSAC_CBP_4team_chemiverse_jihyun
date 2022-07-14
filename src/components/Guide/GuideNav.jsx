@@ -13,7 +13,7 @@ const GuideNav = () => {
         {navList.map((element, index) => {
           return (
             <li key={index}>
-              <NavLink to={element.href}>{element.content}</NavLink>
+              <NavLink to={element.href} >{element.content}</NavLink>
             </li>
           );
         })}
