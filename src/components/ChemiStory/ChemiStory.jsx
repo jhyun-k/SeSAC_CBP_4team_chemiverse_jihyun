@@ -10,15 +10,22 @@ import styles from"./css/index.module.css"
 const ChemiStory = () => {
   return (
     <div className={styles.chemistory}>
-      <h1 className={styles.main}>
+      <div className={styles.main}>
+        <div className={styles.mainTxt}>
+          <span>
+            Chemi Story
+          </span>
+          <span>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+          </span>
+        </div>
         <img
-          className={styles.chemiImg}
-          src={"/chemiverse_img/bg-gnb-noshadow.png"}
-          alt="bg-gnb-noshadow"
+          className={styles.mainImg}
+          src={"/chemiverse_img/img-pop-cardnews.png"}
+          alt="img-pop-cardnews"
         />
-        Chemi Story
-      </h1>
-      <h4>컨텐츠 설명글</h4>
+      </div>
       <ChemiNav />
       <Routes>
         <Route path="/" element={<WhatIsChemiStory />}></Route>
