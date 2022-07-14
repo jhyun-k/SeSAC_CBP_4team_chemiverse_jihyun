@@ -1,7 +1,80 @@
 /* Learning.jsx */
+.learningWrapper .main {
+  padding-left: 6.944vw;
+  padding-right: 6.25vw;
+  margin-bottom: 3.472vw;
+  width: 100vw;
+  height: 11.806vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+.learningWrapper .mainTxt {
+  display: flex;
+  align-items: center;
+}
+.learningWrapper .mainTxt span {
+  display: inline-block;
+  color: #fff;
+}
+.learningWrapper .mainTxt span:first-child {
+  font-size: 3.333vw;
+  font-weight: 700;
+  margin-right: 2.083vw;
+}
+.learningWrapper .mainTxt span:last-child {
+  font-size: 0.833vw;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.learningWrapper .mainImg {
+  width: 15.833vw;
+  height: auto;
+}
+
 .learning {
   background-color: black;
   font-size: 100px;
+}
+
+/* learnNav */
+.learnNav ul li {
+  color: #6f76c1;
+  border: 0.139vw solid #6f76c1;
+  margin-bottom: 50px;
+  width: 17.361vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.181vw;
+  font-weight: 500;
+}
+.learnNav ul li * {
+  text-decoration: none;
+}
+.learnNav ul li:first-child {
+  border-top-left-radius: 0.347vw;
+  border-bottom-left-radius: 0.347vw;
+  border-right: none;
+}
+.learnNav ul li:nth-child(2) {
+  border-right: none;
+}
+.learnNav ul li:last-child {
+  border-top-right-radius: 0.347vw;
+  border-bottom-right-radius: 0.347vw;
+  border-left: none;
+}
+
+.navbtn.on {
+  color: #424888;
+  font-weight: 900;
+  font-size: 1.25vw;
 }
 
 /* Understand.jsx */
@@ -139,22 +212,20 @@ section {
   z-index: 2;
 }
 .modalBackdrop .modalContent {
-  width: 80%;
-  min-height: 200px;
   background-color: white;
-  padding: 25px;
   border-radius: 10px;
 }
 .modalBackdrop .modalContent button {
   float: right;
+  z-index: 1000;
 }
 .modalBackdrop .slide {
-  display: flex;
-  flex-wrap: nowrap;
+  width: 1000px;
+  height: 500px;
+  position: relative;
 }
 .modalBackdrop .slide img {
-  margin: 0;
-  padding: 0;
+  height: 400px;
 }
 .modalBackdrop .youtube {
   height: 500px;

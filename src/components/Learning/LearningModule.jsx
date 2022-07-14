@@ -49,7 +49,7 @@ const LearningModule = (props) => {
                         <img
                             src={
                                 process.env.PUBLIC_URL +
-                                "/chemiverse_img/img-cardnews01.png"
+                                "/chemiverse_img/img-cardnews011.png"
                             }
                             alt=""
                         />
@@ -71,10 +71,7 @@ const LearningModule = (props) => {
                         }}
                     >
                         <img
-                            src={
-                                process.env.PUBLIC_URL +
-                                "/chemiverse_img/no-data.png"
-                            }
+                            src="https://i.ytimg.com/an_webp/dGpYuTshhuA/mqdefault_6s.webp?du=3000&sqp=CKDavpYG&rs=AOn4CLD6pGu3SFtZiTcarAHysG1KdzKViw"
                             alt=""
                         />
                         <Modal

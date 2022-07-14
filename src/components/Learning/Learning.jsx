@@ -14,7 +14,22 @@ import sData from "../../data/selfmanageData.json";
 
 const Learning = () => {
     return (
-        <div className="learningWrapper">
+        <div className={styles.learningWrapper}>
+            <div className={styles.main}>
+                <div className={styles.mainTxt}>
+                    <span>역량학습</span>
+                    <span>
+                        컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+                        <br></br>
+                        컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+                    </span>
+                </div>
+                <img
+                    className={styles.mainImg}
+                    src={"/chemiverse_img/img-pop-cardnews.png"}
+                    alt="img-pop-cardnews"
+                />
+            </div>
             <LearnNav />
             <h1>역량학습 페이지</h1>
             <Routes>

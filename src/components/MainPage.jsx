@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+import Loginok from './Login/Loginok';
+import { useState } from 'react';
 
 const MainPage = () => {
+
+  
+
   const mainList = [
     { content: "Connect With 바로가기", href: "/*" },
     { content: "교육장 이동", href: "./move" },
@@ -27,6 +33,7 @@ const MainPage = () => {
         }
       </ul>
     </div>
+    
   );
 };
 

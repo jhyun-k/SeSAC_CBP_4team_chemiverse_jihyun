@@ -5,7 +5,22 @@
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
+    right: 0;
+    left: auto;
 }
 
 .swiper-slide {
+}
+
+.swiper-wrapper {
+}
+.swiper {
+    padding: 25px;
+    width: 1000px;
+    height: 500px;
+    top: 20px;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 60px !important;
 }
