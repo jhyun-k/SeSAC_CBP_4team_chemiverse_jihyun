@@ -67,11 +67,11 @@
   justify-content: flex-start;
 }
 .navBox:hover .tabmenuBox .tabmenu ul:nth-child(4) {
-  width: 9.028vw;
-  margin: 0 1.2vw 0 1.8vw;
+  width: 11.028vw;
+  margin: 0 0.2vw 0 0.8vw;
 }
 .navBox:hover .tabmenuBox .tabmenu ul:nth-child(4) li {
-  width: 9.028vw;
+  width: 11.028vw;
 }
 .navBox:hover .tabmenuBox .tabmenu ul li {
   display: flex;
