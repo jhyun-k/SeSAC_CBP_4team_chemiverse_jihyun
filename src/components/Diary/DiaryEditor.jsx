@@ -40,6 +40,8 @@ const DiaryEditor = ({ onCreate }) => {
 
   };
 
+  // const 
+
   return (
     <div className={styles.DiaryEditor}>
       <div>
