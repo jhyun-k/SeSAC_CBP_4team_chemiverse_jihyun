@@ -51,6 +51,9 @@
   font-size: 1.181vw;
   font-weight: 500;
 }
+.nav ul li * {
+  text-decoration: none;
+}
 .nav ul li:first-child {
   border-top-left-radius: 0.347vw;
   border-bottom-left-radius: 0.347vw;
