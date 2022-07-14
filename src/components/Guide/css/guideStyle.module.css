@@ -22,4 +22,8 @@
   border-top-right-radius: 0.347vw;
   border-bottom-right-radius: 0.347vw;
   border-left: none;
+}
+
+* {
+  color: inherit;
 }/*# sourceMappingURL=guideStyle.module.css.map */
