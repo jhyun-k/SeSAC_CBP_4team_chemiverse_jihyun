@@ -40,6 +40,11 @@ const DiaryEditor = ({ onCreate }) => {
 
   };
 
+  const doPrint = (e) => {
+    e.preventDefault();
+    window.print();
+  }
+
   return (
     <div className={styles.DiaryEditor}>
       <div>
@@ -77,6 +82,7 @@ const DiaryEditor = ({ onCreate }) => {
       </div> */}
       <div>
         <button onClick={handleSubmit}>작성하기</button>
+        <button onClick={doPrint}>인쇄하기</button>
       </div>
     </div>
   );

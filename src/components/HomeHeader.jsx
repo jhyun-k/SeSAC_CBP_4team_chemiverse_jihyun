@@ -4,6 +4,7 @@ import './HomeHeader.css';
 
 const HomeHeader = () => {
 
+
   const homeList = [
     { content: "환영인사", href: "welcome" },
     { content: "회사소개", href: "introduce" },
@@ -26,8 +27,8 @@ const HomeHeader = () => {
                 );
               })}
             </ul>
-            <button className='onup_btn'>
-              <Link to="/main">Chemiverse On & Up 바로가기</Link>
+            <button className={styles.onup_btn}>
+              <Link to="/main" >Chemiverse On & Up 바로가기</Link>
             </button>
         </div>
     </header>

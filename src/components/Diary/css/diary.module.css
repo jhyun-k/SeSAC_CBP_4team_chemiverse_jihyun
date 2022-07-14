@@ -18,10 +18,13 @@ textarea {
 
 .DiaryEditor input {
   padding: 10px;
+  border: 1px solid gray;
 }
 .DiaryEditor textarea {
   padding: 10px;
   height: 150px;
+  border: 1px solid gray;
+
 }
 
 .DiaryEditor select {
@@ -31,9 +34,11 @@ textarea {
 }
 
 .DiaryEditor button {
-  width: 500px;
+  width: 100px;
   padding: 10px;
+  margin: 10px;
   cursor: pointer;
+  border: 1px solid gray;
 }
 
 /* List  */
