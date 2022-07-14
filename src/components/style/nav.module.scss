@@ -23,22 +23,6 @@
   }
 }
 
-/* .nav li:hover {
-  a {
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0.3vw;
-      background-color: #6f76c1;
-      z-index: 10;
-    }
-  }
-}
- */
 .tabmenuBox {
   height: 0;
   overflow: hidden;
@@ -47,6 +31,19 @@
     ul {
       display: flex;
       flex-direction: column;
+      &:hover {
+        background-color: rgba(217, 217, 217, 0.3);
+        ::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 0.3vw;
+          background-color: #6f76c1;
+          z-index: 10;
+        }
+      }
     }
   }
 }
@@ -54,7 +51,6 @@
 .navBox:hover {
   .tabmenuBox {
     background-color: rgba(255, 255, 255, 0.9);
-    // border: 1px solid green;
     height: 14.653vw;
     width: 100vw;
     position: absolute;
