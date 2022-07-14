@@ -13,8 +13,8 @@ import ChemiStory from "./ChemiStory/ChemiStory";
 import PostTab from "./Post/PostTab";
 import Loginok from './Login/Loginok';
 import { useState,useEffect } from 'react';
-import DetailRedirect from './Login/DetailRedirect';
 import IdPw from './Login/IdPw';
+import DetailRedirect from './Login/DetailRedirect';
 
 const Main = () => {
 
