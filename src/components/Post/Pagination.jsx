@@ -42,8 +42,6 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
     return index + 1;
   });
 
-  console.log(pagesArrStartNum, pagesArrEndNum, pagesNum);
-
   return (
     <div className={styles.pagination}>
       <button onClick={handleFirstBtnClick} disabled={pagesArrStartNum === 0}>
