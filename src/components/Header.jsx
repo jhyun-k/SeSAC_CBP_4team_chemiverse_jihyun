@@ -4,7 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 import headerStyle from "./style/header.module.css";
 import { FiSearch } from "react-icons/fi";
 
-
 const Header = ({ title }) => {
   const headerList = [
     { content: "로그인", href: "./login" },
