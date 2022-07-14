@@ -10,7 +10,7 @@
 }
 .text{width: 126px; height: 12px; margin:-10px 0; color: #909090;font-size: 12px; text-align: left;}
 
-.inner{position: absolute;
+.inner{
 display: flex; flex-direction: column; bottom: 60px;}
 
 .modal{
@@ -30,6 +30,7 @@ display: flex; flex-direction: column; bottom: 60px;}
     margin: 10px auto;
     border: 1px solid transparent;
     background-color: #D6DDF8;
+    position: relative;
 }
 
 .button_box{display: flex; justify-content: space-between; width: 250px;}
