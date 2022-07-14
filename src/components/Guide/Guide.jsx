@@ -4,10 +4,25 @@ import TimeTable from "./TimeTable";
 import Teacher from "./Teacher";
 import GuideNav from "./GuideNav";
 import Notice from "./Notice";
+import styles from "../ChemiStory/css/index.module.css";
 
 const Guide = () => {
   return (
-    <div className="guide">
+    <div className={styles.chemistory}>
+      <div className={styles.main}>
+        <div className={styles.mainTxt}>
+          <span>교육 안내</span>
+          <span>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+          </span>
+        </div>
+        <img
+          className={styles.mainImg}
+          src={"/chemiverse_img/Group 242.png"}
+          alt="img-pop-cardnews"
+        />
+      </div>
       <GuideNav />
       <Routes>
         <Route path="/" element={<Notice />}></Route>
