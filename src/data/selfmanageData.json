@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "자기관리1",
+        "goal": "학습목표1",
+        "basic": "기본개념1",
+        "img": "https://images.unsplash.com/photo-1484406566174-9da000fda645?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW5pbWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 2,
+        "name": "자기관리2",
+        "goal": "학습목표2",
+        "basic": "기본개념2",
+        "img": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 3,
+        "name": "자기관리3",
+        "goal": "학습목표3",
+        "basic": "기본개념3",
+        "img": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+]

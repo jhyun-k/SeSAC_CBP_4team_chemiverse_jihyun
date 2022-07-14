@@ -5,24 +5,22 @@ import styles from "./css/learning.module.css";
 // 회사이해
 const Understand = ({ module }) => {
     return (
-        <div className={styles.moduleListArea}>
+        <ul className={styles.moduleList}>
             {/* 모듈 목록  */}
             {module.map((ele) => {
-                console.log(ele);
                 return (
-                    <Link to={`./${ele.id}`}>
-                        <div className={styles.moduleListItem}>
-                            <img
-                                src={ele.img}
-                                className="App-logo"
-                                alt="React"
-                            />
-                            <p>{ele.name}</p>
-                        </div>
-                    </Link>
+                    <li className={styles.moduleListItem} key={ele.id}>
+                        <Link to={`./${ele.id}`}>
+                            <div className={styles.imgBox}>
+                                <img src={ele.img} alt="React" />
+                                <div className={styles.hover}>{ele.goal}</div>
+                            </div>
+                            <p className={styles.moduleName}>{ele.name}</p>
+                        </Link>
+                    </li>
                 );
             })}
-        </div>
+        </ul>
     );
 };
 

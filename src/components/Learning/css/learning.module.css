@@ -1,17 +1,130 @@
 /* Learning.jsx */
+.learning {
+  background-color: black;
+  font-size: 100px;
+}
+
 /* Understand.jsx */
-.moduleListArea {
+.moduleList {
   display: flex;
   margin: auto;
-  width: 1000px;
 }
-.moduleListArea .moduleListItem {
-  width: 300px;
-  overflow: hidden;
+.moduleList .moduleListItem {
   margin: 20px;
+}
+.moduleList .moduleListItem .imgBox {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+.moduleList .moduleListItem .imgBox img {
+  overflow: hidden;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+}
+.moduleList .moduleListItem .imgBox .hover {
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(230, 224, 236, 0.9);
+  width: 640px;
+  height: 300px;
+  transition: 0.4s;
+  opacity: 0;
+  border-radius: 50%;
+  padding: 60px 200px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.moduleList .moduleListItem .moduleName {
+  font-size: 20px;
+  margin: 20px;
+  text-align: left;
+}
+.moduleList .moduleListItem:hover .hover {
+  top: 210px;
+  opacity: 1;
 }
 
 /* LearningModule.jsx */
+.moduleBox {
+  width: 1000px;
+  margin: auto;
+}
+.moduleBox .moduleDesc {
+  display: flex;
+  padding: 20px;
+}
+.moduleBox .moduleDesc .moduleImgBox {
+  margin-right: 30px;
+}
+.moduleBox .moduleDesc .moduleImgBox img {
+  width: 255px;
+  height: 340px;
+  border-radius: 10px;
+}
+.moduleBox .moduleDesc .moduleTextBox {
+  width: 800px;
+  text-align: left;
+  padding: 30px 40px;
+  height: 340px;
+}
+.moduleBox .moduleDesc .moduleTextBox .moduleTitle {
+  font-size: 33px;
+}
+.moduleBox .moduleDesc .moduleTextBox .descTitle {
+  font-size: 15px;
+}
+.moduleBox .moduleDesc .moduleTextBox dt {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.moduleBox .moduleDesc .moduleTextBox dt:first-child {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #d9d9d9;
+}
+.moduleBox .moduleDesc .moduleTextBox dd {
+  font-size: 16px;
+}
+.moduleBox .moduleLearning .learningContents {
+  display: flex;
+  justify-content: space-around;
+}
+.moduleBox .moduleLearning .learningContents .imgBox > img {
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.sectionTitle {
+  margin: 30px 0;
+  padding-bottom: 15px;
+  text-align: left;
+  color: #6f76c1;
+  font-size: 30px;
+  line-height: 50px;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+}
+.sectionTitle .sectionIcon {
+  width: 50px;
+  margin-right: 10px;
+}
+.sectionTitle p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+section {
+  margin: 100px 0;
+}
+
 /* Modal.jsx */
 .modalBackdrop {
   position: fixed;
@@ -26,12 +139,23 @@
   z-index: 2;
 }
 .modalBackdrop .modalContent {
-  width: 60%;
+  width: 80%;
   min-height: 200px;
   background-color: white;
   padding: 25px;
+  border-radius: 10px;
 }
-.modalBackdrop .imgArea {
+.modalBackdrop .modalContent button {
+  float: right;
+}
+.modalBackdrop .slide {
   display: flex;
   flex-wrap: nowrap;
+}
+.modalBackdrop .slide img {
+  margin: 0;
+  padding: 0;
+}
+.modalBackdrop .youtube {
+  height: 500px;
 }/*# sourceMappingURL=learning.module.css.map */

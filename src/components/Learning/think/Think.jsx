@@ -6,13 +6,11 @@ import { useRef, useState } from "react";
 function Think() {
     const [data, setData] = useState([]);
     const dataId = useRef(0);
-    const onCreate = (author, content, emotion) => {
+    const onCreate = (content) => {
         const created_date = new Date().getTime();
 
         const newItem = {
-            author,
             content,
-            emotion,
             created_date,
             id: dataId.current,
         };

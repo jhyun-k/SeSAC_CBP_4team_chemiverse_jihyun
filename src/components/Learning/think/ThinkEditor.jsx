@@ -22,10 +22,7 @@ const ThinkEditor = ({ onCreate }) => {
             return;
         }
 
-        onCreate(
-            state.author,
-            state.content
-        ); /* tate.author 지우면 내용이 안나옴 .. 확인하기 */
+        onCreate(state.content);
         alert("저장성공!");
         setState({
             content: "",
