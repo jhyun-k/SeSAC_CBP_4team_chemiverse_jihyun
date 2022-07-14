@@ -45,12 +45,19 @@
         width: 15.625vw;
         height: 2.083vw;
         border-radius: 0.347vw;
+        position: relative;
         input {
+          width: 12.917vw;
           font-size: 0.347vw;
           background-color: #f3f3f3;
           outline: none;
         }
         button {
+          width: 1.25vw;
+          height: 1.25vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           * {
             color: #838383;
           }

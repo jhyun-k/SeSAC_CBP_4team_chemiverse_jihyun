@@ -51,7 +51,7 @@
 .navBox:hover {
   .tabmenuBox {
     background-color: rgba(255, 255, 255, 0.9);
-    height: 14.653vw;
+    height: 16vw;
     width: 100vw;
     position: absolute;
     top: 6.667vw;
@@ -61,16 +61,19 @@
       width: 58.889vw;
       position: relative;
       ul {
-        height: 14.653vw;
+        height: 16vw;
         position: relative;
-        left: 28vw;
+        left: 28.1vw;
         display: flex;
         justify-content: flex-start;
+        &:nth-child(2) {
+          margin-right: 0.05vw;
+        }
         &:nth-child(4) {
-          width: 11.028vw;
-          margin: 0 0.2vw 0 0.8vw;
+          width: 11vw;
+          margin: 0 0.2vw 0 0.78vw;
           li {
-            width: 11.028vw;
+            width: 11vw;
           }
         }
         li {
