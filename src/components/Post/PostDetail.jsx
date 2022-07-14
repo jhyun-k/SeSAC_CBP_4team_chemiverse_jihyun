@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import styles from './css/PostDetail.module.css';
-import SearchHeader from './SearchHeader';
 import SearchBar from './SearchBar';
+import { useLocation } from 'react-router-dom';
 
 const PostDetail = ({ data }) => {
   const { post } = useParams();
@@ -10,7 +10,21 @@ const PostDetail = ({ data }) => {
     return x.id == post;
   });
 
-  console.log(selectedPost);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const locationInclude = (name) => {
+    return location.pathname.includes(name);
+  };
+
+  const backListBtn = () => {
+    if (locationInclude('freepost')) {
+      navigate('/main/post/freepost');
+    } else if (locationInclude('suggestIdea')) {
+      navigate('/main/post/suggestIdea');
+    }
+  };
+
   return (
     <div className={styles.wrap}>
       <SearchBar />
@@ -24,9 +38,9 @@ const PostDetail = ({ data }) => {
       </div>
       <div className={styles.body}>{selectedPost.body}</div>
       <div>
-        {/* <Link to='/freepost'> */}
-        <button className={styles.listBtn}>목록</button>
-        {/* </Link> */}
+        <button onClick={backListBtn} className={styles.listBtn}>
+          목록
+        </button>
       </div>
     </div>
   );

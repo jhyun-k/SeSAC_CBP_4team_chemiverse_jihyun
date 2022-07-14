@@ -4,10 +4,8 @@ import Pagination from './Pagination';
 import FreePostList from './FreePostList';
 import SearchHeader from './SearchHeader';
 import styles from './css/Post.module.css';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import data from '../../data/freePostData.json';
-import PostDetail from './PostDetail';
-import WritePostPage from './WritePostPage';
 
 const FreePost = () => {
   const [lists, setLists] = useState([]);

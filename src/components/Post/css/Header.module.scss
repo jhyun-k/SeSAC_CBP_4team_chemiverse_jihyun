@@ -1,4 +1,14 @@
+.totalPost {
+  margin-top: 10px;
+}
 .searchHeader {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.searchBarBox {
   width: 1000px;
   margin: auto;
   display: flex;
@@ -6,8 +16,11 @@
   align-items: flex-end;
   margin-bottom: 50px;
 }
+.searchHeader .searchBarBox {
+  margin-bottom: 10px;
+}
 .totalPost {
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .searchBar {

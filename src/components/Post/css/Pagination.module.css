@@ -2,7 +2,34 @@
   margin-top: 100px;
 }
 
-.pagination button {
+.pagination .button {
   padding: 0 5px;
-  font-size: 14px;
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ccc;
+  vertical-align: top;
+}
+
+.pagination .button:hover {
+  color: #6f76c1;
+  transition: color 0.3s;
+}
+
+.pagination .button.on {
+  color: #6f76c1;
+}
+
+.angleBtn {
+  font-size: 16px;
+  vertical-align: top;
+  margin: 0 5px;
+}
+.angleBtn path {
+  color: #6f76c1;
+}
+
+.angleBtn.disabled path {
+  color: #bbb;
 }/*# sourceMappingURL=Pagination.module.css.map */
