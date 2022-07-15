@@ -1,83 +1,139 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 //ChemiStory
 .chemistory {
-    .main{
-        font-size: 40px;
+  .main{
+    padding-left: 6.944vw;
+    padding-right: 6.250vw;
+    margin-bottom: 3.472vw;
+    width: 100vw;
+    height: 11.806vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .mainTxt{
+    display: flex;
+    align-items: center;
+  }
+  .mainTxt span{
+    display: inline-block;
+    color: #fff;
+    &:first-child{
+      font-size: 3.333vw;
+      font-weight: 700;
+      margin-right: 2.083vw;
     }
-    .chemiImg{
-        width: 100px;
-        height: 100px;
+    &:last-child{
+      font-size: 0.833vw;
+      line-height: 1.5;
+      font-weight: 500;
     }
+    }
+  .mainImg{
+    width: 15.833vw;
+    height: auto;
+  }
 }
 
 //ChemiNav
-.navbtn{
-    border: 1px solid gray;
-    width: 130px;
-    height: 40px;
+.nav ul li{
+    color:#6F76C1;
+    border: 0.139vw solid #6F76C1;
+    margin-bottom: 50px;
+    width: 17.361vw;
+    height: 3.125vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-}
+    font-size: 1.181vw;
+    font-weight: 500;
+    *{
+      text-decoration: none;
+    }
+    &:first-child{
+      border-top-left-radius: 0.347vw;
+      border-bottom-left-radius: 0.347vw;
+      border-right: none;
+    }
+    &:nth-child(2){
+      border-right: none;
+    }
+    &:last-child{
+      border-top-right-radius: 0.347vw;
+      border-bottom-right-radius: 0.347vw;
+      border-left: none;
+    }
+  }
+  .navbtn{
+    &.on{
+      color:#424888;
+      font-weight: 900;
+      font-size: 1.25vw;
+    }
+  }
+
 
 //all
-.title{
-    width: 1000px;
+.title {
+  width: 1000px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+
+.WhatIsChemiStory {
+  .subTitle {
+    h2 {
+      display: inline-block;
+      border-bottom: 1px solid gray;
+      width: 900px;
+      margin: 10px auto;
+      padding-bottom: 10px;
+      text-align: left;
+    }
+    .content {
+      border: 1px solid gray;
+      width: 800px;
+      height: 100px;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.subTitle {
+  h1 {
+    display: inline-block;
+    width: 900px;
+    text-align: left;
+  }
+  h2 {
+    display: block;
+    width: 900px;
     margin: 10px auto;
     padding-bottom: 10px;
+    text-align: left;
+  }
+  .content {
+    border: 1px solid gray;
+    width: 800px;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.WhatIsChemiStory{
-    .subTitle{
-        h2{
-            display: inline-block;
-            border-bottom: 1px solid gray;
-            width: 900px;
-            margin: 10px auto;
-            padding-bottom: 10px;
-            text-align: left;
-        }
-        .content{
-            border: 1px solid gray;
-            width: 800px;
-            height: 100px;
-            margin: 10px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-
-.subTitle{
-    h1{
-        display: inline-block;
-        width: 900px;
-        text-align: left;
-    }
-    h2{
-        display: block;
-        width: 900px;
-        margin: 10px auto;
-        padding-bottom: 10px;
-        text-align: left;
-    }
-    .content{
-        border: 1px solid gray;
-        width: 800px;
-        height: 200px;
-        margin: 10px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.btn{
-    width: 100px;
-    padding: 10px;
+.btn {
+  width: 100px;
+  padding: 10px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styles from"./css/index.module.css"
 
 const ChemiNav = () => {
   const chemiNavList = [
@@ -9,13 +10,18 @@ const ChemiNav = () => {
     { content: "자기개발목표", href: "./goal" },
   ];
   return (
-    <div className="ChemiNav">
-      <nav className="nav">
+    <div className={styles.ChemiNav}>
+      <nav className={styles.nav}>
         <ul>
           {chemiNavList.map((element, index) => {
             return (
-              <li className="navbtn" key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
+              <li key={index}>
+                <NavLink 
+                to={element.href}
+                className={({ isActive }) =>
+                  isActive ? `${styles.navbtn} ${styles.on}` : `${styles.navbtn}`
+                }
+                >{element.content}</NavLink>
               </li>
             );
           })}
