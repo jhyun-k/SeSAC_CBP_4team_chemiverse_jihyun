@@ -29,7 +29,7 @@ const SuggestIdea = () => {
         startNum={startNum}
         endNum={endNum}
       />
-      <Link to='/main/post/write'>
+      <Link to='./write'>
         <button className={styles.writeBtn}>작성하기</button>
       </Link>
       <Pagination
