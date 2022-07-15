@@ -81,6 +81,7 @@ const DiaryEditor = ({ onCreate }) => {
         </select>
       </div> */}
       <div>
+        <button onClick={() => alert('임시저장 완료')}>임시저장</button>
         <button onClick={handleSubmit}>작성하기</button>
         <button onClick={doPrint}>인쇄하기</button>
       </div>

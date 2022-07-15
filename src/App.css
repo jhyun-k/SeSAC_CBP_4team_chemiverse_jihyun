@@ -1,5 +1,4 @@
 * {
-  color: black;
   text-decoration: none;
 }
 .App {
@@ -118,4 +117,21 @@ i {
 }
 .blind {
   display: none;
+}
+.topBtn{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+/* top버튼 스크롤 */
+.topBtn.active {
+  z-index: 10; 
+  opacity: 1; 
+}
+
+.topBtn:hover,
+.topBtn:focus,
+.topBtn:active { 
+  outline: 0 none; 
 }

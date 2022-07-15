@@ -6,8 +6,6 @@ import { useState } from 'react';
 
 const MainPage = () => {
 
-  
-
   const mainList = [
     { content: "Connect With 바로가기", href: "/*" },
     { content: "교육장 이동", href: "./move" },

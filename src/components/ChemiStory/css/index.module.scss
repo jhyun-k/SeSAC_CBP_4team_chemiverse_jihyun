@@ -70,12 +70,17 @@
       border-bottom-right-radius: 0.347vw;
       border-left: none;
     }
+    :hover{
+      color:#424888;
+      transition: all 0.2s;
+    }
   }
   .navbtn{
     &.on{
       color:#424888;
       font-weight: 900;
       font-size: 1.25vw;
+      transition: all 0.2s;
     }
   }
 
