@@ -22,6 +22,7 @@
 .mainHeaderBox .inner .login * {
   margin-left: 0.5vw;
   color: #6c6c6c;
+  font-size: 0.82vw;
 }
 .mainHeaderBox .inner .mainHeader {
   display: flex;
