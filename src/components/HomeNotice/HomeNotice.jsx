@@ -3,6 +3,8 @@ import SearchHeader from '../Post/SearchHeader';
 import data from '../../data/noticeData.json';
 import Pagination from '../Post/Pagination';
 import PostList from '../Post/PostList';
+import { Link } from 'react-router-dom';
+import styles from './../Post/css/Post.module.css';
 
 const HomeNotice = () => {
   const [lists, setLists] = useState([]);
@@ -27,6 +29,9 @@ const HomeNotice = () => {
         startNum={startNum}
         endNum={endNum}
       />
+      <Link to='./write'>
+        <button className={styles.writeBtn}>작성하기</button>
+      </Link>
       <Pagination
         total={lists.length}
         page={page}
