@@ -1,15 +1,7 @@
 import React from "react";
-import Calendar from "react-calendar";
-import { useState } from "react";
-import "./css/Calendar.css";
 
 const CalendarDay = () => {
-  const [value, onChange] = useState(new Date());
-  return (
-    <div>
-      <Calendar onChange={onChange} value={value} />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default CalendarDay;
