@@ -6,8 +6,11 @@ import calendar from "./css/calendar.module.css";
 const CalendarDay = () => {
   return (
     <div className={calendar.mainBox}>
-      <FullCalendar events={[]} defaultView="dayGridMonth" plugins={[dayGridPlugin]} />
-      <div>mainbox</div>
+      <FullCalendar
+        events={[]}
+        defaultView="dayGridMonth"
+        plugins={[dayGridPlugin]}
+      />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 .mainBox {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto;
+}
+body {
+  overflow-x: hidden;
 }
