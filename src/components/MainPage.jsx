@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import Loginok from "./Login/Loginok";
 import { useState } from "react";
+import mainPageStyle from "./style/mainPage.module.css";
 
 const MainPage = () => {
   const mainList = [
@@ -16,7 +17,7 @@ const MainPage = () => {
     { content: "게시판", href: "./post" },
   ];
   return (
-    <div className="mainPage">
+    <div className={mainPageStyle.mainPage}>
       <ul>
         {mainList.map((element, index) => {
           return (
