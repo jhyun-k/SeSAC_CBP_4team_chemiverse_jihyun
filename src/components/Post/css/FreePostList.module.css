@@ -45,6 +45,7 @@ a:hover {
 .postTitle {
   width: 600px;
   text-align: left;
+  font-weight: 600;
 }
 
 .userName {

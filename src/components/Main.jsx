@@ -10,8 +10,6 @@ import Login from './Login/Login';
 import MainPage from './MainPage';
 import Mentoring from './Mentoring/Mentoring';
 import ChemiStory from './ChemiStory/ChemiStory';
-import FreePost from './Post/FreePost';
-import SuggestIdea from './Post/SuggestIdea';
 import PostTab from './Post/PostTab';
 
 const Main = () => {

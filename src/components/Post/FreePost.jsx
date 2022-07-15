@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Pagination from './Pagination';
-
-import FreePostList from './FreePostList';
 import SearchHeader from './SearchHeader';
 import styles from './css/Post.module.css';
 import { Link } from 'react-router-dom';
 import data from '../../data/freePostData.json';
+import PostList from './PostList';
 
 const FreePost = () => {
   const [lists, setLists] = useState([]);
@@ -24,12 +23,7 @@ const FreePost = () => {
     <div className={styles.post}>
       <h1>자유게시판</h1>
       <SearchHeader data={lists} />
-      <FreePostList
-        lists={lists}
-        postIndexNum={data}
-        startNum={startNum}
-        endNum={endNum}
-      />
+      <PostList lists={lists} startNum={startNum} endNum={endNum} />
       <Link to='./write'>
         <button className={styles.writeBtn}>작성하기</button>
       </Link>
