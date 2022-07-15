@@ -52,8 +52,8 @@ textarea {
   font-size: 12px;
   line-height: 16px;
   color: #202020;
-  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
-    helvetica, 'Apple SD Gothic Neo', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
+    helvetica, "Apple SD Gothic Neo", sans-serif;
 }
 h1,
 h2,
@@ -119,3 +119,4 @@ i {
 .blind {
   display: none;
 }
+
