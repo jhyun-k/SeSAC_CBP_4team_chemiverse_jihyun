@@ -20,6 +20,7 @@
       li {
         margin-left: 1vw;
         color: #6c6c6c;
+        cursor: pointer;
       }
     }
     .mainHeader {
@@ -64,5 +65,15 @@
         }
       }
     }
+  }
+}
+
+.login_btn{
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  :hover{
+    text-decoration: underline;
+    font-weight: 700;
   }
 }

@@ -4,7 +4,7 @@ import Main from './../Main';
 
 
 const DetailRedirect = ({auth}) => {
-    return auth ? <Main />: <Navigate to="/login" />;
+    return auth ? <Main />: <Navigate to="./login" />;
 };  
 
 export default DetailRedirect;

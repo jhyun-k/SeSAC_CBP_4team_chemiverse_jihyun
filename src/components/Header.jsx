@@ -13,9 +13,6 @@ const Header = ({ title,auth,setAuth,setIsOpen}) => {
         navigate('/main/login')
     }
   
-    function openModal() {
-      setIsOpen(true);
-    }
    
   return (
     <header className={headerStyle.mainHeaderBox}>
@@ -24,11 +21,11 @@ const Header = ({ title,auth,setAuth,setIsOpen}) => {
         <NavLink to='./mypage'>마이페이지</NavLink>
           <div className='login_btn'>
              {
-                auth === true ? 
+                auth ? 
                 <span onClick={()=>setAuth(false)}>
                     로그아웃  
                 </span> : 
-                <span onClick={()=>{goToLogin();openModal()}}>로그인</span>
+                <span onClick={()=>goToLogin()}>로그인</span>
              }
             </div>
         </ul>

@@ -6,7 +6,6 @@ import Guide from "./Guide/Guide";
 import Diagnosis from "./Diagnosis";
 import Learning from "./Learning/Learning";
 import Mypage from "./Mypage";
-import Login from "./Login/Login";
 import MainPage from "./MainPage";
 import Mentoring from "./Mentoring/Mentoring";
 import ChemiStory from "./ChemiStory/ChemiStory";
@@ -42,8 +41,8 @@ const Main = () => {
         <Route path="mentoring/*" element={<Mentoring />}></Route>
         <Route path="post/*" element={<PostTab />}></Route>
         <Route path="mypage" element={<Mypage />}></Route>
-        <Route path="login" element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen}/> } ></Route>
-        <Route path='/main/:id' element = {<DetailRedirect auth={auth} />} />
+        <Route path="login" element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen} auth={auth}/>  } ></Route>
+        <Route path='main/:id' element = {<DetailRedirect auth={auth} />} />
         <Route path='login/idpw' element = {<IdPw/>} setIsOpen={setIsOpen}/>
       </Routes>
 

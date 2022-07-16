@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from './HomeHeader.module.css'
+import styles from './css/HomeHeader.module.css' 
 
 const HomeHeader = () => {
+  
 
 
   const homeList = [
@@ -14,21 +15,19 @@ const HomeHeader = () => {
   return (
     <header className={styles.homeHeader}>
         <div className={styles.homeContainer}>
-            <div className={styles.blacklogo}>
-              <Link to="/" >expert</Link>
-            </div>
+              <Link to="/" className={styles.blacklogo}>expert</Link>
             <div className={styles.title}>Chemiverse Connect With</div>
-            <ul className='homeNav'>
+            {/* <ul className={styles.homeNav}>
               {homeList.map((element, index) => {
                 return (
-                  <li key={index}>
+                  <li className={styles.navlist} key={index}>
                     <Link to={element.href}>{element.content}</Link>
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
             <button className={styles.onup_btn}>
-              <Link to="/main" >Chemiverse On & Up 바로가기</Link>
+              <Link to="/main/login" >Chemiverse On & Up</Link>
             </button>
         </div>
     </header>

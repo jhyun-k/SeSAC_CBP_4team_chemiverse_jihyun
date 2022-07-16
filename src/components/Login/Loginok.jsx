@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Loginok = ({setAuth,setIsOpen}) => {
+const Loginok = ({auth,setAuth,setIsOpen}) => {
 
   const navigate = useNavigate()
   
@@ -18,14 +18,32 @@ const Loginok = ({setAuth,setIsOpen}) => {
     navigate('/main')
   } 
 
-  const closeModal = ()=> {
-    setIsOpen(false);
+  const closeModal = (e)=> {
+    e.preventDefault()
+    setAuth(false);
+    navigate('/main')
   }
     return (
-        <Modal isOpen={true}>
+        <Modal isOpen={true} 
+        style={{
+          overlay: {
+          backgroundColor: '#787a8eaa',
+            
+          },
+            content: {
+              width: '50vw',
+              height: '60vh',
+              margin: 'auto',
+              border: '1px solid blue;',
+              borderRadius: '20px',
+              padding: 0
+            }}}>
+       <button onClick={(e)=>closeModal(e)} className={styles.close} type='button'>X</button>
         <form onSubmit={(e)=>{login(e)}}>
         <div className={styles.modal}>
-        <button onClick={()=>{closeModal();setAuth(false)}}>모달 닫기</button>
+    
+        <h1 className={styles.logo}>로고</h1>
+          <p className={styles.text}>신규입사자웅앵웅 환영해요~!~! 환영합니다 환영합니다 극도로 환영 짱짱환영 </p>
             <div className={styles.inner}>
                 <input className={styles.input} id="id" name="id" placeholder="아이디를 입력해주세요" 
                 autoComplete='off'/>
@@ -44,7 +62,6 @@ const Loginok = ({setAuth,setIsOpen}) => {
         </div>
         </form>
       </Modal>
-
     );
 };
 
