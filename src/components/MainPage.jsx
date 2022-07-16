@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+import Loginok from './Login/Loginok';
+import { useState } from 'react';
 
 const MainPage = () => {
 

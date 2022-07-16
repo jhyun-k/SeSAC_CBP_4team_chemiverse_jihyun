@@ -6,6 +6,7 @@ const HomeHeader = () => {
   
 
 
+
   const homeList = [
     { content: "환영인사", href: "welcome" },
     { content: "회사소개", href: "introduce" },
@@ -27,7 +28,11 @@ const HomeHeader = () => {
               })}
             </ul> */}
             <button className={styles.onup_btn}>
+<<<<<<< HEAD:src/components/Home/HomeHeader.jsx
               <Link to="/main/login" >Chemiverse On & Up</Link>
+=======
+              <Link to="/main" >Chemiverse On & Up 바로가기</Link>
+>>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6:src/components/HomeHeader.jsx
             </button>
         </div>
     </header>
