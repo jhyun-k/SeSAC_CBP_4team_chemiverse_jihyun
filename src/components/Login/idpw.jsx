@@ -58,7 +58,7 @@ const IdPw = ({setIsOpen}) => {
                           </div>
                           <div>
                               <label className={styles.label} htmlFor="전화번호">전화번호</label>
-                              <input  className={styles.input}type="text" placeholder='전화번호를 입력해주세요'         id='전화번호' />
+                              <input  className={styles.input}type="text" placeholder='전화번호를 입력해주세요'  id='전화번호' />
                           </div>
                           <button className={styles.find_btn} onClick={() => {toggleModal(true);}}>비밀번호 변경</button>
                       </div>
