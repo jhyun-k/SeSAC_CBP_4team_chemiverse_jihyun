@@ -12,7 +12,7 @@ import ChemiStory from "./ChemiStory/ChemiStory";
 import PostTab from "./Post/PostTab";
 import Loginok from './Login/Loginok';
 import { useState,useEffect } from 'react';
-import IdPw from './Login/IdPw';
+import FindID from './Login/FindID';
 import DetailRedirect from './Login/DetailRedirect';
 
 const Main = () => {
@@ -43,7 +43,7 @@ const Main = () => {
         <Route path="mypage" element={<Mypage />}></Route>
         <Route path="login" element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen} auth={auth}/>  } ></Route>
         <Route path='main/:id' element = {<DetailRedirect auth={auth} />} />
-        <Route path='login/idpw' element = {<IdPw/>} setIsOpen={setIsOpen}/>
+        <Route path='login/idpw' element = {<FindID/>} setIsOpen={setIsOpen}/>
       </Routes>
 
       

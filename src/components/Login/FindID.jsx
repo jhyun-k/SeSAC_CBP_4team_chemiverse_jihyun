@@ -5,7 +5,7 @@ import PwFind from './PwFind';
 
 
 
-const IdPw = ({setIsOpen}) => {
+const FindID = ({setIsOpen}) => {
 
     const [modalShown, toggleModal] = useState(false);
     
@@ -71,4 +71,4 @@ const IdPw = ({setIsOpen}) => {
     );
 };
 
-export default IdPw;
+export default FindID;
