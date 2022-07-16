@@ -12,13 +12,8 @@ import ChemiStory from "./ChemiStory/ChemiStory";
 import PostTab from "./Post/PostTab";
 import Loginok from './Login/Loginok';
 import { useState,useEffect } from 'react';
-<<<<<<< HEAD
 import FindID from './Login/FindID';
 import DetailRedirect from './Login/DetailRedirect';
-=======
-import DetailRedirect from './Login/DetailRedirect';
-import IdPw from './Login/IdPw';
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
 
 const Main = () => {
 
@@ -46,15 +41,9 @@ const Main = () => {
         <Route path="mentoring/*" element={<Mentoring />}></Route>
         <Route path="post/*" element={<PostTab />}></Route>
         <Route path="mypage" element={<Mypage />}></Route>
-<<<<<<< HEAD
         <Route path="login" element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen} auth={auth}/>  } ></Route>
         <Route path='main/:id' element = {<DetailRedirect auth={auth} />} />
         <Route path='login/idpw' element = {<FindID/>} setIsOpen={setIsOpen}/>
-=======
-        <Route path="login" element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen}/> } ></Route>
-        <Route path='/main/:id' element = {<DetailRedirect auth={auth} />} />
-        <Route path='login/idpw' element = {<IdPw/>} setIsOpen={setIsOpen}/>
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
       </Routes>
 
       

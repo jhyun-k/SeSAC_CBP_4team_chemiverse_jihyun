@@ -6,11 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
-<<<<<<< HEAD
-const Loginok = ({auth,setAuth,setIsOpen}) => {
-=======
 const Loginok = ({setAuth,setIsOpen}) => {
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
 
   const navigate = useNavigate()
   
@@ -22,7 +18,6 @@ const Loginok = ({setAuth,setIsOpen}) => {
     navigate('/main')
   } 
 
-<<<<<<< HEAD
   const closeModal = (e)=> {
     e.preventDefault()
     setAuth(false);
@@ -49,16 +44,6 @@ const Loginok = ({setAuth,setIsOpen}) => {
     
         <h1 className={styles.logo}>로고</h1>
           <p className={styles.text}>신규입사자웅앵웅 환영해요~~! 환영합니다 환영합니다 극도로 환영 짱짱환영 </p>
-=======
-  const closeModal = ()=> {
-    setIsOpen(false);
-  }
-    return (
-        <Modal isOpen={true}>
-        <form onSubmit={(e)=>{login(e)}}>
-        <div className={styles.modal}>
-        <button onClick={()=>{closeModal();setAuth(false)}}>모달 닫기</button>
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
             <div className={styles.inner}>
                 <input className={styles.input} id="id" name="id" placeholder="아이디를 입력해주세요" 
                 autoComplete='off'/>
@@ -77,10 +62,6 @@ const Loginok = ({setAuth,setIsOpen}) => {
         </div>
         </form>
       </Modal>
-<<<<<<< HEAD
-=======
-
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
     );
 };
 

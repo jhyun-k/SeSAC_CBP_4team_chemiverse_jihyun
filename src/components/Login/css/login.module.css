@@ -22,7 +22,6 @@
 .inner {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   bottom: 8vh;
   align-items: center;
   position: absolute;
@@ -31,10 +30,6 @@
 
 .entire {
   background: url(/public/chemiverse_img/img-main.png) center/cover;
-=======
-  bottom: 60px;
-  align-items: center;
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
 }
 
 .modal {
@@ -82,7 +77,6 @@
   color: #ffffff;
   font-weight: bold;
   margin: auto;
-<<<<<<< HEAD
   cursor: pointer;
 }
 .loginbtn:hover {
@@ -91,24 +85,14 @@
   color: #6F76C1;
   font-weight: bold;
   transition: all 0.3s;
-=======
-}
-
-.loginbtn:hover {
-  text-decoration: underline;
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
 }
 
 .button_box > a {
   text-align: center;
-<<<<<<< HEAD
   line-height: 45px;
 }
 
 .close {
   position: absolute;
   top: 1vw;
-=======
-  line-height: 40px;
->>>>>>> 2ffca4304b2c36eb37a565fda26f09d368de0bc6
 }/*# sourceMappingURL=login.module.css.map */
