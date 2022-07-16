@@ -43,7 +43,7 @@ const Loginok = ({auth,setAuth,setIsOpen}) => {
         <div className={styles.modal}>
     
         <h1 className={styles.logo}>로고</h1>
-          <p className={styles.text}>신규입사자웅앵웅 환영해요~!~! 환영합니다 환영합니다 극도로 환영 짱짱환영 </p>
+          <p className={styles.text}>신규입사자웅앵웅 환영해요~~! 환영합니다 환영합니다 극도로 환영 짱짱환영 </p>
             <div className={styles.inner}>
                 <input className={styles.input} id="id" name="id" placeholder="아이디를 입력해주세요" 
                 autoComplete='off'/>
