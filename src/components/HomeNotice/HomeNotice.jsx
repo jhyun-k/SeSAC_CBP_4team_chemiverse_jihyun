@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import SearchHeader from '../Post/SearchHeader';
-import noticeData from '../../data/noticeData.json';
+import data from '../../data/noticeData.json';
 import Pagination from '../Post/Pagination';
-import FreePostList from '../Post/FreePostList';
+import PostList from '../Post/PostList';
+import { Link } from 'react-router-dom';
+import styles from './../Post/css/PostTab.module.css';
 
 const HomeNotice = () => {
   const [lists, setLists] = useState([]);
@@ -11,19 +13,25 @@ const HomeNotice = () => {
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
   const endNum = startNum + LIST_PER_PAGE;
+
   useEffect(() => {
-    setLists(noticeData);
+    const postLatest = [...data].reverse();
+    setLists(postLatest);
   }, []);
+
   return (
     <div>
       <h1>공지사항</h1>
-      <SearchHeader data={noticeData} />
-      <FreePostList
-        lists={noticeData}
-        postIndexNum={noticeData}
+      <SearchHeader data={lists} />
+      <PostList
+        lists={lists}
+        postIndexNum={lists}
         startNum={startNum}
         endNum={endNum}
       />
+      <Link to='./write'>
+        <button className={styles.writeBtn}>작성하기</button>
+      </Link>
       <Pagination
         total={lists.length}
         page={page}
