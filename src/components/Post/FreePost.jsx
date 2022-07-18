@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import SearchBar from './SearchBar';
 import Pagination from './Pagination';
 
 import FreePostList from './FreePostList';
 import SearchHeader from './SearchHeader';
-import WritePostBtn from './WritePostBtn';
+import styles from './css/Post.module.css';
+import { Link, Route, Routes } from 'react-router-dom';
+import data from '../../data/freePostData.json';
+import PostDetail from './PostDetail';
+import WritePostPage from './WritePostPage';
 
-const FreePost = ({ postLatest, post: postIndexNum }) => {
+const FreePost = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
   //const [search, setSearch] = useState([]);
@@ -15,20 +18,23 @@ const FreePost = ({ postLatest, post: postIndexNum }) => {
   const endNum = startNum + LIST_PER_PAGE;
 
   useEffect(() => {
+    const postLatest = [...data].reverse();
     setLists(postLatest);
-  }, [postLatest]);
+  }, []);
 
   return (
-    <div className='post'>
+    <div className={styles.post}>
       <h1>자유게시판</h1>
-      <SearchHeader data={postLatest} />
+      <SearchHeader data={lists} />
       <FreePostList
         lists={lists}
-        postIndexNum={postIndexNum}
+        postIndexNum={data}
         startNum={startNum}
         endNum={endNum}
       />
-      <WritePostBtn />
+      <Link to='./write'>
+        <button className={styles.writeBtn}>작성하기</button>
+      </Link>
       <Pagination
         total={lists.length}
         page={page}
