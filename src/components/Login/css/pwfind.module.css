@@ -1,51 +1,22 @@
-.inner {
-  width: 100vw;
-  margin: auto;
-}
-
-.main {
-  padding-left: 6.944vw;
-  padding-right: 6.25vw;
-  margin-bottom: 3.472vw;
-  width: 100vw;
-  height: 11.806vw;
+.modal_backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 90%;
+  z-index: 2;
 }
 
-.mainTxt {
-  display: flex;
-  align-items: center;
-}
-
-.mainTxt span {
-  display: inline-block;
-  color: #fff;
-}
-.mainTxt span:first-child {
-  font-size: 2vw;
-  font-weight: 700;
-  margin-right: 2.083vw;
-}
-.mainTxt span:last-child {
-  font-size: 0.833vw;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.mainImg {
-  width: 15vw;
-  height: auto;
-}
-
-.flex {
-  display: flex;
-  width: 100vw;
+.modal_content {
+  width: 50%;
+  height: 70vh;
+  min-height: 200px;
+  background-color: white;
+  padding: 25px;
 }
 
 .section {
@@ -61,11 +32,9 @@
 }
 
 .unit {
-  border: 1px solid #ccc;
   width: 40.333vw;
   margin: auto;
-  height: 20.833vw;
-  margin-top: 2vw;
+  height: 25.833vw;
   margin-bottom: 2vw;
   display: flex;
   flex-direction: column;
@@ -79,6 +48,7 @@
   height: 10px;
   display: flex;
   justify-content: space-between;
+  padding: 1.5vw 0;
 }
 
 .label {
@@ -109,9 +79,4 @@
   color: #ffffff;
   font-weight: bold;
   margin-top: 3.5vw;
-}
-
-.balloon {
-  width: 58px;
-  height: 58px;
-}/*# sourceMappingURL=idpw.module.css.map */
+}/*# sourceMappingURL=pwfind.module.css.map */
