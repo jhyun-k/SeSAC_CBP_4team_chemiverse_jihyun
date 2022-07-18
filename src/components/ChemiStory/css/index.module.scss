@@ -43,7 +43,6 @@
 }
 
 //ChemiNav
-<<<<<<< HEAD
 .nav ul li{
     color:#6F76C1;
     border: 0.139vw solid #6F76C1;
@@ -76,43 +75,7 @@
       transition: all 0.2s;
     }
   }
-  .navbtn{
-    &.on{
-      color:#424888;
-      font-weight: 900;
-      font-size: 1.25vw;
-      transition: all 0.2s;
-    }
-=======
-.nav ul li {
-  color: #6f76c1;
-  border: 0.139vw solid #6f76c1;
-  margin-bottom: 50px;
-  width: 17.361vw;
-  height: 3.125vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.181vw;
-  font-weight: 500;
-  * {
-    text-decoration: none;
-  }
-  &:first-child {
-    border-top-left-radius: 0.347vw;
-    border-bottom-left-radius: 0.347vw;
-    border-right: none;
->>>>>>> develop
-  }
-  &:nth-child(2) {
-    border-right: none;
-  }
-  &:last-child {
-    border-top-right-radius: 0.347vw;
-    border-bottom-right-radius: 0.347vw;
-    border-left: none;
-  }
-}
+
 .navbtn {
   &.on {
     color: #424888;
@@ -121,60 +84,33 @@
   }
 }
 
-//all
-.title {
-  width: 1000px;
+//WriteChemiStory
+.WriteChemiStory{
+  width: 1200px;
   margin: 10px auto;
-  padding-bottom: 10px;
-}
-
-.WhatIsChemiStory {
-  .subTitle {
-    h2 {
-      display: inline-block;
-      border-bottom: 1px solid gray;
-      width: 900px;
-      margin: 10px auto;
-      padding-bottom: 10px;
-      text-align: left;
-    }
-    .content {
-      border: 1px solid gray;
-      width: 800px;
-      height: 100px;
-      margin: 10px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .pin{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(75, 80, 132, 0.721);
   }
-}
-
-.subTitle {
-  h1 {
+  .title{
     display: inline-block;
-    width: 900px;
-    text-align: left;
+    text-align: center;
+    width: 1200px;
+    color: #6F76C1;
+    font-size: 30px;
+    // border-bottom: 2px solid #c8c8c8;
+    padding-bottom: 80px;
   }
-  h2 {
-    display: block;
-    width: 900px;
-    margin: 10px auto;
-    padding-bottom: 10px;
-    text-align: left;
+  .subTitle{
+    .module{
+      display: flex;
+      .img{
+        display: flex;
+        justify-content: flex-start;
+        width: 50px;
+        height: auto;
+      }
+    }
   }
-  .content {
-    border: 1px solid gray;
-    width: 800px;
-    height: 200px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.btn {
-  width: 100px;
-  padding: 10px;
 }

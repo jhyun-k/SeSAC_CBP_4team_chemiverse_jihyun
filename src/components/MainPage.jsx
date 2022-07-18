@@ -6,10 +6,7 @@ import { useState } from "react";
 import mainPageStyle from "./style/mainPage.module.css";
 
 const MainPage = () => {
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
+  
   const mainList = [
     { content: "Connect With 바로가기", href: "/*" },
     { content: "교육장 이동", href: "./move" },
