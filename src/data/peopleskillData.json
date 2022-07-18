@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "자신과의 소통",
+        "goal": "조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.",
+        "basic": "기본개념1",
+        "img": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 2,
+        "name": "상사와 소통",
+        "goal": "유형 진단을 통해 나와 타인의 다름을 인정하고 타인과 맞춰갈 수 있는 행동적 특징을 파악할 수 있습니다.",
+        "basic": "기본개념2",
+        "img": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 3,
+        "name": "논리적 사고를 통한 보고 스킬",
+        "goal": "논리적 사고를 통한 보고법을 습득하여 탁월한 팔로워의 역할을 수행하도록 합니다.",
+        "basic": "기본개념3",
+        "img": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+]

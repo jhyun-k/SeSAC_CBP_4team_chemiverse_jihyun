@@ -8,15 +8,12 @@ import { FiSearch } from "react-icons/fi";
 
 
 const Header = ({ title,auth,setAuth,setIsOpen}) => {
+
   const navigate = useNavigate();
+    console.log(auth);
     const goToLogin = ()=>{
-        navigate('/main/login')
+        navigate('/login')
     }
-  
-    function openModal() {
-      setIsOpen(true);
-    }
-   
   return (
     <header className={headerStyle.mainHeaderBox}>
       <div className={headerStyle.inner}>
@@ -24,11 +21,11 @@ const Header = ({ title,auth,setAuth,setIsOpen}) => {
         <NavLink to='./mypage'>마이페이지</NavLink>
           <div className='login_btn'>
              {
-                auth === true ? 
+                auth ? 
                 <span onClick={()=>setAuth(false)}>
                     로그아웃  
                 </span> : 
-                <span onClick={()=>{goToLogin();openModal()}}>로그인</span>
+                <span onClick={()=>goToLogin()}>로그인</span>
              }
             </div>
         </ul>

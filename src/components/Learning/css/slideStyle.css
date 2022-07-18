@@ -1,0 +1,21 @@
+.slick-slider {
+}
+
+.slick-arrow {
+    top: 50% !important;
+}
+
+.slick-prev {
+    left: -20px !important;
+}
+.slick-next {
+    right: -5px !important;
+    color: #6678b9;
+    z-index: 19999;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #6678b9 !important;
+    font-size: 30px !important;
+}

@@ -1,9 +1,11 @@
 .navBox {
+
   .nav {
     width: 58.889vw;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    
     li {
       color: #6f76c1;
       font-size: 1.389vw;
@@ -18,6 +20,7 @@
         display: block;
         height: 6.667vw;
         line-height: 6.667vw;
+        
       }
     }
   }
