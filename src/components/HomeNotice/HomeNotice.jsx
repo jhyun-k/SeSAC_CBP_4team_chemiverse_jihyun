@@ -4,7 +4,7 @@ import data from '../../data/noticeData.json';
 import Pagination from '../Post/Pagination';
 import PostList from '../Post/PostList';
 import { Link } from 'react-router-dom';
-import styles from './../Post/css/Post.module.css';
+import styles from './../Post/css/PostTab.module.css';
 
 const HomeNotice = () => {
   const [lists, setLists] = useState([]);

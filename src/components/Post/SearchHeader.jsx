@@ -1,11 +1,21 @@
 import React from 'react';
 import SearchBar from './SearchBar';
-import styles from './css/Header.module.css';
+import styles from './css/PostTab.module.css';
 
-const SearchHeader = ({ data }) => {
+const SearchHeader = ({
+  data,
+  onChangeSearch,
+  searchRef,
+  onChangeSearchCategory,
+}) => {
   return (
     <div className={styles.searchHeader}>
-      <SearchBar />
+      <SearchBar
+        data={data}
+        onChangeSearch={onChangeSearch}
+        searchRef={searchRef}
+        onChangeSearchCategory={onChangeSearchCategory}
+      />
       <p className={styles.totalPost}>총 게시물 {data.length}개</p>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Pagination from './Pagination';
 import SearchHeader from './SearchHeader';
-import styles from './css/Post.module.css';
+import styles from './css/PostTab.module.css';
 import { Link } from 'react-router-dom';
 import data from '../../data/suggestIdeaData.json';
 import PostList from './PostList';
@@ -21,7 +21,6 @@ const SuggestIdea = () => {
 
   return (
     <div className={styles.post}>
-      <h1>아이디어 제시</h1>
       <SearchHeader data={lists} />
       <PostList
         lists={lists}

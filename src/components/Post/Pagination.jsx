@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from './css/Pagination.module.css';
+import styles from './css/PostTab.module.css';
 import {
   FaAngleRight,
   FaAngleLeft,

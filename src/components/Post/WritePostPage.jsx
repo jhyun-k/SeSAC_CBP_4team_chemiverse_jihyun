@@ -1,9 +1,13 @@
-import React from 'react';
-import styles from './css/WritePostPage.module.css';
+import React, { useRef } from 'react';
+import styles from './css/PostTab.module.css';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import './css/editor.css';
 
-const WritePostPage = () => {
+const WritePostPage = ({ newContent, setNewContent }) => {
+  const titleInput = (e) => {
+    setNewContent({ ...newContent, title: e.target.value });
+  };
   return (
     <form className={styles.writeForm}>
       <div className='editor'></div>
@@ -11,6 +15,7 @@ const WritePostPage = () => {
         className={styles.titleInput}
         type='text'
         placeholder='제목을 입력해주세요.'
+        onChange={titleInput}
       />
       <CKEditor
         editor={ClassicEditor}
@@ -35,8 +40,12 @@ const WritePostPage = () => {
             'undo',
             'redo',
           ],
+          placeholder: '내용을 입력하세요.',
         }}
-        data='<p>내용을 입력해주세요.</p>'
+        onChange={(event, editor) => {
+          const data = editor.getData();
+          setNewContent({ ...newContent, body: data });
+        }}
         onReady={(editor) => {
           // You can store the "editor" and use when it is needed.
         }}

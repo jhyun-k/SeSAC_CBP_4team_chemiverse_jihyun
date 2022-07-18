@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import styles from './css/FreePostList.module.css';
+import styles from './css/PostTab.module.css';
 import { MdAttachFile } from 'react-icons/md';
 
 const PostList = ({ lists, startNum, endNum }) => {

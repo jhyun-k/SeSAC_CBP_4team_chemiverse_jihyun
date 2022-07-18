@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import styles from './css/PostDetail.module.css';
+import styles from './css/PostTab.module.css';
 import SearchBar from './SearchBar';
 import { useLocation } from 'react-router-dom';
 
@@ -37,8 +37,7 @@ const PostDetail = ({ data }) => {
   });
 
   return (
-    <div className={styles.wrap}>
-      <SearchBar />
+    <div className={styles.postDetailWrap}>
       <div className={styles.headerBox}>
         <h2 className={styles.title}>{selectedPost.title}</h2>
         <div className={styles.postInfo}>
