@@ -1,32 +1,60 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import styles from './css/PostDetail.module.css';
-import SearchHeader from './SearchHeader';
+import { useParams, useNavigate } from 'react-router-dom';
+import styles from './css/PostTab.module.css';
 import SearchBar from './SearchBar';
+import { useLocation } from 'react-router-dom';
 
 const PostDetail = ({ data }) => {
   const { post } = useParams();
   const selectedPost = data.find((x) => {
-    return x.id == post;
+    return Number(x.id) === Number(post);
   });
 
-  console.log(selectedPost);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const locationInclude = (name) => {
+    return location.pathname.includes(name);
+  };
+
+  const backListBtn = () => {
+    if (locationInclude('freepost')) {
+      navigate('/main/post/freepost');
+    } else if (locationInclude('suggestIdea')) {
+      navigate('/main/post/suggestIdea');
+    } else if (locationInclude('notice')) {
+      navigate('/board/notice');
+    }
+  };
+
+  const body = selectedPost.body.split(`\n`).map((line) => {
+    return (
+      <span>
+        {line}
+        <br />
+      </span>
+    );
+  });
+
   return (
-    <div className={styles.wrap}>
-      <SearchBar />
+    <div className={styles.postDetailWrap}>
       <div className={styles.headerBox}>
         <h2 className={styles.title}>{selectedPost.title}</h2>
         <div className={styles.postInfo}>
           <span>{selectedPost.userId}</span>
-          <span>조회수</span>
-          <span>2022.10.12</span>
+          <span>{selectedPost.date}</span>
+          <span>조회수 {selectedPost.view}</span>
         </div>
       </div>
-      <div className={styles.body}>{selectedPost.body}</div>
+      <img src={selectedPost.img} alt='' />
+      <div className={styles.body}>{body}</div>
+      <div className={styles.fileBox}>
+        첨부파일 : <a href={selectedPost.fileLink}>{selectedPost.file}</a>
+      </div>
       <div>
-        {/* <Link to='/freepost'> */}
-        <button className={styles.listBtn}>목록</button>
-        {/* </Link> */}
+        <button onClick={backListBtn} className={styles.listBtn}>
+          목록
+        </button>
       </div>
     </div>
   );

@@ -1,0 +1,300 @@
+/* PostTab */
+.main {
+  padding-left: 6.944vw;
+  padding-right: 6.25vw;
+  margin-bottom: 3.472vw;
+  width: 100vw;
+  height: 11.806vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+
+.mainTxt {
+  display: flex;
+  align-items: center;
+}
+
+.mainTxt span {
+  display: inline-block;
+  color: #fff;
+}
+.mainTxt span:first-child {
+  font-size: 3.333vw;
+  font-weight: 700;
+  margin-right: 2.083vw;
+}
+.mainTxt span:last-child {
+  font-size: 0.833vw;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.mainImg {
+  width: 15.833vw;
+  height: auto;
+}
+
+/* Post */
+.post {
+  width: 69.444vw;
+  margin: auto;
+}
+.post .writeBtn {
+  float: right;
+  margin-top: 1.389vw;
+  width: 6.25vw;
+  height: 2.431vw;
+  background-color: #809cea;
+  color: #fff;
+  border-radius: 5px;
+}
+.post .writeBtn:hover {
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
+/* PostList */
+.freePostList {
+  display: flex;
+  flex-direction: column;
+  width: 69.444vw;
+  margin: auto;
+  box-sizing: border-box;
+  font-size: 1.042vw;
+}
+.freePostList a:hover {
+  text-decoration: none;
+}
+.freePostList li {
+  display: flex;
+  justify-content: space-between;
+  height: 3.472vw;
+  line-height: 3.472vw;
+  border-bottom: 1px solid #e2e2e2;
+}
+.freePostList .freePostTitle {
+  background-color: #ececf7;
+}
+.freePostList .freePostTitle span {
+  text-align: center;
+}
+.freePostList .freePost:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.freePostList .freePost span {
+  display: block;
+  color: #333;
+}
+
+.postIndex {
+  width: 3.472vw;
+}
+
+.postTitle {
+  width: 41.667vw;
+  text-align: left;
+  font-weight: 600;
+}
+
+.userName {
+  width: 5.556vw;
+}
+
+.view {
+  width: 4.861vw;
+}
+
+.date {
+  width: 6.944vw;
+}
+
+.like {
+  width: 6.944vw;
+}
+
+/* searchHeader */
+.searchHeader {
+  width: 69.444vw;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.searchHeader .totalPost {
+  margin-bottom: 1.389vw;
+}
+
+.searchBarBox {
+  width: 69.444vw;
+  margin: 0 auto 0.694vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 0.694vw;
+}
+.searchBarBox .searchBar {
+  height: 2.778vw;
+}
+.searchBarBox .searchBar .option {
+  height: 100%;
+  width: 5.556vw;
+  font-size: 0.972vw;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #c2c2c2;
+  outline: none;
+}
+.searchBarBox .searchBar .searchInput {
+  height: 100%;
+  width: 17.361vw;
+  border-radius: 5px;
+  border: 1px solid #c2c2c2;
+  text-indent: 1.042vw;
+  font-size: 0.972vw;
+  margin-left: 0.347vw;
+  outline: none;
+}
+
+/* pagination */
+.pagination {
+  margin-top: 6.944vw;
+}
+.pagination .button {
+  padding: 0 0.347vw;
+  margin: 0 0.347vw;
+  font-size: 1.111vw;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ccc;
+  vertical-align: top;
+}
+.pagination .button:hover {
+  color: #6f76c1;
+  transition: color 0.3s;
+}
+.pagination .button.on {
+  color: #6f76c1;
+}
+
+.angleBtn {
+  font-size: 1.111vw;
+  vertical-align: top;
+  margin: 0 0.347vw;
+}
+.angleBtn path {
+  color: #6f76c1;
+}
+.angleBtn.disabled path {
+  color: #bbb;
+}
+
+/* PostDetail */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.postDetailWrap {
+  width: 69.444vw;
+  margin: auto;
+  height: 34.722vw;
+  text-align: left;
+  font-size: 1.042vw;
+}
+.postDetailWrap .headerBox {
+  width: 100%;
+  height: 4.861vw;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 0 1.389vw;
+}
+.postDetailWrap .headerBox .title {
+  font-size: 1.667vw;
+  color: #2e2e2e;
+  margin-bottom: 1.389vw;
+}
+.postDetailWrap .headerBox .postInfo {
+  font-size: 0.972vw;
+  color: #686868;
+}
+.postDetailWrap .headerBox .postInfo span {
+  margin-right: 1.042vw;
+}
+.postDetailWrap .body {
+  width: 100%;
+  padding: 2.431vw 1.736vw 10.417vw;
+  color: #2e2e2e;
+  border-bottom: 1px solid #c2c2c2;
+  line-height: 2.2;
+  word-break: keep-all;
+}
+.postDetailWrap .fileBox {
+  padding-left: 1.389vw;
+  height: 4.861vw;
+  border-bottom: 1px solid #c2c2c2;
+  line-height: 4.861vw;
+}
+.postDetailWrap .fileBox a {
+  text-decoration: underline;
+  margin-left: 0.694vw;
+}
+.postDetailWrap .listBtn {
+  display: block;
+  width: 10.417vw;
+  height: 3.472vw;
+  font-size: 1.042vw;
+  background: #fff;
+  border: 2px solid #6f76c1;
+  border-radius: 50px;
+  color: #6f76c1;
+  margin: 5.208vw auto 0;
+  cursor: pointer;
+}
+.postDetailWrap .listBtn:hover {
+  background-color: #6f76c1;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* WritePostPage */
+.writeForm {
+  width: 69.444vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.writeForm input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  text-indent: 1.389vw;
+  font-size: 1.042vw;
+  border-radius: 5px;
+}
+.writeForm button {
+  width: 6.25vw;
+  height: 2.431vw;
+  background-color: #809cea;
+  color: #fff;
+  border-radius: 5px;
+}
+.writeForm .titleInput {
+  width: 100%;
+  height: 3.472vw;
+}
+.writeForm .btnBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.778vw;
+}
+.writeForm .btnBox .submitBtn {
+  margin-left: 1.389vw;
+}/*# sourceMappingURL=PostTab.module.css.map */
