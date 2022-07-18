@@ -1,0 +1,268 @@
+/* Learning.jsx */
+.learningWrapper .main {
+  padding-left: 6.944vw;
+  padding-right: 6.25vw;
+  margin-bottom: 3.472vw;
+  width: 100vw;
+  height: 11.806vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+.learningWrapper .mainTxt {
+  display: flex;
+  align-items: center;
+}
+.learningWrapper .mainTxt span {
+  display: inline-block;
+  color: #fff;
+}
+.learningWrapper .mainTxt span:first-child {
+  font-size: 3.333vw;
+  font-weight: 700;
+  margin-right: 2.083vw;
+}
+.learningWrapper .mainTxt span:last-child {
+  font-size: 0.833vw;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.learningWrapper .mainImg {
+  width: 15.833vw;
+  height: auto;
+}
+
+.learning {
+  background-color: black;
+  font-size: 100px;
+}
+
+/* learnNav */
+.learnNav ul li {
+  color: #6f76c1;
+  border: 0.139vw solid #6f76c1;
+  margin-bottom: 50px;
+  width: 17.361vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.181vw;
+  font-weight: 500;
+}
+.learnNav ul li * {
+  text-decoration: none;
+}
+.learnNav ul li:first-child {
+  border-top-left-radius: 0.347vw;
+  border-bottom-left-radius: 0.347vw;
+  border-right: none;
+}
+.learnNav ul li:nth-child(2) {
+  border-right: none;
+}
+.learnNav ul li:last-child {
+  border-top-right-radius: 0.347vw;
+  border-bottom-right-radius: 0.347vw;
+  border-left: none;
+}
+
+.navbtn.on {
+  color: #424888;
+  font-weight: 900;
+  font-size: 1.25vw;
+}
+
+/* Understand.jsx */
+.inner {
+  width: 83.333vw;
+  margin: auto;
+}
+
+.moduleList .moduleListItem {
+  margin: 1.389vw;
+}
+.moduleList .moduleListItem .imgBox {
+  position: relative;
+  height: 31.25vw;
+  overflow: hidden;
+}
+.moduleList .moduleListItem .imgBox img {
+  overflow: hidden;
+  width: 23.403vw;
+  height: 31.25vw;
+  border-radius: 0.694vw;
+}
+.moduleList .moduleListItem .imgBox .hover {
+  position: absolute;
+  top: 32.639vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(230, 224, 236, 0.9);
+  width: 44.444vw;
+  height: 20.833vw;
+  transition: 0.4s;
+  opacity: 0;
+  border-radius: 50%;
+  padding: 4.167vw 13.889vw;
+  font-size: 1.111vw;
+  line-height: 1.5;
+}
+.moduleList .moduleListItem .moduleName {
+  font-size: 1.389vw;
+  margin: 1.389vw;
+  text-align: left;
+}
+.moduleList .moduleListItem:hover .hover {
+  top: 15.694vw;
+  opacity: 1;
+}
+
+/* LearningModule.jsx */
+.moduleBox {
+  width: 83.333vw;
+  margin: auto;
+}
+.moduleBox .moduleDesc {
+  display: flex;
+  padding: 1.389vw;
+}
+.moduleBox .moduleDesc .moduleImgBox {
+  margin-right: 2.083vw;
+}
+.moduleBox .moduleDesc .moduleImgBox img {
+  width: 17.708vw;
+  height: 23.611vw;
+  border-radius: 0.694vw;
+}
+.moduleBox .moduleDesc .moduleTextBox {
+  width: 55.556vw;
+  text-align: left;
+  padding: 2.083vw 2.778vw;
+  height: 23.611vw;
+}
+.moduleBox .moduleDesc .moduleTextBox .moduleTitle {
+  font-size: 2.292vw;
+}
+.moduleBox .moduleDesc .moduleTextBox .descTitle {
+  font-size: 1.042vw;
+}
+.moduleBox .moduleDesc .moduleTextBox dt {
+  margin-top: 1.389vw;
+  margin-bottom: 0.694vw;
+  font-weight: bold;
+}
+.moduleBox .moduleDesc .moduleTextBox dt:first-child {
+  margin: 0;
+  padding-bottom: 1.389vw;
+  border-bottom: 3px solid #d9d9d9;
+}
+.moduleBox .moduleDesc .moduleTextBox dd {
+  font-size: 1.111vw;
+}
+.moduleBox .moduleLearning .learningContents {
+  display: flex;
+  justify-content: space-around;
+}
+.moduleBox .moduleLearning .learningContents .imgBox > img {
+  width: 31.25vw;
+  height: 17.361vw;
+  border-radius: 0.694vw;
+}
+
+.sectionTitle {
+  margin: 2.083vw 0;
+  padding-bottom: 1.042vw;
+  text-align: left;
+  color: #6f76c1;
+  font-size: 2.083vw;
+  line-height: 3.472vw;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+}
+.sectionTitle .sectionIcon {
+  width: 3.472vw;
+  margin-right: 0.694vw;
+}
+.sectionTitle p {
+  margin-top: 0.694vw;
+  margin-left: 1.389vw;
+  font-size: 0.764vw;
+  font-weight: normal;
+}
+
+section {
+  margin: 6.944vw 0;
+}
+
+/* Modal.jsx */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.modalBackdrop .modalContent {
+  background-color: white;
+  background-image: url(./../../../../public/chemiverse_img/bg-login.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -20px;
+  border-radius: 0.694vw;
+  padding: 2.389vw;
+  position: relative;
+}
+.modalBackdrop .modalContent button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.modalBackdrop .slide {
+  width: 69.444vw;
+  height: 34.722vw;
+  position: relative;
+}
+.modalBackdrop .slide h1 {
+  text-align: left;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #6f76c1;
+}
+.modalBackdrop .slide img {
+  height: 26.389vw;
+  margin: auto;
+}
+.modalBackdrop .youtube {
+  position: relative;
+  margin: 30px auto 0;
+  max-width: 900px;
+  width: 69.444vw;
+}
+.modalBackdrop .youtube > div {
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.modalBackdrop .youtube > div iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modalBackdrop .closeBtn img {
+  width: 20px;
+  margin: 20px;
+}/*# sourceMappingURL=learning.module.css.map */

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "업무수명 및 기획",
+        "goal": "업무 수명 및 보고의 기본 원칙과 스킬을 실습 및 발표를 통해 익힙니다.",
+        "basic": "기본개념1",
+        "img": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 2,
+        "name": "문서작성 및 보고",
+        "goal": "비지니스 문서 작성의 기본과 핵심 구조를 익혀 실제 문서 작성 능력을 배양 하도록 합니다.",
+        "basic": "기본개념2",
+        "img": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 3,
+        "name": "SMART OFFICE",
+        "goal": "Smart Office 게임을 통해 조직에서의 협업과 창의력 발휘를 통해 문제 해결역량을 함양 합니다.",
+        "basic": "기본개념3",
+        "img": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+]
