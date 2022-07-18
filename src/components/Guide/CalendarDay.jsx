@@ -12,7 +12,8 @@ const CalendarDay = () => {
     info.jsEvent.preventDefault();
     console.log(info.event.start);
     setTitle(info.event.title);
-    /* setStart(info.event.start); */
+    setStart(info.event.start);
+    console.log(start.start);
   };
   return (
     <div className={calendar.mainBox}>
