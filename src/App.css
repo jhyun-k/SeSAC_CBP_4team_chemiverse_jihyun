@@ -118,6 +118,7 @@ i {
 .blind {
   display: none;
 }
+<<<<<<< HEAD
 .topBtn{
   position: fixed;
   bottom: 30px;
@@ -135,3 +136,5 @@ i {
 .topBtn:active { 
   outline: 0 none; 
 }
+=======
+>>>>>>> develop
