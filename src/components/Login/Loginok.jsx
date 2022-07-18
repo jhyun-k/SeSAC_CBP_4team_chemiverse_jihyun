@@ -6,16 +6,17 @@ import { Link } from 'react-router-dom';
 
 
 
-const Loginok = ({setAuth,setIsOpen}) => {
+const Loginok = ({setAuth,setIsOpen,auth}) => {
 
   const navigate = useNavigate()
   
   
   const login = (e) =>{
     e.preventDefault();
-    console.log('로그인테스트');
+    console.log('로그인테스트',{auth});
     setAuth(true)
     navigate('/main')
+
   } 
 
   const closeModal = (e)=> {

@@ -4,7 +4,9 @@ import Main from './../Main';
 
 
 const DetailRedirect = ({auth}) => {
-    return auth ? <Main />: <Navigate to="./login" />;
+
+    console.log('리다이렉트',auth);
+    return auth ? <Main />: <Navigate to="/login" />;
 };  
 
 export default DetailRedirect;

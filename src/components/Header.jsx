@@ -8,12 +8,12 @@ import { FiSearch } from "react-icons/fi";
 
 
 const Header = ({ title,auth,setAuth,setIsOpen}) => {
+
   const navigate = useNavigate();
+    console.log(auth);
     const goToLogin = ()=>{
-        navigate('/main/login')
+        navigate('/login')
     }
-  
-   
   return (
     <header className={headerStyle.mainHeaderBox}>
       <div className={headerStyle.inner}>
