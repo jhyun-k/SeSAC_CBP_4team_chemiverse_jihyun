@@ -106,4 +106,14 @@
 .mainHeaderBox .inner .login_btn :hover {
   text-decoration: underline;
   font-weight: 700;
+}
+
+.login_btn {
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.login_btn :hover {
+  text-decoration: underline;
+  font-weight: 700;
 }/*# sourceMappingURL=header.module.css.map */
