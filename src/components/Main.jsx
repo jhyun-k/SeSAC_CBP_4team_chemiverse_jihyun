@@ -10,7 +10,6 @@ import MainPage from "./MainPage";
 import Mentoring from "./Mentoring/Mentoring";
 import ChemiStory from "./ChemiStory/ChemiStory";
 import PostTab from "./Post/PostTab";
-<<<<<<< HEAD
 import Loginok from './Login/Loginok';
 import { useState,useEffect } from 'react';
 import FindID from './Login/FindID';
@@ -21,17 +20,8 @@ const Main = ({setAuth,auth}) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   
   // const [auth,setAuth] = useState(false)
-=======
-import Loginok from "./Login/Loginok";
-import { useState, useEffect } from "react";
-import IdPw from "./Login/IdPw";
-import DetailRedirect from "./Login/DetailRedirect";
 
-const Main = () => {
-  const [modalIsOpen, setIsOpen] = useState(false);
->>>>>>> 876124946690df082520b39933f57769df4c84c0
-
-  const [auth, setAuth] = useState(false);
+  // const [auth, setAuth] = useState(false);
 
   useEffect(() => {
     console.log("로그인인증값", auth);
@@ -50,19 +40,10 @@ const Main = () => {
         <Route path="mentoring/*" element={<Mentoring />}></Route>
         <Route path="post/*" element={<PostTab />}></Route>
         <Route path="mypage" element={<Mypage />}></Route>
-<<<<<<< HEAD
 
         {/* <Route path="login" element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen} auth={auth}/>  } ></Route>
         <Route path='main/:id' element = {<DetailRedirect auth={auth} />} />
         <Route path='login/idpw' element = {<FindID/>} setIsOpen={setIsOpen}/> */}
-=======
-        <Route
-          path="login"
-          element={<Loginok setAuth={setAuth} setIsOpen={setIsOpen} />}
-        ></Route>
-        <Route path="/main/:id" element={<DetailRedirect auth={auth} />} />
-        <Route path="login/idpw" element={<IdPw />} setIsOpen={setIsOpen} />
->>>>>>> 876124946690df082520b39933f57769df4c84c0
       </Routes>
     </div>
   );
