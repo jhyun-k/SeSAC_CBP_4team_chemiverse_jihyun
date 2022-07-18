@@ -1,5 +1,15 @@
 .mainHeaderBox {
   width: 100vw;
+  > ::after {
+    content: "";
+    width: 100vw;
+    background-color: gray;
+    opacity: 0.2;
+    position: absolute;
+    top: 6.8vw;
+    left: -3.6vw;
+    height: 1px;
+  }
   .inner {
     width: 92.639vw;
     margin: 0 auto;
@@ -15,7 +25,8 @@
       top: 0.7vw;
       right: 0.2vw;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      width: 7vw;
       font-size: 0.764vw;
       li {
         margin-left: 1vw;
@@ -97,16 +108,15 @@
         }
       }
     }
+  }
+}
 
-    .login_btn {
-      padding: 5px;
-      margin: 0 5px;
-      cursor: pointer;
-      :hover {
-        text-decoration: underline;
-        font-weight: 700;
-      }
-    }
+.searchBox {
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  background-color: #f3f3f3;
+  * {
+    background-color: #f3f3f3;
   }
 }
 
