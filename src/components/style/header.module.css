@@ -19,10 +19,10 @@
   justify-content: flex-end;
   font-size: 0.764vw;
 }
-.mainHeaderBox .inner .login * {
-  margin-left: 0.5vw;
+.mainHeaderBox .inner .login li {
+  margin-left: 1vw;
   color: #6c6c6c;
-  font-size: 0.82vw;
+  cursor: pointer;
 }
 .mainHeaderBox .inner .mainHeader {
   display: flex;
