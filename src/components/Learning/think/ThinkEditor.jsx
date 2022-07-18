@@ -37,7 +37,7 @@ const ThinkEditor = ({ onCreate }) => {
                     name="content"
                     value={state.content}
                     onChange={handleChangeState}
-                    placeholder="내용"
+                    placeholder="내용을 입력하세요. 작성한 글은 작성자와 관리자에게만 공개됩니다."
                     type="text"
                 />
             </div>

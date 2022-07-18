@@ -4,11 +4,12 @@ import styles from "./css/learning.module.css";
 
 const LearnNav = () => {
     const navList = [
-        { content: "회사이해", href: "." },
-        { content: "워크스킬", href: "./workskill" },
-        { content: "피플스킬", href: "./peopleskill" },
-        { content: "자기관리", href: "./selfmanage" },
+        { id: 1, content: "회사이해", href: "." },
+        { id: 2, content: "워크스킬", href: "./workskill" },
+        { id: 3, content: "피플스킬", href: "./peopleskill" },
+        { id: 4, content: "자기관리", href: "./selfmanage" },
     ];
+
     return (
         <nav className={styles.learnNav}>
             <ul>

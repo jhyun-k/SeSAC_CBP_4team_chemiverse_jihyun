@@ -80,45 +80,48 @@
 }
 
 /* Understand.jsx */
-.moduleList {
-    display: flex;
+.inner {
+    width: 83.333vw;
     margin: auto;
+}
+.moduleList {
+    // display: block;
     .moduleListItem {
-        margin: 20px;
+        margin: 1.389vw;
         .imgBox {
             position: relative;
-            height: 450px;
+            height: 31.25vw;
             overflow: hidden;
             img {
                 overflow: hidden;
-                width: 320px;
-                height: 450px;
-                border-radius: 10px;
+                width: 23.403vw;
+                height: 31.25vw;
+                border-radius: 0.694vw;
             }
             .hover {
                 position: absolute;
-                top: 470px;
+                top: 32.639vw;
                 left: 50%;
                 transform: translateX(-50%);
                 background-color: rgba(230, 224, 236, 0.9);
-                width: 640px;
-                height: 300px;
+                width: 44.444vw;
+                height: 20.833vw;
                 transition: 0.4s;
                 opacity: 0;
                 border-radius: 50%;
-                padding: 60px 200px;
-                font-size: 16px;
+                padding: 4.167vw 13.889vw;
+                font-size: 1.111vw;
                 line-height: 1.5;
             }
         }
         .moduleName {
-            font-size: 20px;
-            margin: 20px;
+            font-size: 1.389vw;
+            margin: 1.389vw;
             text-align: left;
         }
 
         &:hover .hover {
-            top: 210px;
+            top: 15.694vw;
             opacity: 1;
         }
     }
@@ -126,43 +129,42 @@
 
 /* LearningModule.jsx */
 .moduleBox {
-    width: 1000px;
+    width: 83.333vw; // 이너 대신..
     margin: auto;
     .moduleDesc {
         display: flex;
-        padding: 20px;
-
+        padding: 1.389vw;
         .moduleImgBox {
             img {
-                width: 255px;
-                height: 340px;
-                border-radius: 10px;
+                width: 17.708vw;
+                height: 23.611vw;
+                border-radius: 0.694vw;
             }
-            margin-right: 30px;
+            margin-right: 2.083vw;
         }
         .moduleTextBox {
-            width: 800px;
+            width: 55.556vw;
             text-align: left;
-            padding: 30px 40px;
-            height: 340px;
+            padding: 2.083vw 2.778vw;
+            height: 23.611vw;
             .moduleTitle {
-                font-size: 33px;
+                font-size: 2.292vw;
             }
             .descTitle {
-                font-size: 15px;
+                font-size: 1.042vw;
             }
             dt {
-                margin-top: 20px;
-                margin-bottom: 10px;
+                margin-top: 1.389vw;
+                margin-bottom: 0.694vw;
                 font-weight: bold;
             }
             dt:first-child {
                 margin: 0;
-                padding-bottom: 20px;
+                padding-bottom: 1.389vw;
                 border-bottom: 3px solid #d9d9d9;
             }
             dd {
-                font-size: 16px;
+                font-size: 1.111vw;
             }
         }
     }
@@ -172,9 +174,9 @@
             justify-content: space-around;
             .imgBox {
                 > img {
-                    width: 450px;
-                    height: 250px;
-                    border-radius: 10px;
+                    width: 31.25vw;
+                    height: 17.361vw;
+                    border-radius: 0.694vw;
                 }
             }
         }
@@ -182,28 +184,28 @@
 }
 
 .sectionTitle {
-    margin: 30px 0;
-    padding-bottom: 15px;
+    margin: 2.083vw 0;
+    padding-bottom: 1.042vw;
     text-align: left;
     color: #6f76c1;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 2.083vw;
+    line-height: 3.472vw;
     border-bottom: 1px solid #d9d9d9;
     display: flex;
     .sectionIcon {
-        width: 50px;
-        margin-right: 10px;
+        width: 3.472vw;
+        margin-right: 0.694vw;
     }
     p {
-        margin-top: 10px;
-        margin-left: 20px;
-        font-size: 11px;
+        margin-top: 0.694vw;
+        margin-left: 1.389vw;
+        font-size: 0.764vw;
         font-weight: normal;
     }
 }
 
 section {
-    margin: 100px 0;
+    margin: 6.944vw 0;
 }
 
 /* Modal.jsx */
@@ -220,21 +222,60 @@ section {
     z-index: 2;
     .modalContent {
         background-color: white;
-        border-radius: 10px;
+        background-image: url(./../../../../public/chemiverse_img/bg-login.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right -20px;
+        border-radius: 0.694vw;
+        padding: 2.389vw;
+        position: relative;
         button {
-            float: right;
+            // float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
             z-index: 1000;
         }
     }
     .slide {
-        width: 1000px;
-        height: 500px;
+        width: 69.444vw;
+        height: 34.722vw;
         position: relative;
+        // padding: 3.472vw;
+        h1 {
+            text-align: left;
+            margin-left: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            color: #6f76c1;
+        }
         img {
-            height: 400px;
+            height: 26.389vw;
+            margin: auto;
         }
     }
     .youtube {
-        height: 500px;
+        position: relative;
+        margin: 30px auto 0;
+        max-width: 900px;
+        width: 69.444vw;
+        > div {
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+        > div iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    .closeBtn {
+        img {
+            width: 20px;
+            margin: 20px;
+        }
     }
 }

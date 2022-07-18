@@ -16,7 +16,13 @@ const Modal = ({ children, shown, close }) => {
                 }}
             >
                 <button onClick={close} className={styles.closeBtn}>
-                    Close
+                    <img
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/chemiverse_img/btn-close.png"
+                        }
+                        alt=""
+                    />
                 </button>
                 {children}
             </div>

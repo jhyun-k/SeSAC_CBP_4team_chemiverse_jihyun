@@ -1,28 +1,23 @@
 import React from "react";
 import styles from "./css/learning.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "./css/slideStyle.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ModalContent1 = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+    };
     return (
         <div className={styles.slide}>
-            <Swiper
-                navigation={true}
-                modules={[Navigation, Pagination]}
-                pagination={{
-                    clickable: true,
-                }}
-                // spaceBetween={50}
-                slidesPerView={3}
-                slidesPerGroup={3}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                <SwiperSlide>
+            <h1>미래를 향한 TIP을 찾다</h1>
+            <Slider {...settings}>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -30,8 +25,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -39,8 +34,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -48,8 +43,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -57,8 +52,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -66,8 +61,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -75,8 +70,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -84,8 +79,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -93,8 +88,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -102,8 +97,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -111,8 +106,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -120,8 +115,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -129,8 +124,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -138,8 +133,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-                <SwiperSlide>
+                </div>
+                <div>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -147,8 +142,8 @@ const ModalContent1 = () => {
                         }
                         alt=""
                     />
-                </SwiperSlide>
-            </Swiper>
+                </div>
+            </Slider>
         </div>
     );
 };

@@ -1,38 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./css/learning.module.css";
 
+// 자기관리
 const SelfManage = ({ module }) => {
-    // console.log(module);
     return (
-        <div
-            className="module-area"
-            style={{
-                display: "flex",
-                margin: "auto",
-                width: "1000px",
-            }}
-        >
-            {module.map((ele, index) => {
-                return (
-                    <Link to={`./${module[index].id}`}>
-                        <div
-                            className="module"
-                            style={{
-                                width: "300px",
-                                overflow: "hidden",
-                                margin: "20px",
-                            }}
-                        >
-                            <img
-                                src={module[index].img}
-                                className="App-logo"
-                                alt="React"
-                            />
-                            <p>{module[index].name}</p>
-                        </div>
-                    </Link>
-                );
-            })}
+        <div className={styles.inner}>
+            <ul className={styles.moduleList}>
+                {/* 모듈 목록  */}
+                {module.map((ele) => {
+                    return (
+                        <li className={styles.moduleListItem} key={ele.id}>
+                            <Link to={`./${ele.id}`}>
+                                <div className={styles.imgBox}>
+                                    <img src={ele.img} alt="React" />
+                                    <div className={styles.hover}>
+                                        {ele.goal}
+                                    </div>
+                                </div>
+                                <p className={styles.moduleName}>{ele.name}</p>
+                            </Link>
+                        </li>
+                    );
+                })}
+            </ul>
         </div>
     );
 };

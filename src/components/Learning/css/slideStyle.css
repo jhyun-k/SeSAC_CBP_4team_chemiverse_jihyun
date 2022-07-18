@@ -1,26 +1,21 @@
-.swiper-button-next,
-.swiper-button-prev {
+.slick-slider {
+}
+
+.slick-arrow {
+    top: 50% !important;
+}
+
+.slick-prev {
+    left: -20px !important;
+}
+.slick-next {
+    right: -5px !important;
     color: #6678b9;
+    z-index: 19999;
 }
 
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-    right: 0;
-    left: auto;
-}
-
-.swiper-slide {
-}
-
-.swiper-wrapper {
-}
-.swiper {
-    padding: 25px;
-    width: 1000px;
-    height: 500px;
-    top: 20px;
-}
-
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 60px !important;
+.slick-next:before,
+.slick-prev:before {
+    color: #6678b9 !important;
+    font-size: 30px !important;
 }
