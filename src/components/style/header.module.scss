@@ -17,10 +17,14 @@
       display: flex;
       justify-content: flex-end;
       font-size: 0.764vw;
-      li {
-        margin-left: 1vw;
+      * {
+        margin-left: 0.5vw;
         color: #6c6c6c;
+<<<<<<< HEAD
         cursor: pointer;
+=======
+        font-size: 0.82vw;
+>>>>>>> 876124946690df082520b39933f57769df4c84c0
       }
     }
     .mainHeader {
