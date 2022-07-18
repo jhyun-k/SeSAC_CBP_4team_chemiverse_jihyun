@@ -12,21 +12,21 @@ const HomeHeader = () => {
     return (
         <header className={styles.homeHeader}>
             <div className={styles.homeContainer}>
-                <div className={styles.blacklogo}>
-                    <Link to="/"></Link>
-                </div>
+                <Link to="/" className={styles.blacklogo}>
+                    expert
+                </Link>
                 <div className={styles.title}>Chemiverse Connect With</div>
-                <ul className="homeNav">
-                    {homeList.map((element, index) => {
-                        return (
-                            <li key={index}>
-                                <Link to={element.href}>{element.content}</Link>
-                            </li>
-                        );
-                    })}
-                </ul>
+                {/* <ul className={styles.homeNav}>
+              {homeList.map((element, index) => {
+                return (
+                  <li className={styles.navlist} key={index}>
+                    <Link to={element.href}>{element.content}</Link>
+                  </li>
+                );
+              })}
+            </ul> */}
                 <button className={styles.onup_btn}>
-                    <Link to="/main">Chemiverse On & Up 바로가기</Link>
+                    <Link to="/login">Chemiverse On & Up</Link>
                 </button>
             </div>
         </header>

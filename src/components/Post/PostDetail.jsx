@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styles from './css/PostDetail.module.css';
+import SearchHeader from './SearchHeader';
+import SearchBar from './SearchBar';
 
 const PostDetail = ({ data }) => {
   const { post } = useParams();
@@ -11,6 +13,7 @@ const PostDetail = ({ data }) => {
   console.log(selectedPost);
   return (
     <div className={styles.wrap}>
+      <SearchBar />
       <div className={styles.headerBox}>
         <h2 className={styles.title}>{selectedPost.title}</h2>
         <div className={styles.postInfo}>
@@ -21,9 +24,9 @@ const PostDetail = ({ data }) => {
       </div>
       <div className={styles.body}>{selectedPost.body}</div>
       <div>
-        <Link to='/main/post'>
-          <button className={styles.listBtn}>목록</button>
-        </Link>
+        {/* <Link to='/freepost'> */}
+        <button className={styles.listBtn}>목록</button>
+        {/* </Link> */}
       </div>
     </div>
   );
