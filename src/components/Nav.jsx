@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import navStyle from "./style/nav.module.css";
 
 const Nav = () => {
-  
-  
   const navList = [
     { content: "교육장 이동", href: "./move" },
     { content: "교육안내", href: "./guide" },

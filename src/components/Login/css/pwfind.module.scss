@@ -1,49 +1,23 @@
-.inner{
-    width: 100vw;
-    margin: auto;
+.modal_backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-.main{
-    padding-left: 6.944vw;
-    padding-right: 6.250vw;
-    margin-bottom: 3.472vw;
-    width: 100vw;
-    height: 11.806vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 90%;
-  }
-  .mainTxt{
-    display: flex;
-    align-items: center;
-  }
-  .mainTxt span{
-    display: inline-block;
-    color: #fff;
-    &:first-child{
-      font-size: 2vw;
-      font-weight: 700;
-      margin-right: 2.083vw;
-    }
-    &:last-child{
-      font-size: 0.833vw;
-      line-height: 1.5;
-      font-weight: 500;
-    }
-    }
-  .mainImg{
-    width: 15vw;
-    height: auto;
-  } // 배너까지
-
-.flex{display: flex;
-width: 100vw;}
-
-//아디찾기 시작
+.modal_content {
+    width: 50%;
+    height: 70vh;
+    min-height: 200px;
+    background-color: white;
+    padding: 25px;
+}
 .section{
     width: 40.333vw;
     margin: auto;
@@ -58,11 +32,9 @@ width: 100vw;}
 }
 
 .unit{
-    border : 1px solid #ccc;
     width: 40.333vw;
     margin: auto;
-    height: 20.833vw;
-    margin-top: 2vw;
+    height: 25.833vw;
     margin-bottom: 2vw;
     display: flex;
     flex-direction: column;
@@ -76,6 +48,7 @@ width: 100vw;}
     height: 10px;
     display: flex;
     justify-content: space-between;
+    padding: 1.5vw 0;
 }
 .label{
     margin: 1vw;
@@ -105,11 +78,3 @@ width: 100vw;}
     font-weight: bold;
     margin-top: 3.5vw;
 }
-
-.balloon{
-  width: 58px;
-  height: 58px;
-}
-
-
-

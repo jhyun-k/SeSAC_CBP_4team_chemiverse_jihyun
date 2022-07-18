@@ -1,6 +1,9 @@
 .homeHeader {
   width: 100%;
-  margin: 20px 0;
+  height: 80px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 4px 4px -4px black;
 }
 
 .blacklogo {
@@ -15,20 +18,25 @@
   flex-direction: row;
   margin: auto;
   justify-content: space-around;
+  align-items: center;
 }
 
 .homeNav {
   width: auto;
   margin: 0;
 }
-.homeNav > li {
-  margin: 0 10px;
+.navlist{
+  width: 200px;
+  margin: 0 20px;
+  
 }
 
 .homeNav a {
   color: #000000;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
 }
 
 .title {
@@ -41,4 +49,18 @@
   background-color: #ffffff;
   border: 2px solid #e0e0e0;
   border-radius: 30px;
+  height: 50px;
+  width: 200px;
+  &:hover{
+    background-color: #6f76c1;
+    color: #ffffff;
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+  a{
+    &:hover{
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+  }
 }

@@ -19,9 +19,10 @@
   justify-content: flex-end;
   font-size: 0.764vw;
 }
-.mainHeaderBox .inner .login li {
-  margin-left: 1vw;
+.mainHeaderBox .inner .login * {
+  margin-left: 0.5vw;
   color: #6c6c6c;
+  font-size: 0.82vw;
 }
 .mainHeaderBox .inner .mainHeader {
   display: flex;
@@ -64,4 +65,14 @@
 }
 .mainHeaderBox .inner .mainHeader .searchBox button * {
   color: #838383;
+}
+
+.login_btn {
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.login_btn :hover {
+  text-decoration: underline;
+  font-weight: 700;
 }/*# sourceMappingURL=header.module.css.map */
