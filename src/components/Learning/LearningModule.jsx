@@ -71,7 +71,7 @@ const LearningModule = (props) => {
                         }}
                     >
                         <img
-                            src="https://i.ytimg.com/an_webp/dGpYuTshhuA/mqdefault_6s.webp?du=3000&sqp=CKDavpYG&rs=AOn4CLD6pGu3SFtZiTcarAHysG1KdzKViw"
+                            src="https://i.ytimg.com/an_webp/dGpYuTshhuA/mqdefault_6s.webp?du=3000&sqp=CODP05YG&rs=AOn4CLBb3QltRjmKftKER_cal8uspVKfdA"
                             alt=""
                         />
                         <Modal

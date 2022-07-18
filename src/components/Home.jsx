@@ -5,7 +5,6 @@ import Introduce from "./Introduce";
 import Ready from "./Ready";
 import HomeNotice from "./HomeNotice";
 import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import HomePage from "./HomePage";
 
 const Home = () => {

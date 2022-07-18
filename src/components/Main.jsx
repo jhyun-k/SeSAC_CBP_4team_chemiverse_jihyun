@@ -10,9 +10,7 @@ import MainPage from "./MainPage";
 import Mentoring from "./Mentoring/Mentoring";
 import ChemiStory from "./ChemiStory/ChemiStory";
 import PostTab from "./Post/PostTab";
-import Loginok from "./Login/Loginok";
 import { useState, useEffect } from "react";
-import FindID from "./Login/FindID";
 import DetailRedirect from "./Login/DetailRedirect";
 
 const Main = ({ setAuth, auth }) => {
