@@ -20,7 +20,11 @@
       * {
         margin-left: 0.5vw;
         color: #6c6c6c;
+<<<<<<< HEAD
+        cursor: pointer;
+=======
         font-size: 0.82vw;
+>>>>>>> 876124946690df082520b39933f57769df4c84c0
       }
     }
     .mainHeader {
@@ -65,5 +69,15 @@
         }
       }
     }
+  }
+}
+
+.login_btn{
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  :hover{
+    text-decoration: underline;
+    font-weight: 700;
   }
 }
