@@ -1,84 +1,29 @@
-import React, { useState } from "react";
-import LearningModule from "./LearningModule";
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./css/learning.module.css";
 
-const Understand = () => {
-    /* 테스트용 데이터!! 나중에 axios나 .. 머 그런걸로 가져와야됨 */
-    const module = [
-        { id: 1, name: "모듈명1", goal: "학습목표1", basic: "기본개념1" },
-        { id: 2, name: "모듈명2", goal: "학습목표2", basic: "기본개념2" },
-        { id: 3, name: "모듈명3", goal: "학습목표3", basic: "기본개념3" },
-    ];
-
-    const [num, setNum] = useState(0);
-    const code = module.filter((data, index) => index === num);
-    const fncTab = (e, index) => {
-        e.preventDefault();
-        setNum(index);
-    };
-
+// 회사이해
+const Understand = ({ module }) => {
     return (
-        <div className="module-area">
-            <h1>회사이해</h1>
-            <div className="tab-btn">
-                {module.map((data, index) => (
-                    <button
-                        className={index === num ? "btn active" : "btn"}
-                        key={data.id}
-                        onClick={(e) => {
-                            fncTab(e, index);
-                        }}
-                    >
-                        <div className="module" style={{ width: "100px" }}>
-                            <img
-                                src={`${process.env.PUBLIC_URL}/chemiverse_img/answer-o-on.png`}
-                                className="App-logo"
-                                alt="React"
-                            />
-                            <p>{data.name}</p>
-                        </div>
-                    </button>
-                ))}
-            </div>
-            <div className="tab-contents">
-                {code.map((data, index) => (
-                    <LearningModule key={data.id} data={data} />
-                ))}
-            </div>
-            {/* <div
-                className="module-area"
-                style={{ display: "flex", margin: "auto", width: "300px" }}
-            >
-                <Link to={`./1`}>
-                    <div className="module1" style={{ width: "100px" }}>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/chemiverse_img/answer-o-on.png`}
-                            className="App-logo"
-                            alt="React"
-                        />
-                        <p>모듈명</p>
-                    </div>
-                </Link>
-                <Link to={`./2`}>
-                    <div className="module2" style={{ width: "100px" }}>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/chemiverse_img/answer-o-on.png`}
-                            className="App-logo"
-                            alt="React"
-                        />
-                        <p>모듈명</p>
-                    </div>
-                </Link>
-                <Link to={`./3`}>
-                    <div className="module3" style={{ width: "100px" }}>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/chemiverse_img/answer-o-on.png`}
-                            className="App-logo"
-                            alt="React"
-                        />
-                        <p>모듈명</p>
-                    </div>
-                </Link>
-            </div> */}
+        <div className={styles.inner}>
+            <ul className={styles.moduleList}>
+                {/* 모듈 목록  */}
+                {module.map((ele) => {
+                    return (
+                        <li className={styles.moduleListItem} key={ele.id}>
+                            <Link to={`./${ele.id}`}>
+                                <div className={styles.imgBox}>
+                                    <img src={ele.img} alt="React" />
+                                    <div className={styles.hover}>
+                                        {ele.goal}
+                                    </div>
+                                </div>
+                                <p className={styles.moduleName}>{ele.name}</p>
+                            </Link>
+                        </li>
+                    );
+                })}
+            </ul>
         </div>
     );
 };
