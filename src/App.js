@@ -2,12 +2,21 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from './components/Home/Home';
 import Main from "./components/Main";
-<<<<<<< HEAD
 import {IoIosArrowDropupCircle} from 'react-icons/io'
 import { useState,useEffect } from "react";
+import Welcome from './components/Home/Welcome';
+import Ready from './components/Home/Ready';
+import Introduce from './components/Home/Introduce';
+import HomeNotice from './components/Home/HomeNotice';
+import Loginok from './components/Login/Loginok';
+import FindID from './components/Login/FindID';
+import DetailRedirect from './components/Login/DetailRedirect';
 
 function App() {
 
+  const [modalIsOpen, setIsOpen] = useState(false);
+  
+  const [auth,setAuth] = useState(false)
   const [ScrollY, setScrollY] = useState(0);
   const [BtnStatus, setBtnStatus] = useState(false); // 버튼 상태
   
@@ -40,29 +49,11 @@ function App() {
       window.removeEventListener('scroll', handleFollow)
     }
   })
-
-=======
-import Welcome from './components/Home/Welcome';
-import Ready from './components/Home/Ready';
-import Introduce from './components/Home/Introduce';
-import HomeNotice from './components/Home/HomeNotice';
-import Loginok from './components/Login/Loginok';
-import { useState,useEffect } from 'react';
-import FindID from './components/Login/FindID';
-import DetailRedirect from './components/Login/DetailRedirect';
-
-function App() {
-
-  const [modalIsOpen, setIsOpen] = useState(false);
-  
-  const [auth,setAuth] = useState(false)
-
   
 
   useEffect(()=>{
   },[auth])
   
->>>>>>> develop
   return (
     <div className="App">
       <BrowserRouter>

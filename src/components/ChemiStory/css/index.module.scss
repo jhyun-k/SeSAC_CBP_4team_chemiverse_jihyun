@@ -84,8 +84,8 @@
   }
 }
 
-//WriteChemiStory
-.WriteChemiStory{
+//WhatIsChemiStory
+.WhatIsChemiStory{
   width: 1200px;
   margin: 10px auto;
   .pin{
@@ -102,15 +102,152 @@
     // border-bottom: 2px solid #c8c8c8;
     padding-bottom: 80px;
   }
+  .content{
+    width: 1000px;
+    height: 300px;
+    background-color: #f4f4f4;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .subTitle{
-    .module{
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    .img{
       display: flex;
-      .img{
-        display: flex;
-        justify-content: flex-start;
-        width: 50px;
-        height: auto;
+      justify-content: flex-start;
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .module{
+      flex-direction: column;
+      align-items: flex-start;
+      h1{
+        font-size: 24px;
+        font-weight: 700;
       }
     }
+  }
+}
+
+//WriteChemiStory
+.WriteChemiStory{
+  width: 1200px;
+  margin: 10px auto;
+  .subFlex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    align-items: baseline;
+    .printBtn{
+      display: inline-block;
+      background-color: #6F76C1;
+      width: 60px;
+      height: 25px;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(119, 125, 199, 0.721);
+      }
+    }
+  }
+  .pin{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .title{
+    display: inline-block;
+    text-align: center;
+    width: 1200px;
+    color: #6F76C1;
+    font-size: 30px;
+    // border-bottom: 2px solid #c8c8c8;
+    padding-bottom: 80px;
+  }
+  .subTitle{
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    .img{
+      display: flex;
+      justify-content: flex-start;
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .module{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h1{
+        font-size: 24px;
+        font-weight: 700;
+      }
+      h2{
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+  .roadMap{
+    margin-top: 70px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    .year{
+      width: 170px;
+      height: 54px;
+      border-radius: 30px;
+      background-color: #6F76C1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-right: 20px;
+    }
+    .yearContent{
+      font-size: 20px;
+      font-weight: 700;
+      color: #565DAB;
+    }
+  }
+}
+
+//Journal,Goal
+.JournalGoal{
+  width: 1200px;
+  margin: 10px auto;
+  .pin{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .title{
+    display: inline-block;
+    text-align: center;
+    width: 1200px;
+    color: #6F76C1;
+    font-size: 30px;
+    // border-bottom: 2px solid #c8c8c8;
+    padding-bottom: 20px;
+  }
+  .subTitle{
+    padding-bottom: 80px;
+    font-weight: 500;
   }
 }
