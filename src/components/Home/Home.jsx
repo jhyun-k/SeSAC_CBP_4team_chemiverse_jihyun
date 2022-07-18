@@ -24,6 +24,7 @@ const Home = () => {
       <Link to='homenotice'>게시판</Link>
 
       <Routes>
+        {/* <Route path='/' element={<HomePage />}></Route> */}
         <Route path='/welcome' element={<Welcome />}></Route>
         <Route path='/introduce' element={<Introduce />}></Route>
         <Route path='/ready' element={<Ready />}></Route>
