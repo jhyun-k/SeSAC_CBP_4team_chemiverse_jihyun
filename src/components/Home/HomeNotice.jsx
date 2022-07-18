@@ -1,9 +1,11 @@
 import React from 'react';
+import HomeHeaderNavy from './HomeHeaderNavy';
 
 const HomeNotice = () => {
     return (
         <div>
-            <h1>게시판이란</h1>
+        <HomeHeaderNavy />
+        <h1>게시판이란</h1>
         </div>
     );
 };
