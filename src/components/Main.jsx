@@ -34,7 +34,7 @@ const Main = () => {
       <Header title={title} auth={auth} setAuth={setAuth} setIsOpen={setIsOpen} />
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
-        <Route path="move" element={<Move />}></Route>
+        <Route path="move/*" element={<Move />}></Route>
         <Route path="guide/*" element={<Guide />}></Route>
         <Route path="diagnosis/*" element={<Diagnosis />}></Route>
         <Route path="learning/*" element={<Learning />}></Route>
