@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './css/Header.module.css';
 
-const SearchBar = ({ data }) => {
+const SearchBar = () => {
   return (
     <form className={styles.searchBar}>
       <select className={styles.option}>

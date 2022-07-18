@@ -5,7 +5,7 @@ import styles from './css/Header.module.css';
 const SearchHeader = ({ data }) => {
   return (
     <div className={styles.searchHeader}>
-      <SearchBar data={data} />
+      <SearchBar />
       <p className={styles.totalPost}>총 게시물 {data.length}개</p>
     </div>
   );

@@ -7,7 +7,7 @@ import mainPageStyle from "./style/mainPage.module.css";
 
 const MainPage = () => {
   const mainList = [
-    { content: "Connect With 바로가기", href: "/*" },
+    { content: "Connect With 바로가기", href: "/" },
     { content: "교육장 이동", href: "./move" },
     { content: "교육안내", href: "./guide" },
     { content: "진단", href: "./diagnosis" },
