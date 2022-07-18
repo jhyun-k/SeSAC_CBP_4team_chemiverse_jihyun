@@ -29,7 +29,6 @@ const Home = () => {
         <Route path='/introduce' element={<Introduce />}></Route>
         <Route path='/ready' element={<Ready />}></Route>
         <Route path='/board/notice' element={<HomeNotice />}></Route>
-        <Route path="/" element={<HomePage />}></Route>
       </Routes>
     </div>
   );
