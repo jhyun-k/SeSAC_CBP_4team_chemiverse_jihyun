@@ -6,7 +6,7 @@
 }
 .mainBox > :first-child {
   width: 50%;
-  position: relative;
+  height: 52vw;
 }
 
 body {
@@ -22,4 +22,8 @@ body {
 
 .h1Event {
   font-size: 1.2vw;
+}
+
+.h2Event {
+  font-size: 1vw;
 }/*# sourceMappingURL=calendar.module.css.map */
