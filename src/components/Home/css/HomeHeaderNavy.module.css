@@ -54,14 +54,16 @@
   width: 200px;
   color: #6f76c1;
   font-weight: bold;
-}
-.onup_btn:hover {
-  background-color: #191d5e;
-  color: #ffffff;
-  transition: all 0.3s;
-  font-weight: bold;
-}
-.onup_btn a:hover {
-  transition: all 0.3s;
-  text-decoration: none;
+  /* &:hover{
+    background-color: #E6F4F1;
+    color: #ffffff;
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+  a{
+    &:hover{
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+  } */
 }/*# sourceMappingURL=HomeHeaderNavy.module.css.map */

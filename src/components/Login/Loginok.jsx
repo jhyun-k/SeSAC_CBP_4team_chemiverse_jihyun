@@ -3,6 +3,8 @@ import styles from './css/login.module.css'
 import { useNavigate} from 'react-router-dom'
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
+import Header from './../Header';
+import MainPage from './../MainPage';
 
 
 
@@ -25,6 +27,9 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
     navigate('/main')
   }
     return (
+      <div>
+        <Header />
+        <MainPage />
         <Modal isOpen={true} 
         style={{
           overlay: {
@@ -47,13 +52,14 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
           <p className={styles.text}>신규입사자웅앵웅 환영해요~~! 환영합니다 환영합니다 극도로 환영 짱짱환영 </p>
             <div className={styles.inner}>
                 <input className={styles.input} id="id" name="id" placeholder="아이디를 입력해주세요" 
-                autoComplete='off'/>
+                autoComplete='off' required />
                 <input
                   className={styles.input}
                   id="password"
                   name="password"
                   type="password"
                   placeholder="비밀번호를 입력해주세요"
+                  required
                 />
                 <div className={styles.button_box}>
                     <Link to='./idpw' className={styles.loginbtn}>ID/PW찾기</Link>
@@ -62,7 +68,9 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
             </div>
         </div>
         </form>
+
       </Modal>
+      </div>
     );
 };
 
