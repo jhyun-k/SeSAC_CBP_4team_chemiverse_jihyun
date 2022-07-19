@@ -12,7 +12,7 @@ const Board = () => {
     <div>
       <h1>게시판</h1>
       <Routes>
-        <Route path='/notice' element={<HomeNotice />} />
+        <Route path='/notice' element={<HomeNotice data={noticeLatest} />} />
         <Route
           path='/notice/:post'
           element={<PostDetail data={noticeLatest} />}

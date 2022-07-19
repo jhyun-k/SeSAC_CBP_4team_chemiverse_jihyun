@@ -10,7 +10,8 @@ import { useRef } from 'react';
 const FreePost = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
-
+  /* const [category, setCategory]
+   */
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
   const endNum = startNum + LIST_PER_PAGE;

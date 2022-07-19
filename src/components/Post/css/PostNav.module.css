@@ -31,4 +31,10 @@
   color: #424888;
   font-weight: 900;
   font-size: 1.25vw;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    display: none;
+  }
 }/*# sourceMappingURL=PostNav.module.css.map */

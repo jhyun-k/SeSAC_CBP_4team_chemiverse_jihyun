@@ -33,3 +33,9 @@
     font-size: 1.25vw;
   }
 }
+
+@media (max-width: 720px) {
+  .nav {
+    display: none;
+  }
+}

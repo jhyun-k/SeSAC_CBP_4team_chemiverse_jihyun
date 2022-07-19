@@ -297,4 +297,155 @@
 }
 .writeForm .btnBox .submitBtn {
   margin-left: 1.389vw;
+}
+
+@media (max-width: 720px) {
+  /* post */
+  .post {
+    width: 100vw;
+  }
+  .post .writeBtn {
+    width: 20.833vw;
+    height: 8.333vw;
+    font-size: 2.778vw;
+    margin-right: 6.944vw;
+  }
+  /* postList */
+  .freePostList {
+    width: 90vw;
+    font-size: 3.333vw;
+  }
+  .freePostList li {
+    flex-direction: column;
+    height: 22.222vw;
+    line-height: normal;
+    padding: 4.167vw 0;
+  }
+  .freePostList .freePostTitle {
+    display: none;
+  }
+  .freePostList .freePost .postIndex {
+    display: none;
+  }
+  .freePostList .freePost .postTitle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .freePostList .freePost .userName {
+    display: inline;
+    width: auto;
+    align-self: flex-start;
+    font-size: 2.5vw;
+  }
+  .freePostList .freePost .date {
+    display: inline;
+    width: auto;
+    align-self: flex-start;
+    font-size: 2.5vw;
+  }
+  .freePostList .freePost .view {
+    display: none;
+  }
+  .freePostList .freePost .like {
+    display: none;
+  }
+  /* searchHeader */
+  .searchHeader {
+    width: 90vw;
+  }
+  .searchHeader .searchBarBox {
+    width: 100%;
+    margin-bottom: 2.083vw;
+  }
+  .searchHeader .searchBarBox .searchBar {
+    width: 100%;
+    height: 8.333vw;
+    display: flex;
+  }
+  .searchHeader .searchBarBox .searchBar .option {
+    width: 20%;
+    font-size: 2.5vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput {
+    width: 80%;
+    font-size: 3vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput::-moz-placeholder {
+    font-size: 3vw;
+    text-indent: 2.083vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput:-ms-input-placeholder {
+    font-size: 3vw;
+    text-indent: 2.083vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput::placeholder {
+    font-size: 3vw;
+    text-indent: 2.083vw;
+  }
+  .searchHeader .totalPost {
+    font-size: 2.361vw;
+  }
+  /* pagination */
+  .pagination {
+    margin-top: 13.889vw;
+  }
+  .pagination .button {
+    font-size: 4.861vw;
+    line-height: 4.861vw;
+    padding: 0 1.2vw;
+    margin: 0 1.2vw;
+  }
+  .pagination .angleBtn {
+    font-size: 4.861vw;
+    vertical-align: top;
+  }
+  /* PostDetail */
+  .postDetailWrap {
+    width: 90vw;
+    height: auto;
+    font-size: 3.472vw;
+  }
+  .postDetailWrap .headerBox {
+    height: auto;
+  }
+  .postDetailWrap .headerBox .title {
+    font-size: 3.472vw;
+    line-height: 1.3;
+  }
+  .postDetailWrap .headerBox .postInfo {
+    font-size: 2.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .postDetailWrap .headerBox .postInfo span {
+    margin-right: 2.5vw;
+  }
+  .postDetailWrap .fileBox {
+    font-size: 2.5vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  .postDetailWrap .listBtn {
+    width: 20.833vw;
+    height: 8.333vw;
+    font-size: 2.778vw;
+  }
+  /* WritePostPage */
+  .writeForm {
+    width: 90vw;
+    font-size: 2.778vw;
+  }
+  .writeForm .titleInput {
+    height: 8.333vw;
+    font-size: 2.778vw;
+  }
+  .writeForm .btnBox button {
+    width: 20.833vw;
+    height: 8.333vw;
+    font-size: 2.778vw;
+  }
+  .writeForm .btnBox .submitBtn {
+    margin-left: 6.944vw;
+  }
 }/*# sourceMappingURL=PostTab.module.css.map */
