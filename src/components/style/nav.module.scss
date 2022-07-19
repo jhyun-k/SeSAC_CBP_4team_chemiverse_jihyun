@@ -58,7 +58,9 @@
   overflow: hidden;
   .tabmenu {
     display: flex;
-    left: 1.9vw;
+    justify-content: flex-end;
+    width: 58%;
+    right: 8%;
     ul {
       display: flex;
       flex-direction: column;
@@ -73,7 +75,8 @@
             background-color: #6f76c1;
             position: fixed;
             top: 1.9vw;
-            left: 37vw;
+            left: 36.7%;
+            transform: translateX(-50%);
             order: 10;
           }
         }
@@ -86,7 +89,8 @@
             background-color: #6f76c1;
             position: fixed;
             top: 1.9vw;
-            left: 43.5vw;
+            left: 43%;
+            transform: translateX(-50%);
             order: 10;
           }
         }
@@ -99,7 +103,8 @@
             background-color: #6f76c1;
             position: fixed;
             top: 1.9vw;
-            left: 51.7vw;
+            left: 51.6%;
+            transform: translateX(-50%);
             order: 10;
           }
         }
@@ -112,7 +117,8 @@
             background-color: #6f76c1;
             position: fixed;
             top: 1.9vw;
-            left: 61.7vw;
+            left: 61.8%;
+            transform: translateX(-50%);
             order: 10;
           }
         }
@@ -125,7 +131,8 @@
             background-color: #6f76c1;
             position: fixed;
             top: 1.9vw;
-            left: 69vw;
+            left: 69%;
+            transform: translateX(-50%);
             order: 10;
           }
         }
@@ -138,7 +145,8 @@
             background-color: #6f76c1;
             position: fixed;
             top: 1.9vw;
-            left: 77.2vw;
+            left: 77.5%;
+            transform: translateX(-50%);
             order: 10;
           }
         }
@@ -167,7 +175,7 @@
     left: -3.72vw;
     width: 100vw;
     .tabmenu {
-      width: 58.889vw;
+      width: 58%;
       position: relative;
       ul {
         height: 16vw;

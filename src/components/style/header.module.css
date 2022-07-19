@@ -27,8 +27,10 @@
   right: 0.2vw;
   display: flex;
   justify-content: space-between;
-  width: 7vw;
   font-size: 0.764vw;
+}
+.mainHeaderBox .inner .login * {
+  text-decoration: none;
 }
 .mainHeaderBox .inner .login li {
   margin-left: 1vw;
@@ -50,70 +52,49 @@
   background: url(../../../public/chemiverse_img/logo2.png) center;
   background-size: cover;
 }
-.mainHeaderBox .inner .mainHeader .searchBox {
-  display: flex;
-  position: relative;
-}
-.mainHeaderBox .inner .mainHeader .searchBox .login {
-  position: absolute;
-  top: 0.7vw;
-  right: 0.2vw;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.764vw;
-}
-.mainHeaderBox .inner .mainHeader .searchBox .login * {
-  margin-left: 0.5vw;
-  color: #6c6c6c;
-  font-size: 0.82vw;
-}
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader {
+.mainHeaderBox .inner .mainHeader .mainHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader h1 {
+.mainHeaderBox .inner .mainHeader .mainHeader h1 {
   font-size: 0px;
 }
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader h1 a {
+.mainHeaderBox .inner .mainHeader .mainHeader h1 a {
   display: block;
   width: 10.486vw;
   height: 2.639vw;
   background: url(../../../public/chemiverse_img/logo2.png) center;
   background-size: cover;
 }
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader .searchBox {
+
+.searchBox {
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  background-color: #f3f3f3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5vw;
   background-color: #f3f3f3;
-  width: 15.625vw;
+  width: 14.625vw;
   height: 2.083vw;
-  border-radius: 0.347vw;
-  position: relative;
 }
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader .searchBox input {
+.searchBox input {
   width: 12.917vw;
   font-size: 0.347vw;
   background-color: #f3f3f3;
   outline: none;
+  font-size: 0.5vw;
 }
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader .searchBox button {
+.searchBox button {
   width: 1.25vw;
   height: 1.25vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.mainHeaderBox .inner .mainHeader .searchBox .mainHeader .searchBox button * {
+.searchBox button * {
   color: #838383;
-}
-
-.searchBox {
-  padding: 0.5vw 1vw;
-  border-radius: 0.5vw;
-  background-color: #f3f3f3;
 }
 .searchBox * {
   background-color: #f3f3f3;
