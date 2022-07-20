@@ -1,7 +1,6 @@
 import React from "react";
-import { useState,useRef } from "react";
-import styles from './css/diary.module.css';
-
+import { useState, useRef } from "react";
+import styles from "./css/diary.module.css";
 
 // 1. onRemove함수 밖으로 뺴기
 // 2. isEdit State함수 만들기
@@ -17,11 +16,7 @@ import styles from './css/diary.module.css';
 //수정할거냐는 확인메세지 띄우기
 //toggle함수로 수정창 닫기
 
-const DiaryItem = ({
-  onEdit,
-  content,
-  id,
-}) => {
+const DiaryItem = ({ onEdit, content, id }) => {
   const [isEdit, setIsEdit] = useState(false);
   const toggleIsEdit = () => setIsEdit(!isEdit);
   const [localContent, setLocalContent] = useState(content);
@@ -32,40 +27,50 @@ const DiaryItem = ({
     setLocalContent(content);
   };
 
-  const handleEdit = () =>{
-    if (window.confirm(`작성글을 수정하시겠습니까?`)) {
-      onEdit(id,localContent);
+  const handleEdit = () => {
+    if (window.confirm(`수정하시겠습니까?`)) {
+      onEdit(id, localContent);
       toggleIsEdit();
     }
-
-  }
-
+  };
+  const title = [`목\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0표`, "필요역량", "실행계획"];
   return (
     <div className={styles.DiaryItem}>
-      <div className={styles.content}>
+      <div className={styles.item}>
+        <div className={styles.itemTitle}>{title[id]}</div>
+        <div className={styles.content}>
+          {isEdit ? (
+            <>
+              <textarea
+                className={styles.edit}
+                ref={localContentInput}
+                value={localContent}
+                onChange={(e) => setLocalContent(e.target.value)}
+              />
+            </>
+          ) : (
+            <>{content}</>
+          )}
+        </div>
+      </div>
+      <div className={styles.btn}>
         {isEdit ? (
           <>
-            <textarea
-              ref={localContentInput}
-              value={localContent}
-              onChange={(e) => setLocalContent(e.target.value)}
-            />
+            <button onClick={handleQuitEdit}>
+              수정취소
+            </button>
+            <button onClick={handleEdit}>
+              수정완료
+            </button>
           </>
         ) : (
           <>
-          {content}</>
+            <button onClick={toggleIsEdit}>
+              수정하기
+            </button>
+          </>
         )}
       </div>
-      {isEdit ? (
-        <>
-          <button onClick={handleQuitEdit}>수정취소</button>
-          <button onClick={handleEdit}>수정완료</button>
-        </>
-      ) : (
-        <>
-          <button onClick={toggleIsEdit}>수정하기</button>
-        </>
-      )}
     </div>
   );
 };

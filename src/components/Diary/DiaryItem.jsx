@@ -22,7 +22,6 @@ const DiaryItem = ({
   author,
   content,
   created_date,
-  emotion,
   id,
   onRemove,
 }) => {
@@ -43,12 +42,6 @@ const DiaryItem = ({
   };
 
   const handleEdit = () =>{
-
-    if (localContent.length < 5) {
-      localContentInput.current.focus();
-      return;
-    }
-
     if (window.confirm(`${id+1}번째 작성글을 수정하시겠습니까?`)) {
       onEdit(id,localContent);
       toggleIsEdit();

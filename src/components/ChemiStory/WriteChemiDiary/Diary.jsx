@@ -16,7 +16,7 @@ function Diary() {
     // }
     dataId.current +=1;
     setData(...data,arr);
-    console.log(data)
+    console.log('데이타',data)
    
   }
 
@@ -29,9 +29,9 @@ function Diary() {
   return (
     <div className={styles.App}>
       {data.length >= 1 ? (
-                <DiaryList diaryList={data} onEdit={onEdit} />
+                <DiaryList diaryList={data} onEdit={onEdit}  className={styles.list}/>
             ) : (
-                <DiaryEditor onCreate={onCreate} />
+                <DiaryEditor onCreate={onCreate} className={styles.edit}/>
             )}
     </div>
   );

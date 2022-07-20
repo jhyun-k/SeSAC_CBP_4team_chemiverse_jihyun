@@ -46,7 +46,7 @@
 .nav ul li{
     color:#6F76C1;
     border: 0.139vw solid #6F76C1;
-    margin-bottom: 50px;
+    margin-bottom: 3.472vw;
     width: 17.361vw;
     height: 3.125vw;
     display: flex;
@@ -86,28 +86,28 @@
 
 //WhatIsChemiStory
 .WhatIsChemiStory{
-  width: 1200px;
-  margin: 10px auto;
+  width: 83.333vw;
+  margin: 0.694vw auto;
   .pin{
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.389vw;
+    margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
   .title{
     display: inline-block;
     text-align: center;
-    width: 1200px;
+    width: 83.333vw;
     color: #6F76C1;
-    font-size: 30px;
+    font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
-    padding-bottom: 80px;
+    padding-bottom: 5.556vw;
   }
   .content{
-    width: 1000px;
-    height: 300px;
+    width: 69.444vw;
+    height: 20.833vw;
     background-color: #f4f4f4;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 2.083vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,20 +117,20 @@
     align-items: center;
     line-height: 1.5;
     border-bottom: 1px solid #c8c8c8;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
+    padding-bottom: 1.389vw;
+    margin-bottom: 2.778vw;
     .img{
       display: flex;
       justify-content: flex-start;
-      width: 50px;
+      width: 3.472vw;
       height: auto;
-      margin-right: 10px;
+      margin-right: 0.694vw;
     }
     .module{
       flex-direction: column;
       align-items: flex-start;
       h1{
-        font-size: 24px;
+        font-size: 1.667vw;
         font-weight: 700;
       }
     }
@@ -139,23 +139,24 @@
 
 //WriteChemiStory
 .WriteChemiStory{
-  width: 1200px;
-  margin: 10px auto;
+  width: 83.333vw;
+  margin: 0.694vw auto;
   .subFlex{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #c8c8c8;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
+    padding-bottom: 1.389vw;
+    margin-bottom: 2.778vw;
     align-items: baseline;
     .printBtn{
       display: inline-block;
       background-color: #6F76C1;
-      width: 60px;
-      height: 25px;
+      width: 4.167vw;
+      height: 1.736vw;
       color: #fff;
       font-weight: 700;
-      border-radius: 5px;
+      border-radius: 0.347vw;
+      font-size: 0.87vw;
       cursor: pointer;
       &:hover{
         background-color: rgba(119, 125, 199, 0.721);
@@ -163,18 +164,18 @@
     }
   }
   .pin{
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.389vw;
+    margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
   .title{
     display: inline-block;
     text-align: center;
-    width: 1200px;
+    width: 83.333vw;
     color: #6F76C1;
-    font-size: 30px;
+    font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
-    padding-bottom: 80px;
+    padding-bottom: 5.556vw;
   }
   .subTitle{
     display: flex;
@@ -183,45 +184,45 @@
     .img{
       display: flex;
       justify-content: flex-start;
-      width: 50px;
+      width: 3.472vw;
       height: auto;
-      margin-right: 10px;
+      margin-right: 0.694vw;
     }
     .module{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       h1{
-        font-size: 24px;
+        font-size: 1.667vw;
         font-weight: 700;
       }
       h2{
-        font-size: 15px;
+        font-size: 1.034vw;
         font-weight: 500;
       }
     }
   }
   .roadMap{
-    margin-top: 70px;
+    margin-top: 4.861vw;
     display: inline-block;
     display: flex;
     align-items: center;
     justify-content: left;
     .year{
-      width: 170px;
-      height: 54px;
-      border-radius: 30px;
+      width: 14.861vw;
+      height: 3.750vw;
+      border-radius: 2.083vw;
       background-color: #6F76C1;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
+      font-size: 1.389vw;
       font-weight: 700;
       color: #fff;
-      margin-right: 20px;
+      margin-right: 1.389vw;
     }
     .yearContent{
-      font-size: 20px;
+      font-size: 1.389vw;
       font-weight: 700;
       color: #565DAB;
     }
@@ -230,24 +231,24 @@
 
 //Journal,Goal
 .JournalGoal{
-  width: 1200px;
-  margin: 10px auto;
+  width: 83.333vw;
+  margin: 0.694vw auto;
   .pin{
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.389vw;
+    margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
   .title{
     display: inline-block;
     text-align: center;
-    width: 1200px;
+    width: 83.333vw;
     color: #6F76C1;
-    font-size: 30px;
+    font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
-    padding-bottom: 20px;
+    padding-bottom: 1.389vw;
   }
   .subTitle{
-    padding-bottom: 80px;
+    padding-bottom: 5.556vw;
     font-weight: 500;
   }
 }

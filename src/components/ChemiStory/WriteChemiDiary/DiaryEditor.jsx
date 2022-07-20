@@ -64,7 +64,7 @@ const DiaryEditor = ({ onCreate }) => {
         content: state3.content,
       },
     ]);
-    alert("저장성공!");
+    alert("저장되었습니다.");
     setState({
       content: "",
     });
@@ -108,7 +108,6 @@ const DiaryEditor = ({ onCreate }) => {
       <div className={styles.btn}>
         <button onClick={() => alert("임시저장 완료")}>임시저장</button>
         <button onClick={handleSubmit}>작성하기</button>
-        {/* <button onClick={doPrint}>인쇄하기</button> */}
       </div>
     </div>
   );
