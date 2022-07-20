@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-//move 상단 
+// Move-header
 
 .move {
   .main{
@@ -41,22 +41,112 @@
     width: 15.833vw;
     height: auto;
   }
+}
 
-.inner{
+
+// Move.Inner 
+
 .moveInner{
-  width: 83.333vw;
-  margin: auto center;
-}
-.platformTitle{
-  display: flex;
-  justify-content: flex-start;
-  position:left;
+    width: 83.333vw;
+    margin: auto;
 
-}
-.platformLogo{
-  width:5.069vw
+    .platformInfo{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position:left;
+      margin: 3rem 1rem;
+    }
+    .platformLogo{
+      width:5.069vw;
+      height: 4.306vw;
+    }
+    .platformTitle{
+      font-size: 2.778vw;
+      text-align: center;
+      margin-left: 1.5vw;
+    }
+  }  
 
+
+
+
+
+
+
+// ClassItem.jsx
+
+.itemboxs{
+  width:25vw;
+  height:31.042vw;
+  border: 0.069vw solid #bcbed3;
+  border-radius: 0.694vw;
+  margin:1.736vw;
+  position: relative;
+
+  .move_class_img{
+    width: 23.611vw;
+    height:19vw;
+    border-radius:0.694vw;
+    margin:0.3rem;
+    border:1px solid #edeffe
+  }
+  .itemtitle{
+    text-align: left;
+    font-size:1.528vw;
+    font-weight:bold;
+  }
+  .classname{
+    font-size:1.528vw;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:0.947vw 1.23vw;
+  }
+  .classinfotitle{
+    align-items: center;
+    text-align: left;
+    padding:0.147vw 1.23vw;
+    font-size:1.250vw;
+  }
+  .classinfo{
+    text-align: center;
+    padding:0.147vw 0;
+    font-size:1.111vw;
+    align-items: center;
+  }
+  .buttonarea{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.25vw;
+    padding-right: 1vw;
+  }
+  .copybutton{
+    cursor: pointer;
+    color:#6F76C1;
+    margin-right:1.139vw;
+    margin-top:0.439vw;
+    align-items: center;
+    font-size: 1.389vw
+  }
+  .url{
+    display: none;
+  }
+  .urlcopy{
+    font-size:0.833vw ;
+    align-items: center;
+    text-align: center;
+  }
+  .button{
+    width: 8.333vw;
+    height:2.431vw ;
+    border: 0.069vw solid #6F76C1;
+    color:#6F76C1;
+    text-align: center;
+    align-items: center;
+  }
 }
 
-}
-}

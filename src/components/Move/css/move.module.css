@@ -38,15 +38,97 @@
   width: 15.833vw;
   height: auto;
 }
-.move .inner .moveInner {
+
+.moveInner {
   width: 83.333vw;
-  margin: auto center;
+  margin: auto;
 }
-.move .inner .platformTitle {
+.moveInner .platformInfo {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   position: left;
+  margin: 3rem 1rem;
 }
-.move .inner .platformLogo {
+.moveInner .platformLogo {
   width: 5.069vw;
+  height: 4.306vw;
+}
+.moveInner .platformTitle {
+  font-size: 2.778vw;
+  text-align: center;
+  margin-left: 1.5vw;
+}
+
+.itemboxs {
+  width: 25vw;
+  height: 31.042vw;
+  border: 0.069vw solid #bcbed3;
+  border-radius: 0.694vw;
+  margin: 1.736vw;
+  position: relative;
+}
+.itemboxs .move_class_img {
+  width: 23.611vw;
+  height: 19vw;
+  border-radius: 0.694vw;
+  margin: 0.3rem;
+  border: 1px solid #edeffe;
+}
+.itemboxs .itemtitle {
+  text-align: left;
+  font-size: 1.528vw;
+  font-weight: bold;
+}
+.itemboxs .classname {
+  font-size: 1.528vw;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.947vw 1.23vw;
+}
+.itemboxs .classinfotitle {
+  align-items: center;
+  text-align: left;
+  padding: 0.147vw 1.23vw;
+  font-size: 1.25vw;
+}
+.itemboxs .classinfo {
+  text-align: center;
+  padding: 0.147vw 0;
+  font-size: 1.111vw;
+  align-items: center;
+}
+.itemboxs .buttonarea {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.25vw;
+  padding-right: 1vw;
+}
+.itemboxs .copybutton {
+  cursor: pointer;
+  color: #6F76C1;
+  margin-right: 1.139vw;
+  margin-top: 0.439vw;
+  align-items: center;
+  font-size: 1.389vw;
+}
+.itemboxs .url {
+  display: none;
+}
+.itemboxs .urlcopy {
+  font-size: 0.833vw;
+  align-items: center;
+  text-align: center;
+}
+.itemboxs .button {
+  width: 8.333vw;
+  height: 2.431vw;
+  border: 0.069vw solid #6F76C1;
+  color: #6F76C1;
+  text-align: center;
+  align-items: center;
 }/*# sourceMappingURL=move.module.css.map */

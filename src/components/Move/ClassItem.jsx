@@ -2,7 +2,7 @@ import React from 'react';
 // import MoveDate from "./../../data/moveData.json"
 import { AiOutlineShareAlt } from 'react-icons/ai';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
-import styles from "./css/classitem.module.css"
+import styles from "./css/move.module.css"
 import { useState,useRef } from 'react';
 
 
@@ -17,35 +17,32 @@ const ClassItem = ({classdata}) => {
     }
   };
   
+  
 
   return (
-
-              <li className={styles.itemboxs}>
-        <img src={classdata.moveClassImg}/>
+    <li className={styles.itemboxs}>
+        <img  className={styles.move_class_img} src={classdata.moveClassImg}/>
         <dl>
-           <dt>{classdata.moveClassName}</dt>
-           <dd>교육 일정 : {classdata.moveClassDate}</dd>
-           <dd>교육 시간 : {classdata.moveClassTime}</dd>
+           <dt className={styles.classname}>{classdata.moveClassName}</dt>
+           <dd className={styles.classinfotitle}>교육 일정 : 
+           <span className={styles.classinfo}>{classdata.moveClassDate}</span> </dd>
+           <dd className={styles.classinfotitle}> 교육 시간 : 
+           <span className={styles.classinfo}> {classdata.moveClassTime}</span></dd>
         </dl>
 
-
-            <span className="url" ref={link}>
-              {window.location.href}
+        <div className={styles.buttonarea}>
+            <span className={styles.url} ref={link}>
+             {classdata.moveClassUrl}
             </span>
-            <span className="copy" onClick={toClipboard}>
-              {isCopied ? <BsFillCheckCircleFill/> : <AiOutlineShareAlt />}
-            </span>
+            <botton className={styles.copybutton} onClick={toClipboard}>
+              {isCopied ? <BsFillCheckCircleFill/> : <AiOutlineShareAlt/>}
+            </botton>
  
-          {isCopied && <h2>복사되었습니다!</h2>}
+          {isCopied && <h2 className={styles.urlcopy}>URL 복사 완료! </h2>}
     
 
-        <button><a href="www.naver.com">바로가기</a></button>
-{/*         {
-        success ? 
-        <div style={{color:'green'}}>
-          URL이 복사되었습니다.
-        </div> : null
-      } */}
+        <button className={styles.button}><a href={classdata.moveClassUrl}>바로가기</a></button>
+        </div>
         </li>
 
 

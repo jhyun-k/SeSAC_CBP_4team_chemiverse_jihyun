@@ -3,10 +3,27 @@ import React from 'react';
 const PresentState = () => {
   return (
     <div>
-      <h1>사전 사후 탭으로 말고 링크 넣기</h1>
+      <h1>ddd</h1>
     </div>
-   
   );
 };
-<button>URL 복사</button>
+
 export default PresentState;
+
+/* import React from 'react';
+
+import PresentNav from './PresentNav';
+
+
+const PresentState = () => {
+  return (
+    <div>
+      <PresentNav/>
+      <Routes>
+      <Route path="/" element={<PresentBefore />}></Route>
+      <Route path="present_after" element={<PresentAfter />}></Route>
+      </Routes>    
+    </div>
+  );
+};;
+export default PresentState; */
