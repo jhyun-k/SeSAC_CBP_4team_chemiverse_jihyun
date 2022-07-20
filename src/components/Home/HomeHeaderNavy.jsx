@@ -27,7 +27,7 @@ const HomeHeaderNavy = () => {
               })}
             </ul> 
             <button className={styles.onup_btn}>
-              <Link to="/login" >Chemiverse On & Up</Link>
+              <Link to="/login" className={styles.a} >Chemiverse On & Up</Link>
             </button>
         </div>
     </header>

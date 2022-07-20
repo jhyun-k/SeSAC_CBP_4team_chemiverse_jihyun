@@ -56,16 +56,29 @@
   width: 200px;
   color: #6f76c1;
   font-weight: bold;
-  /* &:hover{
-    background-color: #E6F4F1;
-    color: #ffffff;
+  position: relative;
+  &:hover{
+    /* background-color: #3C4375; */
+    color: #3C4375;
     transition: all 0.3s;
     font-weight: bold;
+    /* transform: scale(1.11); */
+    box-shadow: 0 2px 2px 0 black;
+    a{
+      text-decoration: none;
+      
+
+    }
   }
-  a{
+  /* a{
     &:hover{
+      width: 200px;
       transition: all 0.3s;
       text-decoration: none;
+      color: red;
+      position: absolute;
+      transform: translateX(-10%);
     }
   } */
 }
+
