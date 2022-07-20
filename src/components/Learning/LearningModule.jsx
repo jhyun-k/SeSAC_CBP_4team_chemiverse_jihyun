@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Modal from "./Modal";
 import styles from "./css/learning.module.css";
-import Think from "./think/Think";
 import ModalContent1 from "./ModalContent1";
 import ModalContent2 from "./ModalContent2";
 
@@ -101,8 +100,6 @@ const LearningModule = (props) => {
                         성찰할 점 등에 대해 자유롭게 적어 봅시다.
                     </p>
                 </h3>
-
-                <Think />
             </section>
         </div>
     );
