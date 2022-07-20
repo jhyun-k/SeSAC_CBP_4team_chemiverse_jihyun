@@ -118,7 +118,7 @@ i {
 .blind {
   display: none;
 }
-.topBtn{
+.topBtn {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -126,12 +126,16 @@ i {
 }
 /* top버튼 스크롤 */
 .topBtn.active {
-  z-index: 10; 
-  opacity: 1; 
+  z-index: 10;
+  opacity: 1;
 }
 
 .topBtn:hover,
 .topBtn:focus,
-.topBtn:active { 
-  outline: 0 none; 
+.topBtn:active {
+  outline: 0 none;
+}
+
+input {
+  outline: none;
 }

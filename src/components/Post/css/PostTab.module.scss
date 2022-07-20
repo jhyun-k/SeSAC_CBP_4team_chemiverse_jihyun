@@ -1,0 +1,306 @@
+$innerWidth: 69.444vw;
+$defaultFont: 1.042vw;
+$borderRadius: 5px;
+
+/* PostTab */
+
+.main {
+  padding-left: 6.944vw;
+  padding-right: 6.25vw;
+  margin-bottom: 3.472vw;
+  width: 100vw;
+  height: 11.806vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+.mainTxt {
+  display: flex;
+  align-items: center;
+}
+.mainTxt span {
+  display: inline-block;
+  color: #fff;
+  &:first-child {
+    font-size: 3.333vw;
+    font-weight: 700;
+    margin-right: 2.083vw;
+  }
+  &:last-child {
+    font-size: 0.833vw;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+}
+.mainImg {
+  width: 15.833vw;
+  height: auto;
+}
+
+/* Post */
+
+.post {
+  width: $innerWidth;
+  margin: auto;
+  .writeBtn {
+    float: right;
+    margin-top: 1.389vw;
+    width: 6.25vw;
+    height: 2.431vw;
+    background-color: #809cea;
+    color: #fff;
+    border-radius: $borderRadius;
+  }
+  .writeBtn:hover {
+    font-weight: 900;
+    transition: all 0.3s;
+  }
+}
+
+/* PostList */
+
+.freePostList {
+  display: flex;
+  flex-direction: column;
+  width: $innerWidth;
+  margin: auto;
+  box-sizing: border-box;
+  font-size: $defaultFont;
+  a:hover {
+    text-decoration: none;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    height: 3.472vw;
+    line-height: 3.472vw;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .freePostTitle {
+    background-color: #ececf7;
+    span {
+      text-align: center;
+    }
+  }
+  .freePost {
+    &:hover {
+      background-color: #f5f5f5;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    span {
+      display: block;
+      color: #333;
+    }
+  }
+}
+.postIndex {
+  width: 3.472vw;
+}
+
+.postTitle {
+  width: 41.667vw;
+  text-align: left;
+  font-weight: 600;
+}
+
+.userName {
+  width: 5.556vw;
+}
+.view {
+  width: 4.861vw;
+}
+.date {
+  width: 6.944vw;
+}
+.like {
+  width: 6.944vw;
+}
+
+/* searchHeader */
+.searchHeader {
+  width: $innerWidth;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  .totalPost {
+    margin-bottom: 1.389vw;
+  }
+}
+
+.searchBarBox {
+  width: $innerWidth;
+  margin: 0 auto 0.694vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 0.694vw;
+  .searchBar {
+    height: 2.778vw;
+    .option {
+      height: 100%;
+      width: 5.556vw;
+      font-size: 0.972vw;
+      text-align: center;
+      border-radius: $borderRadius;
+      border: 1px solid #c2c2c2;
+      outline: none;
+    }
+    .searchInput {
+      height: 100%;
+      width: 17.361vw;
+      border-radius: $borderRadius;
+      border: 1px solid #c2c2c2;
+      text-indent: 1.042vw;
+      font-size: 0.972vw;
+      margin-left: 0.347vw;
+      outline: none;
+    }
+  }
+}
+
+/* pagination */
+.pagination {
+  margin-top: 6.944vw;
+  .button {
+    padding: 0 0.347vw;
+    margin: 0 0.347vw;
+    font-size: 1.111vw;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ccc;
+    vertical-align: top;
+    &:hover {
+      color: #6f76c1;
+      transition: color 0.3s;
+    }
+    &.on {
+      color: #6f76c1;
+    }
+  }
+}
+.angleBtn {
+  font-size: 1.111vw;
+  vertical-align: top;
+  margin: 0 0.347vw;
+  path {
+    color: #6f76c1;
+  }
+  &.disabled {
+    path {
+      color: #bbb;
+    }
+  }
+}
+
+/* PostDetail */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.postDetailWrap {
+  width: $innerWidth;
+  margin: auto;
+  height: 34.722vw;
+  text-align: left;
+  font-size: $defaultFont;
+  .headerBox {
+    width: 100%;
+    height: 4.861vw;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 0 1.389vw;
+    .title {
+      font-size: 1.667vw;
+      color: #2e2e2e;
+      margin-bottom: 1.389vw;
+    }
+    .postInfo {
+      font-size: 0.972vw;
+      color: #686868;
+      span {
+        margin-right: 1.042vw;
+      }
+    }
+  }
+  .body {
+    width: 100%;
+    padding: 2.431vw 1.736vw 10.417vw;
+    color: #2e2e2e;
+    border-bottom: 1px solid #c2c2c2;
+    line-height: 2.2;
+    word-break: keep-all;
+  }
+  .fileBox {
+    padding-left: 1.389vw;
+    height: 4.861vw;
+    border-bottom: 1px solid #c2c2c2;
+    line-height: 4.861vw;
+    a {
+      text-decoration: underline;
+      margin-left: 0.694vw;
+    }
+  }
+  .listBtn {
+    display: block;
+    width: 10.417vw;
+    height: 3.472vw;
+    font-size: $defaultFont;
+    background: #fff;
+    border: 2px solid #6f76c1;
+    border-radius: 50px;
+    color: #6f76c1;
+    margin: 5.208vw auto 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #6f76c1;
+      color: #fff;
+      transition: all 0.3s;
+    }
+  }
+}
+
+/* WritePostPage */
+
+.writeForm {
+  width: $innerWidth;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    text-indent: 1.389vw;
+    font-size: $defaultFont;
+    border-radius: $borderRadius;
+  }
+  button {
+    width: 6.25vw;
+    height: 2.431vw;
+    background-color: #809cea;
+    color: #fff;
+    border-radius: $borderRadius;
+  }
+  .titleInput {
+    width: 100%;
+    height: 3.472vw;
+  }
+  .btnBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.778vw;
+    .submitBtn {
+      margin-left: 1.389vw;
+    }
+  }
+}

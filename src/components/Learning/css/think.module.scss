@@ -1,0 +1,79 @@
+/* App */
+.App {
+}
+
+/* editor */
+
+.ThinkEditor {
+  text-align: center;
+  padding: 20px;
+}
+
+.ThinkEditor input,
+textarea {
+  margin-bottom: 20px;
+  width: 100% !important;
+  border: 1px solid #d9d9d9;
+}
+
+.ThinkEditor input {
+  padding: 10px;
+}
+.ThinkEditor textarea {
+  padding: 10px;
+  height: 150px;
+  outline: none;
+}
+
+.ThinkEditor button {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #809cea;
+  width: 90px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* List  */
+
+.ThinkList {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.ThinkList h2 {
+  text-align: center;
+}
+
+/* ITEM */
+
+.ThinkItem {
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.ThinkItem span {
+  margin-right: 10px;
+}
+
+.ThinkItem .info {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.ThinkItem .date {
+  color: gray;
+}
+
+.ThinkItem .content {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.ThinkItem textarea {
+  padding: 10px;
+}

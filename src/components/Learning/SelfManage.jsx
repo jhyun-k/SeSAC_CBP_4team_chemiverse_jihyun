@@ -1,9 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./css/learning.module.css";
 
-const SelfManage = () => {
+// 자기관리
+const SelfManage = ({ module }) => {
     return (
-        <div>
-            <h1>자기관리</h1>
+        <div className={styles.inner}>
+            <ul className={styles.moduleList}>
+                {/* 모듈 목록  */}
+                {module.map((ele) => {
+                    return (
+                        <li className={styles.moduleListItem} key={ele.id}>
+                            <Link to={`./${ele.id}`}>
+                                <div className={styles.imgBox}>
+                                    <img src={ele.img} alt="React" />
+                                    <div className={styles.hover}>
+                                        {ele.goal}
+                                    </div>
+                                </div>
+                                <p className={styles.moduleName}>{ele.name}</p>
+                            </Link>
+                        </li>
+                    );
+                })}
+            </ul>
         </div>
     );
 };

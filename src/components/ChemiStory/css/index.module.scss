@@ -77,6 +77,14 @@
   }
 
 .navbtn {
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &.on {
     color: #424888;
     font-weight: 900;
