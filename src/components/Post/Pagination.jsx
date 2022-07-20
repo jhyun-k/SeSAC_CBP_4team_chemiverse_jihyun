@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from './css/Pagination.module.css';
+import styles from './css/PostTab.module.css';
 import {
   FaAngleRight,
   FaAngleLeft,
@@ -42,21 +42,42 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
     return index + 1;
   });
 
-  console.log(pagesArrStartNum, pagesArrEndNum, pagesNum);
-
   return (
     <div className={styles.pagination}>
-      <button onClick={handleFirstBtnClick} disabled={pagesArrStartNum === 0}>
+      <button
+        onClick={handleFirstBtnClick}
+        disabled={pagesArrStartNum === 0}
+        className={`${styles.angleBtn} ${
+          pagesArrStartNum === 0 ? styles.disabled : ''
+        }`}
+      >
         <FaAngleDoubleLeft />
       </button>
-      <button onClick={handlePrevBtnClick} disabled={pagesArrStartNum == 0}>
+      <button
+        onClick={handlePrevBtnClick}
+        disabled={pagesArrStartNum == 0}
+        className={`${styles.angleBtn} ${
+          pagesArrStartNum === 0 ? styles.disabled : ''
+        }`}
+      >
         <FaAngleLeft />
       </button>
       {pagesNumArray
         .slice(pagesArrStartNum, pagesArrEndNum)
         .map((element, index) => {
           return (
-            <button key={index} onClick={() => setPage(element)}>
+            <button
+              key={index}
+              onClick={() => setPage(element)}
+              /* className={
+                index == page
+                  ? `${styles.button} ${styles.on}`
+                  : `${styles.button}`
+              } */
+              className={`${styles.button} ${
+                index + 1 === page ? styles.on : ''
+              }`}
+            >
               {element}
             </button>
           );
@@ -64,12 +85,18 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
       <button
         onClick={handleNextBtnClick}
         disabled={pagesArrEndNum >= pagesNum}
+        className={`${styles.angleBtn} ${
+          pagesArrEndNum >= pagesNum ? styles.disabled : ''
+        }`}
       >
         <FaAngleRight />
       </button>
       <button
         onClick={handleLastBtnClick}
         disabled={pagesArrEndNum >= pagesNum}
+        className={`${styles.angleBtn} ${
+          pagesArrEndNum >= pagesNum ? styles.disabled : ''
+        }`}
       >
         <FaAngleDoubleRight />
       </button>

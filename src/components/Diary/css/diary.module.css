@@ -20,13 +20,19 @@ textarea {
   padding: 10px;
   border: 1px solid gray;
 }
+.DiaryEditor input:focus{
+  outline: none;
+}
 .DiaryEditor textarea {
   padding: 10px;
   height: 150px;
+  width: 1000px;
   border: 1px solid gray;
 
 }
-
+.DiaryEditor textarea:focus{
+  outline: none;
+}
 .DiaryEditor select {
   width: 300px;
   padding: 10px;
@@ -34,11 +40,23 @@ textarea {
 }
 
 .DiaryEditor button {
-  width: 100px;
+  width: 80px;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
-  border: 1px solid gray;
+  border: 2px solid #6F76C1;
+  color: #6F76C1;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.DiaryEditor .btn{
+  display: flex;
+  justify-content: center;
+}
+.DiaryEditor .btn :hover{
+  background-color: #6F76C1;
+  color: #fff;
 }
 
 /* List  */
@@ -82,4 +100,7 @@ textarea {
 
 .DiaryItem textarea {
   padding: 10px;
+}
+.DiaryItem textarea:focus{
+  outline: none;
 }

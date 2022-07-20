@@ -131,7 +131,7 @@ const HomePage = () => {
                                 회사에 대한 궁금한 점을 물어보세요. 나의 동료와
                                 다양한 이야기를 나누어보세요.
                             </p>
-                            <Link to="homenotice">
+                            <Link to="board/notice">
                                 <div className={styles.linkBtn}>바로가기</div>
                             </Link>
                         </li>
@@ -247,7 +247,7 @@ const HomePage = () => {
                                 회사에 대한 궁금한 점을 물어보세요. 나의 동료와
                                 다양한 이야기를 나누어보세요.
                             </p>
-                            <Link to="homenotice">
+                            <Link to="board/notice">
                                 <div className={styles.linkBtn}>바로가기</div>
                             </Link>
                         </li>

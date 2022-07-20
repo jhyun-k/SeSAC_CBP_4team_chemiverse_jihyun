@@ -1,0 +1,131 @@
+
+/* editor */
+
+.DiaryEditor {
+  text-align: left;
+  padding: 1.389vw;
+}
+.DiaryEditor textarea {
+  margin-top: 0.694vw;
+  margin-bottom: 0.694vw;
+  width: 69.444vw;
+  font-size: 1.042vw;
+  padding: 0.694vw;
+  height: 4.861vw;
+  border: 1px solid #c8c8c8;
+}
+.DiaryEditor textarea:focus{
+  outline: none;
+}
+
+.DiaryEditor select {
+  width: 20.833vw;
+  padding: 0.694vw;
+  margin-bottom: 1.389vw;
+}
+
+.DiaryEditor button {
+  width: 5.556vw;
+  padding: 0.694vw;
+  margin: 0.347vw;
+  cursor: pointer;
+  border: 2px solid #6F76C1;
+  color: #6F76C1;
+  border-radius: 1.389vw;
+  font-size: 1.042vw;
+  font-weight: 700;
+}
+.DiaryEditor .btn{
+  display: flex;
+  justify-content: right;
+}
+.DiaryEditor .btn :hover{
+  background-color: #6F76C1;
+  color: #fff;
+}
+
+/* List  */
+
+.DiaryList {
+  padding: 1.389vw;
+  margin-top: 1.389vw;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+/* ITEM */
+
+.DiaryItem {
+  text-align: left;
+}
+
+.DiaryItem span {
+  margin-right: 0.694vw;
+}
+
+.DiaryItem .info {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.694vw;
+  margin-bottom: 0.694vw;
+}
+
+.DiaryItem .content {
+  font-size: 1.042vw;
+  padding: 0.694vw;
+  height: 4.861vw;
+  border: 1px solid #c8c8c8;
+  margin-top: 0.347vw;
+  margin-bottom: 0.347vw;
+  width: 69.444vw;
+}
+
+.DiaryItem textarea {
+  font-size: 1.042vw;
+  height: 4.861vw;
+  width: 69.444vw;
+}
+.DiaryItem textarea:focus{
+  outline: none;
+}
+
+.DiaryItem .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DiaryItem .itemTitle{
+  font-size: 1.389vw;
+  font-weight: 700;
+  color: #6F76C1;
+  margin-left: 1.875vw;
+  vertical-align: middle;
+}
+.DiaryItem .btn{
+  display: flex;
+  justify-content: right;
+}
+.DiaryItem button{
+  cursor: pointer;
+  color: #6F76C1;
+  text-align: center;
+  width: 3.472vw;
+  font-weight: 600;
+}
+.DiaryItem button:hover{
+  color: #3c427d;
+}
+
+.DiaryEditor .editorTxt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DiaryEditor .editorTxt h1{
+  font-size: 1.389vw;
+  font-weight: 700;
+  color: #6F76C1;
+  margin-left: 1.875vw;
+}

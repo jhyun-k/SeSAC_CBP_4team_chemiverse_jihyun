@@ -10,7 +10,6 @@ const DiaryEditor = ({ onCreate }) => {
   const [state, setState] = useState({
     author: "",
     content: "",
-    emotion: 1,
   });
 
   const handleChangeState = (e) => {
@@ -30,12 +29,11 @@ const DiaryEditor = ({ onCreate }) => {
       return;
     }
 
-    onCreate(state.author, state.content, state.emotion);
-    alert("저장성공!");
+    onCreate(state.author, state.content);
+    alert("저장되었습니다.");
     setState({
       author: "",
       content: "",
-      emotion: 1,  
     })
 
   };
@@ -67,20 +65,8 @@ const DiaryEditor = ({ onCreate }) => {
           type="text"
         />
       </div>
-      {/* <div>
-        <select
-          name="emotion"
-          value={state.emotion}
-          onChange={handleChangeState}
-        >
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-          <option value={4}>4</option>
-          <option value={5}>5</option>
-        </select>
-      </div> */}
-      <div>
+      <div className={styles.btn}>
+        <button onClick={() => alert('임시저장 완료')}>임시저장</button>
         <button onClick={handleSubmit}>작성하기</button>
         <button onClick={doPrint}>인쇄하기</button>
       </div>

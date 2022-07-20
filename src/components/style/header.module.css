@@ -1,10 +1,20 @@
 .mainHeaderBox {
   width: 100vw;
 }
+.mainHeaderBox > ::after {
+  content: "";
+  width: 100vw;
+  background-color: gray;
+  opacity: 0.3;
+  position: absolute;
+  top: 6.7vw;
+  left: -3.7vw;
+  height: 0.1vw;
+}
 .mainHeaderBox .inner {
   width: 92.639vw;
   margin: 0 auto;
-  height: 8.194vw;
+  height: 6.7vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,13 +26,17 @@
   top: 0.7vw;
   right: 0.2vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   font-size: 0.764vw;
 }
 .mainHeaderBox .inner .login * {
-  margin-left: 0.5vw;
+  text-decoration: none;
+}
+.mainHeaderBox .inner .login li {
+  margin-left: 1vw;
   color: #6c6c6c;
   font-size: 0.82vw;
+  cursor: pointer;
 }
 .mainHeaderBox .inner .mainHeader {
   display: flex;
@@ -39,32 +53,52 @@
   background: url(../../../public/chemiverse_img/logo2.png) center;
   background-size: cover;
 }
-.mainHeaderBox .inner .mainHeader .searchBox {
+.mainHeaderBox .inner .mainHeader .mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeaderBox .inner .mainHeader .mainHeader h1 {
+  font-size: 0px;
+}
+.mainHeaderBox .inner .mainHeader .mainHeader h1 a {
+  display: block;
+  width: 10.486vw;
+  height: 2.639vw;
+  background: url(../../../public/chemiverse_img/logo2.png) center;
+  background-size: cover;
+}
+
+.searchBox {
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  background-color: #f3f3f3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5vw;
   background-color: #f3f3f3;
-  width: 15.625vw;
+  width: 14.625vw;
   height: 2.083vw;
-  border-radius: 0.347vw;
-  position: relative;
 }
-.mainHeaderBox .inner .mainHeader .searchBox input {
+.searchBox input {
   width: 12.917vw;
   font-size: 0.347vw;
   background-color: #f3f3f3;
   outline: none;
+  font-size: 0.5vw;
 }
-.mainHeaderBox .inner .mainHeader .searchBox button {
+.searchBox button {
   width: 1.25vw;
   height: 1.25vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.mainHeaderBox .inner .mainHeader .searchBox button * {
+.searchBox button * {
   color: #838383;
+}
+.searchBox * {
+  background-color: #f3f3f3;
 }
 
 .login_btn {

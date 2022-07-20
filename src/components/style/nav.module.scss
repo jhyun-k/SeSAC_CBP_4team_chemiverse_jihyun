@@ -1,18 +1,29 @@
 .navBox {
-
   .nav {
     width: 58.889vw;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    
+
     li {
       color: #6f76c1;
       font-size: 1.389vw;
       font-weight: bold;
-      height: 6.667vw;
+      height: 7.5vw;
       display: flex;
+      justify-content: center;
       align-items: center;
+      position: relative;
+      width: 7.778vw;
+      &:nth-child(1) {
+        margin: 0 1vw;
+      }
+      &:nth-child(3) {
+        width: 6vw;
+      }
+      &:nth-child(5) {
+        width: 9vw;
+      }
       * {
         text-decoration: none;
       }
@@ -20,9 +31,25 @@
         display: block;
         height: 6.667vw;
         line-height: 6.667vw;
-        
+        &:hover {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
+  }
+}
+.navBox .nav ul li:hover {
+  &::before {
+    content: "";
+    width: 7.778vw;
+    height: 0.3vw;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 10;
   }
 }
 
@@ -31,12 +58,99 @@
   overflow: hidden;
   .tabmenu {
     display: flex;
+    justify-content: flex-end;
+    width: 58%;
+    right: 8%;
     ul {
       display: flex;
       flex-direction: column;
       &:hover {
         background-color: rgba(217, 217, 217, 0.3);
-        ::after {
+        &:nth-child(1) {
+          &::before {
+            content: "";
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: #6f76c1;
+            position: fixed;
+            top: 1.9vw;
+            left: 36.7%;
+            transform: translateX(-50%);
+            order: 10;
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            content: "";
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: #6f76c1;
+            position: fixed;
+            top: 1.9vw;
+            left: 43%;
+            transform: translateX(-50%);
+            order: 10;
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            content: "";
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: #6f76c1;
+            position: fixed;
+            top: 1.9vw;
+            left: 51.6%;
+            transform: translateX(-50%);
+            order: 10;
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            content: "";
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: #6f76c1;
+            position: fixed;
+            top: 1.9vw;
+            left: 61.8%;
+            transform: translateX(-50%);
+            order: 10;
+          }
+        }
+        &:nth-child(5) {
+          &::before {
+            content: "";
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: #6f76c1;
+            position: fixed;
+            top: 1.9vw;
+            left: 69%;
+            transform: translateX(-50%);
+            order: 10;
+          }
+        }
+        &:nth-child(6) {
+          &::before {
+            content: "";
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: #6f76c1;
+            position: fixed;
+            top: 1.9vw;
+            left: 77.5%;
+            transform: translateX(-50%);
+            order: 10;
+          }
+        }
+        &::after {
           content: "";
           position: absolute;
           top: 0;
@@ -61,28 +175,36 @@
     left: -3.72vw;
     width: 100vw;
     .tabmenu {
-      width: 58.889vw;
+      width: 58%;
       position: relative;
       ul {
         height: 16vw;
         position: relative;
-        left: 28.1vw;
+        left: 27.95vw;
         display: flex;
         justify-content: flex-start;
-        &:nth-child(2) {
-          margin-right: 0.05vw;
-        }
         &:nth-child(4) {
-          width: 11vw;
-          margin: 0 0.2vw 0 0.78vw;
+          width: 9.8vw;
           li {
-            width: 11vw;
+            width: 9.8vw;
+          }
+        }
+        &:nth-child(5) {
+          width: 8vw;
+          li {
+            width: 8vw;
+          }
+        }
+        &:nth-child(6) {
+          width: 8.5vw;
+          li {
+            width: 8.5vw;
           }
         }
         li {
           display: flex;
           justify-content: center;
-          width: 7.778vw;
+          width: 7.7vw;
           padding: 1vw 0;
           * {
             color: #a9a9a9;
@@ -90,6 +212,7 @@
           }
         }
         li:hover {
+          position: relative;
           * {
             color: #747474;
             font-weight: bold;

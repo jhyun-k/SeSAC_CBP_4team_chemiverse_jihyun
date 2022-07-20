@@ -1,56 +1,169 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+.Mentoring {
+  .main {
+    padding-left: 6.944vw;
+    padding-right: 6.25vw;
+    margin-bottom: 3.472vw;
+    width: 100vw;
+    height: 11.806vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .mainTxt {
+    display: flex;
+    align-items: center;
+  }
+  .mainTxt span {
+    display: inline-block;
+    color: #fff;
+    &:first-child {
+      font-size: 3.333vw;
+      font-weight: 700;
+      margin-right: 2.083vw;
+    }
+    &:last-child {
+      font-size: 0.833vw;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+  }
+  .mainImg {
+    width: 15.833vw;
+    height: auto;
+  }
 }
 
-.Mentoring{
-    .main{
-        font-size: 40px;
-    }
-    .chemiImg{
-        width: 100px;
-        height: 100px;
-    }
+//ChemiNav
+.nav ul li {
+  color: #6f76c1;
+  border: 0.139vw solid #6f76c1;
+  margin-bottom: 50px;
+  width: 17.361vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.181vw;
+  font-weight: 500;
+  * {
+    text-decoration: none;
+  }
+  &:first-child {
+    border-top-left-radius: 0.347vw;
+    border-bottom-left-radius: 0.347vw;
+    border-right: none;
+  }
+//   &:nth-child(2) {
+//     border-right: none;
+//   }
+  &:last-child {
+    border-top-right-radius: 0.347vw;
+    border-bottom-right-radius: 0.347vw;
+    border-left: none;
+  }
+  :hover{
+    color:#424888;
+    transition: all 0.2s;
+  }
 }
-
 .navbtn{
-    border: 1px solid gray;
-    width: 130px;
-    height: 40px;
+  &.on{
+    color:#424888;
+    font-weight: 900;
+    font-size: 1.25vw;
+    transition: all 0.2s;
+  }
+}
+
+.title {
+  width: 1000px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+
+.WhatIsMentoring {
+  width: 1200px;
+  margin: 10px auto;
+  .pin{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .title{
+    display: inline-block;
+    text-align: center;
+    width: 1200px;
+    color: #6F76C1;
+    font-size: 30px;
+    // border-bottom: 2px solid #c8c8c8;
+    padding-bottom: 80px;
+  }
+  .content{
+    width: 1000px;
+    height: 300px;
+    background-color: #f4f4f4;
+    margin: auto;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-}
-
-.title{
-    width: 1000px;
-    margin: 10px auto;
-    padding-bottom: 10px;
-}
-
-.WhatIsMentoring{
-    .subTitle{
-        h2{
-            display: inline-block;
-            border-bottom: 1px solid gray;
-            width: 900px;
-            margin: 10px auto;
-            padding-bottom: 10px;
-            text-align: left;
-        }
-        div{
-            border: 1px solid gray;
-            width: 800px;
-            height: 200px;
-            margin: 10px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+  }
+  .subTitle{
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    .img{
+      display: flex;
+      justify-content: flex-start;
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
     }
+    .module{
+      flex-direction: column;
+      align-items: flex-start;
+      h1{
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
-.btn{
-    width: 100px;
-    padding: 10px;
+.btn {
+  width: 100px;
+  padding: 10px;
+}
+
+.WritePlan , .Upload{
+  width: 1200px;
+  margin: 10px auto;
+  .pin{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .title{
+    display: inline-block;
+    text-align: center;
+    width: 1200px;
+    color: #6F76C1;
+    font-size: 30px;
+    // border-bottom: 2px solid #c8c8c8;
+    padding-bottom: 20px;
+  }
+  .subTitle{
+    padding-bottom: 80px;
+    font-weight: 500;
+  }
 }

@@ -3,89 +3,89 @@ a {
     text-decoration: none !important;
 }
 .learningWrapper {
-    .main {
-        padding-left: 6.944vw;
-        padding-right: 6.25vw;
-        margin-bottom: 3.472vw;
-        width: 100vw;
-        height: 11.806vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 90%;
+  .main {
+    padding-left: 6.944vw;
+    padding-right: 6.25vw;
+    margin-bottom: 3.472vw;
+    width: 100vw;
+    height: 11.806vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .mainTxt {
+    display: flex;
+    align-items: center;
+  }
+  .mainTxt span {
+    display: inline-block;
+    color: #fff;
+    &:first-child {
+      font-size: 3.333vw;
+      font-weight: 700;
+      margin-right: 2.083vw;
     }
-    .mainTxt {
-        display: flex;
-        align-items: center;
+    &:last-child {
+      font-size: 0.833vw;
+      line-height: 1.5;
+      font-weight: 500;
     }
-    .mainTxt span {
-        display: inline-block;
-        color: #fff;
-        &:first-child {
-            font-size: 3.333vw;
-            font-weight: 700;
-            margin-right: 2.083vw;
-        }
-        &:last-child {
-            font-size: 0.833vw;
-            line-height: 1.5;
-            font-weight: 500;
-        }
-    }
-    .mainImg {
-        width: 15.833vw;
-        height: auto;
-    }
+  }
+  .mainImg {
+    width: 15.833vw;
+    height: auto;
+  }
 }
 .learning {
-    background-color: black;
-    font-size: 100px;
+  background-color: black;
+  font-size: 100px;
 }
 
 /* learnNav */
 .learnNav ul li {
-    color: #6f76c1;
-    border: 0.139vw solid #6f76c1;
-    margin-bottom: 50px;
-    width: 17.361vw;
-    height: 3.125vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.181vw;
-    font-weight: 500;
-    * {
-        text-decoration: none;
-    }
-    &:first-child {
-        border-top-left-radius: 0.347vw;
-        border-bottom-left-radius: 0.347vw;
-        border-right: none;
-    }
-    &:nth-child(2) {
-        border-right: none;
-    }
-    &:last-child {
-        border-top-right-radius: 0.347vw;
-        border-bottom-right-radius: 0.347vw;
-        border-left: none;
-    }
+  color: #6f76c1;
+  border: 0.139vw solid #6f76c1;
+  margin-bottom: 50px;
+  width: 17.361vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.181vw;
+  font-weight: 500;
+  * {
+    text-decoration: none;
+  }
+  &:first-child {
+    border-top-left-radius: 0.347vw;
+    border-bottom-left-radius: 0.347vw;
+    border-right: none;
+  }
+  &:nth-child(2) {
+    border-right: none;
+  }
+  &:last-child {
+    border-top-right-radius: 0.347vw;
+    border-bottom-right-radius: 0.347vw;
+    border-left: none;
+  }
 }
 .navbtn {
-    &.on {
-        color: #424888;
-        font-weight: 900;
-        font-size: 1.25vw;
-    }
+  &.on {
+    color: #424888;
+    font-weight: 900;
+    font-size: 1.25vw;
+  }
 }
 
 /* Understand.jsx */
 .inner {
-    width: 83.333vw;
-    margin: auto;
+  width: 83.333vw;
+  margin: auto;
 }
 .moduleList {
     display: flex;
@@ -157,6 +157,17 @@ a {
             }
         }
     }
+    .moduleName {
+      font-size: 1.389vw;
+      margin: 1.389vw;
+      text-align: left;
+    }
+
+    &:hover .hover {
+      top: 15.694vw;
+      opacity: 1;
+    }
+  }
 }
 
 /* LearningModule.jsx */
@@ -228,19 +239,45 @@ a {
             }
         }
     }
-    .moduleLearning {
-        .learningContents {
-            display: flex;
-            justify-content: space-around;
-            .imgBox {
-                > img {
-                    width: 31.25vw;
-                    height: 17.361vw;
-                    border-radius: 0.694vw;
-                }
-            }
-        }
+    .moduleTextBox {
+      width: 55.556vw;
+      text-align: left;
+      padding: 2.083vw 2.778vw;
+      height: 23.611vw;
+      .moduleTitle {
+        font-size: 2.292vw;
+      }
+      .descTitle {
+        font-size: 1.042vw;
+      }
+      dt {
+        margin-top: 1.389vw;
+        margin-bottom: 0.694vw;
+        font-weight: bold;
+      }
+      dt:first-child {
+        margin: 0;
+        padding-bottom: 1.389vw;
+        border-bottom: 3px solid #d9d9d9;
+      }
+      dd {
+        font-size: 1.111vw;
+      }
     }
+  }
+  .moduleLearning {
+    .learningContents {
+      display: flex;
+      justify-content: space-around;
+      .imgBox {
+        > img {
+          width: 31.25vw;
+          height: 17.361vw;
+          border-radius: 0.694vw;
+        }
+      }
+    }
+  }
 }
 
 .sectionTitleArea {
@@ -267,7 +304,7 @@ a {
 }
 
 section {
-    margin: 6.944vw 0;
+  margin: 6.944vw 0;
 }
 
 /* Modal.jsx */
@@ -393,4 +430,18 @@ section {
             }
         }
     }
-}
+    > div iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  .closeBtn {
+    img {
+      width: 20px;
+      margin: 20px;
+    }
+  }
