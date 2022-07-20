@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import PostList from '../Post/PostList';
 import SearchHeader from '../Post/SearchHeader';
 import Pagination from '../Post/Pagination';
-import data from '../../data/noticeData.json';
+import data from '../../data/qnaData.json';
 
 const QnA = () => {
   const [lists, setLists] = useState([]);

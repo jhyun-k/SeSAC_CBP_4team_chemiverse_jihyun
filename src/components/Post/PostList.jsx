@@ -35,6 +35,22 @@ const PostList = ({ lists, startNum, endNum }) => {
     }
   };
 
+  const qnaAnswer = (post) => {
+    if (locationInclude('qna')) {
+      return (
+        <li className={styles.freePost} key={post.id}>
+          <span className={styles.postIndex}>{post.id}</span>
+          <Link to={`./${post.id}`}>
+            <span className={styles.postTitle}>{post.title}</span>
+          </Link>
+          <span className={styles.userName}>{post.userId}</span> {list(post)}
+          <span className={styles.view}>{post.view}</span>
+          <span className={styles.date}>{post.date}</span>
+        </li>
+      );
+    }
+  };
+
   return (
     <ul className={styles.freePostList}>
       <li className={styles.freePostTitle}>
