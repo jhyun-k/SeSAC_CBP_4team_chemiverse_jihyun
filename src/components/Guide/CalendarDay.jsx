@@ -30,9 +30,6 @@ const CalendarDay = () => {
     setTitle(info.event.title);
     setStart(format);
     setEnd(formatEnd);
-
-    console.log(start);
-    console.log(format);
   };
   return (
     <div className={calendar.mainBox}>
@@ -48,7 +45,7 @@ const CalendarDay = () => {
           {
             title: "Another Event",
             start: "2022-07-20",
-            end: "2022-07-22",
+            // end: "2022-07-22",
             url: "http://google.com/",
           },
         ]}
@@ -59,8 +56,10 @@ const CalendarDay = () => {
       />
       <div className={calendar.eventBox}>
         <h1 className={calendar.h1Event}>{title}</h1>
-        <h2 className={calendar.h2Event}>{start}</h2>
-        <h2 className={calendar.h2Event}>{end}</h2>
+        <div className={calendar.h2Box}>
+          <h2 className={calendar.h2Event}>{start}</h2>
+          <h2 className={calendar.h2Event}>{end}</h2>
+        </div>
       </div>
     </div>
   );
