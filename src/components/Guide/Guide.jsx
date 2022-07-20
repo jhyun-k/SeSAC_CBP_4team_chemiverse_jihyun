@@ -11,7 +11,7 @@ const Guide = () => {
     <div className={styles.chemistory}>
       <div className={styles.main}>
         <div className={styles.mainTxt}>
-          <span>교육 안내</span>
+          <span>교육안내</span>
           <span>
             컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
             컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
@@ -19,7 +19,7 @@ const Guide = () => {
         </div>
         <img
           className={styles.mainImg}
-          src={"/chemiverse_img/Group 242.png"}
+          src={"/chemiverse_img/img-pop-cardnews.png"}
           alt="img-pop-cardnews"
         />
       </div>

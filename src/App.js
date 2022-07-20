@@ -2,15 +2,15 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Main from "./components/Main";
-import { IoIosArrowDropupCircle } from "react-icons/io";
-import { useState, useEffect } from "react";
-import Welcome from "./components/Home/Welcome";
-import Ready from "./components/Home/Ready";
-import Introduce from "./components/Home/Introduce";
-import HomeNotice from "./components/HomeNotice/HomeNotice";
-import Loginok from "./components/Login/Loginok";
-import FindID from "./components/Login/FindID";
-import DetailRedirect from "./components/Login/DetailRedirect";
+import {IoIosArrowDropupCircle} from 'react-icons/io'
+import { useState,useEffect } from "react";
+import Welcome from './components/Home/Welcome';
+import Ready from './components/Home/Ready';
+import Introduce from './components/Home/Introduce';
+import HomeNotice from './components/HomeNotice/HomeNotice';
+import Loginok from './components/Login/Loginok';
+import FindID from './components/Login/FindID';
+import DetailRedirect from './components/Login/DetailRedirect';
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
