@@ -13,26 +13,34 @@ import ChemiStory from "./ChemiStory/ChemiStory";
 import FreePost from "./Post/FreePost";
 import SuggestIdea from "./Post/SuggestIdea";
 import PostTab from "./Post/PostTab";
+import Loginok from "./Login/Loginok";
+import { useState, useEffect } from "react";
 
-const Main = () => {
-    const title = "expert";
-    return (
-        <div className="main">
-            <Header title={title} />
-            <Routes>
-                <Route path="/" element={<MainPage />}></Route>
-                <Route path="move" element={<Move />}></Route>
-                <Route path="guide/*" element={<Guide />}></Route>
-                <Route path="diagnosis/*" element={<Diagnosis />}></Route>
-                <Route path="learning/*" element={<Learning />}></Route>
-                <Route path="chemiStory/*" element={<ChemiStory />}></Route>
-                <Route path="mentoring/*" element={<Mentoring />}></Route>
-                <Route path="post/*" element={<PostTab />}></Route>
-                <Route path="mypage" element={<Mypage />}></Route>
-                <Route path="login" element={<Login />}></Route>
-            </Routes>
-        </div>
-    );
+const Main = ({ setAuth, auth }) => {
+  const title = "expert";
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="main">
+      <Header
+        title={title}
+        auth={auth}
+        setAuth={setAuth}
+        setIsOpen={setIsOpen}
+      />
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="move" element={<Move />}></Route>
+        <Route path="guide/*" element={<Guide />}></Route>
+        <Route path="diagnosis/*" element={<Diagnosis />}></Route>
+        <Route path="learning/*" element={<Learning />}></Route>
+        <Route path="chemiStory/*" element={<ChemiStory />}></Route>
+        <Route path="mentoring/*" element={<Mentoring />}></Route>
+        <Route path="post/*" element={<PostTab />}></Route>
+        <Route path="mypage" element={<Mypage />}></Route>
+      </Routes>
+    </div>
+  );
 };
 
 export default Main;

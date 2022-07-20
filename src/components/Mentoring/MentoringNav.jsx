@@ -15,8 +15,13 @@ const MentoringNav = () => {
         <ul>
           {mentorNavList.map((element, index) => {
             return (
-              <li className={styles.navbtn} key={index}>
-                <NavLink to={element.href}>{element.content}</NavLink>
+              <li key={index}>
+                <NavLink 
+                to={element.href}
+                className={({ isActive }) =>
+                  isActive ? `${styles.navbtn} ${styles.on}` : `${styles.navbtn}`
+                }
+                >{element.content}</NavLink>
               </li>
             );
           })}
