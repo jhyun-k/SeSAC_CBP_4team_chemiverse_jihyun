@@ -2,15 +2,13 @@ import React from "react";
 import DiaryItem from "./DiaryItem";
 import styles from './css/diary.module.css';
 
-const DiaryList = ({ diaryList,onRemove,onEdit }) => {
+const DiaryList = ({ diaryList,onEdit }) => {
   
   return (
     <div className={styles.DiaryList}>
-      <h2>작성 글 리스트</h2>
-      <h4>{diaryList.length}개의 작성글이 있습니다.</h4>
       <div>
         {diaryList.map((it) => (
-          <DiaryItem key={it.id} {...it} onRemove={onRemove} onEdit={onEdit}/>
+          <DiaryItem key={it.id} {...it} onEdit={onEdit}/>
         ))}
       </div>
     </div>

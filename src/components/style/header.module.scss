@@ -1,113 +1,113 @@
 .mainHeaderBox {
+  width: 100vw;
+  > ::after {
+    content: "";
     width: 100vw;
-    .inner {
-        width: 92.639vw;
-        margin: 0 auto;
-        height: 8.194vw;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        // border: 1px solid blue;
-        display: flex;
-        position: relative;
-        .login {
-            position: absolute;
-            top: 0.7vw;
-            right: 0.2vw;
-            display: flex;
-            justify-content: flex-end;
-            font-size: 0.764vw;
-            li {
-                margin-left: 1vw;
-                color: #6c6c6c;
-                cursor: pointer;
-            }
-        }
-        .mainHeader {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            h1 {
-                font-size: 0px;
-                a {
-                    display: block;
-                    width: 10.486vw;
-                    height: 2.639vw;
-                    background: url(../../../public/chemiverse_img/logo2.png)
-                        center;
-                    background-size: cover;
-                }
-            }
-            .searchBox {
-                display: flex;
-                position: relative;
-                .login {
-                    position: absolute;
-                    top: 0.7vw;
-                    right: 0.2vw;
-                    display: flex;
-                    justify-content: flex-end;
-                    font-size: 0.764vw;
-                    * {
-                        margin-left: 0.5vw;
-                        color: #6c6c6c;
-                        font-size: 0.82vw;
-                    }
-                }
-                .mainHeader {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    h1 {
-                        font-size: 0px;
-                        a {
-                            display: block;
-                            width: 10.486vw;
-                            height: 2.639vw;
-                            background: url(../../../public/chemiverse_img/logo2.png)
-                                center;
-                            background-size: cover;
-                        }
-                    }
-                    .searchBox {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0 0.5vw;
-                        background-color: #f3f3f3;
-                        width: 15.625vw;
-                        height: 2.083vw;
-                        border-radius: 0.347vw;
-                        position: relative;
-                        input {
-                            width: 12.917vw;
-                            font-size: 0.347vw;
-                            background-color: #f3f3f3;
-                            outline: none;
-                        }
-                        button {
-                            width: 1.25vw;
-                            height: 1.25vw;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            * {
-                                color: #838383;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .login_btn {
-            padding: 5px;
-            margin: 0 5px;
-            cursor: pointer;
-            :hover {
-                text-decoration: underline;
-                font-weight: 700;
-            }
-        }
+    background-color: gray;
+    opacity: 0.3;
+    position: absolute;
+    top: 6.7vw;
+    left: -3.7vw;
+    height: 0.1vw;
+  }
+  .inner {
+    width: 92.639vw;
+    margin: 0 auto;
+    height: 6.7vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // border: 1px solid blue;
+    display: flex;
+    position: relative;
+    .login {
+      position: absolute;
+      top: 0.7vw;
+      right: 0.2vw;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.764vw;
+      * {
+        text-decoration: none;
+      }
+      li {
+        margin-left: 1vw;
+        color: #6c6c6c;
+        font-size: 0.82vw;
+        cursor: pointer;
+      }
     }
+    .mainHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-size: 0px;
+        a {
+          display: block;
+          width: 10.486vw;
+          height: 2.639vw;
+          background: url(../../../public/chemiverse_img/logo2.png) center;
+          background-size: cover;
+        }
+      }
+      .mainHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          font-size: 0px;
+          a {
+            display: block;
+            width: 10.486vw;
+            height: 2.639vw;
+            background: url(../../../public/chemiverse_img/logo2.png) center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.searchBox {
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  width: 14.625vw;
+  height: 2.083vw;
+  input {
+    width: 12.917vw;
+    font-size: 0.347vw;
+    background-color: #f3f3f3;
+    outline: none;
+    font-size: 0.5vw;
+  }
+  button {
+    width: 1.25vw;
+    height: 1.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    * {
+      color: #838383;
+    }
+  }
+  * {
+    background-color: #f3f3f3;
+  }
+}
+
+.login_btn {
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  :hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
 }

@@ -8,9 +8,21 @@
   color: #6f76c1;
   font-size: 1.389vw;
   font-weight: bold;
-  height: 6.667vw;
+  height: 7.5vw;
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  width: 7.778vw;
+}
+.navBox .nav li:nth-child(1) {
+  margin: 0 1vw;
+}
+.navBox .nav li:nth-child(3) {
+  width: 6vw;
+}
+.navBox .nav li:nth-child(5) {
+  width: 9vw;
 }
 .navBox .nav li * {
   text-decoration: none;
@@ -20,6 +32,22 @@
   height: 6.667vw;
   line-height: 6.667vw;
 }
+.navBox .nav li a:hover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navBox .nav ul li:hover::before {
+  content: "";
+  width: 7.778vw;
+  height: 0.3vw;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  z-index: 10;
+}
 
 .tabmenuBox {
   height: 0;
@@ -27,6 +55,9 @@
 }
 .tabmenuBox .tabmenu {
   display: flex;
+  justify-content: flex-end;
+  width: 58%;
+  right: 8%;
 }
 .tabmenuBox .tabmenu ul {
   display: flex;
@@ -35,7 +66,79 @@
 .tabmenuBox .tabmenu ul:hover {
   background-color: rgba(217, 217, 217, 0.3);
 }
-.tabmenuBox .tabmenu ul:hover ::after {
+.tabmenuBox .tabmenu ul:hover:nth-child(1)::before {
+  content: "";
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #6f76c1;
+  position: fixed;
+  top: 1.9vw;
+  left: 36.7%;
+  transform: translateX(-50%);
+  order: 10;
+}
+.tabmenuBox .tabmenu ul:hover:nth-child(2)::before {
+  content: "";
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #6f76c1;
+  position: fixed;
+  top: 1.9vw;
+  left: 43%;
+  transform: translateX(-50%);
+  order: 10;
+}
+.tabmenuBox .tabmenu ul:hover:nth-child(3)::before {
+  content: "";
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #6f76c1;
+  position: fixed;
+  top: 1.9vw;
+  left: 51.6%;
+  transform: translateX(-50%);
+  order: 10;
+}
+.tabmenuBox .tabmenu ul:hover:nth-child(4)::before {
+  content: "";
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #6f76c1;
+  position: fixed;
+  top: 1.9vw;
+  left: 61.8%;
+  transform: translateX(-50%);
+  order: 10;
+}
+.tabmenuBox .tabmenu ul:hover:nth-child(5)::before {
+  content: "";
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #6f76c1;
+  position: fixed;
+  top: 1.9vw;
+  left: 69%;
+  transform: translateX(-50%);
+  order: 10;
+}
+.tabmenuBox .tabmenu ul:hover:nth-child(6)::before {
+  content: "";
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #6f76c1;
+  position: fixed;
+  top: 1.9vw;
+  left: 77.5%;
+  transform: translateX(-50%);
+  order: 10;
+}
+.tabmenuBox .tabmenu ul:hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -56,35 +159,46 @@
   width: 100vw;
 }
 .navBox:hover .tabmenuBox .tabmenu {
-  width: 58.889vw;
+  width: 58%;
   position: relative;
 }
 .navBox:hover .tabmenuBox .tabmenu ul {
   height: 16vw;
   position: relative;
-  left: 28.1vw;
+  left: 27.95vw;
   display: flex;
   justify-content: flex-start;
 }
-.navBox:hover .tabmenuBox .tabmenu ul:nth-child(2) {
-  margin-right: 0.05vw;
-}
 .navBox:hover .tabmenuBox .tabmenu ul:nth-child(4) {
-  width: 11vw;
-  margin: 0 0.2vw 0 0.78vw;
+  width: 9.8vw;
 }
 .navBox:hover .tabmenuBox .tabmenu ul:nth-child(4) li {
-  width: 11vw;
+  width: 9.8vw;
+}
+.navBox:hover .tabmenuBox .tabmenu ul:nth-child(5) {
+  width: 8vw;
+}
+.navBox:hover .tabmenuBox .tabmenu ul:nth-child(5) li {
+  width: 8vw;
+}
+.navBox:hover .tabmenuBox .tabmenu ul:nth-child(6) {
+  width: 8.5vw;
+}
+.navBox:hover .tabmenuBox .tabmenu ul:nth-child(6) li {
+  width: 8.5vw;
 }
 .navBox:hover .tabmenuBox .tabmenu ul li {
   display: flex;
   justify-content: center;
-  width: 7.778vw;
+  width: 7.7vw;
   padding: 1vw 0;
 }
 .navBox:hover .tabmenuBox .tabmenu ul li * {
   color: #a9a9a9;
   font-size: 1.111vw;
+}
+.navBox:hover .tabmenuBox .tabmenu ul li:hover {
+  position: relative;
 }
 .navBox:hover .tabmenuBox .tabmenu ul li:hover * {
   color: #747474;
