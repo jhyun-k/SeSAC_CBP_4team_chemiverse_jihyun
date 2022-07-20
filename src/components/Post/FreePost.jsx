@@ -67,7 +67,7 @@ const FreePost = () => {
       />
       <PostList lists={lists} startNum={startNum} endNum={endNum} />
       <Link to='./write'>
-        <button className={styles.writeBtn}>작성하기</button>
+        <button className={styles.writeBtn}>글쓰기</button>
       </Link>
       <Pagination
         total={lists.length}

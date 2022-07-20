@@ -5,12 +5,11 @@ import Main from './components/Main';
 import Welcome from './components/Home/Welcome';
 import Ready from './components/Home/Ready';
 import Introduce from './components/Home/Introduce';
-import HomeNotice from './components/HomeNotice/HomeNotice';
 import Loginok from './components/Login/Loginok';
 import { useState, useEffect } from 'react';
 import FindID from './components/Login/FindID';
 import DetailRedirect from './components/Login/DetailRedirect';
-import Board from './components/HomeNotice/Board';
+import Board from './components/Board/Board';
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);

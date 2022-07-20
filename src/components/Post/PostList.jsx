@@ -11,16 +11,22 @@ const PostList = ({ lists, startNum, endNum }) => {
   };
 
   const listTitle = () => {
-    if (locationInclude('freepost')) {
-      return <span className={styles.like}>좋아요</span>;
-    } else if (locationInclude('suggestIdea')) {
+    if (
+      locationInclude('freepost') ||
+      locationInclude('suggestIdea') ||
+      locationInclude('introduce')
+    ) {
       return <span className={styles.like}>좋아요</span>;
     } else if (locationInclude('notice')) {
       return <span className={styles.like}>첨부파일</span>;
     }
   };
   const list = (post) => {
-    if (locationInclude('freepost') || locationInclude('suggestIdea')) {
+    if (
+      locationInclude('freepost') ||
+      locationInclude('suggestIdea') ||
+      locationInclude('introduce')
+    ) {
       return <span className={styles.like}>{post.like}</span>;
     } else if (locationInclude('notice')) {
       return (

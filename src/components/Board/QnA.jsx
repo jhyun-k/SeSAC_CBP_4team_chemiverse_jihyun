@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Pagination from './Pagination';
-import SearchHeader from './SearchHeader';
-import styles from './css/PostTab.module.css';
+import React, { useEffect, useState } from 'react';
+import styles from '../Post/css/PostTab.module.css';
 import { Link } from 'react-router-dom';
-import data from '../../data/suggestIdeaData.json';
-import PostList from './PostList';
+import { useRef } from 'react';
+import PostList from '../Post/PostList';
+import SearchHeader from '../Post/SearchHeader';
+import Pagination from '../Post/Pagination';
+import data from '../../data/noticeData.json';
 
-const SuggestIdea = () => {
+const QnA = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
 
@@ -55,7 +56,6 @@ const SuggestIdea = () => {
       setLists(filterData);
     }
   };
-
   return (
     <div className={styles.post}>
       <SearchHeader
@@ -78,4 +78,4 @@ const SuggestIdea = () => {
   );
 };
 
-export default SuggestIdea;
+export default QnA;

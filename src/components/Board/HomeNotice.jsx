@@ -7,7 +7,7 @@ import SearchHeader from '../Post/SearchHeader';
 import Pagination from '../Post/Pagination';
 import data from '../../data/noticeData.json';
 
-const FreePost = () => {
+const HomeNotice = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
 
@@ -66,7 +66,7 @@ const FreePost = () => {
       />
       <PostList lists={lists} startNum={startNum} endNum={endNum} />
       <Link to='./write'>
-        <button className={styles.writeBtn}>작성하기</button>
+        <button className={styles.writeBtn}>글쓰기</button>
       </Link>
       <Pagination
         total={lists.length}
@@ -78,4 +78,4 @@ const FreePost = () => {
   );
 };
 
-export default FreePost;
+export default HomeNotice;

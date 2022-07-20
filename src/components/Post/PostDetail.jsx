@@ -22,8 +22,10 @@ const PostDetail = ({ data }) => {
       navigate('/main/post/freepost');
     } else if (locationInclude('suggestIdea')) {
       navigate('/main/post/suggestIdea');
-    } else if (locationInclude('notice')) {
+    } else if (locationInclude('/board/notice')) {
       navigate('/board/notice');
+    } else if (locationInclude('introduce')) {
+      navigate('/board/introduce');
     }
   };
 
