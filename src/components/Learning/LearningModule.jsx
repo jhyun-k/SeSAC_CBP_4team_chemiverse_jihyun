@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Modal from "./Modal";
 import styles from "./css/learning.module.css";
-import Think from "./think/Think";
 import ModalContent1 from "./ModalContent1";
 import ModalContent2 from "./ModalContent2";
 
@@ -112,8 +111,6 @@ const LearningModule = (props) => {
                         </p>
                     </div>
                 </div>
-
-                <Think />
             </section>
         </div>
     );

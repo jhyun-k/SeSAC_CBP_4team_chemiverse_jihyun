@@ -21,7 +21,6 @@
 .slidingItem::after {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -87,19 +86,19 @@
 }
 
 .welcomeSlide {
-  background-color: #f5f9ff;
+  background-color: #ffefca;
 }
 
 .introduceSlide {
-  background-color: #e3eafd;
+  background-color: #eee8aa;
 }
 
 .readySlide {
-  background-color: #e0f4fc;
+  background-color: #d2edec;
 }
 
 .homeNoticeSlide {
-  background-color: #efe1fd;
+  background-color: #cfd3ff;
 }
 
 @media (max-width: 720px) {

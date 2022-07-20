@@ -153,7 +153,7 @@ const HomePage = () => {
                             <img
                                 src={
                                     process.env.PUBLIC_URL +
-                                    "/chemiverse_img/bg-welcome-pop.png"
+                                    "/chemiverse_img/Vector-4.png"
                                 }
                                 alt=""
                                 className={styles.popImg}
@@ -180,7 +180,7 @@ const HomePage = () => {
                             <img
                                 src={
                                     process.env.PUBLIC_URL +
-                                    "/chemiverse_img/bg-contents-pop2.png"
+                                    "/chemiverse_img/Vector-5.png"
                                 }
                                 alt=""
                                 className={styles.popImg}
@@ -208,7 +208,7 @@ const HomePage = () => {
                             <img
                                 src={
                                     process.env.PUBLIC_URL +
-                                    "/chemiverse_img/bg-ready-pop.png"
+                                    "/chemiverse_img/Vector-6.png"
                                 }
                                 alt=""
                                 className={styles.popImg}
@@ -237,7 +237,7 @@ const HomePage = () => {
                             <img
                                 src={
                                     process.env.PUBLIC_URL +
-                                    "/chemiverse_img/bg-board-pop.png"
+                                    "/chemiverse_img/bg-contents-pop2.png"
                                 }
                                 alt=""
                                 className={styles.popImg}
