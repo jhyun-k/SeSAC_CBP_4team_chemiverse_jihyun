@@ -19,7 +19,10 @@ const LearningModule = (props) => {
                     <img src={data.img} alt="" />
                 </div>
                 <dl className={styles.moduleTextBox}>
-                    <dt className={styles.moduleTitle}>{data.name}</dt>
+                    <dt className={styles.moduleTitle}>
+                        {data.name}
+                        <span>{data.engName}</span>
+                    </dt>
                     <dt className={styles.descTitle}>학습목표</dt>
                     <dd>{data.goal}</dd>
                     <dt className={styles.descTitle}>기본개념</dt>
@@ -27,7 +30,7 @@ const LearningModule = (props) => {
                 </dl>
             </section>
             <section className={styles.moduleLearning}>
-                <h3 className={styles.sectionTitle}>
+                <div className={styles.sectionTitleArea}>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -36,8 +39,14 @@ const LearningModule = (props) => {
                         alt=""
                         className={styles.sectionIcon}
                     />
-                    학습(마이크로러닝 / 카드뉴스)
-                </h3>
+                    <div className="sectionTitleText">
+                        <h3 className={styles.sectionTitle}>학습</h3>
+                        <p className={styles.subTitle}>
+                            (마이크로러닝 / 카드뉴스)
+                        </p>
+                    </div>
+                </div>
+
                 <div className={styles.learningContents}>
                     {/* 학습 - 1 */}
                     <div
@@ -86,7 +95,7 @@ const LearningModule = (props) => {
                 </div>
             </section>
             <section className={styles.moduleThink}>
-                <h3 className={styles.sectionTitle}>
+                <div className={styles.sectionTitleArea}>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -95,12 +104,14 @@ const LearningModule = (props) => {
                         alt=""
                         className={styles.sectionIcon}
                     />
-                    생각해보기
-                    <p>
-                        오늘 배운 내용에 대해 Review하며 배운 점, 느낀 점,
-                        성찰할 점 등에 대해 자유롭게 적어 봅시다.
-                    </p>
-                </h3>
+                    <div className="seectionTitleText">
+                        <h3 className={styles.sectionTitle}>생각해보기</h3>
+                        <p className={styles.subTitle}>
+                            오늘 배운 내용에 대해 Review하며 배운 점, 느낀 점,
+                            성찰할 점 등에 대해 자유롭게 적어 봅시다.
+                        </p>
+                    </div>
+                </div>
 
                 <Think />
             </section>

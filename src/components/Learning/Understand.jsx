@@ -16,9 +16,13 @@ const Understand = ({ module }) => {
                                     <img src={ele.img} alt="React" />
                                     <div className={styles.hover}>
                                         {ele.goal}
+                                        <p className={styles.moreBtn}>더보기</p>
                                     </div>
                                 </div>
                                 <p className={styles.moduleName}>{ele.name}</p>
+                                <p className={styles.moduleEngName}>
+                                    {ele.engName}
+                                </p>
                             </Link>
                         </li>
                     );

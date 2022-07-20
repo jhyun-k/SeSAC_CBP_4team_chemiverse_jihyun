@@ -5,17 +5,11 @@ import Introduce from "./Introduce";
 import Ready from "./Ready";
 import HomeNotice from "./HomeNotice";
 import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import HomePage from "../HomePage";
 const Home = () => {
     return (
         <div className="home">
             <HomeHeader />
-            <Link to="welcome">환영인사</Link>
-            <Link to="introduce">회사소개</Link>
-            <Link to="ready">입사 전 준비사항</Link>
-            <Link to="homenotice">게시판</Link>
-
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/welcome" element={<Welcome />}></Route>

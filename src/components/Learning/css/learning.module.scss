@@ -1,4 +1,7 @@
 /* Learning.jsx */
+a {
+    text-decoration: none !important;
+}
 .learningWrapper {
     .main {
         padding-left: 6.944vw;
@@ -85,20 +88,27 @@
     margin: auto;
 }
 .moduleList {
-    // display: block;
+    display: flex;
+    flex-wrap: wrap;
     .moduleListItem {
-        margin: 1.389vw;
+        // margin: 1.389vw;
         .imgBox {
             position: relative;
-            height: 31.25vw;
+            width: 20vw;
+            height: 20vw;
             overflow: hidden;
+            margin: 1.389vw 2.083vw;
+            border-radius: 0.694vw;
             img {
                 overflow: hidden;
-                width: 23.403vw;
-                height: 31.25vw;
-                border-radius: 0.694vw;
+                // width: 100%;
+                height: 100%;
+                // border-radius: 0.694vw;
             }
             .hover {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 position: absolute;
                 top: 32.639vw;
                 left: 50%;
@@ -109,32 +119,55 @@
                 transition: 0.4s;
                 opacity: 0;
                 border-radius: 50%;
-                padding: 4.167vw 13.889vw;
+                padding: 4.167vw 13.889vw 8vw;
                 font-size: 1.111vw;
                 line-height: 1.5;
+                font-size: 0.833vw;
+                align-items: flex-end;
+                .moreBtn {
+                    background-color: #fff;
+                    border-radius: 0.347vw;
+                    height: 2.431vw;
+                    line-height: 2.431vw;
+                    font-weight: bold;
+                    width: 6.944vw;
+                }
             }
         }
         .moduleName {
             font-size: 1.389vw;
-            margin: 1.389vw;
+            margin: 0.694vw 2.389vw;
             text-align: left;
+            font-weight: bold;
         }
-
-        &:hover .hover {
-            top: 15.694vw;
-            opacity: 1;
+        .moduleEngName {
+            font-size: 0.903vw;
+            margin: 0 2.389vw 2.389vw;
+            text-align: left;
+            text-transform: capitalize;
+            color: #aaa;
+        }
+        &:hover {
+            .hover {
+                top: 5.694vw;
+                opacity: 1;
+            }
+            .moduleName {
+                color: #6f76c1;
+            }
         }
     }
 }
 
 /* LearningModule.jsx */
 .moduleBox {
-    width: 83.333vw; // 이너 대신..
+    width: 83.333vw;
     margin: auto;
     .moduleDesc {
         display: flex;
         padding: 1.389vw;
         .moduleImgBox {
+            margin: auto;
             img {
                 width: 17.708vw;
                 height: 23.611vw;
@@ -145,10 +178,24 @@
         .moduleTextBox {
             width: 55.556vw;
             text-align: left;
+            margin: auto;
             padding: 2.083vw 2.778vw;
             height: 23.611vw;
+            overflow: scroll;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+            &::-webkit-scrollbar {
+                display: none; /* Chrome, Safari, Opera*/
+            }
             .moduleTitle {
                 font-size: 2.292vw;
+                color: #555;
+                span {
+                    margin-left: 1.042vw;
+                    font-size: 1.389vw;
+                    color: #aaa;
+                    font-weight: normal;
+                }
             }
             .descTitle {
                 font-size: 1.042vw;
@@ -164,7 +211,20 @@
                 border-bottom: 3px solid #d9d9d9;
             }
             dd {
+                line-height: 1.5;
                 font-size: 1.111vw;
+                position: relative;
+                padding-left: 1.389vw;
+                &::before {
+                    content: "";
+                    width: 0.347vw;
+                    height: 0.347vw;
+                    background-color: #6f76c1;
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0.347vw;
+                    top: 0.694vw;
+                }
             }
         }
     }
@@ -183,24 +243,26 @@
     }
 }
 
-.sectionTitle {
+.sectionTitleArea {
     margin: 2.083vw 0;
     padding-bottom: 1.042vw;
     text-align: left;
-    color: #6f76c1;
-    font-size: 2.083vw;
-    line-height: 3.472vw;
+    h3 {
+        margin: 1.042vw;
+        color: #6f76c1;
+        font-size: 2.083vw;
+    }
     border-bottom: 1px solid #d9d9d9;
     display: flex;
-    .sectionIcon {
-        width: 3.472vw;
-        margin-right: 0.694vw;
-    }
-    p {
-        margin-top: 0.694vw;
-        margin-left: 1.389vw;
+    .subTitle {
         font-size: 0.764vw;
         font-weight: normal;
+        margin: 2.083vw 1.042vw;
+    }
+    .sectionIcon {
+        width: 5vw;
+        height: 100%;
+        margin-right: 0.694vw;
     }
 }
 
@@ -225,7 +287,7 @@ section {
         background-image: url(./../../../../public/chemiverse_img/bg-login.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: right -20px;
+        background-position: right -1.389vw;
         border-radius: 0.694vw;
         padding: 2.389vw;
         position: relative;
@@ -244,9 +306,9 @@ section {
         // padding: 3.472vw;
         h1 {
             text-align: left;
-            margin-left: 20px;
-            padding-bottom: 20px;
-            font-size: 20px;
+            margin-left: 1.389vw;
+            padding-bottom: 1.389vw;
+            font-size: 1.389vw;
             color: #6f76c1;
         }
         img {
@@ -256,8 +318,8 @@ section {
     }
     .youtube {
         position: relative;
-        margin: 30px auto 0;
-        max-width: 900px;
+        margin: 2.083vw auto 0;
+        max-width: 62.5vw;
         width: 69.444vw;
         > div {
             width: 100%;
@@ -274,8 +336,61 @@ section {
     }
     .closeBtn {
         img {
-            width: 20px;
-            margin: 20px;
+            width: 1.389vw;
+            margin: 1.389vw;
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 720px) {
+    .moduleList {
+        .moduleListItem {
+            .imgBox {
+                width: 35vw;
+                height: 35vw;
+                margin: 0 2vw;
+                img {
+                    width: 40vw;
+                }
+                .hover {
+                    top: 0;
+                    width: 105%;
+                    height: 105%;
+                    border-radius: 0;
+                    padding: 3.472vw;
+                }
+            }
+        }
+    }
+
+    .moduleBox {
+        .moduleDesc {
+            display: flex;
+            flex-direction: column;
+            .moduleImgBox {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .moduleTextBox {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .moduleLearning {
+            .learningContents {
+                display: flex;
+                flex-direction: column;
+                .imgBox {
+                    margin-top: 2.389vw;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 }

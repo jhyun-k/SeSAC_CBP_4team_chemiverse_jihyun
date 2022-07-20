@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./css/learning.module.css";
 
-// 자기관리
+// 회사이해
 const SelfManage = ({ module }) => {
     return (
         <div className={styles.inner}>

@@ -1,4 +1,8 @@
 /* Learning.jsx */
+a {
+  text-decoration: none !important;
+}
+
 .learningWrapper .main {
   padding-left: 6.944vw;
   padding-right: 6.25vw;
@@ -83,21 +87,26 @@
   margin: auto;
 }
 
-.moduleList .moduleListItem {
-  margin: 1.389vw;
+.moduleList {
+  display: flex;
+  flex-wrap: wrap;
 }
 .moduleList .moduleListItem .imgBox {
   position: relative;
-  height: 31.25vw;
+  width: 20vw;
+  height: 20vw;
   overflow: hidden;
+  margin: 1.389vw 2.083vw;
+  border-radius: 0.694vw;
 }
 .moduleList .moduleListItem .imgBox img {
   overflow: hidden;
-  width: 23.403vw;
-  height: 31.25vw;
-  border-radius: 0.694vw;
+  height: 100%;
 }
 .moduleList .moduleListItem .imgBox .hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 32.639vw;
   left: 50%;
@@ -108,18 +117,39 @@
   transition: 0.4s;
   opacity: 0;
   border-radius: 50%;
-  padding: 4.167vw 13.889vw;
+  padding: 4.167vw 13.889vw 8vw;
   font-size: 1.111vw;
   line-height: 1.5;
+  font-size: 0.833vw;
+  align-items: flex-end;
+}
+.moduleList .moduleListItem .imgBox .hover .moreBtn {
+  background-color: #fff;
+  border-radius: 0.347vw;
+  height: 2.431vw;
+  line-height: 2.431vw;
+  font-weight: bold;
+  width: 6.944vw;
 }
 .moduleList .moduleListItem .moduleName {
   font-size: 1.389vw;
-  margin: 1.389vw;
+  margin: 0.694vw 2.389vw;
   text-align: left;
+  font-weight: bold;
+}
+.moduleList .moduleListItem .moduleEngName {
+  font-size: 0.903vw;
+  margin: 0 2.389vw 2.389vw;
+  text-align: left;
+  text-transform: capitalize;
+  color: #aaa;
 }
 .moduleList .moduleListItem:hover .hover {
-  top: 15.694vw;
+  top: 5.694vw;
   opacity: 1;
+}
+.moduleList .moduleListItem:hover .moduleName {
+  color: #6f76c1;
 }
 
 /* LearningModule.jsx */
@@ -132,6 +162,7 @@
   padding: 1.389vw;
 }
 .moduleBox .moduleDesc .moduleImgBox {
+  margin: auto;
   margin-right: 2.083vw;
 }
 .moduleBox .moduleDesc .moduleImgBox img {
@@ -142,11 +173,25 @@
 .moduleBox .moduleDesc .moduleTextBox {
   width: 55.556vw;
   text-align: left;
+  margin: auto;
   padding: 2.083vw 2.778vw;
   height: 23.611vw;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.moduleBox .moduleDesc .moduleTextBox::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 .moduleBox .moduleDesc .moduleTextBox .moduleTitle {
   font-size: 2.292vw;
+  color: #555;
+}
+.moduleBox .moduleDesc .moduleTextBox .moduleTitle span {
+  margin-left: 1.042vw;
+  font-size: 1.389vw;
+  color: #aaa;
+  font-weight: normal;
 }
 .moduleBox .moduleDesc .moduleTextBox .descTitle {
   font-size: 1.042vw;
@@ -162,7 +207,20 @@
   border-bottom: 3px solid #d9d9d9;
 }
 .moduleBox .moduleDesc .moduleTextBox dd {
+  line-height: 1.5;
   font-size: 1.111vw;
+  position: relative;
+  padding-left: 1.389vw;
+}
+.moduleBox .moduleDesc .moduleTextBox dd::before {
+  content: "";
+  width: 0.347vw;
+  height: 0.347vw;
+  background-color: #6f76c1;
+  border-radius: 4px;
+  position: absolute;
+  left: 0.347vw;
+  top: 0.694vw;
 }
 .moduleBox .moduleLearning .learningContents {
   display: flex;
@@ -174,25 +232,27 @@
   border-radius: 0.694vw;
 }
 
-.sectionTitle {
+.sectionTitleArea {
   margin: 2.083vw 0;
   padding-bottom: 1.042vw;
   text-align: left;
-  color: #6f76c1;
-  font-size: 2.083vw;
-  line-height: 3.472vw;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
 }
-.sectionTitle .sectionIcon {
-  width: 3.472vw;
-  margin-right: 0.694vw;
+.sectionTitleArea h3 {
+  margin: 1.042vw;
+  color: #6f76c1;
+  font-size: 2.083vw;
 }
-.sectionTitle p {
-  margin-top: 0.694vw;
-  margin-left: 1.389vw;
+.sectionTitleArea .subTitle {
   font-size: 0.764vw;
   font-weight: normal;
+  margin: 2.083vw 1.042vw;
+}
+.sectionTitleArea .sectionIcon {
+  width: 5vw;
+  height: 100%;
+  margin-right: 0.694vw;
 }
 
 section {
@@ -217,7 +277,7 @@ section {
   background-image: url(./../../../../public/chemiverse_img/bg-login.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right -20px;
+  background-position: right -1.389vw;
   border-radius: 0.694vw;
   padding: 2.389vw;
   position: relative;
@@ -235,9 +295,9 @@ section {
 }
 .modalBackdrop .slide h1 {
   text-align: left;
-  margin-left: 20px;
-  padding-bottom: 20px;
-  font-size: 20px;
+  margin-left: 1.389vw;
+  padding-bottom: 1.389vw;
+  font-size: 1.389vw;
   color: #6f76c1;
 }
 .modalBackdrop .slide img {
@@ -246,8 +306,8 @@ section {
 }
 .modalBackdrop .youtube {
   position: relative;
-  margin: 30px auto 0;
-  max-width: 900px;
+  margin: 2.083vw auto 0;
+  max-width: 62.5vw;
   width: 69.444vw;
 }
 .modalBackdrop .youtube > div {
@@ -263,6 +323,50 @@ section {
   z-index: 1;
 }
 .modalBackdrop .closeBtn img {
-  width: 20px;
-  margin: 20px;
+  width: 1.389vw;
+  margin: 1.389vw;
+}
+
+@media (min-width: 360px) and (max-width: 720px) {
+  .moduleList .moduleListItem .imgBox {
+    width: 35vw;
+    height: 35vw;
+    margin: 0 2vw;
+  }
+  .moduleList .moduleListItem .imgBox img {
+    width: 40vw;
+  }
+  .moduleList .moduleListItem .imgBox .hover {
+    top: 0;
+    width: 105%;
+    height: 105%;
+    border-radius: 0;
+    padding: 3.472vw;
+  }
+  .moduleBox .moduleDesc {
+    display: flex;
+    flex-direction: column;
+  }
+  .moduleBox .moduleDesc .moduleImgBox {
+    width: 100%;
+  }
+  .moduleBox .moduleDesc .moduleImgBox img {
+    width: 100%;
+    height: auto;
+  }
+  .moduleBox .moduleDesc .moduleTextBox {
+    width: 100%;
+    height: auto;
+  }
+  .moduleBox .moduleLearning .learningContents {
+    display: flex;
+    flex-direction: column;
+  }
+  .moduleBox .moduleLearning .learningContents .imgBox {
+    margin-top: 2.389vw;
+  }
+  .moduleBox .moduleLearning .learningContents .imgBox img {
+    width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=learning.module.css.map */

@@ -26,7 +26,7 @@ const Learning = () => {
                 </div>
                 <img
                     className={styles.mainImg}
-                    src={"/chemiverse_img/img-pop-cardnews.png"}
+                    src={"/chemiverse_img/group 230.png"}
                     alt="img-pop-cardnews"
                 />
             </div>
