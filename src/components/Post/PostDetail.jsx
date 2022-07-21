@@ -1,13 +1,16 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styles from './css/PostTab.module.css';
-import SearchBar from './SearchBar';
 import { useLocation } from 'react-router-dom';
 
 const PostDetail = ({ data }) => {
   const { post } = useParams();
   const selectedPost = data.find((x) => {
-    return Number(x.id) === Number(post);
+    if (typeof x.id === 'string') {
+      return x.id === post;
+    } else {
+      return Number(x.id) === Number(post);
+    }
   });
 
   const location = useLocation();
@@ -26,6 +29,10 @@ const PostDetail = ({ data }) => {
       navigate('/board/notice');
     } else if (locationInclude('introduce')) {
       navigate('/board/introduce');
+    } else if (locationInclude('qna')) {
+      navigate('/board/qna');
+    } else if (locationInclude('guide')) {
+      navigate('/main/guide');
     }
   };
 

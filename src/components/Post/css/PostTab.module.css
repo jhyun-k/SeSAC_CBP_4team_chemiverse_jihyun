@@ -448,4 +448,33 @@
   .writeForm .btnBox .submitBtn {
     margin-left: 6.944vw;
   }
+}
+/* secret */
+.secretPage {
+  font-size: 1.111vw;
+}
+.secretPage .message {
+  height: 10.417vw;
+  width: 34.722vw;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 5.208vw auto 0;
+  line-height: 10.417vw;
+}
+.secretPage .listBtn {
+  display: block;
+  width: 10.417vw;
+  height: 3.472vw;
+  font-size: 1.042vw;
+  background: #fff;
+  border: 2px solid #6f76c1;
+  border-radius: 50px;
+  color: #6f76c1;
+  margin: 5.208vw auto 0;
+  cursor: pointer;
+}
+.secretPage .listBtn:hover {
+  background-color: #6f76c1;
+  color: #fff;
+  transition: all 0.3s;
 }/*# sourceMappingURL=PostTab.module.css.map */

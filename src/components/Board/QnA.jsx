@@ -58,12 +58,6 @@ const QnA = () => {
   };
   return (
     <div className={styles.post}>
-      <SearchHeader
-        data={lists}
-        onChangeSearch={onChangeSearch}
-        searchRef={searchRef}
-        onChangeSearchCategory={onChangeSearchCategory}
-      />
       <PostList lists={lists} startNum={startNum} endNum={endNum} />
       <Link to='./write'>
         <button className={styles.writeBtn}>글쓰기</button>

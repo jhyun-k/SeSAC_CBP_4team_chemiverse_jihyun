@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './css/PostTab.module.css';
 import { MdAttachFile } from 'react-icons/md';
+import { AiFillLock } from 'react-icons/ai';
+import { BsArrowReturnRight } from 'react-icons/bs';
 
 const PostList = ({ lists, startNum, endNum }) => {
   const location = useLocation();
@@ -35,28 +37,19 @@ const PostList = ({ lists, startNum, endNum }) => {
     }
   };
 
-  const qnaAnswer = (post) => {
-    if (locationInclude('qna')) {
-      return (
-        <li className={styles.freePost} key={post.id}>
-          <span className={styles.postIndex}>{post.id}</span>
-          <Link to={`./${post.id}`}>
-            <span className={styles.postTitle}>{post.title}</span>
-          </Link>
-          <span className={styles.userName}>{post.userId}</span> {list(post)}
-          <span className={styles.view}>{post.view}</span>
-          <span className={styles.date}>{post.date}</span>
-        </li>
-      );
-    }
-  };
-
   return (
     <ul className={styles.freePostList}>
       <li className={styles.freePostTitle}>
         <span className={styles.postIndex}>No.</span>
         <span className={styles.postTitle}>제목</span>
-        <span className={styles.userName}>작성자</span>
+        <span
+          className={styles.userName}
+          style={
+            !locationInclude('qna') ? { display: 'block' } : { display: 'none' }
+          }
+        >
+          작성자
+        </span>
         {listTitle()}
         <span className={styles.view}>조회수</span>
         <span className={styles.date}>작성일</span>
@@ -64,11 +57,22 @@ const PostList = ({ lists, startNum, endNum }) => {
       {lists.slice(startNum, endNum).map((post, index) => {
         return (
           <li className={styles.freePost} key={post.id}>
-            <span className={styles.postIndex}>{post.id}</span>
-            <Link to={`./${post.id}`}>
-              <span className={styles.postTitle}>{post.title}</span>
+            <span className={styles.postIndex}>
+              {post.answer ? <BsArrowReturnRight /> : post.id}
+            </span>
+            <Link to={post.private ? './secret' : `./${post.id}`}>
+              <span className={styles.postTitle}>
+                {post.title}
+                {post.private ? <AiFillLock /> : ''}
+              </span>
             </Link>
-            <span className={styles.userName}>{post.userId}</span> {list(post)}
+            <span
+              className={styles.userName}
+              style={post.userId ? { display: 'block' } : { display: 'none' }}
+            >
+              {post.userId}
+            </span>{' '}
+            {list(post)}
             <span className={styles.view}>{post.view}</span>
             <span className={styles.date}>{post.date}</span>
           </li>

@@ -53,6 +53,10 @@ const WritePostPage = ({ newContent, setNewContent }) => {
         onFocus={(event, editor) => {}}
       />
       <div className={styles.btnBox}>
+        <label htmlFor=''>
+          <input type='radio' />
+          비공개
+        </label>
         <button className={styles.temporaryBtn}>임시저장</button>
         <button className={styles.submitBtn}>등록</button>
       </div>
