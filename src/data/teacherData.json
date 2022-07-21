@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "최동환",
+    "plus": "수석",
+    "image": "https://www.exc.co.kr/dwn_data/lecturer_data/lecturer_imgs/LECT_THUMB_ZXJY2021120618000504IL.jpg",
+    "description": "前) 조직문화콘텐츠연구소 대표",
+    "desc": "대한민국 사업 트렌드 저자",
+    "class": "솔브레인 핵심가치내재화워크샵, 동국제약 핵심가치내재화(‘20~21), 대우건설 Value Together 등"
+  },
+  {
+    "id": 2,
+    "name": "안재현",
+    "plus": "수석",
+    "image": "https://www.exc.co.kr/dwn_data/lecturer_data/lecturer_imgs/LECT_THUMB_CGAR20211206155816CN9D.jpg",
+    "description": "서울과학기술대학교 외래교수",
+    "desc": "대한민국 사업 트렌드 저자",
+    "class": "롯데호텔 신입대상 메타버스, 삼성전기 승격자대상 핵심가치, 한국발명진흥회 워크스마트"
+  },
+  {
+    "id": 3,
+    "name": "권서희",
+    "image": "https://www.exc.co.kr/dwn_data/lecturer_data/lecturer_imgs/LECT_THUMB_ZNRF20211217164701VHZ0.jpg",
+    "description": "前)기업행복연구소 교육컨설팅 대표",
+    "desc": "중앙대학교 인적자원개발학 석사",
+    "class": "삼성 SDI 신입사원 입문 과정, 현대자동차 신규입사자 과정, 한국수자원공사 조직문화과정"
+  },
+  {
+    "id": 4,
+    "name": "김미주",
+    "image": "https://www.exc.co.kr/dwn_data/lecturer_data/lecturer_imgs/LECT_THUMB_8EH3202112031711359LGQ.jpg",
+    "description": "前) LX 판토스 사내강사",
+    "desc": "경희대학교 경영대학원 (MBA 전공)",
+    "class": "세종충남대 병원 신입/경력직 교육, 용인시청 부서장 역량향상과정, 한국기술교육대학교 리더십"
+  },
+  {
+    "id": 5,
+    "name": "한주미",
+    "image": "https://www.exc.co.kr/dwn_data/lecturer_data/lecturer_imgs/LECT_THUMB_2LWQ202112061809362SVD.jpg",
+    "description": "前) 삼성전자서비스 사내 강의",
+    "desc": "前) CESO 교육홍보팀",
+    "class": "대우건설 경력 개발, 강점 설계 과정, 삼성디스플레이 협업역량 향상 과정, 디티앤씨 협업 강화 W/S"
+  }
+]
