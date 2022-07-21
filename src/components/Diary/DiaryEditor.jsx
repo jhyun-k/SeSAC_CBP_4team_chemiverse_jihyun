@@ -8,7 +8,6 @@ const DiaryEditor = ({ onCreate }) => {
   const contentInput = useRef();
 
   const [state, setState] = useState({
-    author: "",
     content: "",
   });
 
@@ -20,10 +19,6 @@ const DiaryEditor = ({ onCreate }) => {
   };
 
   const handleSubmit = () => {
-    if (state.author.length < 1) {
-      authorInput.current.focus();
-      return;
-    }
     if (state.content.length < 5) {
       contentInput.current.focus();
       return;
@@ -32,7 +27,6 @@ const DiaryEditor = ({ onCreate }) => {
     onCreate(state.author, state.content);
     alert("저장되었습니다.");
     setState({
-      author: "",
       content: "",
     })
 
@@ -45,16 +39,6 @@ const DiaryEditor = ({ onCreate }) => {
 
   return (
     <div className={styles.DiaryEditor}>
-      <div>
-        <input
-          ref={authorInput}
-          name="author"
-          value={state.author}
-          onChange={handleChangeState}
-          placeholder="작성자"
-          type="text"
-        />
-      </div>
       <div>
         <textarea
           ref={contentInput}
