@@ -1,10 +1,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import teacher from "./css/teacher.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ card, index }) => {
+  const navigate = useNavigate();
   const onClick = () => {
-    console.log(card.id);
+    let id = card.id;
+    console.log(id);
+    navigate(`./${id}`);
   };
   return (
     <li key={card.id} className={teacher.teacherList}>

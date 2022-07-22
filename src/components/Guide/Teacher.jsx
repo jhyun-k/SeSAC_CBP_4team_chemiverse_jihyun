@@ -1,23 +1,17 @@
 import React from "react";
 import styles from "../ChemiStory/css/index.module.css";
-import { BsCheckLg } from "react-icons/bs";
-import { useState } from "react";
 import teacher from "./css/teacher.module.css";
-import Card from "./Card";
-import teacherData from "../../data/teacherData.json";
+import { Route, Routes } from "react-router-dom";
+import TeacherCard from "./TeacherCard";
+import CardId from "./CardId";
 
 const Teacher = () => {
   return (
     <div className={styles.WhatIsChemiStory}>
-      <p className={styles.pin}>
-        <BsCheckLg />
-      </p>
-      <h1 className={styles.title}>강사소개</h1>
-      <ul className={teacher.teacherBox}>
-        {teacherData.map((card, index) => (
-          <Card key={card.id} card={card} />
-        ))}
-      </ul>
+      <Routes>
+        <Route path="/*" element={<TeacherCard />} />
+        <Route path="/:id" element={<CardId />} />
+      </Routes>
     </div>
   );
 };
