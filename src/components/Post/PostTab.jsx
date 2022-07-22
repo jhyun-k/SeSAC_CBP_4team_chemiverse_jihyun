@@ -51,7 +51,15 @@ const PostTab = () => {
             />
           }
         />
-        <Route path='/suggestIdea/write' element={<WritePostPage />} />
+        <Route
+          path='/suggestIdea/write'
+          element={
+            <WritePostPage
+              newContent={newContent}
+              setNewContent={SetNewContent}
+            />
+          }
+        />
       </Routes>
     </div>
   );

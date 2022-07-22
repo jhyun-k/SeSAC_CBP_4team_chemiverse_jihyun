@@ -16,6 +16,14 @@ const SuggestIdea = () => {
 
   const searchRef = useRef('');
 
+  /*   useEffect(() => {
+    fetch('/data/suggestIdeaData.json')
+      .then((res) => res.json())
+      .then((data) => [...data].reverse())
+      .then((data) => setLists(data))
+      .catch((e) => console.log(e));
+  }, []); */
+
   useEffect(() => {
     const postLatest = [...data].reverse();
     setLists(postLatest);
@@ -26,7 +34,7 @@ const SuggestIdea = () => {
   };
   const onChangeSearch = (e, category) => {
     const search = searchRef.current.value;
-    const postLatest = [...data].reverse();
+    const postLatest = [...data].slice().reverse();
     console.log(category);
     if (search === null || search === '') {
       setLists(postLatest);

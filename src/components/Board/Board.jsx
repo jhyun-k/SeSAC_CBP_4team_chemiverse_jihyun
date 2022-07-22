@@ -9,8 +9,11 @@ import WritePostPage from '../Post/WritePostPage';
 import Introduce from './Introduce';
 import QnA from './QnA';
 import Secret from './Secret';
+import { useState } from 'react';
 
 const Board = () => {
+  const [newContent, SetNewContent] = useState({ title: '', body: '' });
+
   return (
     <div>
       <h1>게시판</h1>
@@ -27,9 +30,24 @@ const Board = () => {
           element={<PostDetail data={introduceData} />}
         />
         <Route path='/qna/:post' element={<PostDetail data={qnaData} />} />
-        <Route path='/notice/write' element={<WritePostPage />} />
-        <Route path='/introduce/write' element={<WritePostPage />} />
-        <Route path='/qna/write' element={<WritePostPage />} />
+        <Route
+          path='/introduce/write'
+          element={
+            <WritePostPage
+              newContent={newContent}
+              setNewContent={SetNewContent}
+            />
+          }
+        />
+        <Route
+          path='/qna/write'
+          element={
+            <WritePostPage
+              newContent={newContent}
+              setNewContent={SetNewContent}
+            />
+          }
+        />
 
         <Route path='/qna/secret' element={<Secret />} />
       </Routes>

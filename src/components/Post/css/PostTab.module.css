@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 /* PostTab */
 .main {
   padding-left: 6.944vw;
@@ -77,6 +81,10 @@
   line-height: 3.472vw;
   border-bottom: 1px solid #e2e2e2;
 }
+.freePostList .null {
+  height: 34.72vw;
+  line-height: 34.72vw;
+}
 .freePostList .freePostTitle {
   background-color: #ececf7;
 }
@@ -92,6 +100,27 @@
   display: block;
   color: #333;
 }
+.freePostList .freePost .important {
+  color: red;
+  position: relative;
+  font-size: 0.972vw;
+}
+.freePostList .freePost .important::after {
+  content: "";
+  display: block;
+  width: 2.3vw;
+  height: 1.8vw;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.freePostList .freePost span.newText {
+  display: inline-block;
+  color: red;
+  margin-left: 1vw;
+}
 
 .postIndex {
   width: 3.472vw;
@@ -101,6 +130,9 @@
   width: 41.667vw;
   text-align: left;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .userName {
@@ -295,7 +327,26 @@
   justify-content: flex-end;
   margin-top: 2.778vw;
 }
-.writeForm .btnBox .submitBtn {
+.writeForm .btnBox .radioWrap {
+  width: 6.25vw;
+  height: 2.431vw;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.writeForm .btnBox .radioWrap input[type=checkbox],
+.writeForm .btnBox .radioWrap input[type=checkbox]:checked {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 0.5vw;
+}
+.writeForm .btnBox .submitBtn,
+.writeForm .btnBox .temporaryBtn {
   margin-left: 1.389vw;
 }
 
@@ -324,14 +375,19 @@
   .freePostList .freePostTitle {
     display: none;
   }
+  .freePostList .freePost {
+    position: relative;
+  }
   .freePostList .freePost .postIndex {
     display: none;
   }
   .freePostList .freePost .postTitle {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 95%;
+  }
+  .freePostList .freePost .postTitle span.newText {
+    display: inline-block;
+    color: red;
+    margin-left: 1vw;
   }
   .freePostList .freePost .userName {
     display: inline;
@@ -349,6 +405,15 @@
     display: none;
   }
   .freePostList .freePost .like {
+    display: none;
+  }
+  .freePostList .freePost .postIndex.important {
+    display: block;
+    font-size: 2vw;
+    position: absolute;
+    top: 1.39vw;
+  }
+  .freePostList .freePost .postIndex.important::after {
     display: none;
   }
   /* searchHeader */

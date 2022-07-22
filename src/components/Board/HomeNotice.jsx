@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../Post/css/PostTab.module.css';
-import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import PostList from '../Post/PostList';
 import SearchHeader from '../Post/SearchHeader';
@@ -65,9 +64,6 @@ const HomeNotice = () => {
         onChangeSearchCategory={onChangeSearchCategory}
       />
       <PostList lists={lists} startNum={startNum} endNum={endNum} />
-      <Link to='./write'>
-        <button className={styles.writeBtn}>글쓰기</button>
-      </Link>
       <Pagination
         total={lists.length}
         page={page}

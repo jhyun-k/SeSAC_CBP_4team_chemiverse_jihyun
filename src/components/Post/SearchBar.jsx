@@ -14,7 +14,7 @@ const SearchBar = ({ onChangeSearch, searchRef, onChangeSearchCategory }) => {
         <input
           className={styles.searchInput}
           type='search'
-          placeholder='검색어를 입력해주세요'
+          placeholder='검색어를 입력하세요'
           onChange={onChangeSearch}
           ref={searchRef}
         />

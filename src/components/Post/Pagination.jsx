@@ -26,6 +26,8 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
     setPagesArrEndNum(pagesArrEndNum + 5);
   };
 
+  console.log(page);
+
   const handleFirstBtnClick = () => {
     setPage(1);
     setPagesArrStartNum(0);
@@ -75,7 +77,7 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
                   : `${styles.button}`
               } */
               className={`${styles.button} ${
-                index + 1 === page ? styles.on : ''
+                Number(element) === page ? styles.on : ''
               }`}
             >
               {element}
