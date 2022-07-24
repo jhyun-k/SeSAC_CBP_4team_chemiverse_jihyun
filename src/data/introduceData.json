@@ -107,10 +107,11 @@
   {
     "userId": "교육담당자",
     "id": 13,
-    "title": "크라우드소싱을 통한 학습은 정말로 이루어지는 것인가",
+    "title": "자기소개 게시판 공지사항",
     "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam",
     "view": 231,
     "date": "2022/4/12",
-    "like": 1
+    "like": 1,
+    "important": true
   }
 ]

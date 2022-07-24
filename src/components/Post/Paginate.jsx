@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './css/PostTab.module.css';
 import {
   FaAngleRight,
@@ -7,8 +7,9 @@ import {
   FaAngleDoubleRight,
   FaAngleDoubleLeft,
 } from 'react-icons/fa';
+import Pagination from 'rc-pagination';
 
-const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
+const Paginate = ({ total, page, setPage, LIST_PER_PAGE }) => {
   const pagesNum = Math.ceil(total / LIST_PER_PAGE);
   const wholePagesNumArray = new Array(pagesNum);
 
@@ -25,8 +26,6 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
     setPagesArrStartNum(pagesArrStartNum + 5);
     setPagesArrEndNum(pagesArrEndNum + 5);
   };
-
-  console.log(page);
 
   const handleFirstBtnClick = () => {
     setPage(1);
@@ -77,7 +76,7 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
                   : `${styles.button}`
               } */
               className={`${styles.button} ${
-                Number(element) === page ? styles.on : ''
+                index + 1 === page ? styles.on : ''
               }`}
             >
               {element}
@@ -106,4 +105,4 @@ const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {
   );
 };
 
-export default Pagination;
+export default Paginate;

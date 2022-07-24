@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 import FindID from './components/Login/FindID';
 import DetailRedirect from './components/Login/DetailRedirect';
 import Board from './components/Board/Board';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -45,6 +46,7 @@ function App() {
             setIsOpen={setIsOpen}
           />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

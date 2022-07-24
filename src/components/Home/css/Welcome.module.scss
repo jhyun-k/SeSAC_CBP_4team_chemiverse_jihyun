@@ -1,0 +1,56 @@
+.welcome {
+  width: 100%;
+  position: relative;
+  .messageBox {
+    margin-top: 5vw;
+    animation: fadein 4s;
+    img {
+      width: 39.931vw;
+    }
+    .message {
+      font-size: 4.444vw;
+      line-height: 1.7;
+      font-weight: 900;
+      color: #4d57c6;
+      margin: 5vw 0;
+    }
+  }
+  .messageBox2 {
+    width: 69.444vw;
+    margin: 12.847vw auto 6vw;
+    font-size: 1.667vw;
+    text-align: left;
+    p {
+      &:first-child {
+        color: #6f76c1;
+        margin-bottom: 2.083vw;
+      }
+      &:last-child {
+        margin-top: 4.861vw;
+        text-align: right;
+      }
+      img {
+        width: 11.111vw;
+      }
+    }
+  }
+  .description {
+    background-color: #f5f5f5;
+    .wrap {
+      width: 69.444vw;
+      margin: auto;
+      padding: 8.333vw 0;
+      text-align: left;
+      line-height: 2.1;
+      font-size: 1.389vw;
+    }
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

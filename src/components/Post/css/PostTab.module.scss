@@ -242,7 +242,7 @@ button {
 .postDetailWrap {
   width: $innerWidth;
   margin: auto;
-  height: 34.722vw;
+
   text-align: left;
   font-size: $defaultFont;
   .headerBox {
@@ -290,7 +290,7 @@ button {
     border: 2px solid #6f76c1;
     border-radius: 50px;
     color: #6f76c1;
-    margin: 5.208vw auto 0;
+    margin: 5.208vw auto 6.944vw;
     cursor: pointer;
     &:hover {
       background-color: #6f76c1;
@@ -356,7 +356,7 @@ button {
   }
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   /* post */
   .post {
     width: 100vw;

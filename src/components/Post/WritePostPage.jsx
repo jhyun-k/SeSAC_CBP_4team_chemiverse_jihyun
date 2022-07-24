@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from './css/PostTab.module.css';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
@@ -8,8 +8,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 const WritePostPage = ({ newContent, setNewContent }) => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  const titleRef = useRef(null);
 
   const titleInput = (e) => {
     setNewContent({ ...newContent, title: e.target.value });

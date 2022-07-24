@@ -3,12 +3,13 @@ import styles from '../Post/css/PostTab.module.css';
 import { useRef, useState, useEffect } from 'react';
 import PostList from '../Post/PostList';
 import SearchHeader from '../Post/SearchHeader';
-import Pagination from '../Post/Pagination';
+import Paginate from '../Post/Paginate';
 import data from '../../data/noticeData.json';
 
 const Notice = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
+  const [category, setCategory] = useState('전체');
 
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
@@ -21,13 +22,15 @@ const Notice = () => {
     setLists(postLatest);
   }, []);
 
-  const onChangeSearchCategory = (e) => {
-    onChangeSearch('', e.target.value);
+  const onChangeCategory = (e) => {
+    setCategory(e.target.value);
   };
-  const onChangeSearch = (e, category) => {
+
+  const onChangeSearch = (e) => {
+    e.preventDefault();
     const search = searchRef.current.value;
     const postLatest = [...data].reverse();
-    console.log(category);
+
     if (search === null || search === '') {
       setLists(postLatest);
     } else if (category === '전체' || category === undefined) {
@@ -55,16 +58,17 @@ const Notice = () => {
       setLists(filterData);
     }
   };
+
   return (
     <div className={styles.post}>
       <SearchHeader
         data={lists}
         onChangeSearch={onChangeSearch}
         searchRef={searchRef}
-        onChangeSearchCategory={onChangeSearchCategory}
+        onChangeCategory={onChangeCategory}
       />
       <PostList lists={lists} startNum={startNum} endNum={endNum} />
-      <Pagination
+      <Paginate
         total={lists.length}
         page={page}
         setPage={setPage}

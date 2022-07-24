@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Pagination from './Pagination';
+import Paginate from './Paginate';
 import SearchHeader from './SearchHeader';
 import styles from './css/PostTab.module.css';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,7 @@ import PostList from './PostList';
 const SuggestIdea = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
+  const [category, setCategory] = useState('전체');
 
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
@@ -29,13 +30,13 @@ const SuggestIdea = () => {
     setLists(postLatest);
   }, []);
 
-  const onChangeSearchCategory = (e) => {
-    onChangeSearch('', e.target.value);
+  const onChangeCategory = (e) => {
+    setCategory(e.target.value);
   };
-  const onChangeSearch = (e, category) => {
+  const onChangeSearch = (e) => {
+    e.preventDefault();
     const search = searchRef.current.value;
     const postLatest = [...data].slice().reverse();
-    console.log(category);
     if (search === null || search === '') {
       setLists(postLatest);
     } else if (category === '전체' || category === undefined) {
@@ -70,13 +71,13 @@ const SuggestIdea = () => {
         data={lists}
         onChangeSearch={onChangeSearch}
         searchRef={searchRef}
-        onChangeSearchCategory={onChangeSearchCategory}
+        onChangeCategory={onChangeCategory}
       />
       <PostList lists={lists} startNum={startNum} endNum={endNum} />
       <Link to='./write'>
         <button className={styles.writeBtn}>글쓰기</button>
       </Link>
-      <Pagination
+      <Paginate
         total={lists.length}
         page={page}
         setPage={setPage}
