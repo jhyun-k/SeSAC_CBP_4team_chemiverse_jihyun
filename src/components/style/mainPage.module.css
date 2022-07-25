@@ -1,7 +1,144 @@
 .mainPage {
-  width: 70vw;
-  height: 70vh;
-  margin: auto;
+  width: 100vw;
+  height: 150vh;
   background: url("../../../public/chemiverse_img/img-main.png") no-repeat center;
   background-size: contain;
+  background-color: #e7ecfa;
+}
+.mainPage .img1 {
+  position: absolute;
+  width: 17vw;
+  top: 30%;
+  left: 19%;
+  opacity: 0.6;
+}
+.mainPage .img2 {
+  position: absolute;
+  width: 25vw;
+  top: 140%;
+  left: 10%;
+  opacity: 0.6;
+}
+.mainPage .img3 {
+  position: absolute;
+  width: 15vw;
+  top: 40%;
+  right: 1%;
+  opacity: 0.6;
+}
+
+.hoverBox .box {
+  width: 11.111vw;
+  height: 11.111vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 2s;
+}
+.hoverBox .box1 {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverBox .box1:hover .connectWith {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box2 {
+  position: absolute;
+  top: 60%;
+  left: 21%;
+}
+.hoverBox .box2:hover .move {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box3 {
+  position: absolute;
+  top: 50%;
+  left: 61%;
+}
+.hoverBox .box3:hover .guide {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box4 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverBox .box4:hover .learning {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box5 {
+  position: absolute;
+  top: 92%;
+  left: 30%;
+}
+.hoverBox .box5:hover .chemiStory {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box6 {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverBox .box6:hover .post {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box7 {
+  position: absolute;
+  top: 88%;
+  left: 57%;
+}
+.hoverBox .box7:hover .mentoring {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .box8 {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+}
+.hoverBox .box8:hover .diagnosis {
+  opacity: 1;
+  transition: all 1s;
+}
+.hoverBox .common {
+  cursor: default;
+  opacity: 0;
+  width: 16.389vw;
+  height: 7.292vw;
+  background-image: url("../../../public/chemiverse_img/bg-rectangle@3x.png");
+  background-size: cover;
+  position: absolute;
+  top: -35%;
+  left: -20%;
+  padding-top: 14%;
+}
+.hoverBox .common * {
+  text-decoration: none;
+}
+.hoverBox .common p {
+  font-size: 0.8vw;
+  color: #6F76C1;
+  font-weight: 600;
+}
+.hoverBox .common span {
+  vertical-align: middle;
+  font-size: 1.2vw;
+  font-weight: 700;
+  padding-top: 10px;
+  color: #1d2048;
+}
+.hoverBox .common .icon {
+  font-size: 1.4vw;
+  color: #6F76C1;
+  font-weight: 900;
+  vertical-align: middle;
 }/*# sourceMappingURL=mainPage.module.css.map */

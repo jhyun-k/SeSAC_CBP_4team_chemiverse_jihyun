@@ -49,10 +49,10 @@ function App() {
       window.removeEventListener('scroll', handleFollow)
     }
   })
-  
-
   useEffect(()=>{
   },[auth])
+
+  
   
   return (
     <div className="App">
