@@ -5,20 +5,23 @@
 .welcome .messageBox {
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
-  width: 36.806vw;
+  width: 56vw;
+  height: 28vw;
   margin: 5vw auto 0;
-  display: flex;
+  position: relative;
 }
 .welcome .messageBox img {
   width: 4.306vw;
 }
 .welcome .messageBox img:first-child {
-  align-self: flex-start;
-  justify-self: flex-start;
+  position: absolute;
+  top: 0;
+  left: 10%;
 }
 .welcome .messageBox img:last-child {
-  align-self: flex-end;
-  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
 }
 .welcome .messageBox .message {
   font-size: 4.444vw;
@@ -26,8 +29,10 @@
   font-weight: 900;
   color: #4d57c6;
   margin: 5vw 0;
-  align-self: center;
-  justify-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -73%);
 }
 .welcome .messageBox2 {
   width: 69.444vw;
