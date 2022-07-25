@@ -3,12 +3,22 @@
   position: relative;
 }
 .welcome .messageBox {
-  margin-top: 5vw;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
+  width: 36.806vw;
+  margin: 5vw auto 0;
+  display: flex;
 }
 .welcome .messageBox img {
-  width: 39.931vw;
+  width: 4.306vw;
+}
+.welcome .messageBox img:first-child {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.welcome .messageBox img:last-child {
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 .welcome .messageBox .message {
   font-size: 4.444vw;
@@ -16,6 +26,8 @@
   font-weight: 900;
   color: #4d57c6;
   margin: 5vw 0;
+  align-self: center;
+  justify-self: center;
 }
 .welcome .messageBox2 {
   width: 69.444vw;

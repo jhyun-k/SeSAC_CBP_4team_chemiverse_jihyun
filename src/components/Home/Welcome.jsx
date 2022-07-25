@@ -20,7 +20,7 @@ const Welcome = () => {
         <div className={styles.welcome}>
           <div className={styles.messageBox}>
             <img
-              src={process.env.PUBLIC_URL + '/chemiverse_img/Group 376.png'}
+              src={process.env.PUBLIC_URL + '/chemiverse_img/quotes1.png'}
               alt=''
             />
             <div className={styles.message}>
@@ -28,7 +28,7 @@ const Welcome = () => {
               <p>환영합니다</p>
             </div>
             <img
-              src={process.env.PUBLIC_URL + '/chemiverse_img/Group 377.png'}
+              src={process.env.PUBLIC_URL + '/chemiverse_img/quotes.png'}
               alt=''
             />
           </div>
