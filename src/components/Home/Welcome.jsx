@@ -7,16 +7,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 const Welcome = () => {
-<<<<<<< HEAD
-    return (
-        <div>
-            <HomeHeaderNavy />
-                <img src={"/chemiverse_img/bg-gnb-noshadow.png"} alt="balloon"/>
-                <h1 style={
-                    {fontSize : '50px',
-                    padding : '40px'}}>환영인사</h1>
-                <img src={"/chemiverse_img/Group_500.png"} alt="환영인사,회사소개" />
-=======
   const animation = () => {
     if (window.onload) {
       return `${styles.manImg} ${styles.on}`;
@@ -73,7 +63,6 @@ const Welcome = () => {
               </p>
             </div>
           </div>
->>>>>>> jiyoung
         </div>
         {/* welcome */}
       </div>

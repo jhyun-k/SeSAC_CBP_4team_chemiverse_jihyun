@@ -1,11 +1,4 @@
 .mainPage {
-<<<<<<< HEAD
-  width: 70vw;
-  height: 70vh;
-  margin: auto;
-  background: url("../../../public/chemiverse_img/img-main.png") no-repeat center;
-  background-size: contain;
-=======
   width: 100vw;
   height: 150vh;
   background: url("../../../public/chemiverse_img/img-main.png") no-repeat center;
@@ -235,5 +228,4 @@
   .mobileMain .menuList ul .menu:nth-of-type(1) .menuIcon {
     bottom: 1vw;
   }
->>>>>>> jiyoung
 }/*# sourceMappingURL=mainPage.module.css.map */

@@ -20,7 +20,6 @@ const Board = () => {
   return (
     <div>
       <HomeHeaderNavy />
-
       <BoardNav />
       <Routes>
         <Route path='/notice' element={<HomeNotice />} />
