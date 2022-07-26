@@ -15,8 +15,23 @@
       align-items: center;
       position: relative;
       width: 7.778vw;
+      &:hover{
+        &::before {
+          content: "";
+          width: 0.5vw;
+          height: 0.5vw;
+          border-radius: 50%;
+          background-color: #6f76c1;
+          position: absolute;
+          top: 2vw;
+          right: 0;
+          transform: translateX(-50%);
+          order: 10;
+        }
+      }
       &:nth-child(1) {
-        margin: 0 1vw;
+        width: 9vw;
+        
       }
       &:nth-child(3) {
         width: 6vw;
@@ -41,7 +56,7 @@
     }
   }
 }
-.navBox .nav ul li:hover {
+/* .navBox .nav ul li:hover {
   &::before {
     content: "";
     width: 7.778vw;
@@ -51,7 +66,7 @@
     left: 50px;
     z-index: 10;
   }
-}
+} */
 
 .tabmenuBox {
   height: 0;
@@ -60,7 +75,7 @@
     display: flex;
     justify-content: flex-end;
     width: 58%;
-    right: 8%;
+    right: 10%;
     ul {
       display: flex;
       flex-direction: column;
@@ -69,13 +84,13 @@
         &:nth-child(1) {
           &::before {
             content: "";
-            width: 0.7vw;
-            height: 0.7vw;
+            width: 0.5vw;
+            height: 0.5vw;
             border-radius: 50%;
             background-color: #6f76c1;
             position: fixed;
-            top: 1.9vw;
-            left: 36.7%;
+            top: 1.6vw;
+            left: 34%;
             transform: translateX(-50%);
             order: 10;
           }
@@ -83,13 +98,13 @@
         &:nth-child(2) {
           &::before {
             content: "";
-            width: 0.7vw;
-            height: 0.7vw;
+            width: 0.5vw;
+            height: 0.5vw;
             border-radius: 50%;
             background-color: #6f76c1;
             position: fixed;
-            top: 1.9vw;
-            left: 43%;
+            top: 1.6vw;
+            left: 40.5%;
             transform: translateX(-50%);
             order: 10;
           }
@@ -97,13 +112,13 @@
         &:nth-child(3) {
           &::before {
             content: "";
-            width: 0.7vw;
-            height: 0.7vw;
+            width: 0.5vw;
+            height: 0.5vw;
             border-radius: 50%;
             background-color: #6f76c1;
             position: fixed;
-            top: 1.9vw;
-            left: 51.6%;
+            top: 1.6vw;
+            left: 49%;
             transform: translateX(-50%);
             order: 10;
           }
@@ -111,13 +126,13 @@
         &:nth-child(4) {
           &::before {
             content: "";
-            width: 0.7vw;
-            height: 0.7vw;
+            width: 0.5vw;
+            height: 0.5vw;
             border-radius: 50%;
             background-color: #6f76c1;
             position: fixed;
-            top: 1.9vw;
-            left: 61.8%;
+            top: 1.6vw;
+            left: 58.7%;
             transform: translateX(-50%);
             order: 10;
           }
@@ -125,13 +140,13 @@
         &:nth-child(5) {
           &::before {
             content: "";
-            width: 0.7vw;
-            height: 0.7vw;
+            width: 0.5vw;
+            height: 0.5vw;
             border-radius: 50%;
             background-color: #6f76c1;
             position: fixed;
-            top: 1.9vw;
-            left: 69%;
+            top: 1.6vw;
+            left: 67%;
             transform: translateX(-50%);
             order: 10;
           }
@@ -139,13 +154,13 @@
         &:nth-child(6) {
           &::before {
             content: "";
-            width: 0.7vw;
-            height: 0.7vw;
+            width: 0.5vw;
+            height: 0.5vw;
             border-radius: 50%;
             background-color: #6f76c1;
             position: fixed;
-            top: 1.9vw;
-            left: 77.5%;
+            top: 1.6vw;
+            left: 75.5%;
             transform: translateX(-50%);
             order: 10;
           }
@@ -167,7 +182,9 @@
 
 .navBox:hover {
   .tabmenuBox {
-    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.2s linear;
+
+    background-color: rgba(255, 255, 255);
     height: 16vw;
     width: 100vw;
     position: absolute;
@@ -214,12 +231,18 @@
         li:hover {
           position: relative;
           * {
-            color: #747474;
+            color: #232323;
             font-weight: bold;
             text-decoration: none;
           }
         }
       }
     }
+  }
+}
+ 
+@media screen and (max-width:720px) {
+  .navBox{
+    display: none;
   }
 }

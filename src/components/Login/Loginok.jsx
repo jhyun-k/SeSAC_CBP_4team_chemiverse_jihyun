@@ -31,7 +31,9 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
         <Header />
         <MainPage />
         <Modal isOpen={true} 
-        style={{
+        className={styles.Modal}
+        overlayClassName={styles.Overlay}
+        /* style={{
           overlay: {
           backgroundColor: '#787a8eaa',
             
@@ -43,14 +45,16 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
               border: '1px solid blue;',
               borderRadius: '20px',
               padding: 0
-            }}}>
+            }}} */>
        <button onClick={(e)=>closeModal(e)} className={styles.close} type='button'>X</button>
         <form onSubmit={(e)=>{login(e)}}>
         <div className={styles.modal}>
     
         <h1 className={styles.logo}>로고</h1>
-          <p className={styles.text}>신규입사자웅앵웅 환영해요~~! 환영합니다 환영합니다 극도로 환영 짱짱환영 </p>
+          <p className={styles.text}>신규입사자 여러분 환영합니다. 로그인 후 온보딩 프로그램을 진행해주세요. </p>
+          <img src="/chemiverse_img/cloudpeople.png" alt="cloudpeople" className={styles.cloudpeople} />
             <div className={styles.inner}>
+            <span className={styles.login_txt}>LOGIN</span>
                 <input className={styles.input} id="id" name="id" placeholder="아이디를 입력해주세요" 
                 autoComplete='off' required />
                 <input
@@ -62,8 +66,8 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
                   required
                 />
                 <div className={styles.button_box}>
+                <button type='submit' className={styles.loginbtn}>로그인</button>
                     <Link to='./idpw' className={styles.loginbtn}>ID/PW찾기</Link>
-                    <button type='submit' className={styles.loginbtn}>로그인</button>
                 </div>
             </div>
         </div>

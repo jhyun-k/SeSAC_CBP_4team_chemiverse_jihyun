@@ -12,14 +12,10 @@ const Ready = () => {
         <div>
             <HomeHeaderNavy />
 			<div className={styles.title}>
-			{/* <img
-          className={styles.img}
-          src={"/chemiverse_img/bg-gnb-noshadow.png"}
-          alt="bg-gnb-noshadow"/>  */}
-		  <div className={styles.title_inner}>	
-      		<h1>입사 전 준비사항</h1>
-			  <p>합격을 진심으로 축하드립니다.<br/> 체크리스트를 활용하여 입사에 필요한 사항을 체크해봅시다.</p>
-			  </div>
+		  		<div className={styles.title_inner}>	
+      			<h1>입사 전 준비사항</h1>
+				  <p>합격을 진심으로 축하드립니다.<br/> 체크리스트를 활용하여 입사에 필요한 사항을 체크해봅시다.</p>
+				</div>
 			  
 			</div>
 			<div className={styles.inner}>

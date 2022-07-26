@@ -1,11 +1,5 @@
 * {
-<<<<<<< HEAD
-    color: black;
-    text-decoration: none;
-    font-family: 'Noto Sans KR', sans-serif;
-=======
   text-decoration: none;
->>>>>>> develop
 }
 .App {
   text-align: center;
@@ -145,3 +139,6 @@ i {
 input {
   outline: none;
 }
+::-webkit-scrollbar {
+  display: none;
+  }

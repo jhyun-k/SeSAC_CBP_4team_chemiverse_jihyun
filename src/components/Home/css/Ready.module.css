@@ -1,137 +1,265 @@
-.pin {
-  margin: 10px auto;
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: rgba(75, 80, 132, 0.721);
+@media screen and (min-width: 721px) {
+  .pin {
+    margin: 0.694vw auto;
+    font-size: 1.389vw;
+    margin-bottom: 1.042vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .pin .tit {
+    padding-left: 0.694vw;
+  }
+  .pin span {
+    font-size: 0.972vw;
+    padding-left: 0.694vw;
+    font-weight: 500;
+  }
+  .title {
+    text-align: left;
+    width: 69.444vw;
+    font-size: 2.361vw;
+    color: #6F76C1;
+    padding: 1.389vw 0;
+    margin: auto;
+    display: flex;
+    margin-top: 1.389vw;
+    border-bottom: 2px solid #ccc;
+  }
+  .title .img {
+    width: 4.167vw;
+  }
+  .title p {
+    color: rgba(75, 80, 132, 0.721);
+    font-size: 0.972vw;
+    padding-top: 1.389vw;
+    line-height: 1.2;
+    font-weight: bold;
+    padding-left: 0.347vw;
+  }
+  .form {
+    width: 69.444vw;
+    margin: auto;
+    margin-top: 1.042vw;
+    background: url(/public/chemiverse_img/img-main02.png)/cover;
+  }
+  .form .legend {
+    font-size: 2.083vw;
+    font-weight: bold;
+    padding: 0.694vw;
+    color: #6F76C1;
+    text-align: center;
+  }
+  .tit {
+    font-size: 1.389vw;
+    margin: auto;
+    color: #6F76C1;
+  }
+  .checklist {
+    margin: 1.667vw;
+    text-align: left;
+    display: flex;
+  }
+  .checklist .checkbox_wrap {
+    width: 31.25vw;
+    border: 2px solid #ccc;
+    border-radius: 0.347vw;
+    box-shadow: 0px 4px 4px -4px black;
+    padding: 2.778vw;
+    margin: 1.736vw;
+  }
+  .checkbox_wrap {
+    font-size: 1.25vw;
+    color: #808080;
+  }
+  .checkbox_wrap input {
+    display: none;
+  }
+  .checkbox_wrap label {
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(2.083vw) translateY(-50%);
+  }
+  .checkbox_wrap span {
+    font-size: 0.833vw;
+  }
+  .checkbox_wrap label::before {
+    height: 38px;
+    width: 38px;
+    content: "";
+    display: block;
+    background: url(/public/chemiverse_img/ic-check.png);
+    position: absolute;
+    transform: translateX(-130%) translateY(-25%);
+  }
+  .checkbox_wrap .checkbox:checked + label::before {
+    height: 38px;
+    width: 38px;
+    content: "";
+    display: block;
+    background: url(/public/chemiverse_img/ic-check-on.png);
+  }
+  .btn_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 69.444vw;
+    padding: 2vh 0;
+  }
+  .btn_submit {
+    width: 8.333vw;
+    height: 3.125vw;
+    margin: auto;
+    border: none;
+    border-radius: 2.778vw;
+    background-color: #6F76C1;
+    color: #ffffff;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+  }
+  .btn_submit:hover {
+    text-decoration: underline;
+    background-color: #bcc1f6;
+    color: #6F76C1;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  .btn_wrap > a {
+    text-align: center;
+    line-height: 3.125vw;
+  }
 }
-.pin .tit {
-  padding-left: 10px;
-}
-.pin span {
-  font-size: 14px;
-  padding-left: 10px;
-  font-weight: 500;
-}
-
-.title {
-  text-align: left;
-  width: 1000px;
-  font-size: 34px;
-  color: #6F76C1;
-  padding: 20px 0;
-  margin: auto;
-  display: flex;
-  margin-top: 20px;
-  border-bottom: 2px solid #ccc;
-}
-.title .img {
-  width: 60px;
-}
-.title p {
-  color: rgba(75, 80, 132, 0.721);
-  font-size: 14px;
-  padding-top: 20px;
-  line-height: 1.2;
-  font-weight: bold;
-  padding-left: 5px;
-}
-
-.form {
-  width: 1000px;
-  margin: auto;
-  margin-top: 15px;
-  background: url(/public/chemiverse_img/img-main02.png)/cover;
-}
-.form .legend {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 10px;
-  color: #6F76C1;
-  text-align: center;
-}
-
-.tit {
-  font-size: 20px;
-  margin: auto;
-  color: #6F76C1;
-}
-
-.checklist {
-  margin: 24px;
-  text-align: left;
-  display: flex;
-}
-.checklist .checkbox_wrap {
-  width: 450px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px -4px black;
-  padding: 40px;
-  margin: 25px;
-}
-
-.checkbox_wrap {
-  font-size: 18px;
-  color: gray;
-}
-.checkbox_wrap input {
-  display: none;
-}
-.checkbox_wrap label {
-  cursor: pointer;
-  position: absolute;
-  transform: translateX(30px) translateY(-50%);
-}
-.checkbox_wrap span {
-  font-size: 12px;
-}
-
-.checkbox_wrap label::before {
-  height: 38px;
-  width: 38px;
-  content: "";
-  display: block;
-  background: url(/public/chemiverse_img/ic-check.png);
-  position: absolute;
-  transform: translateX(-130%) translateY(-25%);
-}
-
-.checkbox_wrap .checkbox:checked + label::before {
-  height: 38px;
-  width: 38px;
-  content: "";
-  display: block;
-  background: url(/public/chemiverse_img/ic-check-on.png);
-}
-
-.btn_wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  padding: 2vh 0;
-}
-
-.btn_submit {
-  width: 120px;
-  height: 45px;
-  margin: auto;
-  border: none;
-  border-radius: 40px;
-  background-color: #6F76C1;
-  color: #ffffff;
-  font-weight: bold;
-  margin: auto;
-  cursor: pointer;
-}
-.btn_submit:hover {
-  text-decoration: underline;
-  background-color: #bcc1f6;
-  color: #6F76C1;
-  font-weight: bold;
-  transition: all 0.3s;
-}
-
-.btn_wrap > a {
-  text-align: center;
-  line-height: 45px;
+@media screen and (max-width: 720px) {
+  .pin {
+    margin: 0.694vw auto;
+    font-size: 4.389vw;
+    margin-bottom: 1.042vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .pin .tit {
+    padding-left: 0.694vw;
+  }
+  .pin span {
+    font-size: 0.972vw;
+    padding-left: 0.694vw;
+    font-weight: 500;
+  }
+  .title {
+    text-align: left;
+    width: 83.333vw;
+    font-size: 6.361vw;
+    color: #6F76C1;
+    padding: 4.389vw 0;
+    margin: auto;
+    display: flex;
+    margin-top: 1.389vw;
+    border-bottom: 2px solid #ccc;
+  }
+  .title .img {
+    width: 4.167vw;
+  }
+  .title p {
+    color: rgba(75, 80, 132, 0.721);
+    font-size: 3.972vw;
+    padding-top: 1.389vw;
+    line-height: 1.2;
+    font-weight: bold;
+    padding-left: 0.347vw;
+    display: none;
+  }
+  .form {
+    width: 83.333vw;
+    margin: auto;
+    margin-top: 1.042vw;
+    background: url(/public/chemiverse_img/img-main02.png)/cover;
+  }
+  .form .legend {
+    font-size: 6.083vw;
+    font-weight: bold;
+    padding: 0.694vw;
+    color: #6F76C1;
+    text-align: left;
+    margin-bottom: 2vw;
+    display: none;
+  }
+  .tit {
+    font-size: 5vw;
+    margin: auto;
+    color: #6F76C1;
+    margin-top: 3vw;
+  }
+  .checklist {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .checklist .checkbox_wrap {
+    width: 83vw;
+    height: 15.167vw;
+    border: 2px solid #ccc;
+    border-radius: 0.347vw;
+    box-shadow: 0px 4px 4px -4px black;
+    padding: 2.778vw;
+    margin: auto;
+    margin-bottom: 5vw;
+  }
+  .checkbox_wrap {
+    font-size: 5.25vw;
+    color: #808080;
+  }
+  .checkbox_wrap input {
+    display: none;
+  }
+  .checkbox_wrap label {
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(10vw) translateY(50%);
+  }
+  .checkbox_wrap span {
+    font-size: 0.833vw;
+  }
+  .checkbox_wrap label::before {
+    height: 38px;
+    width: 38px;
+    content: "";
+    display: block;
+    background: url(/public/chemiverse_img/ic-check.png);
+    position: absolute;
+    transform: translateX(-120%) translateY(-25%);
+  }
+  .checkbox_wrap .checkbox:checked + label::before {
+    height: 38px;
+    width: 38px;
+    content: "";
+    display: block;
+    background: url(/public/chemiverse_img/ic-check-on.png);
+  }
+  .btn_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 89.444vw;
+    padding: 2vh 0;
+  }
+  .btn_submit {
+    width: 83.333vw;
+    height: 10.125vw;
+    margin: auto;
+    border: none;
+    border-radius: 2.778vw;
+    background-color: #6F76C1;
+    color: #ffffff;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+  }
+  .btn_submit:hover {
+    text-decoration: underline;
+    background-color: #bcc1f6;
+    color: #6F76C1;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  .btn_wrap > a {
+    text-align: center;
+    line-height: 3.125vw;
+  }
 }/*# sourceMappingURL=Ready.module.css.map */
