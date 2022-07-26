@@ -15,7 +15,7 @@
       align-items: center;
       position: relative;
       width: 7.778vw;
-      &:hover{
+      &:hover {
         &::before {
           content: "";
           width: 0.5vw;
@@ -31,7 +31,6 @@
       }
       &:nth-child(1) {
         width: 9vw;
-        
       }
       &:nth-child(3) {
         width: 6vw;
@@ -182,16 +181,9 @@
 
 .navBox:hover {
   .tabmenuBox {
-<<<<<<< HEAD
-    transition: all 0.2s linear;
-
-    background-color: rgba(255, 255, 255);
-    height: 16vw;
-=======
     background-color: rgba(255, 255, 255, 0.9);
     height: 200%;
     transition: height 0.5s;
->>>>>>> f20885bd8043936176065a9370b93ac80a339b57
     width: 100vw;
     position: absolute;
     top: 6.667vw;
@@ -246,9 +238,9 @@
     }
   }
 }
- 
-@media screen and (max-width:720px) {
-  .navBox{
+
+@media screen and (max-width: 720px) {
+  .navBox {
     display: none;
   }
 }

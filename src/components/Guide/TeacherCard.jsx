@@ -2,10 +2,9 @@ import React from "react";
 import teacher from "./css/teacher.module.css";
 import { BsCheckLg } from "react-icons/bs";
 import styles from "../ChemiStory/css/index.module.css";
-import teacherData from "../../data/teacherData.json";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const TeacherCard = (props) => {
+const TeacherCard = ({ teacherData }) => {
   return (
     <div>
       <p className={styles.pin}>

@@ -95,7 +95,7 @@
       }
     }
     button {
-      width: 4.2vw;
+      width: 6vw;
       height: 2.5vw;
       background-color: #809cea;
       margin-top: 1vw;
@@ -113,6 +113,107 @@
     }
   }
 }
+
+.target {
+  white-space: pre-wrap;
+  width: 69.444vw;
+  height: 35.556vw;
+  margin: 0 auto;
+  text-align: left;
+  .profileBox {
+    background: url(https://img.exc.co.kr/exc_home/common/pastor_bg.jpg)
+      no-repeat;
+    background-size: cover;
+    padding: 2.778vw 5.556vw;
+    border-radius: 0.486vw;
+    display: flex;
+    margin-bottom: 20px;
+    .picture {
+      width: 20vw;
+      background-color: #fff;
+      border-radius: 0.694vw;
+      border: 1px solid #cdcfd1;
+      overflow: hidden;
+      text-align: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .desc {
+      width: 40vw;
+      margin: 0 auto;
+      padding: 1vw 5vw 0;
+      display: flex;
+      flex-direction: column;
+      color: #646464;
+      font-size: 0.9vw;
+      line-height: 1.5vw;
+      .name {
+        font-size: 1.389vw;
+        margin-bottom: 2.083vw;
+        color: #3d3d3d;
+        span {
+          font-size: 1.944vw;
+          font-weight: bold;
+        }
+      }
+      .career {
+        margin-bottom: 2vw;
+      }
+      .career span,
+      .education span {
+        font-weight: bold;
+        font-size: 1.111vw;
+        display: block;
+        margin-bottom: 0.8vw;
+      }
+    }
+  }
+  .video {
+    width: 69.444vw;
+    height: 39vw;
+    margin: 0 auto;
+    border-radius: 0.486vw;
+    overflow: hidden;
+    margin-bottom: 1.389vw;
+  }
+  .recordBox {
+    display: flex;
+    justify-content: space-between;
+    color: #646464;
+    div {
+      width: 48%;
+    }
+    span {
+      display: block;
+      padding: 1vw 2.8vw;
+      color: #14325e;
+      background-color: #f1f3f6;
+      border-radius: 0.694vw;
+      font-size: 1vw;
+      font-weight: 700;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 0.8vw;
+        height: 0.8vw;
+        border-radius: 50%;
+        background-color: #4d93f6;
+        position: absolute;
+        left: 1.2vw;
+        top: 1.2vw;
+      }
+    }
+    p {
+      padding: 1vw;
+      font-size: 0.9vw;
+      line-height: 1.5vw;
+    }
+  }
+}
+
 @media screen and (max-width: 720px) {
   .teacherBox {
     width: 83.333vw;
@@ -130,11 +231,40 @@
         }
       }
       button {
-        width: 4.2vw;
+        width: 8vw;
         height: 3.2vw;
         font-size: 0.7vw;
         position: absolute;
         top: 1vw;
+      }
+    }
+  }
+  .target {
+    .profileBox {
+      .picture {
+        img {
+          border-bottom: 1px solid #d0d0d0;
+        }
+      }
+      .desc {
+        line-height: 2.8vw;
+      }
+    }
+    .recordBox {
+      flex-direction: column;
+      div {
+        width: 98%;
+        margin: 0 auto;
+      }
+      span {
+        font-size: 2vw;
+        &::before {
+          top: 1.8vw;
+        }
+      }
+      p {
+        font-size: 1.8vw;
+        line-height: 3vw;
       }
     }
   }

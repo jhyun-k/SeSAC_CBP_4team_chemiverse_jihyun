@@ -31,7 +31,7 @@ const Header = ({ title, auth, setAuth, setIsOpen }) => {
           <Nav />
           <div className={headerStyle.mobile_right}>
             <FiSearch className={headerStyle.searchIcon} />
-            <input type="checkbox" id="menuicon" checked="" />
+            <input type="checkbox" id="menuicon" checked={true} />
             <label htmlFor="menuicon">
               <span></span>
               <span></span>
