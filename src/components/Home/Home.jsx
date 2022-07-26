@@ -7,7 +7,6 @@ import HomeNotice from "../HomeNotice/HomeNotice.jsx";
 import HomePage from '../HomePage';
 import { Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
-import HomePage from '../HomePage';
 
 const Home = () => {
     const homeList = [

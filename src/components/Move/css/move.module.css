@@ -40,7 +40,7 @@
 }
 
 .moveInner {
-  width: 83.333vw;
+  width: 69.444vw;
   margin: auto;
 }
 .moveInner .platformInfo {
@@ -65,7 +65,7 @@
   height: 31.042vw;
   border: 0.069vw solid #bcbed3;
   border-radius: 0.694vw;
-  margin: 1.736vw;
+  margin: 0.736vw;
   position: relative;
 }
 .itemboxs .move_class_img {

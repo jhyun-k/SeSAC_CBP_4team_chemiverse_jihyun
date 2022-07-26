@@ -10,7 +10,7 @@ import { FiSearch } from "react-icons/fi";
 const Header = ({ title,auth,setAuth,setIsOpen}) => {
 
   const navigate = useNavigate();
-    console.log(auth);
+/*     console.log(auth); */
     const goToLogin = ()=>{
         navigate('/login')
     }

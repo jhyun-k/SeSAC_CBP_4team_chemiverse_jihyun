@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import styles from "./css/diagnosis.module.css"
+import styles from "./css/diagnosis.module.css";
 
 const DiagnosisNav = () => {
   const DiagnosisNavList  = [
@@ -26,6 +26,7 @@ const DiagnosisNav = () => {
           })}
         </ul>
       </nav>
+
     </div>
   );
 };

@@ -18,8 +18,8 @@ const Nav = () => {
     { content: '강사소개', href: './guide/teacher' },
   ];
   const diagDetail = [
-    { content: '현재상태점검', href: './diagnosis' },
-    { content: '진단결과보기', href: './diagnosis/result' },
+    { content: '현재상태점검', href: './diagnosis/*' },
+    { content: '진단결과보기', href: './diagnosis/result/*' },
   ];
   const learningDetail = [
     { content: '회사이해', href: './learning' },
