@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./css/HomeHeader.module.css";
@@ -19,6 +20,27 @@ const HomeHeader = () => {
                 </Link>
                 <div className={styles.title}>Chemiverse Connect With</div>
                 <ul className={styles.homeNav}>
+=======
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './css/HomeHeader.module.css';
+
+const HomeHeader = () => {
+  const homeList = [
+    { content: '환영인사', href: 'welcome' },
+    { content: '회사소개', href: 'introduce' },
+    { content: '입사 전 준비사항', href: 'ready' },
+    { content: '게시판', href: 'board/notice' },
+  ];
+  return (
+    <header className={styles.homeHeader}>
+      <div className={styles.homeContainer}>
+        <Link to='/' className={styles.blacklogo}>
+          expert
+        </Link>
+        <div className={styles.title}>Chemiverse Connect With</div>
+        {/* <ul className={styles.homeNav}>
+>>>>>>> jiyoung
               {homeList.map((element, index) => {
                 return (
                   <li className={styles.navlist} key={index}>
@@ -26,6 +48,7 @@ const HomeHeader = () => {
                   </li>
                 );
               })}
+<<<<<<< HEAD
             </ul> 
                 <button className={styles.onup_btn}>
                     <Link to="/login">Chemiverse On & Up</Link>
@@ -55,6 +78,15 @@ const HomeHeader = () => {
             </div>
         </header>
     );
+=======
+            </ul> */}
+        <button className={styles.onup_btn}>
+          <Link to='/login'>Chemiverse On & Up</Link>
+        </button>
+      </div>
+    </header>
+  );
+>>>>>>> jiyoung
 };
 
 export default HomeHeader;

@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import SearchHeader from '../Post/SearchHeader';
-import data from '../../data/noticeData.json';
-import Pagination from '../Post/Pagination';
-import PostList from '../Post/PostList';
+import styles from '../Post/css/PostTab.module.css';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD:src/components/HomeNotice/HomeNotice.jsx
 import styles from './../Post/css/PostTab.module.css';
 import HomeHeaderNavy from './../Home/HomeHeaderNavy';
+=======
+import { useRef } from 'react';
+import PostList from '../Post/PostList';
+import Paginate from '../Post/Paginate';
+import data from '../../data/qnaData.json';
+>>>>>>> jiyoung:src/components/Board/QnA.jsx
 
-const HomeNotice = () => {
+const QnA = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
-  //const [search, setSearch] = useState([]);
+
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
   const endNum = startNum + LIST_PER_PAGE;
@@ -21,6 +25,7 @@ const HomeNotice = () => {
   }, []);
 
   return (
+<<<<<<< HEAD:src/components/HomeNotice/HomeNotice.jsx
     <div>
       <HomeHeaderNavy />
       <SearchHeader data={lists} />
@@ -30,10 +35,14 @@ const HomeNotice = () => {
         startNum={startNum}
         endNum={endNum}
       />
+=======
+    <div className={styles.post}>
+      <PostList lists={lists} startNum={startNum} endNum={endNum} />
+>>>>>>> jiyoung:src/components/Board/QnA.jsx
       <Link to='./write'>
-        <button className={styles.writeBtn}>작성하기</button>
+        <button className={styles.writeBtn}>글쓰기</button>
       </Link>
-      <Pagination
+      <Paginate
         total={lists.length}
         page={page}
         setPage={setPage}
@@ -43,4 +52,4 @@ const HomeNotice = () => {
   );
 };
 
-export default HomeNotice;
+export default QnA;

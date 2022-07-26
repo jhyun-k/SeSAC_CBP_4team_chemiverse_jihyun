@@ -3,7 +3,6 @@ import HomeHeader from './HomeHeader';
 import Welcome from './Welcome';
 import Introduce from './Introduce';
 import Ready from './Ready';
-import HomeNotice from './HomeNotice/HomeNotice.jsx';
 import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Board from './HomeNotice/Board';
