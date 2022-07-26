@@ -9,6 +9,13 @@ import { Link } from "react-router-dom";
 import Board from '../HomeNotice/Board';
 
 const Home = () => {
+  const homeList = [
+    { content: "환영인사", href: "welcome" },
+    { content: "회사소개", href: "introduce" },
+    { content: "입사 전 준비사항", href: "ready" },
+    { content: "게시판", href: "/board/notice" },
+  ];
+
   return (
     <div className="home">
       <HomeHeader />

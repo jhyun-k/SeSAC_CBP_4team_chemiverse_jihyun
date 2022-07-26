@@ -7278,6 +7278,15 @@
     "klona" "^2.0.5"
     "semver" "^7.3.5"
 
+"postcss-loader@^7.0.1":
+  "integrity" "sha512-VRviFEyYlLjctSM93gAZtcJJ/iSkPZ79zWbN/1fSH+NisBByEiVLqpdVDrPLVSi8DX0oJo12kL/GppTBdKVXiQ=="
+  "resolved" "https://registry.npmjs.org/postcss-loader/-/postcss-loader-7.0.1.tgz"
+  "version" "7.0.1"
+  dependencies:
+    "cosmiconfig" "^7.0.0"
+    "klona" "^2.0.5"
+    "semver" "^7.3.7"
+
 "postcss-logical@^5.0.4":
   "integrity" "sha512-RHXxplCeLh9VjinvMrZONq7im4wjWGlRJAqmAVLXyZaXwfDWP73/oq4NdIp+OZwhQUMj0zjqDfM5Fj7qby+B4g=="
   "resolved" "https://registry.npmjs.org/postcss-logical/-/postcss-logical-5.0.4.tgz"

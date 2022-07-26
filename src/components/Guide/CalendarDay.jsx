@@ -58,7 +58,7 @@ const CalendarDay = () => {
         <h1 className={calendar.h1Event}>{title}</h1>
         <div className={calendar.h2Box}>
           <h2 className={calendar.h2Event}>{start}</h2>
-          <h2 className={calendar.h2Event}>{end}</h2>
+          <h2 className={calendar.h2Event}>{end ? "~" + end : end}</h2>
         </div>
       </div>
     </div>
