@@ -42,7 +42,7 @@
 }
 .hoverBox .box1:hover .connectWith {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box2 {
   position: absolute;
@@ -51,7 +51,7 @@
 }
 .hoverBox .box2:hover .move {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box3 {
   position: absolute;
@@ -60,7 +60,7 @@
 }
 .hoverBox .box3:hover .guide {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box4 {
   position: absolute;
@@ -70,7 +70,7 @@
 }
 .hoverBox .box4:hover .learning {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box5 {
   position: absolute;
@@ -79,7 +79,7 @@
 }
 .hoverBox .box5:hover .chemiStory {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box6 {
   position: absolute;
@@ -89,7 +89,7 @@
 }
 .hoverBox .box6:hover .post {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box7 {
   position: absolute;
@@ -98,7 +98,7 @@
 }
 .hoverBox .box7:hover .mentoring {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .box8 {
   position: absolute;
@@ -107,7 +107,7 @@
 }
 .hoverBox .box8:hover .diagnosis {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .hoverBox .common {
   cursor: default;
