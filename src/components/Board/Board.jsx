@@ -10,13 +10,18 @@ import Introduce from './Introduce';
 import QnA from './QnA';
 import Secret from './Secret';
 import { useState } from 'react';
+import HomeHeaderNavy from '../Home/HomeHeaderNavy';
+import BoardNav from './BoardNav';
+import styles from './css/Board.module.css';
 
 const Board = () => {
   const [newContent, SetNewContent] = useState({ title: '', body: '' });
 
   return (
     <div>
-      <h1>게시판</h1>
+      <HomeHeaderNavy />
+
+      <BoardNav />
       <Routes>
         <Route path='/notice' element={<HomeNotice />} />
         <Route path='/introduce' element={<Introduce />} />

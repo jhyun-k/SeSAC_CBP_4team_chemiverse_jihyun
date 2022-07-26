@@ -17,6 +17,9 @@
     border-bottom-left-radius: 0.347vw;
     border-right: none;
   }
+  &:nth-child(2) {
+    border-right: none;
+  }
   &:last-child {
     border-top-right-radius: 0.347vw;
     border-bottom-right-radius: 0.347vw;
