@@ -3,14 +3,14 @@ import styles from "../ChemiStory/css/index.module.css";
 import teacher from "./css/teacher.module.css";
 import { Route, Routes } from "react-router-dom";
 import TeacherCard from "./TeacherCard";
-import CardId from "./CardId";
+import TeacherDetail from "./TeacherDetail";
 
 const Teacher = () => {
   return (
     <div className={styles.WhatIsChemiStory}>
       <Routes>
-        <Route path="/*" element={<TeacherCard />} />
-        <Route path="/:id" element={<CardId />} />
+        <Route path="/" element={<TeacherCard />} />
+        <Route path="/:id" element={<TeacherDetail />} />
       </Routes>
     </div>
   );
