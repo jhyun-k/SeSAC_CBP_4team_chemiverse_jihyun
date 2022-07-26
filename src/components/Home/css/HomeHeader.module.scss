@@ -83,7 +83,7 @@ input[id='menuicon']{
   .homeContainer{display: flex; align-items: center;justify-content: space-between;}
   .homeNav{display: none;}
   .title{display: none;}
-  .onup_btn{position: fixed; bottom: 0; width: 100vw;background-color: #6f76c1;border-radius: 0;color: #ffffff; border: 1px solid #6f76c1; ;}
+  .onup_btn{position: fixed; bottom: 0; width: 100vw;background-color: #6f76c1;border-radius: 0;color: #ffffff; border: 1px solid #6f76c1; display: none;}
   .blacklogo{width: 100px;height: 8vw; background-size: contain; background-repeat: no-repeat;margin-left: 5vw;z-index: 2;}
 
   input[id='menuicon']{
@@ -141,16 +141,17 @@ opacity: 0;
   }
   input[id='menuicon']:checked + label + div{
     right: 0;
+    .onup_menu{position: fixed; bottom: 0;left:0; width: 100vw;background-color: #6f76c1;border-radius: 0;color: #ffffff; border: 1px solid #6f76c1;height: 60px; transition: all .35s;}
   }
   .navlist_white{
     color: #222;
     text-align: left;
-    font-size: 6vw;
+    font-size: 5vw;
     height: 6vw;
     margin: 6vw auto;
     // border-bottom:1px solid #ccc ;
     font-weight: bold;
-    padding-left: 2vw;
+    padding-left: 6vw;
   }
 
   /* .hamburger{

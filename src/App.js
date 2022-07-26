@@ -61,7 +61,7 @@ function App() {
         <Route path='main/*' element = {<DetailRedirect auth={auth}/>} />
         <Route path="/main/*" element={<Main auth={auth} setAuth={setAuth} />}></Route>
          {/* 대체 어떻게 props를 내릴 수 있단말인가 */}
-        <Route path="/*" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/welcome" element={<Welcome />}></Route>
         <Route path="/introduce" element={<Introduce />}></Route>
         <Route path="/ready" element={<Ready />}></Route>

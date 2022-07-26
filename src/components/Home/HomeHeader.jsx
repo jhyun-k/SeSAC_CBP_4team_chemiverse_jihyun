@@ -43,7 +43,9 @@ const HomeHeader = () => {
                     <Link to={element.href}>{element.content}</Link>
                   </li>
                 );
-              })}
+              })}<button className={styles.onup_menu}>
+              <Link to="/login">Chemiverse On & Up</Link>
+            </button>
                 </div>
 
                 
