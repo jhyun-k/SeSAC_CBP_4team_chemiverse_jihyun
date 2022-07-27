@@ -655,6 +655,10 @@ A HORIZONTAL event
   right: -4px;
   right: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));
 }
+.fc .fc-daygrid-event-harness-abs,
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  cursor: pointer;
+}
 .fc .fc-popover {
   position: absolute;
   z-index: 9999;

@@ -31,6 +31,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-youtube": "^9.0.3",
+    "reactstrap": "^9.1.2",
     "slick-carousel": "^1.8.1",
     "source-map-js": "^1.0.2",
     "swiper": "^8.3.1",

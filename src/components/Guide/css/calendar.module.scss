@@ -13,16 +13,7 @@ body {
 }
 .eventBox {
   width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: flex-end;
-  align-items: center;
-  border: 1px solid #ddd;
-  height: 48.8vw;
-  top: 4.2vw;
-  position: relative;
-  padding: 3vw 0;
+  
 }
 .h1Event {
   font-size: 1.2vw;
@@ -41,4 +32,23 @@ body {
 .mainBox {
   width: 69.444vw;
   margin: 0 auto;
+  position: relative;
+  .eventBox {
+    width: 40vw;
+    height: 20vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-end;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 10;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 3vw 0;
+  }
 }
