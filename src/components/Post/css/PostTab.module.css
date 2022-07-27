@@ -30,7 +30,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-image: url(/public/chemiverse_img/bg-quiz-wrap.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 90%;
@@ -382,6 +382,19 @@ button {
 }
 
 @media screen and (max-width: 720px) {
+  .menuTitleBanner .pin {
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .menuTitleBanner .title {
+    display: inline-block;
+    text-align: center;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 4.5vw;
+    padding-bottom: 8vw;
+  }
   .main {
     padding-left: 6.944vw;
     padding-right: 6.25vw;
@@ -391,7 +404,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+    background-image: url(/public/chemiverse_img/bg-quiz-wrap.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 90%;
