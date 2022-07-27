@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import data from '../../data/introduceData.json';
 import PostList from '../Post/PostList';
 import { useRef } from 'react';
+import { BsCheckLg } from 'react-icons/bs';
 
 const Introduce = () => {
   const [lists, setLists] = useState([]);
@@ -60,24 +61,32 @@ const Introduce = () => {
     }
   };
   return (
-    <div className={styles.post}>
-      <SearchHeader
-        data={lists}
-        onChangeSearch={onChangeSearch}
-        searchRef={searchRef}
-        onChangeCategory={onChangeCategory}
-      />
-      <PostList lists={lists} startNum={startNum} endNum={endNum} />
-      <Link to='./write'>
-        <button className={styles.writeBtn}>글쓰기</button>
-      </Link>
-      <Paginate
-        total={lists.length}
-        page={page}
-        setPage={setPage}
-        LIST_PER_PAGE={LIST_PER_PAGE}
-      />
-    </div>
+    <>
+      <div className={styles.menuTitleBanner}>
+        <p className={styles.pin}>
+          <BsCheckLg />
+        </p>
+        <h1 className={styles.title}>자기소개</h1>
+      </div>
+      <div className={styles.post}>
+        <SearchHeader
+          data={lists}
+          onChangeSearch={onChangeSearch}
+          searchRef={searchRef}
+          onChangeCategory={onChangeCategory}
+        />
+        <PostList lists={lists} startNum={startNum} endNum={endNum} />
+        <Link to='./write'>
+          <button className={styles.writeBtn}>글쓰기</button>
+        </Link>
+        <Paginate
+          total={lists.length}
+          page={page}
+          setPage={setPage}
+          LIST_PER_PAGE={LIST_PER_PAGE}
+        />
+      </div>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import PostList from '../Post/PostList';
 import Paginate from '../Post/Paginate';
 import data from '../../data/qnaData.json';
+import { BsCheckLg } from 'react-icons/bs';
 
 const QnA = () => {
   const [lists, setLists] = useState([]);
@@ -20,18 +21,29 @@ const QnA = () => {
   }, []);
 
   return (
-    <div className={styles.post}>
-      <PostList lists={lists} startNum={startNum} endNum={endNum} />
-      <Link to='./write'>
-        <button className={styles.writeBtn}>글쓰기</button>
-      </Link>
-      <Paginate
-        total={lists.length}
-        page={page}
-        setPage={setPage}
-        LIST_PER_PAGE={LIST_PER_PAGE}
-      />
-    </div>
+    <>
+      <div className={styles.menuTitleBanner}>
+        <p className={styles.pin}>
+          <BsCheckLg />
+        </p>
+        <h1 className={styles.title}>QnA</h1>
+        <h3 className={styles.subTitle}>
+          문의사항을 남겨 주시면 신속하게 답변해 드리겠습니다.
+        </h3>
+      </div>
+      <div className={styles.post}>
+        <PostList lists={lists} startNum={startNum} endNum={endNum} />
+        <Link to='./write'>
+          <button className={styles.writeBtn}>글쓰기</button>
+        </Link>
+        <Paginate
+          total={lists.length}
+          page={page}
+          setPage={setPage}
+          LIST_PER_PAGE={LIST_PER_PAGE}
+        />
+      </div>
+    </>
   );
 };
 
