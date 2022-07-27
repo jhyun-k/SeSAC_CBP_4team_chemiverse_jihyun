@@ -3,17 +3,33 @@ import { useParams } from "react-router-dom";
 import Modal from "./Modal";
 import styles from "./css/learning.module.css";
 import ModalContent1 from "./ModalContent1";
-import ModalContent2 from "./ModalContent2";
+import Think from "./Think/Think";
+import { useMediaQuery } from "react-responsive";
+import { BsCheckLg } from "react-icons/bs";
+import YouTube from "react-youtube";
 
-const LearningModule = (props) => {
+const LearningModule = ({ module }) => {
     const { id } = useParams();
-    const data = props.module[id - 1];
-    const [modalShown1, toggleModal1] = useState(false);
-    const [modalShown2, toggleModal2] = useState(false);
+    const data = module[id - 1];
+    const [CardModalShown, CardToggleModal] = useState(false);
+    const [VideoModalShown, VideoToggleModal] = useState(false);
+
+    const isMobile = useMediaQuery({
+        query: "(max-width: 720px)",
+    });
+    const isDesktop = useMediaQuery({
+        query: "(min-width: 721px)",
+    });
 
     return (
         <div className={styles.moduleBox}>
-            <section className={styles.moduleDesc}>
+            {/* 역량학습 타이틀 */}
+            <p className={styles.pin}>
+                <BsCheckLg />
+            </p>
+            <h1 className={styles.title}>역량학습</h1>
+            {/* 개요 섹션 */}
+            <section className={`${styles.moduleDesc} ${styles.inner}`}>
                 <div className={styles.moduleImgBox}>
                     <img src={data.img} alt="" />
                 </div>
@@ -28,8 +44,9 @@ const LearningModule = (props) => {
                     <dd>{data.basic}</dd>
                 </dl>
             </section>
+            {/* 학습 섹션 */}
             <section className={styles.moduleLearning}>
-                <div className={styles.sectionTitleArea}>
+                <div className={`${styles.sectionTitleArea} ${styles.inner}`}>
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -46,12 +63,12 @@ const LearningModule = (props) => {
                     </div>
                 </div>
 
-                <div className={styles.learningContents}>
-                    {/* 학습 - 1 */}
+                <div className={`${styles.learningContents} ${styles.inner}`}>
+                    {/* 카드뉴스 모달 */}
                     <div
                         className={styles.imgBox}
                         onClick={() => {
-                            toggleModal1(true);
+                            CardToggleModal(true);
                         }}
                     >
                         <img
@@ -63,37 +80,126 @@ const LearningModule = (props) => {
                         />
 
                         <Modal
-                            shown={modalShown1}
+                            shown={CardModalShown}
                             close={() => {
-                                toggleModal1(false);
+                                CardToggleModal(false);
                             }}
                         >
                             <ModalContent1 />
                         </Modal>
                     </div>
-                    {/* 학습 - 2 */}
-                    <div
-                        className={styles.imgBox}
-                        onClick={() => {
-                            toggleModal2(true);
-                        }}
-                    >
-                        <img
-                            src="https://i.ytimg.com/an_webp/dGpYuTshhuA/mqdefault_6s.webp?du=3000&sqp=CODP05YG&rs=AOn4CLBb3QltRjmKftKER_cal8uspVKfdA"
-                            alt=""
-                        />
-                        <Modal
-                            shown={modalShown2}
-                            close={() => {
-                                toggleModal2(false);
-                            }}
-                        >
-                            <ModalContent2 />
-                        </Modal>
-                    </div>
+                    {/* 모바일 화면에서 유튜브 모달 */}
+                    {isMobile && (
+                        <>
+                            <div className={styles.imgBox}>
+                                <a href="https://www.youtube.com/watch?v=dGpYuTshhuA">
+                                    <img
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/chemiverse_img/hqdefault(1).webp"
+                                        }
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div className={styles.imgBox}>
+                                <a href="https://www.youtube.com/watch?v=6sinhm9AkUM">
+                                    <img
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/chemiverse_img/hqdefault.webp"
+                                        }
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                        </>
+                    )}
+                    {/* 데스크탑에서 유튜브 모달 */}
+                    {isDesktop && (
+                        <>
+                            <div
+                                className={styles.imgBox}
+                                onClick={() => {
+                                    VideoToggleModal(true);
+                                }}
+                            >
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/chemiverse_img/hqdefault(1).webp"
+                                    }
+                                    alt=""
+                                />
+                                <Modal
+                                    shown={VideoModalShown}
+                                    close={() => {
+                                        VideoToggleModal(false);
+                                    }}
+                                >
+                                    <div className={styles.youtube}>
+                                        <YouTube
+                                            videoId="dGpYuTshhuA"
+                                            opts={{
+                                                width: "889",
+                                                height: "500",
+                                                playerVars: {
+                                                    autoplay: 1,
+                                                    rel: 0,
+                                                    modestbranding: 1,
+                                                },
+                                            }}
+                                            onEnd={(e) => {
+                                                e.target.stopVideo(0);
+                                            }}
+                                        />
+                                    </div>
+                                </Modal>
+                            </div>
+                            <div
+                                className={styles.imgBox}
+                                onClick={() => {
+                                    VideoToggleModal(true);
+                                }}
+                            >
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/chemiverse_img/hqdefault.webp"
+                                    }
+                                    alt=""
+                                />
+                                <Modal
+                                    shown={VideoModalShown}
+                                    close={() => {
+                                        VideoToggleModal(false);
+                                    }}
+                                >
+                                    <div className={styles.youtube}>
+                                        <YouTube
+                                            videoId="6sinhm9AkUM"
+                                            opts={{
+                                                width: "889",
+                                                height: "500",
+                                                playerVars: {
+                                                    autoplay: 1,
+                                                    rel: 0,
+                                                    modestbranding: 1,
+                                                },
+                                            }}
+                                            onEnd={(e) => {
+                                                e.target.stopVideo(0);
+                                            }}
+                                        />
+                                    </div>
+                                </Modal>
+                            </div>
+                        </>
+                    )}
                 </div>
             </section>
-            <section className={styles.moduleThink}>
+            {/* 생각해보기 섹션 */}
+            <section className={`${styles.moduleThink} ${styles.inner}`}>
                 <div className={styles.sectionTitleArea}>
                     <img
                         src={
@@ -111,6 +217,7 @@ const LearningModule = (props) => {
                         </p>
                     </div>
                 </div>
+                <Think />
             </section>
         </div>
     );

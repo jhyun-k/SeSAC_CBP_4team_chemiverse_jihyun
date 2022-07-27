@@ -2,6 +2,7 @@
   width: 70vw;
   height: 70vh;
   margin: auto;
-  background: url("../../../public/chemiverse_img/img-main.png") no-repeat center;
-  background-size: contain;
+}
+.mainPage img {
+  width: 100%;
 }/*# sourceMappingURL=mainPage.module.css.map */

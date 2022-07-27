@@ -3,6 +3,19 @@ a {
   text-decoration: none !important;
 }
 
+.learningWrapper .pin {
+  font-size: 1.389vw;
+  margin-bottom: 1.034vw;
+  color: rgba(75, 80, 132, 0.721);
+}
+.learningWrapper .title {
+  display: inline-block;
+  text-align: center;
+  width: 69.44vw;
+  color: #6f76c1;
+  font-size: 2.083vw;
+  padding-bottom: 5.556vw;
+}
 .learningWrapper .main {
   padding-left: 6.944vw;
   padding-right: 6.25vw;
@@ -46,9 +59,18 @@ a {
 }
 
 /* learnNav */
+.learnNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6vw;
+  z-index: 10;
+  background-color: white;
+}
+
 .learnNav ul li {
   color: #6f76c1;
   border: 0.139vw solid #6f76c1;
+  margin-top: 50px;
   margin-bottom: 50px;
   width: 17.361vw;
   height: 3.125vw;
@@ -56,6 +78,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.181vw;
+  background-color: #fff;
   font-weight: 500;
 }
 .learnNav ul li * {
@@ -83,20 +106,21 @@ a {
 
 /* Understand.jsx */
 .inner {
-  width: 83.333vw;
+  width: 69.444vw;
   margin: auto;
 }
 
 .moduleList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .moduleList .moduleListItem .imgBox {
   position: relative;
   width: 20vw;
   height: 20vw;
   overflow: hidden;
-  margin: 1.389vw 2.083vw;
+  margin: 1.389vw 0;
   border-radius: 0.694vw;
 }
 .moduleList .moduleListItem .imgBox img {
@@ -111,7 +135,8 @@ a {
   top: 32.639vw;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(230, 224, 236, 0.9);
+  background-color: rgba(111, 118, 193, 0.9);
+  color: white;
   width: 44.444vw;
   height: 20.833vw;
   transition: 0.4s;
@@ -130,6 +155,7 @@ a {
   line-height: 2.431vw;
   font-weight: bold;
   width: 6.944vw;
+  color: black;
 }
 .moduleList .moduleListItem .moduleName {
   font-size: 1.389vw;
@@ -151,10 +177,18 @@ a {
 .moduleList .moduleListItem:hover .moduleName {
   color: #6f76c1;
 }
+.moduleList .moduleName {
+  font-size: 1.389vw;
+  margin: 1.389vw;
+  text-align: left;
+}
+.moduleList:hover .hover {
+  top: 15.694vw;
+  opacity: 1;
+}
 
 /* LearningModule.jsx */
 .moduleBox {
-  width: 83.333vw;
   margin: auto;
 }
 .moduleBox .moduleDesc {
@@ -222,19 +256,56 @@ a {
   left: 0.347vw;
   top: 0.694vw;
 }
-.moduleBox .moduleLearning .learningContents {
+.moduleBox .moduleTextBox {
+  width: 55.556vw;
+  text-align: left;
+  padding: 2.083vw 2.778vw;
+  height: 23.611vw;
+}
+.moduleBox .moduleTextBox .moduleTitle {
+  font-size: 2.292vw;
+}
+.moduleBox .moduleTextBox .descTitle {
+  font-size: 1.042vw;
+}
+.moduleBox .moduleTextBox dt {
+  margin-top: 1.389vw;
+  margin-bottom: 0.694vw;
+  font-weight: bold;
+}
+.moduleBox .moduleTextBox dt:first-child {
+  margin: 0;
+  padding-bottom: 1.389vw;
+  border-bottom: 3px solid #d9d9d9;
+}
+.moduleBox .moduleTextBox dd {
+  font-size: 1.111vw;
+}
+
+.moduleLearning {
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 25px;
+}
+.moduleLearning .sectionTitleArea {
+  margin: auto;
+}
+.moduleLearning .learningContents {
+  margin: 40px auto;
   display: flex;
   justify-content: space-around;
 }
-.moduleBox .moduleLearning .learningContents .imgBox > img {
-  width: 31.25vw;
-  height: 17.361vw;
+.moduleLearning .learningContents .imgBox {
+  cursor: pointer;
+}
+.moduleLearning .learningContents .imgBox > img {
+  width: 21.25vw;
+  height: 12.361vw;
   border-radius: 0.694vw;
 }
 
 .sectionTitleArea {
   margin: 2.083vw 0;
-  padding-bottom: 1.042vw;
   text-align: left;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
@@ -256,7 +327,7 @@ a {
 }
 
 section {
-  margin: 6.944vw 0;
+  margin: 3.944vw 0;
 }
 
 /* Modal.jsx */
@@ -270,7 +341,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 100000;
 }
 .modalBackdrop .modalContent {
   background-color: white;
@@ -290,7 +361,7 @@ section {
 }
 .modalBackdrop .slide {
   width: 69.444vw;
-  height: 34.722vw;
+  height: 30.722vw;
   position: relative;
 }
 .modalBackdrop .slide h1 {
@@ -329,21 +400,17 @@ section {
 
 @media (min-width: 360px) and (max-width: 720px) {
   .moduleList .moduleListItem .imgBox {
-    width: 35vw;
+    width: 30vw;
     height: 35vw;
-    margin: 0 2vw;
   }
   .moduleList .moduleListItem .imgBox img {
     width: 40vw;
   }
   .moduleList .moduleListItem .imgBox .hover {
-    top: 0;
-    width: 105%;
-    height: 105%;
-    border-radius: 0;
-    padding: 3.472vw;
+    display: none;
   }
   .moduleBox .moduleDesc {
+    background: none;
     display: flex;
     flex-direction: column;
   }
@@ -358,6 +425,10 @@ section {
     width: 100%;
     height: auto;
   }
+  .moduleBox .moduleLearning {
+    background: none;
+    background-color: #f7f7f7;
+  }
   .moduleBox .moduleLearning .learningContents {
     display: flex;
     flex-direction: column;
@@ -368,5 +439,31 @@ section {
   .moduleBox .moduleLearning .learningContents .imgBox img {
     width: 100%;
     height: auto;
+  }
+  > div iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .closeBtn img {
+    width: 20px;
+    margin: 20px;
+  }
+  .modalContent {
+    width: 100%;
+    height: 80%;
+  }
+  .modalBackdrop .slide {
+    margin: auto;
+  }
+  .modalBackdrop .slide > div {
+    width: 50vh;
+    margin: auto;
+  }
+  .modalBackdrop .slide > div > button {
+    margin: 0 -50px;
   }
 }/*# sourceMappingURL=learning.module.css.map */
