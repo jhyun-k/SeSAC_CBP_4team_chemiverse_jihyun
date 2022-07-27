@@ -281,13 +281,13 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   align-items: center;
 }
 .fc .fc-toolbar.fc-header-toolbar {
-  margin-bottom: 0.8vw;
+  margin-bottom: 1.5em;
 }
 .fc .fc-toolbar.fc-footer-toolbar {
   margin-top: 1.5em;
 }
 .fc .fc-toolbar-title {
-  font-size: 2.5vw;
+  font-size: 1.75em;
   margin: 0;
 }
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
@@ -458,6 +458,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   background: rgba(208, 208, 208, 0.3);
   background: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));
 }
+
 /* link resets */
 /* ---------------------------------------------------------------------------------------------------- */
 a.fc-event,
@@ -571,10 +572,10 @@ A HORIZONTAL event
 .fc-h-event {
   /* allowed to be top-level */
   display: block;
-  border: 1px solid #6f76c1;
-  border: 1px solid var(--fc-event-border-color, #6f76c1);
-  background-color: #6f76c1;
-  background-color: var(--fc-event-bg-color, #6f76c1);
+  border: 1px solid #3788d8;
+  border: 1px solid var(--fc-event-border-color, #3788d8);
+  background-color: #3788d8;
+  background-color: var(--fc-event-bg-color, #3788d8);
 }
 .fc-h-event .fc-event-main {
   color: #fff;
