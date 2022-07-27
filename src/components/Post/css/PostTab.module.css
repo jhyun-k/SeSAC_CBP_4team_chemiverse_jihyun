@@ -490,6 +490,7 @@ button {
     font-size: 2vw;
     position: absolute;
     top: 1.39vw;
+    width: 5vw;
   }
   .freePostList .freePost .postIndex.important::after {
     display: none;
@@ -583,13 +584,31 @@ button {
     height: 8.333vw;
     font-size: 2.778vw;
   }
-  .writeForm .btnBox button {
-    width: 20.833vw;
-    height: 8.333vw;
-    font-size: 2.778vw;
+  .writeForm .btnBox {
+    display: flex;
+    justify-content: center;
   }
-  .writeForm .btnBox .submitBtn {
-    margin-left: 6.944vw;
+  .writeForm .btnBox .radioWrap {
+    width: 20vw;
+    height: 7vw;
+    margin: 2vw;
+    font-size: 3vw;
+    font-weight: 700;
+  }
+  .writeForm .btnBox .submitBtn,
+.writeForm .btnBox .temporaryBtn {
+    width: 20vw;
+    height: 7vw;
+    padding: 0.694vw;
+    margin: 2vw;
+    cursor: pointer;
+    border: 3px solid #6f76c1;
+    border-radius: 5vw;
+    font-size: 3vw;
+    font-weight: 700;
+    background-color: #6f76c1;
+    color: #fff;
+    margin-bottom: 10vw;
   }
 }
 /* secret */
