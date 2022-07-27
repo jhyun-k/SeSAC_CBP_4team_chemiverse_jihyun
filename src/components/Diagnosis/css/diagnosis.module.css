@@ -62,46 +62,40 @@
   font-size: 1.25vw;
 }
 
-.pin {
-  font-size: 1.389vw;
-  margin-bottom: 1.034vw;
-  color: rgba(75, 80, 132, 0.721);
-}
-
-.title {
-  display: inline-block;
-  text-align: center;
-  width: 83.333vw;
-  color: #6F76C1;
-  font-size: 2.083vw;
-  padding-bottom: 5.556vw;
-}
-
-.diagnosisarea {
+.nowContainer {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
-.diagnosisarea .sidebar {
+
+.diagnosisInner {
+  width: 83.333vw;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 }
-.diagnosisarea .sidebar .tabbutton {
-  width: 9.722vw;
+
+.tabbutton {
+  width: 6.722vw;
   height: 3.125vw;
   border: 0.069vw solid #6f76c1;
   cursor: pointer;
+  margin-bottom: 1.125vw;
 }
-.diagnosisarea .diaInner {
+
+.diaInner {
   width: 69.444vw;
-  margin: auto;
 }
 
 /* ================================ */
 .presentBefore {
   width: 100%;
+  margin: auto;
 }
 .presentBefore .testHeader {
   width: 65.972vw;
@@ -115,12 +109,12 @@
     background-position: center; */
 }
 .presentBefore .diaTestHeaderImg {
-  width: 496px;
-  height: 265px;
+  width: 34.444vw;
+  height: 18.403vw;
 }
 .presentBefore .diaTestHeaderAfreImg {
-  width: 430px;
-  height: 285px;
+  width: 29.861vw;
+  height: 19.792vw;
 }
 .presentBefore .testDesBox {
   display: flex;
@@ -129,53 +123,54 @@
   text-align: start;
 }
 .presentBefore .testTitle {
-  font-size: 25px;
-  line-height: 25px;
-  margin-bottom: 20px;
+  font-size: 1.736vw;
+  line-height: 1.736vw;
+  margin-bottom: 1.389vw;
   color: #424888;
 }
 .presentBefore .testdes {
-  line-height: 20px;
-  margin-bottom: 14px;
-  font-size: 14px;
+  line-height: 1.389vw;
+  margin-bottom: 0.972vw;
+  font-size: 0.972vw;
 }
 .presentBefore .testinfo {
-  font-size: 12px;
+  font-size: 0.833vw;
   color: rgb(202, 83, 83);
 }
 
 .formArea {
-  border: 1px solid #6f76c1;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 70px;
+  border: 0.069vw solid #6f76c1;
+  border-radius: 0.694vw;
+  padding-top: 2.083vw;
+  padding-bottom: 4.861vw;
+  margin: 2.778vw 2.389vw;
 }
 .formArea .testName {
   background-color: #4e559a;
-  width: 400px;
-  height: 35x;
+  width: 27.778vw;
+  height: 2.431vw;
   color: #fff;
   text-align: center;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 1.389vw;
+  line-height: 2.431vw;
   font-weight: bold;
-  margin: 20px auto;
-  border-radius: 20px;
+  margin: 1.389vw auto;
+  border-radius: 1.389vw;
 }
 .formArea .questionbox {
   text-align: center;
-  margin: 30px 0;
+  margin: 2.083vw 0;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
 .formArea .questionTitle {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.25vw;
+  line-height: 1.25vw;
   font-weight: bold;
   color: #272728;
-  padding: 0 5px 5px 0;
-  margin: 20px auto;
+  padding: 0 0.347vw 0.347vw 0;
+  margin: 1.389vw auto;
 }
 .formArea .titleNumber {
   color: #4e559a;
@@ -186,15 +181,15 @@
 .formArea label {
   display: block;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin-bottom: 0.347vw;
 }
 .formArea label span {
   display: inline-flex;
   align-items: center;
-  padding: 5px 20px 5px 10px;
-  border-radius: 31px;
+  padding: 0.347vw 1.389vw 0.347vw 0.694vw;
+  border-radius: 2.153vw;
   transition: 0.24s ease;
-  font-size: 15px;
+  font-size: 1.042vw;
 }
 .formArea label span:hover,
 .formArea input[type=radio]:checked + span {
@@ -204,43 +199,48 @@
   /* display: inline-block; */
   content: "";
   background-color: #fff;
-  width: 15px;
-  height: 15px;
+  width: 1.042vw;
+  height: 1.042vw;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 0.694vw;
   transition: 0.24s ease;
-  box-shadow: inset 0 0 0 2px #6f76c1;
+  box-shadow: inset 0 0 0 0.139vw #6f76c1;
 }
 .formArea input[type=radio]:checked + label span::before {
-  box-shadow: inset 0 0 0 4px #00005c;
+  box-shadow: inset 0 0 0 0.278vw #00005c;
 }
 .formArea input[type=text] {
-  box-shadow: inset 0 0 0 2px #6f76c1;
-  border-radius: 20px;
+  box-shadow: inset 0 0 0 0.139vw #6f76c1;
+  border-radius: 1.389vw;
   color: #58585d;
-  width: 300px;
-  height: 40px;
-  font-size: 15px;
-  padding: 10px 20px;
+  width: 20.833vw;
+  height: 2.778vw;
+  font-size: 1.042vw;
+  padding: 0.694vw 1.389vw;
 }
 .formArea .textbox {
   align-items: center;
 }
 .formArea .infomesage {
   color: rgba(202, 27, 27, 0.809);
-  font-size: 14px;
+  font-size: 0.972vw;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 1.389vw 0;
 }
 .formArea .formbutton {
-  margin-right: 10px;
-  width: 150px;
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid #6f76c1;
+  margin-right: 0.694vw;
+  width: 10.417vw;
+  padding: 0.694vw;
+  font-size: 1.181vw;
+  border: 0.069vw solid #6f76c1;
   cursor: pointer;
 }
 
+.resultbefore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .resultbefore .chartcontainer {
   width: 100%;
   margin-top: 3vw;
@@ -272,6 +272,44 @@
   padding-top: 1.25vw;
 }
 
+.undercontentsarea {
+  border: 1px solid #d6d6e5;
+  border-radius: 10px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.undercontentsarea .threeContent {
+  margin: 20px 10px;
+}
+.undercontentsarea .threeOfAllTitle {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #4e559a;
+  border-radius: 20px;
+  color: #00005c;
+  width: 200px;
+  height: 30px;
+}
+.undercontentsarea .itemNumber {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4e559a;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.undercontentsarea .itemDes {
+  display: block;
+  font-size: 20px;
+}
+
 .resutlAfterContainer {
   display: flex;
   flex-direction: column;
@@ -286,18 +324,49 @@
 }
 .resutlAfterContainer .afterResult {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   border: 0.069vw solid #f2f3fc;
   border-radius: 0.694vw;
+  padding: 2.083vw 3.125vw;
+}
+.resutlAfterContainer .afterResult .resultChartTitlebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.resutlAfterContainer .afterResult .resultChartName {
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 20px;
+  width: 160px;
+  height: 35px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff, #fff), linear-gradient(to right, #ffefca, #d2edec, #cdf8dd);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-bottom: 10px;
+}
+.resutlAfterContainer .afterResult p {
+  font-size: 14px;
+  color: #272728;
+  padding-left: 5px;
+}
+.resutlAfterContainer .afterResult .resultChartImg {
+  width: 22.833vw;
+  height: 15.972vw;
+  padding-top: 1.389vw;
+  padding-left: 3.472vw;
 }
 .resutlAfterContainer .afterResult .beforeChart {
   font-size: 1.211vw;
   font-weight: bold;
+  line-height: 1.211vw;
 }
 .resutlAfterContainer .arrowIcon {
-  font-size: 50px;
+  font-size: 3.472vw;
   color: #58585d;
-  margin: 20px auto;
+  margin: 1.389vw auto;
 }/*# sourceMappingURL=diagnosis.module.css.map */

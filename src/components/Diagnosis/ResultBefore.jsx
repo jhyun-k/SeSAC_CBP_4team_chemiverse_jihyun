@@ -213,12 +213,18 @@ const ResultBefore = () => {
     </div>
       </div> 
 
-    <div className='undercontentsarea'>
-      <div className='threecontent'>
-        <p> 하위 3개 영역 </p>
-        <>
-        점수 제일 낮은 애들 나와야 하는데 이거 탭이니... 
-        </>
+    <div className={styles.undercontentsarea}>
+      <div className={styles.threeContent}>
+        <h2 className={styles.threeOfAllTitle}> 하위 3개 항목 </h2>
+        <p>
+        전체 영역 중 하위 3개 항목이 표시됩니다. 
+        </p>
+        <div className={styles.threeOfAllItemBox}>
+            <div className={styles.threeaOfAllItem}>
+              <p className={styles.itemNumber}> 01 </p>
+              <h4 className={styles.itemDes}>워크스킬 - 다양성 이해</h4>
+            </div>
+        </div>
       </div>
 
     </div>

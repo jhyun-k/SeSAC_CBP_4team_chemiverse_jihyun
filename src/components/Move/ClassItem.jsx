@@ -8,6 +8,7 @@ import { useState,useRef } from 'react';
 
 const ClassItem = ({classdata}) => {
   const link = useRef();
+
   const [isCopied, setIsCopied] = useState(false);
 
   const toClipboard = () => {
@@ -35,7 +36,7 @@ const ClassItem = ({classdata}) => {
              {classdata.moveClassUrl}
             </span>
             <botton className={styles.copybutton} onClick={toClipboard}>
-              {isCopied ? <BsFillCheckCircleFill/> : <AiOutlineShareAlt/>}
+              {isCopied ? <BsFillCheckCircleFill/>  : <AiOutlineShareAlt/>}
             </botton>
  
           {isCopied && <h2 className={styles.urlcopy}>URL 복사 완료! </h2>}

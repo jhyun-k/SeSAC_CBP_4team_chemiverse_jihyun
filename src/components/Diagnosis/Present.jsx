@@ -12,8 +12,8 @@ import styles from './css/diagnosis.module.scss'
 const Present = () => {
     const [selectedTab, setSelectedTab] = useState(0);
     return (
-      <div className="nowContainer">
-        <div className={styles.diagnosisarea}>
+      <div className={styles.nowContainer}>
+        <div className={styles.diagnosisInner}>
           <div className={styles.sidebar}>
             <Link
               className={`${selectedTab === 0 ? "active" : ""}`}

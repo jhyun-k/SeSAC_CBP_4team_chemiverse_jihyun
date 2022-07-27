@@ -74,10 +74,21 @@ const ResultAfter = () => {{
 ; 
   return (
     <div className={styles.resutlAfterContainer}>
+
+
+
       <div className={styles.afterResult}>
-        <h2 className={styles.resultChartName}>사전진단 결과</h2>
+        <div className={styles.resultChartTitlebox}>
+        <h2 className={styles.resultChartName}>#사전 진단 결과</h2>
+        <p> 사전 점검 테스트의 하위 3개 영역이 표시됩니다. </p>
+        <img
+          className={styles.resultChartImg}
+          src={"/DiagnosisImg/image6.jpeg"}
+          alt="result-chart-img"
+        /> 
+        </div>
         <div className={styles.beforeChart}>
- <BarChart
+          <BarChart
       width={500}
       height={300}
       data={resultofbefore}
@@ -98,7 +109,7 @@ const ResultAfter = () => {{
       background={{ fill: "#efebeb" }}  />
       <Bar dataKey="underscore3" fill="#82ca9d"
       background={{ fill: "#e5e5e5" }}  />
-    </BarChart>
+          </BarChart>
     </div>
     </div> 
 
@@ -106,10 +117,20 @@ const ResultAfter = () => {{
     <TbArrowBigDownLine className={styles.arrowIcon}/>
 
 
-    <div className='beforeResult'>
-        <h2 className={styles.resultChartName}>사후진단 결과</h2>
-        <div className={styles.afterChart}>
- <BarChart
+    <div className={styles.afterResult}>
+        <div className={styles.resultChartTitlebox}>
+        <h2 className={styles.resultChartName}>#사후 진단 결과</h2>
+        <p> 사후 점검 테스트 결과 중  
+          <br/>
+          각 영역의 하위 3개 항목이 표시됩니다. </p>
+        <img
+          className={styles.resultChartImg}
+          src={"/DiagnosisImg/image7.jpeg"}
+          alt="result-chart-img"
+        /> 
+        </div>
+        <div className={styles.beforeChart}>
+          <BarChart
       width={500}
       height={300}
       data={resultofafter}
@@ -127,9 +148,9 @@ const ResultAfter = () => {{
     {/*   <Legend /> */}
       <Bar dataKey="underscore1" fill="#f7d27d"  background={{ fill: "#e5e5e5" }} />
       <Bar dataKey="underscore2" fill="#6bc1be" 
-       background={{ fill: "#e5e5e5" }}/>
+        background={{ fill: "#e5e5e5" }}/>
       <Bar dataKey="underscore3" fill="#589770"
-       background={{ fill: "#e5e5e5" }} />
+        background={{ fill: "#e5e5e5" }} />
     </BarChart>
     </div>
     </div> 
