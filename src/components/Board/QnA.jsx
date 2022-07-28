@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../Post/css/PostTab.module.css';
 import { Link } from 'react-router-dom';
-import { useRef } from 'react';
 import PostList from '../Post/PostList';
 import Paginate from '../Post/Paginate';
 import data from '../../data/qnaData.json';

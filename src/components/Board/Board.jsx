@@ -12,7 +12,6 @@ import Secret from './Secret';
 import { useState } from 'react';
 import HomeHeaderNavy from '../Home/HomeHeaderNavy';
 import BoardNav from './BoardNav';
-import styles from './css/Board.module.css';
 
 const Board = () => {
   const [newContent, SetNewContent] = useState({ title: '', body: '' });
