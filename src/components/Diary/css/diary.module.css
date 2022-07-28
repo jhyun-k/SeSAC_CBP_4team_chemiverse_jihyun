@@ -16,6 +16,7 @@
   font-size: 1.3vw;
   color: #424888;
   font-weight: 500;
+  resize: none;
 
 }
 .DiaryEditor textarea:focus{
@@ -40,6 +41,14 @@
   background-color: #6F76C1;
   color: #fff;
   transition: all 0.33s;
+}
+.DiaryEditor .submitTrue{
+  visibility: hidden;
+}
+.DiaryEditor .submitFalse{
+  color: red;
+  font-size: 1.1vw;
+  text-align: right;
 }
 
 /* List  */
@@ -98,6 +107,7 @@
   padding: 0.694vw;
   width: 100%;
   font-size: 1vw;
+  resize: none;
 }
 .DiaryItem textarea:focus{
   outline: none;
