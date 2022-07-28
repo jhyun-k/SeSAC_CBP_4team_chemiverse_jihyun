@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import { Link, NavLink } from "react-router-dom";
 import headerStyle from "./style/header.module.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { useState } from 'react';
 
@@ -78,7 +78,7 @@ const Header = ({ title,auth,setAuth}) => {
           <form className={headerStyle.searchBox}>
             <input type="text" placeholder="검색어를 입력하세요" />
             <button>
-              <FiSearch  />
+              <FiSearch />
             </button>
           </form>
         </div>

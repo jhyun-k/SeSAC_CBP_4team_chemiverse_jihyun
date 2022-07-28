@@ -1,29 +1,54 @@
-.mainBox {
+/* .mainBox {
   width: 80vw;
   margin: 2vw auto;
   display: flex;
   justify-content: space-between;
+  > :first-child {
+    width: 60%;
+    height: 53vw;
+  }
 }
-.mainBox > :first-child {
-  width: 50%;
-  height: 52vw;
-}
-
 body {
   overflow-x: hidden;
 }
-
 .eventBox {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  width: 40%;
 
+}
 .h1Event {
   font-size: 1.2vw;
 }
-
 .h2Event {
   font-size: 1vw;
+}
+@media screen and (max-width: 720px) {
+  .mainBox {
+    flex-direction: column;
+    > :first-child {
+      width: 100%;
+    }
+  }
+} */
+.mainBox {
+  width: 69.444vw;
+  margin: 0 auto;
+  position: relative;
+}
+.mainBox .eventBox {
+  width: 40vw;
+  height: 20vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: flex-end;
+  align-items: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 10;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 3vw 0;
 }/*# sourceMappingURL=calendar.module.css.map */

@@ -1,0 +1,644 @@
+// Diagonosis-header - 컨텐츠 설명 
+
+.diagnosis {
+  .main{
+    padding-left: 6.944vw;
+    padding-right: 6.250vw;
+    margin-bottom: 3.472vw;
+    width: 100vw;
+    height: 11.806vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .mainTxt{
+    display: flex;
+    align-items: center;
+  }
+  .mainTxt span{
+    display: inline-block;
+    color: #fff;
+    &:first-child{
+      font-size: 3.333vw;
+      font-weight: 700;
+      margin-right: 2.083vw;
+    }
+    &:last-child{
+      font-size: 0.833vw;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    }
+  .mainImg{
+    width: 15.833vw;
+    height: auto;
+  }
+}
+
+// 진단 - 네비 (현재상태/진단결과)
+.diaNav ul li {
+  color: #6f76c1;
+  border: 0.139vw solid #6f76c1;
+  margin-bottom: 3.472vw;
+  width: 17.361vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.181vw;
+  font-weight: 500;
+  * {
+      text-decoration: none;
+  }
+  &:last-child {
+      border-top-right-radius: 0.347vw;
+      border-bottom-right-radius: 0.347vw;
+      border-left: none;
+  }
+}
+.navbtn {
+  &.on {
+      color: #424888;
+      font-weight: 900;
+      font-size: 1.25vw;
+  }
+}
+
+
+// Present, Result sidebar 
+
+.nowContainer{
+  width: 100%;
+  margin:auto;}
+
+.diagnosisInner{
+  width: 83.333vw;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tabbutton{
+width: 6.722vw;
+height: 3.125vw;
+border: 0.069vw solid #6f76c1 ;
+cursor: pointer;
+margin-bottom:1.125vw;
+margin-right:1.125vw;
+}
+.diaInner{
+  width: 69.444vw;
+}
+
+
+/* ================================ */ 
+
+//PresentBefore.jsx
+
+.presentBefore{
+  width:100%;
+  margin:auto;
+.testHeader{
+  width:65.972vw;
+  height:25.417vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+/*   background-image: url(./../../../../public/DiagnosisImg/diaprevtest.png);
+  background-size: cover;
+  background-position: center; */
+}
+.diaTestHeaderImg{
+  width: 34.444vw;
+  height:18.403vw;
+}
+.diaTestHeaderAfreImg{
+  width:29.861vw;
+  height:19.792vw;
+}
+.testDesBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.testTitle{
+  font-size: 1.736vw;
+  line-height: 1.736vw;
+  margin-bottom:1.389vw;
+  color: #424888;
+}
+.testdes{
+  line-height: 1.389vw;
+  margin-bottom: 0.972vw;
+  font-size: 0.972vw;
+
+}
+.testinfo{
+  font-size: 0.833vw;
+  color:rgb(202, 83, 83);
+}
+}
+
+.formArea{
+  border: 0.069vw solid #6f76c1;
+  border-radius: 0.694vw;
+  padding-top: 2.083vw;
+  padding-bottom: 4.861vw;
+  margin: 2.778vw 2.389vw;
+  .testName{
+    background-color: #4e559a;
+    width:27.778vw;
+    height:2.431vw;
+    color:#fff;
+    text-align: center;
+    font-size:1.389vw;
+    line-height: 2.431vw;
+    font-weight: bold;
+    margin:1.389vw auto;
+    border-radius: 1.389vw;
+  }
+.questionbox{
+  text-align: center;
+  margin: 2.083vw 0;
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.questionTitle{
+  font-size:1.250vw;
+  line-height: 1.250vw;
+  font-weight: bold;
+  color:#272728;
+  padding: 0 0.347vw 0.347vw 0;
+  margin: 1.389vw auto;
+}
+.titleNumber{
+  color:#4e559a;
+}
+input[type="radio"]{
+  display:none;
+}
+label{
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0.347vw;
+}
+label span{
+  display: inline-flex;
+  align-items: center;
+  padding:0.347vw 1.389vw 0.347vw 0.694vw;
+  border-radius: 2.153vw;
+  transition: .24s ease;
+  font-size:1.042vw;
+}
+label span:hover,
+input[type="radio"]:checked + span{
+  background-color: #d6d6e5;
+}
+label span::before{
+  /* display: inline-block; */
+  content:'';
+  background-color: #fff;
+  width: 1.042vw;
+  height:1.042vw;
+  border-radius: 50%;
+  margin-right: 0.694vw;
+  transition: .24s ease;
+  box-shadow: inset 0 0 0 0.139vw #6f76c1;
+}
+
+input[type="radio"]:checked + label span::before
+{
+box-shadow: inset 0 0 0 0.278vw #00005c;}
+
+input[type="text"]{
+  box-shadow: inset 0 0 0 0.139vw #6f76c1;
+  border-radius: 1.389vw;
+  color: #58585d;
+  width:20.833vw;
+  height: 2.778vw;
+  font-size: 1.042vw;
+  padding:0.694vw 1.389vw;
+}
+.textbox{
+  align-items: center;
+}
+.infomesage{
+  color:rgba(202, 27, 27, 0.809);
+  font-size:0.972vw;
+  font-weight: bold;
+  padding-top: 3vw;
+  padding-bottom: 4.389vw ;
+}
+.formbutton{
+  width: 10.556vw;
+  padding: 0.694vw;
+  margin: 0 1.2vw;
+  cursor: pointer;
+  border: 2px solid #6F76C1;
+  color: #6F76C1;
+  border-radius: 1.389vw;
+  font-size: 1.042vw;
+  font-weight: 700;
+}
+.formbutton:hover{
+  background-color: #6F76C1;
+  color: #fff;
+}
+
+
+
+} 
+
+
+// ResultBefore.jsx
+
+.resultbefore{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .chartcontainer{
+    width: 100%;
+    margin-top:3vw;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    flex-wrap: wrap;
+  }
+  .chartbox{
+    width:16.667vw;
+    height:16.667vw;
+    font-size: 0.847vw;
+    text-align: center;
+    line-height:0.847vw; ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .chartitem{
+    border-radius: 50%;
+    background-color: #f9f9ffee;
+  }
+  .charttitle{
+    font-size:1.389vw;
+    font-weight: bold;
+    text-align: center;
+    color:#222226;
+    cursor: pointer;
+    padding-top:1.25vw;
+  }
+}
+
+  .undercontentsarea{
+    border: 0.069vw solid #d6d6e5;
+    border-radius:  0.069vw;
+    margin: 3.472vw 0;
+    padding: 0.694vw 0 2.083vw 0;
+  .threeContent{
+    margin: 1.389vw 0.694vw;}
+  .threeOfAllTitle{
+    background-color: #4e559a;
+    width:27.778vw;
+    height:2.431vw;
+    color:#fff;
+    text-align: center;
+    font-size:1.389vw;
+    line-height: 2.431vw;
+    font-weight: bold;
+    margin:1.389vw auto;
+    border-radius: 1.389vw;
+    }
+    .threeOfAllDes{
+      font-size: 1vw;
+      line-height: 1.5;
+      color:#272727;
+      font-weight: 600;
+    }
+    .AllDesNotice{    
+      color: rgb(218, 3, 3);
+    }
+    .threeOfAllItemBox{
+      font-weight: 500;
+      .itemNumber{
+        width: 3.472vw;
+        height:3.472vw;
+        border-radius: 50%;
+        background-color: #f74418;
+        color:#fff;
+        line-height:3.472vw;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 1.389vw;
+        margin: 1.389vw auto;
+      }
+      .itemDes{
+        display: inline-block;
+        font-size: 1.667vw;
+      }
+      .itemHelp{
+        font-size: 1.042vw;
+        padding: 1.389vw 0;
+      }
+    }
+  }
+
+
+// ResultAfter.jsx
+
+.resutlAfterContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .resultChartName{ 
+    font-size: 1.389vw;
+    font-weight: bold;
+    line-height: 1.389vw;
+    text-align: left;
+  }
+
+.afterResult{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border:0.069vw solid #f2f3fc;
+  border-radius: 0.694vw;
+  padding:2.083vw 3.125vw;
+  .resultChartTitlebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .resultChartName{
+    font-size:1.389vw;
+    text-align: center;
+    line-height: 2.083vw;
+    border-radius: 1.389vw;
+    width: 11.111vw;
+    height: 2.431vw;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff,#fff,#fff), linear-gradient(to right, #ffefca, #d2edec, #cdf8dd);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-bottom: 0.694vw;
+  }
+  p{
+    font-size: 0.972vw;
+    color:#272728;
+    padding-left:0.347vw;
+  }
+  .resultChartImg{
+    width: 22.833vw;
+    height: 15.972vw;
+    padding-top: 1.389vw;
+    padding-left: 3.472vw;
+  }
+.beforeChart{
+  font-size:1.211vw;
+  font-weight: bold;
+  line-height: 1.211vw;
+}
+}
+.arrowIcon{
+  font-size: 5.472vw;
+  color: #58585d;
+  margin: 3.389vw auto;
+}
+
+}
+
+
+// 반응형 ===========
+
+@media screen and (max-width: 720px) {
+  // diagnosis
+.diagnosis {
+    .main {
+      padding-left: 6.944vw;
+      padding-right: 6.25vw;
+      margin-bottom: 0;
+      width: 100vw;
+      height: 20vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 90%;
+    }
+    .mainTxt {
+      display: flex;
+      align-items: center;
+    }
+    .mainTxt span {
+      display: inline-block;
+      color: #fff;
+      &:first-child {
+        font-size: 6vw;
+        font-weight: 700;
+        margin-right: 2.083vw;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+    .mainImg {
+      width: 30vw;
+      height: auto;
+    }
+  }
+
+  //MoveNav
+  .nav ul li {
+    color: #6f76c1;
+    border: none;
+    margin-bottom: 5vw;
+    width: 100%;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    * {
+      text-decoration: none;
+    }
+  }
+
+  .navbtn {
+    &.on {
+      color: #424888;
+      font-weight: 700;
+      font-size: 3vw;
+      transition: all 0.2s;
+      border-bottom: 5px solid #424888;
+    }
+  }
+
+  .presentBefore{
+    width:100%;
+    margin:auto;
+  .testHeader{
+  display: none;
+  }
+  .diaTestHeaderImg{
+    display: none;
+  }
+  .diaTestHeaderAfreImg{
+    display: none;
+  }
+  .testTitle{
+    font-size: 3.736vw;
+    margin-bottom:4.389vw;
+    color: #fff;
+  }
+  .testdes{
+    color:#fff;
+    margin-bottom: 0.972vw;
+    font-size: 1.972vw;
+    line-height: 1.5;
+  
+  }
+  .testinfo{
+    display: none;
+  }
+  }
+  
+  .formArea{
+    width: 100%;
+    border-radius: 0.694vw;
+    padding-top: 2.083vw;
+    padding-bottom: 4.861vw;
+    background-color: #fafaff;
+    border:none;
+    .testName{
+      background-color: #4e559a;
+      width:35.778vw;
+      height:5.431vw;
+      color:#fff;
+      text-align: center;
+      font-size:3.389vw;
+      line-height:4.6vw;
+      font-weight: bold;
+      border-radius: 1.389vw;
+    }
+  .questionbox{
+    margin: 2.083vw 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .questionTitle{
+    text-align: left;
+    font-size: 3.2vw;
+    line-height: 3vw;
+    font-weight: 600;
+    color:#272728;
+    padding: 0 0.347vw 0.347vw 0;
+    background-color: #fff
+  }
+  .titleNumber{
+    font-size: 1rem;
+    color:#4e559a;
+  }
+
+  label span{
+    font-size:2.5vw;
+    font-weight: 500;
+  }
+  label span::before{
+    width: 2.042vw;
+    height:2.042vw;
+    margin-right: 1.694vw;
+  }
+  
+  input[type="radio"]:checked + label span::before
+  {
+  box-shadow: inset 0 0 0 0.678vw #00005c;}
+  
+  input[type="text"]{
+    box-shadow: inset 0 0 0 0.139vw #6f76c1;
+    border-radius: 1.389vw;
+    color: #58585d;
+    width:45vw;
+    height: 5.778vw;
+    font-size: 1.042vw;
+    padding:0.694vw 1.389vw;
+  }
+  .infomesage{
+    color:rgba(202, 27, 27, 0.809);
+    font-size:0.272vw;
+    font-weight: bold;
+    padding-top: 3vw;
+    padding-bottom: 4.389vw ;
+  }
+  .formbutton{
+    width: 10.556vw;
+    padding: 0.694vw;
+    margin: 0 1.2vw;
+    cursor: pointer;
+    border: 2px solid #6F76C1;
+    color: #6F76C1;
+    border-radius: 1.389vw;
+    font-size: 1.042vw;
+    font-weight: 700;
+  }
+  .formbutton:hover{
+    background-color: #6F76C1;
+    color: #fff;
+  }
+  
+  
+  
+  }
+  
+  .resultbefore{
+    .chartcontainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw;
+    }
+    .chartbox{
+      width:16.667vw;
+      height:16.667vw;
+      font-size: 0.847vw;
+      text-align: center;
+      line-height:0.847vw; ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .chartitem{
+      display: none;
+    }
+  }
+}
+
+
+
+

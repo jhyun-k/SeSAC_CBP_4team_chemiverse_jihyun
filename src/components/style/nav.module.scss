@@ -14,7 +14,7 @@
       align-items: center;
       position: relative;
       width: 7.778vw;
-      &:hover{
+      &:hover {
         &::before {
           content: "";
           width: 0.5vw;
@@ -244,9 +244,9 @@
     }
   }
 }
- 
-@media screen and (max-width:720px) {
-  .navBox{
+
+@media screen and (max-width: 720px) {
+  .navBox {
     display: none;
   }
 }
