@@ -39,6 +39,7 @@
     "react-slick": "^0.29.0",
     "react-youtube": "^9.0.3",
     "reactstrap": "^9.1.2",
+    "recharts": "^2.1.13",
     "slick-carousel": "^1.8.1",
     "source-map-js": "^1.0.2",
     "swiper": "^8.3.1",
@@ -71,6 +72,9 @@
     ]
   },
   "devDependencies": {
-    "Faker": "^0.7.2"
+    "Faker": "^0.7.2",
+    "sass": "^1.54.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0"
   }
 }

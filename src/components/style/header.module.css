@@ -2,16 +2,16 @@
   .mainHeaderBox {
     width: 100vw;
     box-shadow: 0 4px 4px -4px black;
-  }
-  .mainHeaderBox > ::after {
-    content: "";
-    width: 100vw;
-    background-color: gray;
-    opacity: 0.3;
-    position: absolute;
-    top: 6.7vw;
-    left: -3.7vw;
-    height: 0.1vw;
+    /* > ::after {
+      content: "";
+      width: 100vw;
+      background-color: gray;
+      opacity: 0.3;
+      position: absolute;
+      top: 6.7vw;
+      left: -3.7vw;
+      height: 0.1vw;
+    } */
   }
   .mainHeaderBox .inner {
     width: 92.639vw;
@@ -28,47 +28,37 @@
     top: 0.7vw;
     right: 0.2vw;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    position: relative;
-  }
-  .mainHeaderBox .inner .login .login {
-    position: absolute;
-    top: 0.7vw;
-    right: 0.2vw;
-    display: flex;
     justify-content: space-between;
     font-size: 0.764vw;
   }
-  .mainHeaderBox .inner .login .login * {
+  .mainHeaderBox .inner .login * {
     text-decoration: none;
   }
-  .mainHeaderBox .inner .login .login li {
+  .mainHeaderBox .inner .login li {
     margin-left: 1vw;
     color: #6c6c6c;
     font-size: 0.82vw;
     cursor: pointer;
   }
-  .mainHeaderBox .inner .login .mainHeader {
+  .mainHeaderBox .inner .mainHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .mainHeaderBox .inner .login .mainHeader h1 {
+  .mainHeaderBox .inner .mainHeader h1 {
     font-size: 0px;
   }
-  .mainHeaderBox .inner .login .mainHeader h1 a {
+  .mainHeaderBox .inner .mainHeader h1 a {
     display: block;
     width: 10.486vw;
     height: 2.639vw;
     background: url(../../../public/chemiverse_img/logo2.png) center;
     background-size: cover;
   }
-  .mainHeaderBox .searchIcon {
+  .searchIcon {
     display: none;
   }
-  .mainHeaderBox .searchBox {
+  .searchBox {
     padding: 0.5vw 1vw;
     border-radius: 0.5vw;
     background-color: #f3f3f3;
@@ -79,49 +69,41 @@
     width: 14.625vw;
     height: 2.083vw;
   }
-  .mainHeaderBox .searchBox input {
+  .searchBox input {
     width: 12.917vw;
     font-size: 0.347vw;
     background-color: #f3f3f3;
     outline: none;
     font-size: 0.5vw;
   }
-  .mainHeaderBox .searchBox button {
+  .searchBox button {
     width: 1.25vw;
     height: 1.25vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .mainHeaderBox .searchBox button * {
+  .searchBox button * {
     color: #838383;
   }
-  .mainHeaderBox .searchBox * {
+  .searchBox * {
     background-color: #f3f3f3;
   }
-  .mainHeaderBox .login_btn {
+  .login_btn {
     padding: 5px;
     margin: 0 5px;
-    cursor: pointer;
-  }
-  .mainHeaderBox .login_btn :hover {
-    text-decoration: underline;
-    font-weight: 700;
-  }
-  .login_btn {
-    padding: 0 0.347vw;
-    margin: 0 0.347vw;
     cursor: pointer;
   }
   .login_btn :hover {
     text-decoration: underline;
     font-weight: 700;
   }
-  .sidebar {
-    display: none;
-  }
 }
-@media screen and (min-width: 721px) and (max-width: 720px) {
+.sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
   .mainHeaderBox {
     height: 60px;
   }
@@ -129,99 +111,45 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 4.167vw;
+    height: 60px;
   }
   .mainHeader h1 {
     font-size: 0px;
   }
   .mainHeader h1 a {
     display: block;
-    width: 6.944vw;
+    width: 100px;
     height: 5.639vw;
     background: url(../../../public/chemiverse_img/logo2.png) center no-repeat;
     background-size: contain;
     margin-left: 5vw;
   }
-}
-@media screen and (min-width: 721px) {
-  .mainHeader.on {
-    background-color: #9497D1;
-  }
-  .mainHeader.on h1 a {
-    background: url(../../../public/chemiverse_img/logo.png) center no-repeat;
-    background-size: contain;
-  }
-  .mainHeader.on input[id=menuicon] + label span {
-    background-color: #fff;
-  }
-}
-@media screen and (min-width: 721px) {
   .searchBox {
     display: none;
   }
-}
-@media screen and (min-width: 721px) {
-  .login {
-    display: none;
-  }
-}
-@media screen and (min-width: 721px) {
-  .login_btn {
-    margin-left: 1vw;
-  }
-}
-@media screen and (min-width: 721px) {
-  .side_login {
-    position: absolute;
-    right: 3vw;
-    top: 5vw;
-    z-index: 2;
-  }
-}
-@media screen and (min-width: 721px) {
-  .mobile_right {
-    display: flex;
-  }
-}
-@media screen and (min-width: 721px) {
-  input[id=menuicon] {
-    display: none;
-  }
-}
-@media screen and (min-width: 721px) {
   .searchIcon {
     display: block;
     font-size: 30px;
     color: #b1b8c1;
   }
-}
-@media screen and (min-width: 721px) {
   .inner .login {
     display: none;
   }
-}
-@media screen and (min-width: 721px) {
   .mobile_right {
     display: flex;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon] {
     display: none;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon] + label {
     display: block;
-    width: 2.083vw;
-    height: 2.083vw;
+    width: 30px;
+    height: 30px;
     position: relative;
     cursor: pointer;
     margin-right: 5vw;
     z-index: 2;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon] + label span {
     display: block;
     position: absolute;
@@ -231,68 +159,48 @@
     background-color: #b1b8c1;
     transition: all 0.35s;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon] + label span:nth-child(1) {
     top: 0;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon] + label span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon] + label span:nth-child(3) {
     bottom: 0;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon]:checked + label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon]:checked + label span:nth-child(2) {
     opacity: 0;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon]:checked + label span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
   }
-}
-@media screen and (min-width: 721px) {
   .sidebar {
     display: block;
     width: 100vw;
     height: 100%;
     background-color: #fff;
     position: fixed;
-    top: 4.167vw;
-    right: -100vw;
+    top: 60px;
+    right: -100%;
     z-index: 1;
     transition: all 0.35s;
   }
-}
-@media screen and (min-width: 721px) {
   input[id=menuicon]:checked + label + div {
     right: 0;
   }
-}
-@media screen and (min-width: 721px) {
   .navlist_white {
     color: #222;
     text-align: left;
-    font-size: 4.5vw;
+    font-size: 6vw;
     height: 6vw;
     margin: 6vw auto;
-    border-bottom: 1px solid #ccc;
     font-weight: bold;
-    padding-left: 7vw;
-    line-height: 1vw;
+    padding-left: 5vw;
   }
 }/*# sourceMappingURL=header.module.css.map */

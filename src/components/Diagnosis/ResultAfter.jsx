@@ -4,15 +4,14 @@ import {
   BarChart,
   Bar,
   XAxis,
-  YAxis,
-  CartesianGrid,
   Tooltip,
-  Legend
+
 } from "recharts";
 import {TbArrowBigDownLine} from 'react-icons/tb';
 
 
 
+// eslint-disable-next-line no-lone-blocks
 const ResultAfter = () => {{
   const resultofbefore = [
     {
@@ -99,11 +98,8 @@ const ResultAfter = () => {{
         bottom: 5
       }}
     >
-     {/*  <CartesianGrid/> */}
   {    <XAxis dataKey="name" />}
-   {/*    <YAxis /> */}
       <Tooltip /> 
-    {/*   <Legend /> */}
       <Bar dataKey="underscore1" fill="#FFEFCA" background={{ fill: "#f1eaea" }} />
       <Bar dataKey="underscore2" fill="#D2EDEC"
       background={{ fill: "#efebeb" }}  />
@@ -140,11 +136,11 @@ const ResultAfter = () => {{
         bottom: 5
       }}
     >
-      {/* <CartesianGrid strokeDasharray="3 3" /> */}
+
   {    <XAxis dataKey="name"  className={styles.scoreName}/>}
-   {/*    <YAxis /> */}
+
       <Tooltip /> 
-    {/*   <Legend /> */}
+
       <Bar dataKey="underscore1" fill="#f7d27d"  background={{ fill: "#e5e5e5" }} />
       <Bar dataKey="underscore2" fill="#6bc1be" 
         background={{ fill: "#e5e5e5" }}/>
