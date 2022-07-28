@@ -1,24 +1,29 @@
-import React from 'react';
-import MentoringNav from './MentoringNav';
+import React from "react";
+import MentoringNav from "./MentoringNav";
 import { Routes, Route } from "react-router-dom";
-import WhatIsMentoring from './WhatIsMentoring';
-import WritePlan from './WritePlan';
-import Upload from './Upload';
-import styles from "./css/index.module.css"
+import WhatIsMentoring from "./WhatIsMentoring";
+import WritePlan from "./WritePlan";
+import Upload from "./Upload";
+import styles from "./css/index.module.css";
 
 const Mentoring = () => {
   return (
     <div className={styles.Mentoring}>
-      <h1 className={styles.main}>
+      <div className={styles.main}>
+        <div className={styles.mainTxt}>
+          <span>멘토링</span>
+          <span>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+          </span>
+        </div>
         <img
-          className={styles.chemiImg}
-          src={"/chemiverse_img/bg-gnb-noshadow.png"}
-          alt="bg-gnb-noshadow"
+          className={styles.mainImg}
+          src={"/chemiverse_img/img-pop-cardnews.png"}
+          alt="img-pop-cardnews"
         />
-        멘토링
-      </h1>
-      <h4>컨텐츠 설명글</h4>
-      <MentoringNav/>
+      </div>
+      <MentoringNav />
       <Routes>
         <Route path="/" element={<WhatIsMentoring />}></Route>
         <Route path="writePlan" element={<WritePlan />}></Route>

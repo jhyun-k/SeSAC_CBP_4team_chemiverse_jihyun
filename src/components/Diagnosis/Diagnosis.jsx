@@ -1,19 +1,35 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import DiagnosisNav from './DiagnosisNav';
+import React from "react";
+import DiagnosisNav from "./DiagnosisNav";
 import PresentState from './PresentState';
+import { Route, Routes } from 'react-router-dom';
 import DiagnosisResult from './DiagnosisResult';
+import styles from './css/diagnosis.module.scss'
 
 const Diagnosis = () => {
   return (
-    <div>
-      <h2>진단</h2>
-      <p> 컨텐츠 설명글 </p>
-      <DiagnosisNav/>
+    <div className={styles.diagnosis}>
+      <div className={styles.main}>
+        <div className={styles.mainTxt}>
+          <span>
+            진단
+          </span>
+          <span>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
+            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+          </span>
+        </div>
+        <img
+          className={styles.mainImg}
+          src={"/chemiverse_img/img-pop-cardnews.png"}
+          alt="img-pop-cardnews"
+        />
+      </div>
+      <DiagnosisNav />
       <Routes>
-      <Route path="/" element={<PresentState />}></Route>
-      <Route path="result" element={<DiagnosisResult />}></Route>
-      </Routes>    
+        <Route path="*" element={<PresentState />} />
+        <Route path="present/*" element={<PresentState />} />
+        <Route path="result/*" element={<DiagnosisResult/>} />
+      </Routes>
     </div>
   );
 };

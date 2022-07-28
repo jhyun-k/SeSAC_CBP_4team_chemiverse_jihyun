@@ -1,3 +1,17 @@
+.section{
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
 .inner{
     width: 100vw;
     margin: auto;
@@ -104,12 +118,115 @@ width: 100vw;}
     color: #ffffff;
     font-weight: bold;
     margin-top: 3.5vw;
+    &:hover{
+      text-decoration: underline;
+    }
 }
 
 .balloon{
   width: 58px;
   height: 58px;
 }
+.login_alert {
+  visibility: hidden;
+}
+
+.login_alert_view {
+   display: flex;
+   justify-content: center;
+   color: red;
+   font-size: 14px;
+}
 
 
+@media screen and (max-width:720px) {
+  .inner{
+    width: 100vw;
+    margin: auto;
+  }
+  .main{
+    width: 100vw;
+    height: 20vw;
+  }
+  .mainTxt span:first-child{
+    font-size: 5vw;
+  }
+  .mainTxt span:last-child{
+    display: none;
+  }
+  .section{
+    width: 83.333vw;
+    margin: auto;
+}
+.find{
+    font-size: 5vw;
+    color: #6F76C1;
+    padding-bottom: 3.389vw;
+    border-bottom: 3px solid #6F76C1;
+    text-align: left;
+    margin-bottom: 3vw;
+    
+}
 
+.unit{
+    border : 1px solid #ccc;
+    width: 83.333vw;
+    margin: auto;
+    height: 40.833vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.694vw;
+}
+
+.unit>div{
+    margin: auto;
+    width: 83.333vw;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label{
+    margin: 1vw;
+    font-size: 2.2vh;
+    font-weight: bold;
+    color: #6F76C1;
+    text-align: left;
+    line-height: 2.778vw;
+    margin-left: 10vw;
+}
+.input{
+    width: 45.361vw;
+    height: 7.778vw;
+    margin: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left:10px ;
+    margin-right: 10vw;
+}
+
+.find_btn{
+    width: 40.333vw;
+    height: 7vw;
+    margin: auto;
+    border: none;
+    border-radius: 3.472vw;
+    background-color: #6F76C1;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 3.5vw;
+}
+
+  .flex{
+    width: 83.333vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .balloon{
+    display: none;
+  }
+}

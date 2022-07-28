@@ -1,0 +1,231 @@
+.inner{
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title{
+    text-align: left;
+    width: 69.444vw;
+    font-size: 2.361vw;
+    color: #6F76C1;
+    padding: 1.389vw 0;
+    margin: auto;
+    display: flex;
+    margin-top: 1.389vw;
+    border-bottom: 0.139vw solid #ccc;
+
+    p{
+        color:rgba(75, 80, 132, 0.721);
+        font-size: 0.972vw;
+        padding-top: 1.389vw;
+        line-height: 1.2;
+        font-weight: bold;
+        padding-left: 0.347vw;
+    }
+}
+
+//타이틀까지
+
+.pin{
+    text-align: left;
+    margin-top: 0.694vw;
+    font-size: 1.667vw;
+    margin-bottom: 1.042vw;
+    color: rgba(75, 80, 132, 0.721);
+    .tit{
+        padding-left: 0.694vw;
+        font-size: 1.806vw;
+    }
+
+  }
+
+  .name_meaning{
+    h1{
+        font-size: 1.528vw;
+        color: #3e426c;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+        
+    }
+    p{
+        margin-top: 1.042vw;
+        margin-right: 1.389vw;
+        font-size: 0.972vw;
+        color: #808080;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+@media screen and (min-width:721px) {
+    
+
+.inner{
+    width: 69.444vw;
+    margin: auto;
+}
+
+
+.videoBox{
+    margin: auto;
+    margin-top: 0.694vw;
+    display: flex;
+    justify-content: space-between;
+    width: 68.444vw;
+    .contentBox{
+        text-align: left;
+        width: 38.722vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .infoBox{
+        border: 0.069vw dashed #ccc;
+        display: flex;
+        height: 11.111vw;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.389vw;
+        margin-right: 1.389vw;
+        .info{
+            display: flex;
+            align-items: center;
+            margin: 2.778vw 0.347vw;
+            .bullet{
+                text-align: center;
+                line-height: 2.7vw;
+                width: 7.556vw;
+                height: 2.7vw;
+                background-color: #6F76C1;
+                border-radius: 1.389vw;
+                color: #fff;
+                font-weight: 600;
+                margin: 0.347vw;
+                font-size: 0.833vw;
+            }
+            .text{
+                color: #202020;
+                
+            }
+        }
+    }
+    iframe{
+        width: 32.722vw;
+        height: 19.531vw;
+    }
+}
+
+.value{
+    margin-top: 3.472vw;
+    img{
+        border-top: 0.208vw dashed #ccc;
+        width: 65.444vw;
+    }
+}
+
+}
+
+@media screen and (max-width:720px) {
+    .inner{
+        margin: auto;
+        width: 83.333vw;
+
+    }
+    .title{
+        width: 83.333vw;
+        font-size: 6.361vw;
+        margin-top: 1.389vw;
+        padding: 4.389vw 0;
+        p{
+            display: none;
+        }
+    }
+    .pin{
+        text-align: left;
+        margin-top: 1.694vw;
+        font-size: 4.389vw;
+        margin-bottom: 1.042vw;
+        color: rgba(75, 80, 132, 0.721);
+        .tit{
+            padding-left: 0.694vw;
+            font-size: 5vw;
+        }
+    
+      }
+      .name_meaning{
+        h1{
+            font-size: 4.528vw;
+            color: #3e426c;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+        }
+        p{
+            margin-top: 1.042vw;
+            margin-right: 1.389vw;
+    
+            font-size: 2.972vw;
+            color: #808080;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }
+    .infoBox{
+        border: 0.069vw dashed #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0.694vw ;
+        .info{
+            display: flex;
+            margin: 0.694vw;
+            align-items: center;
+            .bullet{
+                text-align: center;
+                line-height: 8.083vw;
+                width: 20.556vw;
+                height: 8.083vw;
+                background-color: #6F76C1;
+                border-radius: 1.389vw;
+                color: #fff;
+                font-weight: 600;
+                margin: 0.347vw;
+                font-size: 1.972vw;
+            }
+            .text{
+                color: #202020;
+                text-align: left;
+                padding-left: 0.694vw;
+            }
+        }
+    }
+    .videoBox{
+        width: 83.333vw;
+        display: flex;
+        flex-direction: column;
+        .contentBox{
+            width: 83.333vw;
+        }
+        iframe{
+            margin-top: 2.083vw;
+            width: 80.333vw;
+            height: 45.874vw;
+        }
+    }
+    .value{
+        margin-top: 3.472vw;
+        img{
+            border-top: 0.208vw dashed #ccc;
+            width: 83.333vw;
+        }
+    }
+}

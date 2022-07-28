@@ -1,25 +1,25 @@
 .mainPage {
   width: 100vw;
   height: 150vh;
-  background: url('../../../public/chemiverse_img/img-main.png') no-repeat
+  background: url("../../../public/chemiverse_img/img-main.png") no-repeat
     center;
   background-size: contain;
   background-color: #e7ecfa;
-  .img1 {
+  .img1{
     position: absolute;
     width: 17vw;
     top: 30%;
     left: 19%;
     opacity: 0.6;
   }
-  .img2 {
+  .img2{
     position: absolute;
     width: 25vw;
     top: 140%;
     left: 10%;
     opacity: 0.6;
   }
-  .img3 {
+  .img3{
     position: absolute;
     width: 15vw;
     top: 40%;
@@ -36,236 +36,136 @@
     cursor: pointer;
     transition: all 2s;
   }
-  .box1 {
+  .box1{
     // border: 2px solid red;
     position: absolute;
     top: 33%;
     left: 50%;
     transform: translateX(-50%);
-    &:hover {
-      .connectWith {
+    &:hover{
+      .connectWith{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box2 {
+  .box2{
     // border: 2px solid orange;
     position: absolute;
     top: 60%;
     left: 21%;
-    &:hover {
-      .move {
+    &:hover{
+      .move{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box3 {
+  .box3{
     // border: 2px solid yellow;
     position: absolute;
     top: 50%;
     left: 61%;
-    &:hover {
-      .guide {
+    &:hover{
+      .guide{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box4 {
+    .box4{
     // border: 2px solid green;
     position: absolute;
     top: 75%;
     left: 50%;
     transform: translateX(-50%);
-    &:hover {
-      .learning {
+    &:hover{
+      .learning{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box5 {
+  .box5{
     // border: 2px solid blue;
     position: absolute;
     top: 92%;
     left: 30%;
-    &:hover {
-      .chemiStory {
+    &:hover{
+      .chemiStory{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box6 {
+  .box6{
     // border: 2px solid darkblue;
     position: absolute;
     top: 110%;
     left: 50%;
     transform: translateX(-50%);
-    &:hover {
-      .post {
+    &:hover{
+      .post{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box7 {
+  .box7{
     // border: 2px solid purple;
     position: absolute;
     top: 88%;
     left: 57%;
-    &:hover {
-      .mentoring {
+    &:hover{
+      .mentoring{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .box8 {
+  .box8{
     // border: 2px solid pink;
     position: absolute;
     top: 70%;
     left: 75%;
-    &:hover {
-      .diagnosis {
+    &:hover{
+      .diagnosis{
         opacity: 1;
-        transition: all 0.7s;
+        transition: all .7s;
       }
     }
   }
-  .common {
+  .common{
     cursor: default;
     opacity: 0;
     width: 16.389vw;
     height: 7.292vw;
-    background-image: url('../../../public/chemiverse_img/bg-rectangle@3x.png');
+    background-image: url("../../../public/chemiverse_img/bg-rectangle@3x.png");
     background-size: cover;
     position: absolute;
     top: -35%;
     left: -20%;
     padding-top: 14%;
-    * {
+    *{
       text-decoration: none;
     }
-    p {
+    p{
       font-size: 0.8vw;
-      color: #6f76c1;
+      color: #6F76C1;
       font-weight: 600;
     }
-    span {
+    span{
       vertical-align: middle;
       font-size: 1.2vw;
       font-weight: 700;
       padding-top: 10px;
       color: #1d2048;
     }
-    .icon {
+    .icon{
       font-size: 1.4vw;
-      color: #6f76c1;
+      color: #6F76C1;
       font-weight: 900;
       vertical-align: middle;
-    }
-  }
-}
-.mobileMain {
-  display: none;
-}
-@media screen and (max-width: 720px) {
-  .mainPage {
-    display: none;
-  }
-  .mobileMain {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    &::before {
-      content: '';
-      background: url(/public/chemiverse_img/bg-checklist.png) no-repeat center /
-        cover;
-      opacity: 0.25;
-      position: fixed;
-      display: block;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-    }
-    .mainBanner {
-      margin-bottom: 5.556vw;
-      img {
-        margin-top: 5.556vw;
-        width: 12.5vw;
-      }
-      p {
-        &:nth-of-type(1) {
-          font-size: 5.556vw;
-          margin: 3.472vw 0;
-          font-weight: 700;
-          color: #5d63a6;
-        }
-
-        &:nth-of-type(2) {
-          font-size: 2.778vw;
-          color: #6f76c1;
-        }
-      }
-    }
-    a {
-      text-decoration: none;
-    }
-    .menuList {
-      ul {
-        width: fit-content;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 6.944vw;
-        row-gap: 11.111vw;
-        .menu {
-          background-color: #fff;
-          width: 27.778vw;
-          height: 23.611vw;
-          border: 1px solid #f1f1f1;
-          border-radius: 10px;
-          padding: 3.472vw;
-          box-shadow: 2px 2px 4px 1px rgba(199, 199, 199, 0.51);
-          position: relative;
-          a {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .menuName {
-              font-size: 2.639vw;
-              font-weight: 900;
-              color: #454545;
-              text-align: left;
-            }
-            .menuIconBox {
-              display: flex;
-              justify-content: flex-end;
-              align-items: center;
-            }
-            .menuIcon {
-              width: 8.333vw;
-              position: absolute;
-              left: 3.472vw;
-              bottom: 3.472vw;
-            }
-          }
-          &:nth-of-type(1) {
-            .menuIcon {
-              bottom: 2vw;
-              left: 2.5vw;
-            }
-          }
-        }
-      }
     }
   }
 }

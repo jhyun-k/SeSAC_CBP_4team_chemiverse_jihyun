@@ -14,7 +14,7 @@ const Guide = () => {
     <div className={styles.chemistory}>
       <div className={styles.main}>
         <div className={styles.mainTxt}>
-          <span>교육 안내</span>
+          <span>교육안내</span>
           <span>
             컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
             컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
@@ -22,17 +22,15 @@ const Guide = () => {
         </div>
         <img
           className={styles.mainImg}
-          src={'/chemiverse_img/Group 242.png'}
-          alt='img-pop-cardnews'
+          src={"/chemiverse_img/img-pop-cardnews.png"}
+          alt="img-pop-cardnews"
         />
       </div>
       <GuideNav />
       <Routes>
-        <Route path='/' element={<Notice />}></Route>
-        <Route path='/:post' element={<PostDetail data={noticeData} />} />
-        <Route path='/write' element={<WritePostPage />} />
-        <Route path='timetable' element={<TimeTable />}></Route>
-        <Route path='teacher' element={<Teacher />}></Route>
+        <Route path="/" element={<Notice />}></Route>
+        <Route path="timetable" element={<TimeTable />}></Route>
+        <Route path="teacher/*" element={<Teacher />}></Route>
       </Routes>
     </div>
   );

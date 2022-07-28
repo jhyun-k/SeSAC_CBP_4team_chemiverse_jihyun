@@ -19,10 +19,8 @@ import styles from './css/diary.module.css';
 
 const DiaryItem = ({
   onEdit,
-  author,
   content,
   created_date,
-  emotion,
   id,
   onRemove,
 }) => {
@@ -43,12 +41,6 @@ const DiaryItem = ({
   };
 
   const handleEdit = () =>{
-
-    if (localContent.length < 5) {
-      localContentInput.current.focus();
-      return;
-    }
-
     if (window.confirm(`${id+1}번째 작성글을 수정하시겠습니까?`)) {
       onEdit(id,localContent);
       toggleIsEdit();
@@ -58,11 +50,7 @@ const DiaryItem = ({
 
   return (
     <div className={styles.DiaryItem}>
-      <div className={styles.info}>
-        <span className={styles.authorInfo}>
-          작성자 : {author}
-        </span>
-        <br />
+            <div className={styles.info}>
         <span className={styles.date}>{new Date(created_date).toLocaleString()}</span>
       </div>
       <div className={styles.content}>
@@ -78,6 +66,7 @@ const DiaryItem = ({
           <>{content}</>
         )}
       </div>
+      <div className={styles.btn}>
       {isEdit ? (
         <>
           <button onClick={handleQuitEdit}>수정취소</button>
@@ -89,6 +78,7 @@ const DiaryItem = ({
           <button onClick={toggleIsEdit}>수정하기</button>
         </>
       )}
+      </div>
     </div>
   );
 };

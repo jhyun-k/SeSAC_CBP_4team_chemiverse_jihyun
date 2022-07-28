@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import Present from './Present';
+
+
 
 const PresentState = () => {
   return (
     <div>
-      <h1>ddd</h1>
+        <Present /> 
     </div>
   );
 };
