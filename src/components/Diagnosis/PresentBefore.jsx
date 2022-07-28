@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './css/diagnosis.module.scss'
 import { useState } from 'react';
 import { RiQuestionnaireFill } from "react-icons/ri";
-import { RiQuestionAnswerFill } from "react-icons/ri";
 
 
 const PresentBefore = () => {
@@ -10,9 +9,8 @@ const PresentBefore = () => {
     e.preventDefault();
   }
 
-  const submitTest=()=>{
-    alert('수고하셨습니다 :)')
-  }
+  const [disable, setDisable] = React.useState(false);
+
   const preSave=()=>{
     alert('임시저장 되었습니다.')
   }
@@ -183,7 +181,14 @@ const PresentBefore = () => {
           </div>
 
         <button className={styles.formbutton}onClick={preSave}>임시저장</button>
-        <button className={styles.formbutton} type="submit" onClick={submitTest}>제출하기</button>
+        <button className={styles.formbutton} 
+        disabled=""  onClick={(e)=>{
+
+	      alert('수고하셨습니다 :) ');
+	      e.currentTarget.disabled = true ;
+        console.log(e.currentTarget);
+        e.currentTarget.style.display='none';
+        }}>제출하기</button>
         </form>
       </div>
     </div>

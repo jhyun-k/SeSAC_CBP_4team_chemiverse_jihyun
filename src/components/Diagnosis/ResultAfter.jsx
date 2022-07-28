@@ -120,9 +120,8 @@ const ResultAfter = () => {{
     <div className={styles.afterResult}>
         <div className={styles.resultChartTitlebox}>
         <h2 className={styles.resultChartName}>#사후 진단 결과</h2>
-        <p> 사후 점검 테스트 결과 중  
-          <br/>
-          각 영역의 하위 3개 항목이 표시됩니다. </p>
+        <p> 사전 테스트 하위 3개 영역의 <br/>
+        사후 테스트 결과가 표시됩니다. </p>
         <img
           className={styles.resultChartImg}
           src={"/DiagnosisImg/image7.jpeg"}

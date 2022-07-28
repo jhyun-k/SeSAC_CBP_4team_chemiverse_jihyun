@@ -1,11 +1,9 @@
- /* eslint-disable */
 
 import React from 'react';
  // import { useState, useEffect } from 'react';
 import styles from "./css/move.module.css"
 import ClassItem from './ClassItem';
 import data from '../../data/moveData.json';
-import Slider from "react-slick";
 
 
 
@@ -14,14 +12,7 @@ const Move = () => {
 const classData = [...data]
 
 console.log('데이터',classData)
-
-/* const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-}; */
+;
 
   return (
 
@@ -51,13 +42,13 @@ console.log('데이터',classData)
         <img className={styles.platformLogo} src={"/Moveimg/zoom.webp"} alt="zoom logo"></img>
         <h2 className={styles.platformTitle}>Zoom</h2>
       </div>
-{/*        <Slider {...settings}>  */}
-      <div className='move_classList'>
-      <ul className="class_wrap" >
+
+      <div className={styles.classList}>
+      <ul className={styles.classWrap} >
       {classData.map((classdata) => {return <ClassItem key={classdata.id} classdata={classdata} />})} 
       </ul>
     </div>
-{/*      </Slider> */}
+
     <div className={styles.platformInfo}>
         <img className={styles.platformLogo} src={"/Moveimg/webex.png"} alt="webex logo"></img>
         <h2 className={styles.platformTitle}>Webex</h2>

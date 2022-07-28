@@ -133,7 +133,7 @@ const ResultBefore = () => {
         <Radar
           name="expert"
           dataKey="A"
-          stroke="#FFEFCA"
+          stroke="#fad172"
           fill="#FFEFCA"
           fillOpacity={0.6}
         />
@@ -156,8 +156,8 @@ const ResultBefore = () => {
         <Radar
           name="expert"
           dataKey="A"
-          stroke="#EEE8AA"
-          fill="#EEE8AA"
+          stroke="#f0e890"
+          fill="#f9f3ae"
           fillOpacity={0.6}
         />
       </RadarChart>
@@ -180,7 +180,7 @@ const ResultBefore = () => {
         <Radar
           name="expert"
           dataKey="A"
-          stroke="#D2EDEC"
+          stroke="#8cedea"
           fill="#D2EDEC"
           fillOpacity={0.6}
         />
@@ -203,7 +203,7 @@ const ResultBefore = () => {
         <Radar
           name="expert"
           dataKey="A"
-          stroke="#D7E0FD"
+          stroke="#aabdfb"
           fill="#D7E0FD"
           fillOpacity={0.6}
         />
@@ -215,14 +215,27 @@ const ResultBefore = () => {
 
     <div className={styles.undercontentsarea}>
       <div className={styles.threeContent}>
-        <h2 className={styles.threeOfAllTitle}> 하위 3개 항목 </h2>
-        <p>
-        전체 영역 중 하위 3개 항목이 표시됩니다. 
+        <h2 className={styles.threeOfAllTitle}> 전체 영역 - 하위 3개 항목 </h2>
+        <p className={styles.threeOfAllDes}>
+        앞선 진단 테스트 결과를 기준으로 <br/>
+        전체 영역 중 하위 3개 항목이 표시됩니다. <br/>
+        <span className={styles.AllDesNotice}>테스트 결과를 바탕으로 현재 상황을 파악 및 보완하기 위한 목적입니다.
+        </span>
         </p>
         <div className={styles.threeOfAllItemBox}>
             <div className={styles.threeaOfAllItem}>
               <p className={styles.itemNumber}> 01 </p>
               <h4 className={styles.itemDes}>워크스킬 - 다양성 이해</h4>
+              <p className={styles.itemHelp}> 이 영역의 이 부분은 뫄뫄 페이지에서 
+                <br/> 이렇게 공부하면 보완에 도움이 됩니다. </p>
+              <p className={styles.itemNumber}> 02 </p>
+              <h4 className={styles.itemDes}>피플스킬 - 해당 항목 </h4>
+              <p className={styles.itemHelp}> 이 영역의 이 부분은 뫄뫄 페이지에서 
+                <br/> 이렇게 공부하면 보완에 도움이 됩니다. </p>
+              <p className={styles.itemNumber}> 03 </p>
+              <h4 className={styles.itemDes}> 자기관리 - 해당 항목 </h4>
+              <p className={styles.itemHelp}> 이 영역의 이 부분은 뫄뫄 페이지에서 
+                <br/> 이렇게 공부하면 보완에 도움이 됩니다. </p>
             </div>
         </div>
       </div>

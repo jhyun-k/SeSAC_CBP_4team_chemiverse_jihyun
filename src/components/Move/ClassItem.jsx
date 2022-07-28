@@ -15,6 +15,8 @@ const ClassItem = ({classdata}) => {
     if (!isCopied) {
       navigator.clipboard.writeText(link.current.innerHTML);
       setIsCopied(true);
+      setTimeout(()=>{
+        setIsCopied(false)}, 1500)
     }
   };
   
@@ -22,8 +24,8 @@ const ClassItem = ({classdata}) => {
 
   return (
     <li className={styles.itemboxs}>
-        <img  className={styles.move_class_img} src={classdata.moveClassImg}/>
         <dl>
+        <img  className={styles.move_class_img} src={classdata.moveClassImg}/>
            <dt className={styles.classname}>{classdata.moveClassName}</dt>
            <dd className={styles.classinfotitle}>교육 일정 : 
            <span className={styles.classinfo}>{classdata.moveClassDate}</span> </dd>
@@ -36,10 +38,10 @@ const ClassItem = ({classdata}) => {
              {classdata.moveClassUrl}
             </span>
             <botton className={styles.copybutton} onClick={toClipboard}>
-              {isCopied ? <BsFillCheckCircleFill/>  : <AiOutlineShareAlt/>}
+              {isCopied ? <BsFillCheckCircleFill/>  : <AiOutlineShareAlt />}
             </botton>
  
-          {isCopied && <h2 className={styles.urlcopy}>URL 복사 완료! </h2>}
+          {isCopied && <span className={styles.urlcopy}> URL 복사 완료! </span>}
     
 
         <button className={styles.button}><a href={classdata.moveClassUrl}>바로가기</a></button>

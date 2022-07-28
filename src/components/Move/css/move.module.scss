@@ -78,11 +78,9 @@
 
 .itemboxs{
   width:20.833vw;
-  height:29.042vw;
   border: 0.069vw solid #bcbed3;
   border-radius: 0.694vw;
   margin:1.036vw;
-  position: relative;
 
   .move_class_img{
     width: 20.713vw;
@@ -119,8 +117,8 @@
   .buttonarea{
     display: flex;
     justify-content: flex-end;
-    padding-top: 0.25vw;
-    padding-right: 1vw;
+    padding: 0.25vw 1vw 1vw 2vw;
+    
   }
   .copybutton{
     cursor: pointer;
@@ -146,5 +144,119 @@
     text-align: center;
     align-items: center;
   }
+}
+
+// 반응형 ===========
+
+@media screen and (max-width: 720px) {
+  // move 
+  .move {
+    .main {
+      padding-left: 6.944vw;
+      padding-right: 6.25vw;
+      margin-bottom: 0;
+      width: 100vw;
+      height: 20vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 90%;
+    }
+    .mainTxt {
+      display: flex;
+      align-items: center;
+    }
+    .mainTxt span {
+      display: inline-block;
+      color: #fff;
+      &:first-child {
+        font-size: 6vw;
+        font-weight: 700;
+        margin-right: 2.083vw;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+    .mainImg {
+      width: 30vw;
+      height: auto;
+    }
+  }
+  .itemboxs{
+    display: flex;
+    width:70vw;
+    border: 0.069vw solid #bcbed3;
+    border-radius: 0.694vw;
+    margin:1.036vw;
+  
+    .move_class_img{
+      width: 20.713vw;
+      height:18vw;
+      border-radius:0.694vw;
+    }
+    .itemtitle{
+      text-align: left;
+      font-size:1.528vw;
+      font-weight:bold;
+    }
+    .classname{
+      font-size:1.528vw;
+      font-weight: bold;
+      text-align: left;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding:0.947vw 1.23vw;
+    }
+    .classinfotitle{
+      align-items: center;
+      text-align: left;
+      padding:0.147vw 1.23vw;
+      font-size:1.250vw;
+    }
+    .classinfo{
+      text-align: center;
+      padding:0.147vw 0;
+      font-size:1.111vw;
+      align-items: center;
+    }
+    .buttonarea{
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.25vw 1vw 1vw 2vw;
+      
+    }
+    .copybutton{
+      cursor: pointer;
+      color:#6F76C1;
+      margin-right:1.139vw;
+      margin-top:0.439vw;
+      align-items: center;
+      font-size: 1.389vw
+    }
+    .url{
+      display: none;
+    }
+    .urlcopy{
+      font-size:0.833vw ;
+      align-items: center;
+      text-align: center;
+    }
+    .button{
+      width: 8.333vw;
+      height:2.431vw ;
+      border: 0.069vw solid #6F76C1;
+      color:#6F76C1;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
+  
 }
 

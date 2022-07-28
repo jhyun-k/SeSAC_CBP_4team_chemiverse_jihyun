@@ -9,12 +9,10 @@ const PresentAfter = () => {
     e.preventDefault();
   }
 
-  const submitTest=()=>{
-    alert('수고하셨습니다 :)')
-  }
   const preSave=()=>{
     alert('임시저장 되었습니다.')
   }
+  const [disable, setDisable] = React.useState(false);
   const [question5, setQuestion5] = useState("");
   const [question6, setQuestion6] = useState("");
   
@@ -182,7 +180,12 @@ const PresentAfter = () => {
           </div>
 
         <button className={styles.formbutton}onClick={preSave}>임시저장</button>
-        <button className={styles.formbutton} type="submit" onClick={submitTest}>제출하기</button>
+
+        <button className={styles.formbutton} 
+        disabled=""  onClick={(e)=>{
+
+	      alert('수고하셨습니다 :) ');
+	      e.currentTarget.disabled = true ;}}>제출하기</button>
         </form>
       </div>
     </div>

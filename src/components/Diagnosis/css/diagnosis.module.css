@@ -38,7 +38,7 @@
 .diaNav ul li {
   color: #6f76c1;
   border: 0.139vw solid #6f76c1;
-  margin-bottom: 50px;
+  margin-bottom: 3.472vw;
   width: 17.361vw;
   height: 3.125vw;
   display: flex;
@@ -86,6 +86,7 @@
   border: 0.069vw solid #6f76c1;
   cursor: pointer;
   margin-bottom: 1.125vw;
+  margin-right: 1.125vw;
 }
 
 .diaInner {
@@ -225,15 +226,23 @@
   color: rgba(202, 27, 27, 0.809);
   font-size: 0.972vw;
   font-weight: bold;
-  margin: 1.389vw 0;
+  padding-top: 3vw;
+  padding-bottom: 4.389vw;
 }
 .formArea .formbutton {
-  margin-right: 0.694vw;
-  width: 10.417vw;
+  width: 10.556vw;
   padding: 0.694vw;
-  font-size: 1.181vw;
-  border: 0.069vw solid #6f76c1;
+  margin: 0 1.2vw;
   cursor: pointer;
+  border: 2px solid #6F76C1;
+  color: #6F76C1;
+  border-radius: 1.389vw;
+  font-size: 1.042vw;
+  font-weight: 700;
+}
+.formArea .formbutton:hover {
+  background-color: #6F76C1;
+  color: #fff;
 }
 
 .resultbefore {
@@ -247,6 +256,7 @@
   display: flex;
   justify-content: center;
   padding: 1vw;
+  flex-wrap: wrap;
 }
 .resultbefore .chartbox {
   width: 16.667vw;
@@ -273,41 +283,57 @@
 }
 
 .undercontentsarea {
-  border: 1px solid #d6d6e5;
-  border-radius: 10px;
-  margin: 50px 0;
-  display: flex;
-  justify-content: center;
+  border: 0.069vw solid #d6d6e5;
+  border-radius: 0.069vw;
+  margin: 3.472vw 0;
+  padding: 0.694vw 0 2.083vw 0;
 }
 .undercontentsarea .threeContent {
-  margin: 20px 10px;
+  margin: 1.389vw 0.694vw;
 }
 .undercontentsarea .threeOfAllTitle {
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid #4e559a;
-  border-radius: 20px;
-  color: #00005c;
-  width: 200px;
-  height: 30px;
-}
-.undercontentsarea .itemNumber {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   background-color: #4e559a;
-  text-align: center;
+  width: 27.778vw;
+  height: 2.431vw;
   color: #fff;
-  line-height: 50px;
-  font-style: italic;
+  text-align: center;
+  font-size: 1.389vw;
+  line-height: 2.431vw;
   font-weight: bold;
-  font-size: 20px;
+  margin: 1.389vw auto;
+  border-radius: 1.389vw;
 }
-.undercontentsarea .itemDes {
-  display: block;
-  font-size: 20px;
+.undercontentsarea .threeOfAllDes {
+  font-size: 1vw;
+  line-height: 1.5;
+  color: #272727;
+  font-weight: 600;
+}
+.undercontentsarea .AllDesNotice {
+  color: rgb(218, 3, 3);
+}
+.undercontentsarea .threeOfAllItemBox {
+  font-weight: 500;
+}
+.undercontentsarea .threeOfAllItemBox .itemNumber {
+  width: 3.472vw;
+  height: 3.472vw;
+  border-radius: 50%;
+  background-color: #f74418;
+  color: #fff;
+  line-height: 3.472vw;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.389vw;
+  margin: 1.389vw auto;
+}
+.undercontentsarea .threeOfAllItemBox .itemDes {
+  display: inline-block;
+  font-size: 1.667vw;
+}
+.undercontentsarea .threeOfAllItemBox .itemHelp {
+  font-size: 1.042vw;
+  padding: 1.389vw 0;
 }
 
 .resutlAfterContainer {
@@ -337,22 +363,22 @@
   align-items: flex-start;
 }
 .resutlAfterContainer .afterResult .resultChartName {
-  font-size: 20px;
+  font-size: 1.389vw;
   text-align: center;
-  line-height: 30px;
-  border-radius: 20px;
-  width: 160px;
-  height: 35px;
+  line-height: 2.083vw;
+  border-radius: 1.389vw;
+  width: 11.111vw;
+  height: 2.431vw;
   border: 2px solid transparent;
   background-image: linear-gradient(#fff, #fff, #fff), linear-gradient(to right, #ffefca, #d2edec, #cdf8dd);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  margin-bottom: 10px;
+  margin-bottom: 0.694vw;
 }
 .resutlAfterContainer .afterResult p {
-  font-size: 14px;
+  font-size: 0.972vw;
   color: #272728;
-  padding-left: 5px;
+  padding-left: 0.347vw;
 }
 .resutlAfterContainer .afterResult .resultChartImg {
   width: 22.833vw;
@@ -366,7 +392,203 @@
   line-height: 1.211vw;
 }
 .resutlAfterContainer .arrowIcon {
-  font-size: 3.472vw;
+  font-size: 5.472vw;
   color: #58585d;
-  margin: 1.389vw auto;
+  margin: 3.389vw auto;
+}
+
+@media screen and (max-width: 720px) {
+  .diagnosis .main {
+    padding-left: 6.944vw;
+    padding-right: 6.25vw;
+    margin-bottom: 0;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .diagnosis .mainTxt {
+    display: flex;
+    align-items: center;
+  }
+  .diagnosis .mainTxt span {
+    display: inline-block;
+    color: #fff;
+  }
+  .diagnosis .mainTxt span:first-child {
+    font-size: 6vw;
+    font-weight: 700;
+    margin-right: 2.083vw;
+  }
+  .diagnosis .mainTxt span:last-child {
+    display: none;
+  }
+  .diagnosis .mainImg {
+    width: 30vw;
+    height: auto;
+  }
+  .nav ul li {
+    color: #6f76c1;
+    border: none;
+    margin-bottom: 5vw;
+    width: 100%;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+  }
+  .nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav ul li * {
+    text-decoration: none;
+  }
+  .navbtn.on {
+    color: #424888;
+    font-weight: 700;
+    font-size: 3vw;
+    transition: all 0.2s;
+    border-bottom: 5px solid #424888;
+  }
+  .presentBefore {
+    width: 100%;
+    margin: auto;
+  }
+  .presentBefore .testHeader {
+    display: none;
+  }
+  .presentBefore .diaTestHeaderImg {
+    display: none;
+  }
+  .presentBefore .diaTestHeaderAfreImg {
+    display: none;
+  }
+  .presentBefore .testTitle {
+    font-size: 3.736vw;
+    margin-bottom: 4.389vw;
+    color: #fff;
+  }
+  .presentBefore .testdes {
+    color: #fff;
+    margin-bottom: 0.972vw;
+    font-size: 1.972vw;
+    line-height: 1.5;
+  }
+  .presentBefore .testinfo {
+    display: none;
+  }
+  .formArea {
+    width: 100%;
+    border-radius: 0.694vw;
+    padding-top: 2.083vw;
+    padding-bottom: 4.861vw;
+    background-color: #fafaff;
+    border: none;
+  }
+  .formArea .testName {
+    background-color: #4e559a;
+    width: 35.778vw;
+    height: 5.431vw;
+    color: #fff;
+    text-align: center;
+    font-size: 3.389vw;
+    line-height: 4.6vw;
+    font-weight: bold;
+    border-radius: 1.389vw;
+  }
+  .formArea .questionbox {
+    margin: 2.083vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .formArea .questionTitle {
+    text-align: left;
+    font-size: 3.2vw;
+    line-height: 3vw;
+    font-weight: 600;
+    color: #272728;
+    padding: 0 0.347vw 0.347vw 0;
+    background-color: #fff;
+  }
+  .formArea .titleNumber {
+    font-size: 1rem;
+    color: #4e559a;
+  }
+  .formArea label span {
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
+  .formArea label span::before {
+    width: 2.042vw;
+    height: 2.042vw;
+    margin-right: 1.694vw;
+  }
+  .formArea input[type=radio]:checked + label span::before {
+    box-shadow: inset 0 0 0 0.678vw #00005c;
+  }
+  .formArea input[type=text] {
+    box-shadow: inset 0 0 0 0.139vw #6f76c1;
+    border-radius: 1.389vw;
+    color: #58585d;
+    width: 45vw;
+    height: 5.778vw;
+    font-size: 1.042vw;
+    padding: 0.694vw 1.389vw;
+  }
+  .formArea .infomesage {
+    color: rgba(202, 27, 27, 0.809);
+    font-size: 0.272vw;
+    font-weight: bold;
+    padding-top: 3vw;
+    padding-bottom: 4.389vw;
+  }
+  .formArea .formbutton {
+    width: 10.556vw;
+    padding: 0.694vw;
+    margin: 0 1.2vw;
+    cursor: pointer;
+    border: 2px solid #6F76C1;
+    color: #6F76C1;
+    border-radius: 1.389vw;
+    font-size: 1.042vw;
+    font-weight: 700;
+  }
+  .formArea .formbutton:hover {
+    background-color: #6F76C1;
+    color: #fff;
+  }
+  .resultbefore .chartcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+  }
+  .resultbefore .chartbox {
+    width: 16.667vw;
+    height: 16.667vw;
+    font-size: 0.847vw;
+    text-align: center;
+    line-height: 0.847vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resultbefore .chartitem {
+    display: none;
+  }
 }/*# sourceMappingURL=diagnosis.module.css.map */
