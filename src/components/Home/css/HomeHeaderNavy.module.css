@@ -22,8 +22,8 @@
 }
 .homeHeader {
   width: 100%;
-  height: 5.556vw;
-  padding: 0.833vw 0;
+  height: 80px;
+  padding: 12px 0;
   background-color: #6f76c1;
   border: 1px solid transparent;
   box-shadow: 0 6px 6px -6px rgba(63, 63, 63, 0.485);
@@ -97,10 +97,10 @@
 
 .onup_btn {
   background-color: #ffffff;
-  border: 0.139vw solid transparent;
-  border-radius: 2.083vw;
-  height: 3.472vw;
-  width: 13.889vw;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  height: 50px;
+  width: 200px;
   color: #6f76c1;
   position: relative;
 }
@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 720px) {
   .homeHeader {
-    height: 4.167vw;
+    height: 60px;
     background-color: #ffffff;
   }
   .homeContainer {
@@ -168,8 +168,8 @@
   }
   input[id=menuicon] + label {
     display: block;
-    width: 2.083vw;
-    height: 2.083vw;
+    width: 30px;
+    height: 30px;
     position: relative;
     cursor: pointer;
     margin-right: 5vw;
@@ -179,8 +179,8 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 0.347vw;
-    border-radius: 2.083vw;
+    height: 5px;
+    border-radius: 30px;
     background-color: #B1B8C1;
     transition: all 0.35s;
   }
@@ -211,7 +211,7 @@
     height: 100%;
     background-color: #fff;
     position: fixed;
-    top: 4.167vw;
+    top: 60px;
     right: -100%;
     z-index: 1;
     transition: all 0.35s;
@@ -228,7 +228,7 @@
     border-radius: 0;
     color: #ffffff;
     border: 1px solid #6f76c1;
-    height: 4.167vw;
+    height: 60px;
     transition: all 0.35s;
   }
   .navlist_white {
