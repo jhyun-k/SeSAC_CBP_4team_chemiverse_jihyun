@@ -2,6 +2,8 @@
 a {
     text-decoration: none !important;
 }
+
+/* 타이틀 */
 .learningWrapper {
     .pin {
         font-size: 1.389vw;
@@ -54,67 +56,61 @@ a {
         height: auto;
     }
 }
-.learning {
-    background-color: black;
-    font-size: 100px;
-}
 
 /* learnNav */
 .learnNav {
     position: sticky;
     top: 6vw;
-    z-index: 10;
+    z-index: 2;
     background-color: white;
-}
-.learnNav ul li {
-    color: #6f76c1;
-    border: 0.139vw solid #6f76c1;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 17.361vw;
-    height: 3.125vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.181vw;
-    background-color: #fff;
-    font-weight: 500;
-    * {
-        text-decoration: none;
+    ul li {
+        color: #6f76c1;
+        border: 0.139vw solid #6f76c1;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 17.361vw;
+        height: 3.125vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.181vw;
+        font-weight: 500;
+        * {
+            text-decoration: none;
+        }
+        &:first-child {
+            border-top-left-radius: 0.347vw;
+            border-bottom-left-radius: 0.347vw;
+            border-right: none;
+        }
+        &:nth-child(2) {
+            border-right: none;
+        }
+        &:last-child {
+            border-top-right-radius: 0.347vw;
+            border-bottom-right-radius: 0.347vw;
+            border-left: none;
+        }
     }
-    &:first-child {
-        border-top-left-radius: 0.347vw;
-        border-bottom-left-radius: 0.347vw;
-        border-right: none;
-    }
-    &:nth-child(2) {
-        border-right: none;
-    }
-    &:last-child {
-        border-top-right-radius: 0.347vw;
-        border-bottom-right-radius: 0.347vw;
-        border-left: none;
-    }
-}
-.navbtn {
-    &.on {
-        color: #424888;
-        font-weight: 900;
-        font-size: 1.25vw;
+    .navbtn {
+        &.on {
+            color: #424888;
+            font-weight: 900;
+            font-size: 1.25vw;
+        }
     }
 }
 
-/* Understand.jsx */
+/* ModuleListPage.jsx */
 .inner {
     width: 69.444vw;
     margin: auto;
 }
 .moduleList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    // justify-items: center;
+    display: block;
     .moduleListItem {
+        display: inline-block;
+        margin: 0 0.833vw;
         .imgBox {
             position: relative;
             width: 20vw;
@@ -124,9 +120,12 @@ a {
             border-radius: 0.694vw;
             img {
                 overflow: hidden;
-                // width: 100%;
                 height: 100%;
-                // border-radius: 0.694vw;
+
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
             }
             .hover {
                 display: flex;
@@ -201,10 +200,15 @@ a {
         padding: 1.389vw;
         .moduleImgBox {
             margin: auto;
+            width: 17.708vw;
+            overflow: hidden;
+            border-radius: 0.694vw;
+            position: relative;
             img {
-                width: 17.708vw;
-                height: 23.611vw;
-                border-radius: 0.694vw;
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
             }
             margin-right: 2.083vw;
         }
@@ -290,20 +294,55 @@ a {
 .moduleLearning {
     background-color: #f7f7f7;
     width: 100%;
-    padding: 25px;
+    padding: 1.736vw;
     .sectionTitleArea {
         margin: auto;
     }
     .learningContents {
-        margin: 40px auto;
+        margin: 2.778vw auto;
         display: flex;
         justify-content: space-around;
-        .imgBox {
-            cursor: pointer;
-            > img {
-                width: 21.25vw;
-                height: 12.361vw;
-                border-radius: 0.694vw;
+        .learningContent {
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            border-radius: 0.8vw;
+            background-color: #fff;
+            // background: linear-gradient(
+            //     to bottom,
+            //     rgba(111, 118, 193, 0.5) 0%,
+            //     rgba(111, 118, 193, 0.1) 30%,
+            //     rgba(255, 255, 255, 1) 100%
+            // );
+            width: 21.25vw;
+            height: 12.361vw;
+            overflow: hidden;
+            &:hover {
+                width: 40vw;
+                transition: 0.5s;
+                .textBox {
+                    display: flex;
+                }
+            }
+            .imgBox {
+                cursor: pointer;
+                > img {
+                    width: 21.25vw;
+                    height: 12.361vw;
+                    border-radius: 0.694vw;
+                }
+            }
+            .textBox {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 10px 10px 0;
+                width: 100%;
+                height: 100%;
+                margin-left: -10px;
+                border: 2px solid rgb(111, 118, 193);
+                border-left: none;
+                top: 50%;
             }
         }
     }
@@ -346,7 +385,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100000;
+    z-index: 100;
     .modalContent {
         background-color: white;
         background-image: url(./../../../../public/chemiverse_img/bg-login.png);
@@ -356,6 +395,7 @@ section {
         border-radius: 0.694vw;
         padding: 2.389vw;
         position: relative;
+        z-index: 100;
         button {
             // float: right;
             position: absolute;
@@ -407,7 +447,51 @@ section {
     }
 }
 
-@media (min-width: 360px) and (max-width: 720px) {
+@media (max-width: 720px) {
+    // .inner {
+    //     width: 100vw;
+    // }
+    //Nav
+    .learnNav {
+        z-index: 2;
+        ul li {
+            color: #6f76c1;
+            border: none;
+            margin-top: 0;
+            margin-bottom: 5vw;
+            width: 100%;
+            height: 8.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3vw;
+            font-weight: 500;
+        }
+        .navbtn {
+            &.on {
+                font-size: 3vw;
+                transition: all 0.2s;
+                border-bottom: 5px solid #424888;
+            }
+        }
+    }
+
+    .learningWrapper {
+        .pin {
+            font-size: 3vw;
+            margin-bottom: 1.5vw;
+            color: rgba(75, 80, 132, 0.721);
+        }
+        .title {
+            display: inline-block;
+            text-align: center;
+            width: 69.444vw;
+            color: #6f76c1;
+            font-size: 4.5vw;
+            padding-bottom: 8vw;
+        }
+    }
+
     .moduleList {
         .moduleListItem {
             .imgBox {
@@ -445,13 +529,30 @@ section {
             background: none;
             background-color: #f7f7f7;
             .learningContents {
-                display: flex;
                 flex-direction: column;
-                .imgBox {
+                .learningContent {
+                    flex-direction: column;
                     margin-top: 2.389vw;
-                    img {
-                        width: 100%;
-                        height: auto;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    .imgBox {
+                        width: 101%;
+                        img {
+                            border-radius: 10px;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .textBox {
+                        display: flex;
+                        // height: 6.944vw;
+                        height: 13.889vw;
+                        border-left: 2px solid #6f76c1;
+                        border-top: none;
+                        border-radius: 0 0 10px 10px;
+                        margin-left: 0;
+                        margin-top: -5px;
                     }
                 }
             }
@@ -468,8 +569,8 @@ section {
 
     .closeBtn {
         img {
-            width: 20px;
-            margin: 20px;
+            width: 1.389vw;
+            margin: 1.389vw;
         }
     }
     .modalContent {

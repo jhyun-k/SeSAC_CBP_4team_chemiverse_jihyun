@@ -6,7 +6,7 @@ import ModalContent1 from "./ModalContent1";
 import Think from "./Think/Think";
 import { useMediaQuery } from "react-responsive";
 import { BsCheckLg } from "react-icons/bs";
-import YouTube from "react-youtube";
+import ModalVideo from "./ModalVideo";
 
 const LearningModule = ({ module }) => {
     const { id } = useParams();
@@ -65,45 +65,43 @@ const LearningModule = ({ module }) => {
 
                 <div className={`${styles.learningContents} ${styles.inner}`}>
                     {/* 카드뉴스 모달 */}
-                    <div
-                        className={styles.imgBox}
-                        onClick={() => {
-                            CardToggleModal(true);
-                        }}
-                    >
-                        <img
-                            src={
-                                process.env.PUBLIC_URL +
-                                "/chemiverse_img/img-cardnews011.png"
-                            }
-                            alt=""
-                        />
-
-                        <Modal
-                            shown={CardModalShown}
-                            close={() => {
-                                CardToggleModal(false);
+                    <div className={styles.learningContent}>
+                        <div
+                            className={styles.imgBox}
+                            onClick={() => {
+                                CardToggleModal(true);
                             }}
                         >
-                            <ModalContent1 />
-                        </Modal>
+                            <img
+                                src={
+                                    process.env.PUBLIC_URL +
+                                    "/chemiverse_img/img-cardnews011.png"
+                                }
+                                alt=""
+                            />
+
+                            <Modal
+                                shown={CardModalShown}
+                                close={() => {
+                                    CardToggleModal(false);
+                                }}
+                            >
+                                <ModalContent1 />
+                            </Modal>
+                        </div>
+                        <div className={styles.textBox}>
+                            Think
+                            <br />
+                            Insight
+                            <br />
+                            Practice
+                        </div>
                     </div>
-                    {/* 모바일 화면에서 유튜브 모달 */}
+                    {/* 모바일 화면에서 유튜브 모달(바로 이동) */}
                     {isMobile && (
-                        <>
+                        <div class={styles.learningContent}>
                             <div className={styles.imgBox}>
                                 <a href="https://www.youtube.com/watch?v=dGpYuTshhuA">
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            "/chemiverse_img/hqdefault(1).webp"
-                                        }
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                            <div className={styles.imgBox}>
-                                <a href="https://www.youtube.com/watch?v=6sinhm9AkUM">
                                     <img
                                         src={
                                             process.env.PUBLIC_URL +
@@ -113,49 +111,17 @@ const LearningModule = ({ module }) => {
                                     />
                                 </a>
                             </div>
-                        </>
+
+                            <div className={styles.textBox}>
+                                협업 시뮬레이션
+                                <br />
+                                in 메타버스
+                            </div>
+                        </div>
                     )}
                     {/* 데스크탑에서 유튜브 모달 */}
                     {isDesktop && (
-                        <>
-                            <div
-                                className={styles.imgBox}
-                                onClick={() => {
-                                    VideoToggleModal(true);
-                                }}
-                            >
-                                <img
-                                    src={
-                                        process.env.PUBLIC_URL +
-                                        "/chemiverse_img/hqdefault(1).webp"
-                                    }
-                                    alt=""
-                                />
-                                <Modal
-                                    shown={VideoModalShown}
-                                    close={() => {
-                                        VideoToggleModal(false);
-                                    }}
-                                >
-                                    <div className={styles.youtube}>
-                                        <YouTube
-                                            videoId="dGpYuTshhuA"
-                                            opts={{
-                                                width: "889",
-                                                height: "500",
-                                                playerVars: {
-                                                    autoplay: 1,
-                                                    rel: 0,
-                                                    modestbranding: 1,
-                                                },
-                                            }}
-                                            onEnd={(e) => {
-                                                e.target.stopVideo(0);
-                                            }}
-                                        />
-                                    </div>
-                                </Modal>
-                            </div>
+                        <div className={styles.learningContent}>
                             <div
                                 className={styles.imgBox}
                                 onClick={() => {
@@ -175,26 +141,15 @@ const LearningModule = ({ module }) => {
                                         VideoToggleModal(false);
                                     }}
                                 >
-                                    <div className={styles.youtube}>
-                                        <YouTube
-                                            videoId="6sinhm9AkUM"
-                                            opts={{
-                                                width: "889",
-                                                height: "500",
-                                                playerVars: {
-                                                    autoplay: 1,
-                                                    rel: 0,
-                                                    modestbranding: 1,
-                                                },
-                                            }}
-                                            onEnd={(e) => {
-                                                e.target.stopVideo(0);
-                                            }}
-                                        />
-                                    </div>
+                                    <ModalVideo />
                                 </Modal>
                             </div>
-                        </>
+                            <div className={styles.textBox}>
+                                협업 시뮬레이션
+                                <br />
+                                in 메타버스
+                            </div>
+                        </div>
                     )}
                 </div>
             </section>

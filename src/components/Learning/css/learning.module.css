@@ -1,8 +1,10 @@
+@charset "UTF-8";
 /* Learning.jsx */
 a {
   text-decoration: none !important;
 }
 
+/* 타이틀 */
 .learningWrapper .pin {
   font-size: 1.389vw;
   margin-bottom: 1.034vw;
@@ -53,20 +55,14 @@ a {
   height: auto;
 }
 
-.learning {
-  background-color: black;
-  font-size: 100px;
-}
-
 /* learnNav */
 .learnNav {
   position: -webkit-sticky;
   position: sticky;
   top: 6vw;
-  z-index: 10;
+  z-index: 2;
   background-color: white;
 }
-
 .learnNav ul li {
   color: #6f76c1;
   border: 0.139vw solid #6f76c1;
@@ -78,7 +74,6 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.181vw;
-  background-color: #fff;
   font-weight: 500;
 }
 .learnNav ul li * {
@@ -97,23 +92,24 @@ a {
   border-bottom-right-radius: 0.347vw;
   border-left: none;
 }
-
-.navbtn.on {
+.learnNav .navbtn.on {
   color: #424888;
   font-weight: 900;
   font-size: 1.25vw;
 }
 
-/* Understand.jsx */
+/* ModuleListPage.jsx */
 .inner {
   width: 69.444vw;
   margin: auto;
 }
 
 .moduleList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: block;
+}
+.moduleList .moduleListItem {
+  display: inline-block;
+  margin: 0 0.833vw;
 }
 .moduleList .moduleListItem .imgBox {
   position: relative;
@@ -126,6 +122,10 @@ a {
 .moduleList .moduleListItem .imgBox img {
   overflow: hidden;
   height: 100%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .moduleList .moduleListItem .imgBox .hover {
   display: flex;
@@ -197,12 +197,17 @@ a {
 }
 .moduleBox .moduleDesc .moduleImgBox {
   margin: auto;
+  width: 17.708vw;
+  overflow: hidden;
+  border-radius: 0.694vw;
+  position: relative;
   margin-right: 2.083vw;
 }
 .moduleBox .moduleDesc .moduleImgBox img {
-  width: 17.708vw;
-  height: 23.611vw;
-  border-radius: 0.694vw;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .moduleBox .moduleDesc .moduleTextBox {
   width: 55.556vw;
@@ -285,23 +290,52 @@ a {
 .moduleLearning {
   background-color: #f7f7f7;
   width: 100%;
-  padding: 25px;
+  padding: 1.736vw;
 }
 .moduleLearning .sectionTitleArea {
   margin: auto;
 }
 .moduleLearning .learningContents {
-  margin: 40px auto;
+  margin: 2.778vw auto;
   display: flex;
   justify-content: space-around;
 }
-.moduleLearning .learningContents .imgBox {
+.moduleLearning .learningContents .learningContent {
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8vw;
+  background-color: #fff;
+  width: 21.25vw;
+  height: 12.361vw;
+  overflow: hidden;
+}
+.moduleLearning .learningContents .learningContent:hover {
+  width: 40vw;
+  transition: 0.5s;
+}
+.moduleLearning .learningContents .learningContent:hover .textBox {
+  display: flex;
+}
+.moduleLearning .learningContents .learningContent .imgBox {
   cursor: pointer;
 }
-.moduleLearning .learningContents .imgBox > img {
+.moduleLearning .learningContents .learningContent .imgBox > img {
   width: 21.25vw;
   height: 12.361vw;
   border-radius: 0.694vw;
+}
+.moduleLearning .learningContents .learningContent .textBox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 100%;
+  margin-left: -10px;
+  border: 2px solid rgb(111, 118, 193);
+  border-left: none;
+  top: 50%;
 }
 
 .sectionTitleArea {
@@ -341,7 +375,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100000;
+  z-index: 100;
 }
 .modalBackdrop .modalContent {
   background-color: white;
@@ -352,6 +386,7 @@ section {
   border-radius: 0.694vw;
   padding: 2.389vw;
   position: relative;
+  z-index: 100;
 }
 .modalBackdrop .modalContent button {
   position: absolute;
@@ -398,7 +433,41 @@ section {
   margin: 1.389vw;
 }
 
-@media (min-width: 360px) and (max-width: 720px) {
+@media (max-width: 720px) {
+  .learnNav {
+    z-index: 2;
+  }
+  .learnNav ul li {
+    color: #6f76c1;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 5vw;
+    width: 100%;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+  }
+  .learnNav .navbtn.on {
+    font-size: 3vw;
+    transition: all 0.2s;
+    border-bottom: 5px solid #424888;
+  }
+  .learningWrapper .pin {
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .learningWrapper .title {
+    display: inline-block;
+    text-align: center;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 4.5vw;
+    padding-bottom: 8vw;
+  }
   .moduleList .moduleListItem .imgBox {
     width: 30vw;
     height: 35vw;
@@ -430,15 +499,31 @@ section {
     background-color: #f7f7f7;
   }
   .moduleBox .moduleLearning .learningContents {
-    display: flex;
     flex-direction: column;
   }
-  .moduleBox .moduleLearning .learningContents .imgBox {
+  .moduleBox .moduleLearning .learningContents .learningContent {
+    flex-direction: column;
     margin-top: 2.389vw;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
   }
-  .moduleBox .moduleLearning .learningContents .imgBox img {
+  .moduleBox .moduleLearning .learningContents .learningContent .imgBox {
+    width: 101%;
+  }
+  .moduleBox .moduleLearning .learningContents .learningContent .imgBox img {
+    border-radius: 10px;
     width: 100%;
     height: auto;
+  }
+  .moduleBox .moduleLearning .learningContents .learningContent .textBox {
+    display: flex;
+    height: 13.889vw;
+    border-left: 2px solid #6f76c1;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin-left: 0;
+    margin-top: -5px;
   }
   > div iframe {
     width: 100%;
@@ -449,8 +534,8 @@ section {
     z-index: 1;
   }
   .closeBtn img {
-    width: 20px;
-    margin: 20px;
+    width: 1.389vw;
+    margin: 1.389vw;
   }
   .modalContent {
     width: 100%;
