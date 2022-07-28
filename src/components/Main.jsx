@@ -1,20 +1,18 @@
 import React from "react";
 import Header from "./Header";
 import { Routes, Route } from "react-router-dom";
-import Move from "./Move";
+import Move from "./Move/Move";
 import Guide from "./Guide/Guide";
 import Diagnosis from "./Diagnosis/Diagnosis";
 import Learning from "./Learning/Learning";
 import Mypage from "./Mypage";
-import Login from "./Login/Login";
 import MainPage from "./MainPage";
 import Mentoring from "./Mentoring/Mentoring";
 import ChemiStory from "./ChemiStory/ChemiStory";
 import FreePost from "./Post/FreePost";
 import SuggestIdea from "./Post/SuggestIdea";
 import PostTab from "./Post/PostTab";
-import Loginok from "./Login/Loginok";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const Main = ({ setAuth, auth }) => {
   const title = "expert";

@@ -1,15 +1,38 @@
 .homeHeader {
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.homeHeader {
   width: 100%;
   height: 80px;
   padding: 12px 0;
   background-color: #6f76c1;
-  box-shadow: 0 4px 4px -4px black;
+  border: 1px solid transparent;
+  box-shadow: 0 6px 6px -6px rgba(63, 63, 63, 0.485);
 }
 
 .blacklogo {
-  background: url(/public/chemiverse_img/logo.png);
-  width: 126px;
-  height: 28px;
+  background: url(/public/chemiverse_img/logo.png) no-repeat center center;
+  width: 11.181vw;
+  height: 2.847vw;
   text-indent: -9999px;
 }
 
@@ -27,22 +50,48 @@
 }
 
 .navlist {
-  margin: 0 15px;
+  margin: 0 1.042vw;
 }
 
 .homeNav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.319vw;
+  font-weight: 700;
+  position: relative;
 }
 .homeNav a:hover {
-  font-weight: bold;
+  transition: all 0.35s;
+  font-weight: 900;
+}
+
+.homeNav a:before, .homeNav a:after {
+  content: "";
+  border-bottom: solid 0.208vw white;
+  position: absolute;
+  bottom: -0.347vw;
+  width: 0;
+}
+
+.homeNav a:before {
+  left: 0;
+}
+
+.homeNav a:after {
+  right: 0;
+}
+
+.homeNav a:hover:before, .homeNav a:hover:after {
+  width: 50%;
+}
+
+.homeNav a:before, .homeNav a:after {
+  transition: all 0.2s ease;
 }
 
 .title {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.222vw;
   font-weight: bold;
 }
 
@@ -53,15 +102,149 @@
   height: 50px;
   width: 200px;
   color: #6f76c1;
-  font-weight: bold;
+  position: relative;
+}
+.onup_btn a {
+  font-weight: 900;
+  font-size: 1.042vw;
 }
 .onup_btn:hover {
-  background-color: #191d5e;
-  color: #ffffff;
   transition: all 0.3s;
-  font-weight: bold;
+  font-weight: 900;
+  border: 0.139vw solid #fff;
+  background-color: #809cea;
+  color: #fff;
+  box-shadow: 0 4px 4px -4px black;
 }
-.onup_btn a:hover {
-  transition: all 0.3s;
+.onup_btn:hover a {
   text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .homeHeader {
+    height: 60px;
+    background-color: #ffffff;
+  }
+  .homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .homeNav {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+  .onup_btn {
+    position: fixed;
+    bottom: 10vw;
+    width: 100vw;
+    background-color: #6f76c1;
+    border-radius: 0;
+    color: #ffffff;
+    border: 1px solid #6f76c1;
+    z-index: 12;
+    display: none;
+  }
+  .blacklogo {
+    background: url(/public/chemiverse_img/logo2.png);
+    width: 100px;
+    height: 8vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5vw;
+  }
+  input[id=menuicon] {
+    display: none;
+  }
+  input[id=menuicon] + label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 5vw;
+    z-index: 2;
+  }
+  input[id=menuicon] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #B1B8C1;
+    transition: all 0.35s;
+  }
+  input[id=menuicon] + label span:nth-child(1) {
+    top: 0;
+  }
+  input[id=menuicon] + label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input[id=menuicon] + label span:nth-child(3) {
+    bottom: 0;
+  }
+  input[id=menuicon]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  input[id=menuicon]:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  input[id=menuicon]:checked + label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  .sidebar {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    z-index: 1;
+    transition: all 0.35s;
+  }
+  input[id=menuicon]:checked + label + div {
+    right: 0;
+  }
+  input[id=menuicon]:checked + label + div .onup_menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #6f76c1;
+    border-radius: 0;
+    color: #ffffff;
+    border: 1px solid #6f76c1;
+    height: 60px;
+    transition: all 0.35s;
+  }
+  .navlist_white {
+    display: block;
+    color: #222;
+    text-align: left;
+    font-size: 5vw;
+    height: 6vw;
+    margin: 6vw auto;
+    font-weight: bold;
+    padding-left: 6vw;
+  }
+  /*   .hamburger{
+      display: block;
+      font-size: 10vw;
+      margin-right: 5vw;
+      color: #B1B8C1;
+    } */
 }/*# sourceMappingURL=HomeHeaderNavy.module.css.map */
