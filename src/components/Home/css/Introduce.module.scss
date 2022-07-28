@@ -1,3 +1,15 @@
+.inner{
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .title{
     text-align: left;
@@ -42,11 +54,11 @@
         font-weight: bold;
         line-height: 1.2;
         text-align: left;
+        
     }
     p{
         margin-top: 1.042vw;
         margin-right: 1.389vw;
-
         font-size: 0.972vw;
         color: #808080;
         line-height: 1.5;

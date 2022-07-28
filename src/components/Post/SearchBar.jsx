@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './css/PostTab.module.css';
 
-const SearchBar = ({ onChangeSearch, searchRef, onChangeSearchCategory }) => {
+const SearchBar = ({ onChangeSearch, searchRef, onChangeCategory }) => {
   return (
     <div className={styles.searchBarBox}>
-      <form className={styles.searchBar}>
-        <select className={styles.option} onChange={onChangeSearchCategory}>
+      <form className={styles.searchBar} onSubmit={onChangeSearch}>
+        <select className={styles.option} onChange={onChangeCategory}>
           <option value='전체'>전체</option>
           <option value='제목'>제목</option>
           <option value='작성자'>작성자</option>
@@ -14,8 +14,7 @@ const SearchBar = ({ onChangeSearch, searchRef, onChangeSearchCategory }) => {
         <input
           className={styles.searchInput}
           type='search'
-          placeholder='검색어를 입력해주세요'
-          onChange={onChangeSearch}
+          placeholder='검색어를 입력하세요'
           ref={searchRef}
         />
       </form>

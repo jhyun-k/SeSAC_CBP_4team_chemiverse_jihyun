@@ -1,7 +1,241 @@
 .mainPage {
-  width: 70vw;
-  height: 70vh;
-  margin: auto;
+  width: 100vw;
+  height: 150vh;
   background: url("../../../public/chemiverse_img/img-main.png") no-repeat center;
   background-size: contain;
+  background-color: #e7ecfa;
+}
+.mainPage .img1 {
+  position: absolute;
+  width: 17vw;
+  top: 30%;
+  left: 19%;
+  opacity: 0.6;
+}
+.mainPage .img2 {
+  position: absolute;
+  width: 25vw;
+  top: 140%;
+  left: 10%;
+  opacity: 0.6;
+}
+.mainPage .img3 {
+  position: absolute;
+  width: 15vw;
+  top: 40%;
+  right: 1%;
+  opacity: 0.6;
+}
+
+.hoverBox .box {
+  width: 11.111vw;
+  height: 11.111vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 2s;
+}
+.hoverBox .box1 {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverBox .box1:hover .connectWith {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box2 {
+  position: absolute;
+  top: 60%;
+  left: 21%;
+}
+.hoverBox .box2:hover .move {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box3 {
+  position: absolute;
+  top: 50%;
+  left: 61%;
+}
+.hoverBox .box3:hover .guide {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box4 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverBox .box4:hover .learning {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box5 {
+  position: absolute;
+  top: 92%;
+  left: 30%;
+}
+.hoverBox .box5:hover .chemiStory {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box6 {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverBox .box6:hover .post {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box7 {
+  position: absolute;
+  top: 88%;
+  left: 57%;
+}
+.hoverBox .box7:hover .mentoring {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .box8 {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+}
+.hoverBox .box8:hover .diagnosis {
+  opacity: 1;
+  transition: all 0.7s;
+}
+.hoverBox .common {
+  cursor: default;
+  opacity: 0;
+  width: 16.389vw;
+  height: 7.292vw;
+  background-image: url("../../../public/chemiverse_img/bg-rectangle@3x.png");
+  background-size: cover;
+  position: absolute;
+  top: -35%;
+  left: -20%;
+  padding-top: 14%;
+}
+.hoverBox .common * {
+  text-decoration: none;
+}
+.hoverBox .common p {
+  font-size: 0.8vw;
+  color: #6f76c1;
+  font-weight: 600;
+}
+.hoverBox .common span {
+  vertical-align: middle;
+  font-size: 1.2vw;
+  font-weight: 700;
+  padding-top: 10px;
+  color: #1d2048;
+}
+.hoverBox .common .icon {
+  font-size: 1.4vw;
+  color: #6f76c1;
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+.mobileMain {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .mainPage {
+    display: none;
+  }
+  .mobileMain {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .mobileMain::before {
+    content: "";
+    background: url(/public/chemiverse_img/bg-checklist.png) no-repeat center/cover;
+    opacity: 0.25;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .mobileMain .mainBanner {
+    margin-bottom: 5.556vw;
+  }
+  .mobileMain .mainBanner img {
+    margin-top: 5.556vw;
+    width: 12.5vw;
+  }
+  .mobileMain .mainBanner p:nth-of-type(1) {
+    font-size: 5.556vw;
+    margin: 3.472vw 0;
+    font-weight: 700;
+    color: #5d63a6;
+  }
+  .mobileMain .mainBanner p:nth-of-type(2) {
+    font-size: 2.778vw;
+    color: #6f76c1;
+  }
+  .mobileMain a {
+    text-decoration: none;
+  }
+  .mobileMain .menuList ul {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 6.944vw;
+         column-gap: 6.944vw;
+    row-gap: 11.111vw;
+  }
+  .mobileMain .menuList ul .menu {
+    background-color: #fff;
+    width: 27.778vw;
+    height: 23.611vw;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 3.472vw;
+    box-shadow: 2px 2px 4px 1px rgba(199, 199, 199, 0.51);
+    position: relative;
+  }
+  .mobileMain .menuList ul .menu a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobileMain .menuList ul .menu a .menuName {
+    font-size: 2.639vw;
+    font-weight: 900;
+    color: #454545;
+    text-align: left;
+  }
+  .mobileMain .menuList ul .menu a .menuIconBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mobileMain .menuList ul .menu a .menuIcon {
+    width: 8.333vw;
+    position: absolute;
+    left: 3.472vw;
+    bottom: 3.472vw;
+  }
+  .mobileMain .menuList ul .menu:nth-of-type(1) .menuIcon {
+    bottom: 2vw;
+    left: 2.5vw;
+  }
 }/*# sourceMappingURL=mainPage.module.css.map */

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-
     li {
       color: #6f76c1;
       font-size: 1.389vw;
@@ -20,13 +19,14 @@
           content: "";
           width: 0.5vw;
           height: 0.5vw;
-          border-radius: 50%;
+          border-radius: 100%;
           background-color: #6f76c1;
           position: absolute;
           top: 2vw;
           right: 0;
           transform: translateX(-50%);
           order: 10;
+          
         }
       }
       &:nth-child(1) {
@@ -55,17 +55,7 @@
     }
   }
 }
-/* .navBox .nav ul li:hover {
-  &::before {
-    content: "";
-    width: 7.778vw;
-    height: 0.3vw;
-    position: absolute;
-    top: 10px;
-    left: 50px;
-    z-index: 10;
-  }
-} */
+
 
 .tabmenuBox {
   height: 0;
@@ -75,9 +65,21 @@
     justify-content: flex-end;
     width: 58%;
     right: 10%;
+    z-index: 12;
     ul {
       display: flex;
       flex-direction: column;
+      
+      &::after{
+        content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 0.3vw;
+          background-color: #6f76c1;
+          z-index: 10;
+      }
       &:hover {
         background-color: rgba(217, 217, 217, 0.3);
         &:nth-child(1) {
@@ -85,7 +87,7 @@
             content: "";
             width: 0.5vw;
             height: 0.5vw;
-            border-radius: 50%;
+            border-radius: 100%;
             background-color: #6f76c1;
             position: fixed;
             top: 1.6vw;
@@ -173,6 +175,7 @@
           height: 0.3vw;
           background-color: #6f76c1;
           z-index: 10;
+          transition: all .5s;
         }
       }
     }
@@ -181,12 +184,12 @@
 
 .navBox:hover {
   .tabmenuBox {
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 200%;
-    transition: height 0.5s;
+    transition: all 0.3s linear;
+    background-color: rgba(255, 255, 255);
+    height: 16vw;
     width: 100vw;
     position: absolute;
-    top: 6.667vw;
+    top: 5.1vw;
     left: -3.72vw;
     width: 100vw;
     .tabmenu {
@@ -232,6 +235,9 @@
             color: #232323;
             font-weight: bold;
             text-decoration: none;
+            border-bottom: 0.417vw solid #9eb6f6;
+            box-shadow:inset 0 -0.278vw 0 #9eb6f6;
+            transition: all .35s;
           }
         }
       }

@@ -1,3 +1,16 @@
+.Modal{
+    animation: fadein .35s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width:721px) {
 
     .Modal {
@@ -61,11 +74,12 @@ display: flex; flex-direction: column; bottom: 8vh; align-items: center;position
     border: 1px solid transparent;
     background-color: #ffffff;
     position: relative;
-    border: 1px solid #6F76C1;
+    border: 2px solid #6F76C1;
     padding-left: 10px;
 }
 
 .button_box{display: flex; justify-content: space-between; width: 270px; padding: 2vh 0;}
+
 
 .loginbtn{
     width: 120px;
@@ -78,23 +92,28 @@ display: flex; flex-direction: column; bottom: 8vh; align-items: center;position
     font-weight: bold;
     margin: auto;
     cursor: pointer;
- &:hover{
-    text-decoration: underline;
-    background-color: #bcc1f6;
-    color: #6F76C1;
-    font-weight: bold;
-    transition: all 0.3s;
-    }
+
  }
 .button_box>a{
     text-align: center; line-height: 45px; 
+}
+.button_box button:hover{
+    text-decoration: underline;
 }
 
 .close{
     position: absolute;
     top: 1vw
 }
+}
+.login_alert {
+   visibility: hidden;
+}
 
+.login_alert_view {
+    display: flex;
+    color: red;
+    font-size: 14px;
 }
 
 //모바일 시작

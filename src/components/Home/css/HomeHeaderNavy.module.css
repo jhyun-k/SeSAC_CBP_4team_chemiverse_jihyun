@@ -1,4 +1,26 @@
 .homeHeader {
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.homeHeader {
   width: 100%;
   height: 80px;
   padding: 12px 0;
@@ -9,8 +31,8 @@
 
 .blacklogo {
   background: url(/public/chemiverse_img/logo.png) no-repeat center center;
-  width: 161px;
-  height: 41px;
+  width: 11.181vw;
+  height: 2.847vw;
   text-indent: -9999px;
 }
 
@@ -28,22 +50,48 @@
 }
 
 .navlist {
-  margin: 0 15px;
+  margin: 0 1.042vw;
 }
 
 .homeNav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.319vw;
+  font-weight: 700;
+  position: relative;
 }
 .homeNav a:hover {
-  font-weight: bold;
+  transition: all 0.35s;
+  font-weight: 900;
+}
+
+.homeNav a:before, .homeNav a:after {
+  content: "";
+  border-bottom: solid 0.208vw white;
+  position: absolute;
+  bottom: -0.347vw;
+  width: 0;
+}
+
+.homeNav a:before {
+  left: 0;
+}
+
+.homeNav a:after {
+  right: 0;
+}
+
+.homeNav a:hover:before, .homeNav a:hover:after {
+  width: 50%;
+}
+
+.homeNav a:before, .homeNav a:after {
+  transition: all 0.2s ease;
 }
 
 .title {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.222vw;
   font-weight: bold;
 }
 
@@ -54,26 +102,19 @@
   height: 50px;
   width: 200px;
   color: #6f76c1;
-  font-weight: bold;
   position: relative;
-  /* a{
-    &:hover{
-      width: 200px;
-      transition: all 0.3s;
-      text-decoration: none;
-      color: red;
-      position: absolute;
-      transform: translateX(-10%);
-    }
-  } */
+}
+.onup_btn a {
+  font-weight: 900;
+  font-size: 1.042vw;
 }
 .onup_btn:hover {
-  /* background-color: #3C4375; */
-  color: #3C4375;
   transition: all 0.3s;
-  font-weight: bold;
-  /* transform: scale(1.11); */
-  box-shadow: 0 2px 2px 0 black;
+  font-weight: 900;
+  border: 0.139vw solid #fff;
+  background-color: #809cea;
+  color: #fff;
+  box-shadow: 0 4px 4px -4px black;
 }
 .onup_btn:hover a {
   text-decoration: none;
@@ -194,11 +235,11 @@
     display: block;
     color: #222;
     text-align: left;
-    font-size: 6vw;
+    font-size: 5vw;
     height: 6vw;
     margin: 6vw auto;
     font-weight: bold;
-    padding-left: 5vw;
+    padding-left: 6vw;
   }
   /*   .hamburger{
       display: block;
