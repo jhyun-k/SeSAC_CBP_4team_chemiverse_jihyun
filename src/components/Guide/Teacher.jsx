@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../ChemiStory/css/index.module.css";
-import teacher from "./css/teacher.module.css";
 import { Route, Routes } from "react-router-dom";
 import TeacherCard from "./TeacherCard";
 import TeacherDetail from "./TeacherDetail";

@@ -3,8 +3,6 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import calendar from "./css/calendar.module.css";
 import "./css/main.css";
-import { useState } from "react";
-import { formatDate } from "@fullcalendar/react";
 import interactionPlugin from "@fullcalendar/interaction";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
@@ -84,8 +82,8 @@ const CalendarDay = () => {
         events={[
           {
             title: "신입사원 과정",
-            start: "2022-07-19",
-            end: "2022-07-21",
+            start: "2022-07-18",
+            end: "2022-07-20",
             extendedProps: {
               description: "신입사원 과정 7.19~7.20",
             },
@@ -94,6 +92,14 @@ const CalendarDay = () => {
             title: "교육안내",
             start: "2022-07-22",
             // end: "2022-07-22",
+            extendedProps: {
+              description: "교육안내 7.22~7.22",
+            },
+          },
+          {
+            title: "교육안내",
+            start: "2022-07-05",
+            end: "2022-07-07",
             extendedProps: {
               description: "교육안내 7.22~7.22",
             },
