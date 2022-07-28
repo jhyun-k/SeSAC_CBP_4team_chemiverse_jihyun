@@ -43,7 +43,7 @@
 //ChemiNav
 .nav ul li {
   color: #6f76c1;
-  border: 0.139vw solid #6f76c1;
+  border: 2px solid #6f76c1;
   margin-bottom: 50px;
   width: 17.361vw;
   height: 3.125vw;
@@ -52,6 +52,14 @@
   justify-content: center;
   font-size: 1.181vw;
   font-weight: 500;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   * {
     text-decoration: none;
   }
@@ -60,110 +68,229 @@
     border-bottom-left-radius: 0.347vw;
     border-right: none;
   }
-//   &:nth-child(2) {
-//     border-right: none;
-//   }
+  //   &:nth-child(2) {
+  //     border-right: none;
+  //   }
   &:last-child {
     border-top-right-radius: 0.347vw;
     border-bottom-right-radius: 0.347vw;
     border-left: none;
   }
-  :hover{
-    color:#424888;
+  :hover {
+    color: #424888;
     transition: all 0.2s;
   }
 }
-.navbtn{
-  &.on{
-    color:#424888;
+.navbtn {
+  &.on {
+    color: #424888;
     font-weight: 900;
     font-size: 1.25vw;
     transition: all 0.2s;
   }
 }
-
-.title {
-  width: 1000px;
-  margin: 10px auto;
-  padding-bottom: 10px;
-}
-
 .WhatIsMentoring {
-  width: 1200px;
-  margin: 10px auto;
-  .pin{
-    font-size: 20px;
-    margin-bottom: 15px;
+  width: 69.444vw;
+  margin: 0.694vw auto;
+  .pin {
+    font-size: 1.389vw;
+    margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
-  .title{
+  .title {
     display: inline-block;
     text-align: center;
-    width: 1200px;
-    color: #6F76C1;
-    font-size: 30px;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
-    padding-bottom: 80px;
+    padding-bottom: 1.389vw;
   }
-  .content{
-    width: 1000px;
-    height: 300px;
+  .content {
+    width: 69.444vw;
+    height: 20.833vw;
     background-color: #f4f4f4;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 2.083vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .subTitle{
+  .subTitle {
     display: flex;
     align-items: center;
     line-height: 1.5;
     border-bottom: 1px solid #c8c8c8;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-    .img{
+    padding-bottom: 1.389vw;
+    margin-bottom: 2.778vw;
+    .img {
       display: flex;
       justify-content: flex-start;
-      width: 50px;
+      width: 3.472vw;
       height: auto;
-      margin-right: 10px;
+      margin-right: 0.694vw;
     }
-    .module{
+    .module {
       flex-direction: column;
       align-items: flex-start;
-      h1{
-        font-size: 24px;
+      h1 {
+        font-size: 1.667vw;
         font-weight: 700;
       }
     }
   }
-}
-
-.btn {
-  width: 100px;
-  padding: 10px;
-}
-
-.WritePlan , .Upload{
-  width: 1200px;
-  margin: 10px auto;
-  .pin{
-    font-size: 20px;
-    margin-bottom: 15px;
+} 
+.WritePlan,
+.Upload{
+  width: 69.444vw;
+  margin: 0.694vw auto;
+  .pin {
+    font-size: 1.389vw;
+    margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
-  .title{
+  .title {
     display: inline-block;
     text-align: center;
-    width: 1200px;
-    color: #6F76C1;
-    font-size: 30px;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
-    padding-bottom: 20px;
+    padding-bottom: 1.389vw;
   }
-  .subTitle{
-    padding-bottom: 80px;
+  .subTitle {
+    padding-bottom: 5.556vw;
     font-weight: 500;
+  }
+} 
+
+
+//반응형***************************************************************
+
+@media screen and (max-width: 719px) {
+  .Mentoring {
+    .main {
+      padding-left: 6.944vw;
+      padding-right: 6.25vw;
+      margin-bottom: 0;
+      width: 100vw;
+      height: 20vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 90%;
+    }
+    .mainTxt {
+      display: flex;
+      align-items: center;
+    }
+    .mainTxt span {
+      display: inline-block;
+      color: #fff;
+      &:first-child {
+        font-size: 6vw;
+        font-weight: 700;
+        margin-right: 2.083vw;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+    .mainImg {
+      width: 30vw;
+      height: auto;
+    }
+  }
+
+  //Nav
+  .nav ul li {
+    color: #6f76c1;
+    border: none;
+    margin-bottom: 5vw;
+    width: 100%;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    * {
+      text-decoration: none;
+    }
+  }
+  .navbtn {
+    &.on {
+      color: #424888;
+      font-weight: 700;
+      font-size: 3vw;
+      transition: all 0.2s;
+      border-bottom: 5px solid #424888;
+    }
+  }
+
+  //멘토링이란?
+  .WhatIsMentoring,
+  .WritePlan,
+  .Upload {
+    width: 83.333vw;
+    margin: 0.694vw auto;
+    .pin {
+      font-size: 3vw;
+      margin-bottom: 1.5vw;
+      color: rgba(75, 80, 132, 0.721);
+    }
+    .title {
+      display: inline-block;
+      text-align: center;
+      width: 69.444vw;
+      color: #6f76c1;
+      font-size: 4.5vw;
+      // border-bottom: 2px solid #c8c8c8;
+      padding-bottom: 8vw;
+    }
+    .content {
+      width: 69.444vw;
+      height: 45vw;
+      background-color: #f4f4f4;
+      padding: 2vw;
+      margin: auto;
+      margin-bottom: 9vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2vw;
+    }
+    .subTitle {
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      .img {
+        display: flex;
+        justify-content: flex-start;
+        width: 10vw;
+        height: auto;
+        margin-right: 0.694vw;
+      }
+      .module {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+          font-size: 3.3vw;
+          font-weight: 700;
+        }
+      }
+    }
   }
 }

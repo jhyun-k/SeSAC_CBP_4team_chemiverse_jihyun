@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import Welcome from "./components/Home/Welcome";
 import Ready from "./components/Home/Ready";
 import Introduce from "./components/Home/Introduce";
-import HomeNotice from "./components/HomeNotice/HomeNotice";
+import HomeNotice from "./components/Board/HomeNotice";
 import Loginok from "./components/Login/Loginok";
 import FindID from "./components/Login/FindID";
 import DetailRedirect from "./components/Login/DetailRedirect";

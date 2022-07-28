@@ -1,53 +1,36 @@
-/* App */
-.App {
-}
 
 /* editor */
 
 .DiaryEditor {
-  border: 1px solid gray;
+  /* border: 1px solid #c8c8c8; */
   text-align: center;
-  padding: 20px;
-}
-
-.DiaryEditor input,
-textarea {
-  margin-bottom: 20px;
-  width: 500px;
-}
-
-.DiaryEditor input {
-  padding: 10px;
-  border: 1px solid gray;
 }
 .DiaryEditor input:focus{
   outline: none;
 }
 .DiaryEditor textarea {
-  padding: 10px;
-  height: 150px;
-  width: 1000px;
-  border: 1px solid gray;
+  padding: 1.389vw;
+  height: 13.889vw;
+  width: 100%;
+  border: 1px solid #6F76C1;
+  font-size: 1.3vw;
+  color: #424888;
+  font-weight: 500;
+  resize: none;
 
 }
 .DiaryEditor textarea:focus{
-  outline: none;
+  outline: 2px solid #6F76C1;
 }
-.DiaryEditor select {
-  width: 300px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
 .DiaryEditor button {
-  width: 80px;
-  padding: 10px;
-  margin: 5px;
+  width: 5.556vw;
+  padding: 0.694vw;
+  margin: 0.347vw;
   cursor: pointer;
   border: 2px solid #6F76C1;
   color: #6F76C1;
-  border-radius: 20px;
-  font-size: 15px;
+  border-radius: 1.389vw;
+  font-size: 1.042vw;
   font-weight: 700;
 }
 .DiaryEditor .btn{
@@ -57,50 +40,213 @@ textarea {
 .DiaryEditor .btn :hover{
   background-color: #6F76C1;
   color: #fff;
+  transition: all 0.33s;
+}
+.DiaryEditor .submitTrue{
+  visibility: hidden;
+}
+.DiaryEditor .submitFalse{
+  color: red;
+  font-size: 1.1vw;
+  text-align: right;
 }
 
 /* List  */
 
 .DiaryList {
-  border: 1px solid gray;
-  padding: 20px;
-  margin-top: 20px;
+  width: 100%;
+  /* border: 2px solid #6F76C1; */
+  margin-top: 3.472vw;
+  padding-top: 2.431vw;
+  border-top: 1px solid #c8c8c8;
 }
 
-.DiaryList h2 {
+/* .DiaryList h2 {
   text-align: center;
+  font-size: 2.083vw;
+  padding-bottom: 1.389vw;
+} */
+.DiaryList h4 {
+  text-align: right;
+  font-size: 1.042vw;
+  padding-bottom: 0.694vw;
+  color: #6F76C1;
 }
 
 /* ITEM */
 
 .DiaryItem {
-  background-color: rgb(240, 240, 240);
-  margin-bottom: 10px;
-  padding: 20px;
+  background-color: #906fc113;
+  margin-bottom: 0.694vw;
+  padding: 1.389vw;
+  padding-bottom: 0.694vw;
 }
 
-.DiaryItem span {
-  margin-right: 10px;
-}
+/* .DiaryItem span {
+  margin-right: 0.694vw;
+} */
 
 .DiaryItem .info {
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  /* border-bottom: 1px solid gray; */
+  text-align: right;
+  padding-bottom: 0.694vw;
+  margin-bottom: 0.694vw;
 }
 .DiaryItem .date {
-  color: gray;
+  color: #828282;
 }
 
 .DiaryItem .content {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 2.083vw;
+  margin-top: 2.083vw;
   font-weight: bold;
+  font-size: 1.3vw;
 }
 
 .DiaryItem textarea {
-  padding: 10px;
+  padding: 0.694vw;
+  width: 100%;
+  font-size: 1vw;
+  resize: none;
 }
 .DiaryItem textarea:focus{
   outline: none;
+}
+.DiaryItem button{
+  width: 5.556vw;
+  height: 2vw;
+  margin: 0.347vw;
+  cursor: pointer;
+  border-bottom: 2px solid #6F76C1;
+  color: #6F76C1;
+  font-size: 1vw;
+  font-weight: 700;
+}
+.DiaryItem .btn{
+  display: flex;
+  justify-content: center;
+}
+.DiaryItem .btn :hover{
+  background-color: #6F76C1;
+  color: #fff;
+  transition: all 0.33s;
+}
+
+/* 반응형 */
+@media screen and (max-width:719px){
+  .DiaryEditor button {
+    width: 30vw;
+    height: 7vw;
+    padding: 0.694vw;
+    margin: 2vw;
+    cursor: pointer;
+    border: 3px solid #6F76C1;
+    border-radius: 5vw;
+    font-size: 3vw;
+    font-weight: 700;
+    background-color: #6F76C1;
+    color: #fff;
+    margin-bottom: 10vw;
+  }
+  .DiaryEditor button:nth-of-type(3){
+    display: none;
+  }
+  .DiaryEditor .btn{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #c8c8c8;
+  }
+  .DiaryEditor textarea {
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    font-size: 3vw;
+    padding: 0.694vw;
+    height: 30vw;
+    text-align: center;
+    line-height: 5vw;
+  }
+  .DiaryEditor textarea::placeholder{
+    color:transparent;
+  }
+
+/* List  */
+
+.DiaryList {
+  width: 100%;
+  /* border: 2px solid #6F76C1; */
+  margin-top: 3.472vw;
+  padding-top: 2.431vw;
+  border-top: none;
+}
+
+.DiaryList h4 {
+  text-align: right;
+  font-size: 3vw;
+  padding-bottom: 2vw;
+  color: #6F76C1;
+}
+
+/* ITEM */
+
+.DiaryItem {
+  background-color: #906fc113;
+  margin-bottom: 2vw;
+  padding: 1.389vw;
+  padding-bottom: 0.694vw;
+}
+
+/* .DiaryItem span {
+  margin-right: 0.694vw;
+} */
+
+.DiaryItem .info {
+  /* border-bottom: 1px solid gray; */
+  text-align: left;
+  padding-bottom: 0.694vw;
+  margin-bottom: 0.694vw;
+}
+.DiaryItem .date {
+  color: #828282;
+  font-size: 2.3vw;
+}
+
+.DiaryItem .content {
+  margin-bottom: 2.083vw;
+  height: 25vw;
+  margin-top: 2.083vw;
+  font-weight: bold;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DiaryItem textarea {
+  padding: 0.694vw;
+  width: 100%;
+  font-size: 2.5vw;
+}
+.DiaryItem textarea:focus{
+  outline: none;
+}
+.DiaryItem button{
+  width: 8.5vw;
+  height: 4vw;
+  margin-right: 2vw;
+  cursor: pointer;
+  border-bottom: 2px solid #6F76C1;
+  color: #6F76C1;
+  font-size: 2.3vw;
+  font-weight: 700;
+}
+.DiaryItem .btn{
+  display: flex;
+  justify-content: right;
+}
+.DiaryItem .btn :hover{
+  background-color: #6F76C1;
+  color: #fff;
+  transition: all 0.33s;
+}
 }

@@ -4,14 +4,14 @@ import { BsCheckLg } from "react-icons/bs";
 import data from "../../data/noticeData.json";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Pagination from "../Post/Pagination";
 import PostList from "../Post/PostList";
 import SearchHeader from "../Post/SearchHeader";
 
 const Notice = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
-  //const [search, setSearch] = useState([]);
+  const [category, setCategory] = useState('전체');
+
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
   const endNum = startNum + LIST_PER_PAGE;
@@ -39,12 +39,6 @@ const Notice = () => {
       <Link to="./write">
         <button className={styles.writeBtn}>작성하기</button>
       </Link>
-      <Pagination
-        total={lists.length}
-        page={page}
-        setPage={setPage}
-        LIST_PER_PAGE={LIST_PER_PAGE}
-      />
     </div>
   );
 };
