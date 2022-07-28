@@ -7,8 +7,6 @@ import HomeNotice from "../HomeNotice/HomeNotice.jsx";
 import HomePage from '../HomePage';
 import { Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
 import Board from '../HomeNotice/Board';
 
 const Home = () => {
@@ -26,7 +24,6 @@ const Home = () => {
       <Link to="introduce">회사소개</Link>
       <Link to="ready">입사 전 준비사항</Link>
       <Link to="board/notice">게시판</Link>
->>>>>>> develop
 
         <Routes>
           <Route path='/welcome' element={<Welcome />}></Route>
