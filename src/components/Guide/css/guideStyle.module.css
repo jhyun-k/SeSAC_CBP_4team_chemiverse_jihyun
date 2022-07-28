@@ -18,6 +18,9 @@
   border-bottom-left-radius: 0.347vw;
   border-right: none;
 }
+.nav ul li:nth-child(2) {
+  border-right: 0.139vw solid #6f76c1;
+}
 .nav ul li:last-child {
   border-top-right-radius: 0.347vw;
   border-bottom-right-radius: 0.347vw;

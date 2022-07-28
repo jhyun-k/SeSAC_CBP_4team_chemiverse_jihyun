@@ -40,8 +40,8 @@
 }
 
 .nav ul li {
-  color: #6F76C1;
-  border: 0.139vw solid #6F76C1;
+  color: #6f76c1;
+  border: 0.139vw solid #6f76c1;
   margin-bottom: 3.472vw;
   width: 17.361vw;
   height: 3.125vw;
@@ -50,6 +50,14 @@
   justify-content: center;
   font-size: 1.181vw;
   font-weight: 500;
+}
+.nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav ul li * {
   text-decoration: none;
@@ -72,18 +80,11 @@
   transition: all 0.2s;
 }
 
-.navbtn a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .navbtn.on {
   color: #424888;
   font-weight: 900;
   font-size: 1.25vw;
+  transition: all 0.2s;
 }
 
 .WhatIsChemiStory {
@@ -99,7 +100,7 @@
   display: inline-block;
   text-align: center;
   width: 83.333vw;
-  color: #6F76C1;
+  color: #6f76c1;
   font-size: 2.083vw;
   padding-bottom: 5.556vw;
 }
@@ -151,7 +152,7 @@
 }
 .WriteChemiStory .subFlex .printBtn {
   display: inline-block;
-  background-color: #6F76C1;
+  background-color: #6f76c1;
   width: 4.167vw;
   height: 1.736vw;
   color: #fff;
@@ -172,7 +173,7 @@
   display: inline-block;
   text-align: center;
   width: 83.333vw;
-  color: #6F76C1;
+  color: #6f76c1;
   font-size: 2.083vw;
   padding-bottom: 5.556vw;
 }
@@ -212,7 +213,7 @@
   width: 14.861vw;
   height: 3.75vw;
   border-radius: 2.083vw;
-  background-color: #6F76C1;
+  background-color: #6f76c1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,7 +225,7 @@
 .WriteChemiStory .roadMap .yearContent {
   font-size: 1.389vw;
   font-weight: 700;
-  color: #565DAB;
+  color: #565dab;
 }
 
 .JournalGoal {
@@ -240,7 +241,7 @@
   display: inline-block;
   text-align: center;
   width: 83.333vw;
-  color: #6F76C1;
+  color: #6f76c1;
   font-size: 2.083vw;
   padding-bottom: 1.389vw;
 }

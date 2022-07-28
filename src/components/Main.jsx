@@ -6,7 +6,6 @@ import Guide from "./Guide/Guide";
 import Diagnosis from "./Diagnosis/Diagnosis";
 import Learning from "./Learning/Learning";
 import Mypage from "./Mypage";
-import Login from "./Login/Login";
 import MainPage from "./MainPage";
 import Mentoring from "./Mentoring/Mentoring";
 import ChemiStory from "./ChemiStory/ChemiStory";

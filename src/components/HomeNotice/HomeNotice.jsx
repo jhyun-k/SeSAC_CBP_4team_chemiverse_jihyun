@@ -5,6 +5,7 @@ import Pagination from '../Post/Pagination';
 import PostList from '../Post/PostList';
 import { Link } from 'react-router-dom';
 import styles from './../Post/css/PostTab.module.css';
+import HomeHeaderNavy from './../Home/HomeHeaderNavy';
 
 const HomeNotice = () => {
   const [lists, setLists] = useState([]);
@@ -21,7 +22,7 @@ const HomeNotice = () => {
 
   return (
     <div>
-      <h1>공지사항</h1>
+      <HomeHeaderNavy />
       <SearchHeader data={lists} />
       <PostList
         lists={lists}

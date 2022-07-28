@@ -17,7 +17,7 @@ const GuideNav = () => {
 
   return (
     <div className={styles.ChemiNav}>
-      <nav className={guideStyle.nav}>
+      <nav className={`${styles.nav} ${guideStyle.nav}`}>
         <ul>
           {navList.map((element, index) => {
             return (
