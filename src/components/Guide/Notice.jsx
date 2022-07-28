@@ -10,7 +10,8 @@ import SearchHeader from "../Post/SearchHeader";
 const Notice = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
-  //const [search, setSearch] = useState([]);
+  const [category, setCategory] = useState('전체');
+
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
   const endNum = startNum + LIST_PER_PAGE;
@@ -38,7 +39,6 @@ const Notice = () => {
       <Link to="./write">
         <button className={styles.writeBtn}>작성하기</button>
       </Link>
-      
     </div>
   );
 };
