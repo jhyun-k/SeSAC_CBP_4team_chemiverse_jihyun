@@ -1,7 +1,29 @@
 .homeHeader {
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.homeHeader {
   width: 100%;
-  height: 80px;
-  padding: 12px 0;
+  height: 5.556vw;
+  padding: 0.833vw 0;
   background-color: #6f76c1;
   border: 1px solid transparent;
   box-shadow: 0 6px 6px -6px rgba(63, 63, 63, 0.485);
@@ -9,8 +31,8 @@
 
 .blacklogo {
   background: url(/public/chemiverse_img/logo.png) no-repeat center center;
-  width: 161px;
-  height: 41px;
+  width: 11.181vw;
+  height: 2.847vw;
   text-indent: -9999px;
 }
 
@@ -28,52 +50,71 @@
 }
 
 .navlist {
-  margin: 0 15px;
+  margin: 0 1.042vw;
 }
 
 .homeNav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.319vw;
+  font-weight: 700;
+  position: relative;
 }
 .homeNav a:hover {
-  font-weight: bold;
+  transition: all 0.35s;
+  font-weight: 900;
+}
+
+.homeNav a:before, .homeNav a:after {
+  content: "";
+  border-bottom: solid 0.208vw white;
+  position: absolute;
+  bottom: -0.347vw;
+  width: 0;
+}
+
+.homeNav a:before {
+  left: 0;
+}
+
+.homeNav a:after {
+  right: 0;
+}
+
+.homeNav a:hover:before, .homeNav a:hover:after {
+  width: 50%;
+}
+
+.homeNav a:before, .homeNav a:after {
+  transition: all 0.2s ease;
 }
 
 .title {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.222vw;
   font-weight: bold;
 }
 
 .onup_btn {
   background-color: #ffffff;
-  border: 2px solid transparent;
-  border-radius: 30px;
-  height: 50px;
-  width: 200px;
+  border: 0.139vw solid transparent;
+  border-radius: 2.083vw;
+  height: 3.472vw;
+  width: 13.889vw;
   color: #6f76c1;
-  font-weight: bold;
   position: relative;
-  /* a{
-    &:hover{
-      width: 200px;
-      transition: all 0.3s;
-      text-decoration: none;
-      color: red;
-      position: absolute;
-      transform: translateX(-10%);
-    }
-  } */
+}
+.onup_btn a {
+  font-weight: 900;
+  font-size: 1.042vw;
 }
 .onup_btn:hover {
-  /* background-color: #3C4375; */
-  color: #3C4375;
   transition: all 0.3s;
-  font-weight: bold;
-  /* transform: scale(1.11); */
-  box-shadow: 0 2px 2px 0 black;
+  font-weight: 900;
+  border: 0.139vw solid #fff;
+  background-color: #809cea;
+  color: #fff;
+  box-shadow: 0 4px 4px -4px black;
 }
 .onup_btn:hover a {
   text-decoration: none;
@@ -89,7 +130,7 @@
 
 @media screen and (max-width: 720px) {
   .homeHeader {
-    height: 60px;
+    height: 4.167vw;
     background-color: #ffffff;
   }
   .homeContainer {
@@ -127,8 +168,8 @@
   }
   input[id=menuicon] + label {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 2.083vw;
+    height: 2.083vw;
     position: relative;
     cursor: pointer;
     margin-right: 5vw;
@@ -138,8 +179,8 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 5px;
-    border-radius: 30px;
+    height: 0.347vw;
+    border-radius: 2.083vw;
     background-color: #B1B8C1;
     transition: all 0.35s;
   }
@@ -170,7 +211,7 @@
     height: 100%;
     background-color: #fff;
     position: fixed;
-    top: 60px;
+    top: 4.167vw;
     right: -100%;
     z-index: 1;
     transition: all 0.35s;
@@ -187,7 +228,7 @@
     border-radius: 0;
     color: #ffffff;
     border: 1px solid #6f76c1;
-    height: 60px;
+    height: 4.167vw;
     transition: all 0.35s;
   }
   .navlist_white {

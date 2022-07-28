@@ -8,10 +8,9 @@ import { useState } from 'react';
 
 
 
-const Header = ({ title,auth,setAuth,setIsOpen}) => {
+const Header = ({ title,auth,setAuth}) => {
 
   const navigate = useNavigate();
-  console.log(auth);
   const goToLogin = ()=>{
         navigate('/login')
     }
@@ -33,8 +32,8 @@ const Header = ({ title,auth,setAuth,setIsOpen}) => {
     <header className={headerStyle.mainHeaderBox}>
       <div className={headerStyle.inner}>
         <ul className={headerStyle.login}>
-        <NavLink to='./mypage'>마이페이지|</NavLink>
-          <div className='login_btn'>
+        <NavLink to='./mypage'>마이페이지</NavLink>
+          <div className={headerStyle.login_btn}>
              {
                 auth ? 
                 <span onClick={()=>setAuth(false)}>
@@ -56,6 +55,18 @@ const Header = ({ title,auth,setAuth,setIsOpen}) => {
                   <span></span>
                 </label>
                 <div className={headerStyle.sidebar}>
+                <ul className={headerStyle.side_login}>
+        <NavLink to='./mypage'>마이페이지 |</NavLink>
+          <div className={headerStyle.login_btn}>
+             {
+                auth ? 
+                <span onClick={()=>setAuth(false)}>
+                    로그아웃  
+                </span> : 
+                <span onClick={()=>goToLogin()}>로그아웃</span>
+             }
+            </div>
+        </ul>
                 {navList.map((element, index) => {
                 return (
                   <li className={headerStyle.navlist_white} key={index} >

@@ -1,3 +1,25 @@
+.section {
+  -webkit-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .inner {
   width: 100vw;
   margin: auto;
@@ -110,10 +132,24 @@
   font-weight: bold;
   margin-top: 3.5vw;
 }
+.find_btn:hover {
+  text-decoration: underline;
+}
 
 .balloon {
   width: 58px;
   height: 58px;
+}
+
+.login_alert {
+  visibility: hidden;
+}
+
+.login_alert_view {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 720px) {

@@ -12,8 +12,7 @@ import ChemiStory from "./ChemiStory/ChemiStory";
 import FreePost from "./Post/FreePost";
 import SuggestIdea from "./Post/SuggestIdea";
 import PostTab from "./Post/PostTab";
-import Loginok from "./Login/Loginok";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const Main = ({ setAuth, auth }) => {
   const title = "expert";

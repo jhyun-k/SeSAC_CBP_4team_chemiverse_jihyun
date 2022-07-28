@@ -1,3 +1,17 @@
+.section{
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
 .inner{
     width: 100vw;
     margin: auto;
@@ -104,13 +118,25 @@ width: 100vw;}
     color: #ffffff;
     font-weight: bold;
     margin-top: 3.5vw;
+    &:hover{
+      text-decoration: underline;
+    }
 }
 
 .balloon{
   width: 58px;
   height: 58px;
 }
+.login_alert {
+  visibility: hidden;
+}
 
+.login_alert_view {
+   display: flex;
+   justify-content: center;
+   color: red;
+   font-size: 14px;
+}
 
 
 @media screen and (max-width:720px) {
