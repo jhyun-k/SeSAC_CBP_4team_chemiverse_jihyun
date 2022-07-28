@@ -4,7 +4,7 @@ import { BsCheckLg } from "react-icons/bs";
 import data from "../../data/noticeData.json";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Pagination from "../Post/Pagination";
+
 import PostList from "../Post/PostList";
 import SearchHeader from "../Post/SearchHeader";
 
@@ -41,12 +41,7 @@ const Notice = () => {
       <Link to="./write">
         <button className={styles.writeBtn}>작성하기</button>
       </Link>
-      <Pagination
-        total={lists.length}
-        page={page}
-        setPage={setPage}
-        LIST_PER_PAGE={LIST_PER_PAGE}
-      />
+
     </div>
   );
 };
