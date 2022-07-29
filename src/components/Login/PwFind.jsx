@@ -23,7 +23,7 @@ const PwFind = ({shown, close}) => {
                         <label className={styles.label} htmlFor="비밀번호 확인">비밀번호 확인</label>
                         <input className={styles.input} type="text" placeholder='변경 비밀번호를 한 번 더 입력해주세요' name='비밀번호 확인' />
                     </div>
-                    <button className={styles.find_btn} onClick={close}>Close</button>
+                    <button className={styles.find_btn} onClick={close}>변경하기</button>
                 </div>
             </div>
         </div>

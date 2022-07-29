@@ -95,7 +95,7 @@
   height: 50px;
   width: 200px;
   color: #6f76c1;
-  font-weight: bold;
+  font-weight: 900;
   position: relative;
   font-size: 15px;
 }
@@ -103,7 +103,7 @@
   background-color: #6f76c1;
   color: #ffffff;
   transition: all 0.3s;
-  font-weight: bold;
+  font-weight: 900;
   border: 2px solid transparent;
 }
 .onup_btn a:hover {
