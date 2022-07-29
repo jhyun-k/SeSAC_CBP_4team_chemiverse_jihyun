@@ -91,6 +91,78 @@
   width: 69.444vw;
   margin: 0.694vw auto;
 }
+.WhatIsChemiStory .moduleList {
+  display: block;
+}
+.WhatIsChemiStory .moduleList .moduleListItem {
+  display: inline-block;
+  margin: 0 0.833vw;
+}
+.WhatIsChemiStory .moduleList .moduleListItem .imgBox {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  margin: 1.389vw 0;
+  border-radius: 0.694vw;
+}
+.WhatIsChemiStory .moduleList .moduleListItem .imgBox img {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.WhatIsChemiStory .moduleList .moduleListItem .imgBox .hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 32.639vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(111, 118, 193, 0.9);
+  color: white;
+  width: 44.444vw;
+  height: 20.833vw;
+  transition: 0.4s;
+  opacity: 0;
+  border-radius: 50%;
+  padding: 4.167vw 13.889vw 8vw;
+  line-height: 1.5;
+  font-size: 1.2vw;
+  align-items: flex-end;
+}
+.WhatIsChemiStory .moduleList .moduleListItem .moduleName {
+  font-size: 1.389vw;
+  margin: 0.694vw 2.389vw;
+  text-align: left;
+  font-weight: bold;
+}
+.WhatIsChemiStory .moduleList .moduleListItem .moduleEngName {
+  font-size: 0.903vw;
+  margin: 0 2.389vw 2.389vw;
+  text-align: left;
+  text-transform: capitalize;
+  color: #aaa;
+}
+.WhatIsChemiStory .moduleList .moduleListItem:hover .hover {
+  top: 5.694vw;
+  opacity: 1;
+}
+.WhatIsChemiStory .moduleList .moduleListItem:hover .moduleName {
+  color: #6f76c1;
+}
+.WhatIsChemiStory .moduleList .moduleName {
+  font-size: 1.389vw;
+  margin: 1.389vw;
+  text-align: left;
+}
+.WhatIsChemiStory .moduleList:hover .hover {
+  top: 13.694vw;
+  opacity: 1;
+}
 .WhatIsChemiStory .pin {
   font-size: 1.389vw;
   margin-bottom: 1.034vw;
@@ -314,6 +386,16 @@
     font-size: 3vw;
     transition: all 0.2s;
     border-bottom: 5px solid #424888;
+  }
+  .moduleList .moduleListItem .imgBox {
+    width: 30vw;
+    height: 35vw;
+  }
+  .moduleList .moduleListItem .imgBox img {
+    width: 40vw;
+  }
+  .moduleList .moduleListItem .imgBox .hover {
+    display: none;
   }
   .WhatIsChemiStory {
     width: 83.333vw;

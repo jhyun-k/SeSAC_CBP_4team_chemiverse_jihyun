@@ -1,14 +1,16 @@
 .mainBox {
   width: 69.444vw;
-  margin: 0 auto;
+  height: 50vw;
+  margin: 0 auto 5vw;
   position: relative;
   padding: 1vw 1vw;
   border-radius: 1vw;
   box-sizing: border-box;
   background-color: #ddd;
+  z-index: 0;
   .eventBox {
     width: 40vw;
-    height: 20vw;
+    height: 10vw;
     border-radius: 1vw;
     display: flex;
     flex-direction: column;
@@ -25,16 +27,8 @@
     padding: 3vw 0;
   }
 }
-.FullCalendar {
-  height: 10vw;
-}
 @media screen and(max-width: 720px) {
   .mainBox {
-    .eventBox {
-      height: 50vw;
-    }
-  }
-  .FullCalendar {
-    height: 75vw;
+    height: 93vw;
   }
 }

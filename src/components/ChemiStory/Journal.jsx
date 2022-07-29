@@ -10,7 +10,10 @@ const Journal = () => {
         <BsCheckLg />
       </p>
       <h1 className={styles.title}>성찰저널</h1>
-      <h3 className={styles.subTitle}>성찰저널 설명 글 성찰저널 설명 글 성찰저널 설명 글 성찰저널 설명 글 성찰저널 설명 글<br></br>성찰저널 설명 글 성찰저널 설명 글 성찰저널 설명 글 성찰저널 설명 글</h3>
+      <h3 className={styles.subTitle}>
+        이번 학습을 통해 무엇을 배웠는지, 앞으로 더 배우고싶은것은 뭔지
+        작성해주세요.
+      </h3>
       <Diary />
     </div>
   );
