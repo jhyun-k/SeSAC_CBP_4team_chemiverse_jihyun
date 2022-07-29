@@ -7,6 +7,8 @@ import Think from "./Think/Think";
 import { useMediaQuery } from "react-responsive";
 import { BsCheckLg } from "react-icons/bs";
 import ModalVideo from "./ModalVideo";
+import { TbSlideshow } from "react-icons/tb";
+import { FiYoutube } from "react-icons/fi";
 
 const LearningModule = ({ module }) => {
     const { id } = useParams();
@@ -90,6 +92,7 @@ const LearningModule = ({ module }) => {
                             </Modal>
                         </div>
                         <div className={styles.textBox}>
+                            <TbSlideshow />
                             Think
                             <br />
                             Insight
@@ -145,6 +148,7 @@ const LearningModule = ({ module }) => {
                                 </Modal>
                             </div>
                             <div className={styles.textBox}>
+                                <FiYoutube />
                                 협업 시뮬레이션
                                 <br />
                                 in 메타버스

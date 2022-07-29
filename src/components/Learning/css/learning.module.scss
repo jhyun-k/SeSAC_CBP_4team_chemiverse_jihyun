@@ -58,43 +58,53 @@ a {
 }
 
 /* learnNav */
-.learnNav {
-    background-color: white;
-    ul li {
-        color: #6f76c1;
-        border: 0.139vw solid #6f76c1;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 17.361vw;
-        height: 3.125vw;
+.learnNav ul li {
+    color: #6f76c1;
+    border: 2px solid #6f76c1;
+    margin-bottom: 3.472vw;
+    width: 17.361vw;
+    height: 3.125vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.181vw;
+    font-weight: 500;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        font-size: 1.181vw;
-        font-weight: 500;
-        * {
-            text-decoration: none;
-        }
-        &:first-child {
-            border-top-left-radius: 0.347vw;
-            border-bottom-left-radius: 0.347vw;
-            border-right: none;
-        }
-        &:nth-child(2) {
-            border-right: none;
-        }
-        &:last-child {
-            border-top-right-radius: 0.347vw;
-            border-bottom-right-radius: 0.347vw;
-            border-left: none;
-        }
+        align-items: center;
     }
-    .navbtn {
-        &.on {
-            color: #424888;
-            font-weight: 900;
-            font-size: 1.25vw;
-        }
+    * {
+        text-decoration: none;
+    }
+    &:first-child {
+        border-top-left-radius: 0.347vw;
+        border-bottom-left-radius: 0.347vw;
+        border-right: none;
+    }
+    &:nth-child(2) {
+        border-right: none;
+    }
+    &:last-child {
+        border-top-right-radius: 0.347vw;
+        border-bottom-right-radius: 0.347vw;
+        border-left: none;
+    }
+    :hover {
+        color: #424888;
+        transition: all 0.2s;
+    }
+}
+
+.navbtn {
+    &.on {
+        color: #424888;
+        font-weight: 900;
+        font-size: 1.25vw;
+        transition: all 0.2s;
     }
 }
 
@@ -305,12 +315,6 @@ a {
             align-items: center;
             border-radius: 0.8vw;
             background-color: #fff;
-            // background: linear-gradient(
-            //     to bottom,
-            //     rgba(111, 118, 193, 0.5) 0%,
-            //     rgba(111, 118, 193, 0.1) 30%,
-            //     rgba(255, 255, 255, 1) 100%
-            // );
             width: 21.25vw;
             height: 12.361vw;
             overflow: hidden;
@@ -340,6 +344,13 @@ a {
                 border: 2px solid rgb(111, 118, 193);
                 border-left: none;
                 top: 50%;
+                font-size: 20px;
+                flex-direction: column;
+                line-height: 1;
+                svg {
+                    margin-bottom: 20px;
+                    font-size: 50px;
+                }
             }
         }
     }
