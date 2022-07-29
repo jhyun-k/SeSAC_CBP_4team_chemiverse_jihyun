@@ -18,14 +18,6 @@ const FreePost = () => {
 
   const searchRef = useRef('');
 
-  /*   useEffect(() => {
-    fetch('/data/freepostData.json')
-      .then((res) => res.json())
-      .then((data) => [...data].reverse())
-      .then((data) => setLists(data))
-      .catch((e) => console.log(e));
-  }, []); */
-
   useEffect(() => {
     const postLatest = [...data].reverse();
     setLists(postLatest);
@@ -34,8 +26,6 @@ const FreePost = () => {
   const onChangeCategory = (e) => {
     setCategory(e.target.value);
   };
-
-  console.log(category);
 
   const onChangeSearch = (e) => {
     e.preventDefault();

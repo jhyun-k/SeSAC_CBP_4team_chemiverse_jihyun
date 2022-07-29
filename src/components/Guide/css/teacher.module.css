@@ -217,6 +217,7 @@
   .teacherBox {
     width: 83.333vw;
     grid-template-columns: auto;
+    margin-bottom: 5vw;
   }
   .teacherList {
     width: 83.333vw;

@@ -186,7 +186,6 @@ const PresentBefore = () => {
 
 	      alert('수고하셨습니다 :) ');
 	      e.currentTarget.disabled = true ;
-        console.log(e.currentTarget);
         e.currentTarget.style.display='none';
         }}>제출하기</button>
         </form>

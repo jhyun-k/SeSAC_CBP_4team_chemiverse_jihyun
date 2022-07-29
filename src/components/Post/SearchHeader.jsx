@@ -11,7 +11,6 @@ const SearchHeader = ({
   return (
     <div className={styles.searchHeader}>
       <SearchBar
-        data={data}
         onChangeSearch={onChangeSearch}
         searchRef={searchRef}
         onChangeCategory={onChangeCategory}

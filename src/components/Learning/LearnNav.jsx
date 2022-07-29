@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./css/learning.module.css";
 
@@ -9,21 +9,27 @@ const LearnNav = () => {
         { id: 3, content: "피플스킬", href: "./peopleskill" },
         { id: 4, content: "자기관리", href: "./selfmanage" },
     ];
+    const [currentTab, setCurrentTab] = useState(0);
+    const handleMenu = (idx) => {
+        setCurrentTab(idx);
+    };
 
     return (
         <nav className={styles.learnNav}>
             <ul>
                 {navList.map((element, index) => {
                     return (
-                        <li key={index}>
-                            <NavLink
-                                to={element.href}
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? `${styles.navbtn} ${styles.on}`
-                                        : `${styles.navbtn}`
-                                }
-                            >
+                        <li
+                            key={element.id}
+                            className={
+                                currentTab === index
+                                    ? `${styles.navbtn} ${styles.on}`
+                                    : `${styles.navbtn}`
+                            }
+                            onClick={() => handleMenu(index)}
+                            type="button"
+                        >
+                            <NavLink to={element.href}>
                                 {element.content}
                             </NavLink>
                         </li>

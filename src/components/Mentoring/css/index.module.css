@@ -41,7 +41,7 @@
 
 .nav ul li {
   color: #6f76c1;
-  border: 0.139vw solid #6f76c1;
+  border: 2px solid #6f76c1;
   margin-bottom: 50px;
   width: 17.361vw;
   height: 3.125vw;
@@ -50,6 +50,14 @@
   justify-content: center;
   font-size: 1.181vw;
   font-weight: 500;
+}
+.nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav ul li * {
   text-decoration: none;
@@ -76,35 +84,29 @@
   transition: all 0.2s;
 }
 
-.title {
-  width: 1000px;
-  margin: 10px auto;
-  padding-bottom: 10px;
-}
-
 .WhatIsMentoring {
-  width: 1200px;
-  margin: 10px auto;
+  width: 69.444vw;
+  margin: 0.694vw auto;
 }
 .WhatIsMentoring .pin {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 1.389vw;
+  margin-bottom: 1.034vw;
   color: rgba(75, 80, 132, 0.721);
 }
 .WhatIsMentoring .title {
   display: inline-block;
   text-align: center;
-  width: 1200px;
-  color: #6F76C1;
-  font-size: 30px;
-  padding-bottom: 80px;
+  width: 69.444vw;
+  color: #6f76c1;
+  font-size: 2.083vw;
+  padding-bottom: 1.389vw;
 }
 .WhatIsMentoring .content {
-  width: 1000px;
-  height: 300px;
+  width: 69.444vw;
+  height: 20.833vw;
   background-color: #f4f4f4;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 2.083vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,48 +116,180 @@
   align-items: center;
   line-height: 1.5;
   border-bottom: 1px solid #c8c8c8;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
+  padding-bottom: 1.389vw;
+  margin-bottom: 2.778vw;
 }
 .WhatIsMentoring .subTitle .img {
   display: flex;
   justify-content: flex-start;
-  width: 50px;
+  width: 3.472vw;
   height: auto;
-  margin-right: 10px;
+  margin-right: 0.694vw;
 }
 .WhatIsMentoring .subTitle .module {
   flex-direction: column;
   align-items: flex-start;
 }
 .WhatIsMentoring .subTitle .module h1 {
-  font-size: 24px;
+  font-size: 1.667vw;
   font-weight: 700;
 }
 
-.btn {
-  width: 100px;
-  padding: 10px;
+.WritePlan,
+.Upload {
+  width: 69.444vw;
+  margin: 0.694vw auto;
 }
-
-.WritePlan, .Upload {
-  width: 1200px;
-  margin: 10px auto;
-}
-.WritePlan .pin, .Upload .pin {
-  font-size: 20px;
-  margin-bottom: 15px;
+.WritePlan .pin,
+.Upload .pin {
+  font-size: 1.389vw;
+  margin-bottom: 1.034vw;
   color: rgba(75, 80, 132, 0.721);
 }
-.WritePlan .title, .Upload .title {
+.WritePlan .title,
+.Upload .title {
   display: inline-block;
   text-align: center;
-  width: 1200px;
-  color: #6F76C1;
-  font-size: 30px;
-  padding-bottom: 20px;
+  width: 69.444vw;
+  color: #6f76c1;
+  font-size: 2.083vw;
+  padding-bottom: 1.389vw;
 }
-.WritePlan .subTitle, .Upload .subTitle {
-  padding-bottom: 80px;
+.WritePlan .subTitle,
+.Upload .subTitle {
+  padding-bottom: 5.556vw;
   font-weight: 500;
+}
+
+@media screen and (max-width: 719px) {
+  .Mentoring .main {
+    padding-left: 6.944vw;
+    padding-right: 6.25vw;
+    margin-bottom: 0;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .Mentoring .mainTxt {
+    display: flex;
+    align-items: center;
+  }
+  .Mentoring .mainTxt span {
+    display: inline-block;
+    color: #fff;
+  }
+  .Mentoring .mainTxt span:first-child {
+    font-size: 6vw;
+    font-weight: 700;
+    margin-right: 2.083vw;
+  }
+  .Mentoring .mainTxt span:last-child {
+    display: none;
+  }
+  .Mentoring .mainImg {
+    width: 30vw;
+    height: auto;
+  }
+  .nav ul li {
+    color: #6f76c1;
+    border: none;
+    margin-bottom: 5vw;
+    width: 100%;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+  }
+  .nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav ul li * {
+    text-decoration: none;
+  }
+  .navbtn.on {
+    color: #424888;
+    font-weight: 700;
+    font-size: 3vw;
+    transition: all 0.2s;
+    border-bottom: 5px solid #424888;
+  }
+  .WhatIsMentoring,
+.WritePlan,
+.Upload {
+    width: 83.333vw;
+    margin: 0.694vw auto;
+  }
+  .WhatIsMentoring .pin,
+.WritePlan .pin,
+.Upload .pin {
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .WhatIsMentoring .title,
+.WritePlan .title,
+.Upload .title {
+    display: inline-block;
+    text-align: center;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 4.5vw;
+    padding-bottom: 8vw;
+  }
+  .WhatIsMentoring .content,
+.WritePlan .content,
+.Upload .content {
+    width: 69.444vw;
+    height: 45vw;
+    background-color: #f4f4f4;
+    padding: 2vw;
+    margin: auto;
+    margin-bottom: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2vw;
+  }
+  .WhatIsMentoring .subTitle,
+.WritePlan .subTitle,
+.Upload .subTitle {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+  }
+  .WhatIsMentoring .subTitle .img,
+.WritePlan .subTitle .img,
+.Upload .subTitle .img {
+    display: flex;
+    justify-content: flex-start;
+    width: 10vw;
+    height: auto;
+    margin-right: 0.694vw;
+  }
+  .WhatIsMentoring .subTitle .module,
+.WritePlan .subTitle .module,
+.Upload .subTitle .module {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .WhatIsMentoring .subTitle .module h1,
+.WritePlan .subTitle .module h1,
+.Upload .subTitle .module h1 {
+    font-size: 3.3vw;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=index.module.css.map */

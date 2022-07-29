@@ -8,7 +8,7 @@
 .DiaryEditor textarea {
   margin-top: 0.694vw;
   margin-bottom: 0.694vw;
-  width: 69.444vw;
+  width: 57vw;
   font-size: 1.042vw;
   padding: 0.694vw;
   height: 4.861vw;
@@ -16,6 +16,7 @@
 }
 .DiaryEditor textarea:focus{
   outline: none;
+  border: 2px solid #6F76C1;
 }
 
 .DiaryEditor select {
@@ -32,7 +33,7 @@
   border: 2px solid #6F76C1;
   color: #6F76C1;
   border-radius: 1.389vw;
-  font-size: 1.042vw;
+  font-size: 0.9vw;
   font-weight: 700;
 }
 .DiaryEditor .btn{
@@ -42,6 +43,7 @@
 .DiaryEditor .btn :hover{
   background-color: #6F76C1;
   color: #fff;
+  transition: all 0.33s;
 }
 
 /* List  */
@@ -78,13 +80,13 @@
   border: 1px solid #c8c8c8;
   margin-top: 0.347vw;
   margin-bottom: 0.347vw;
-  width: 69.444vw;
+  width: 57vw;
 }
 
 .DiaryItem textarea {
   font-size: 1.042vw;
   height: 4.861vw;
-  width: 69.444vw;
+  width: 57vw;
 }
 .DiaryItem textarea:focus{
   outline: none;
@@ -128,4 +130,128 @@
   font-weight: 700;
   color: #6F76C1;
   margin-left: 1.875vw;
+}
+
+
+/* 반응형 */
+@media screen and (max-width:719px){
+  .DiaryEditor .editorTxt{
+    display: flex;
+    flex-direction: column;
+  }
+  .DiaryEditor .editorTxt h1{
+    font-size: 4vw;
+    margin-bottom: 0.4vw;
+    margin-top: 5vw;
+  }
+  .DiaryEditor textarea {
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    width: 430px;
+    font-size: 3vw;
+    padding: 0.694vw;
+    height: 100px;
+    border: 1px solid #c8c8c8;
+    text-align: center;
+    line-height: 5vw;
+  }
+  .DiaryEditor textarea::placeholder{
+    color:transparent;
+  }
+  .DiaryEditor button {
+    width: 30vw;
+    height: 7vw;
+    padding: 0.694vw;
+    margin: 2vw;
+    cursor: pointer;
+    border: 3px solid #6F76C1;
+    border-radius: 5vw;
+    font-size: 3vw;
+    font-weight: 700;
+    background-color: #6F76C1;
+    color: #fff;
+    margin-bottom: 10vw;
+  }
+  .DiaryEditor .btn{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #c8c8c8;
+  }
+
+  /* List  */
+
+.DiaryList {
+  padding: 1.389vw;
+  margin-top: 1.389vw;
+  margin-bottom: 6vw;
+  padding-bottom: 9vw;
+  border-bottom: #c8c8c8 solid 1px;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+  /* 다이어리 아이템 */
+  .DiaryItem {
+    text-align: left;
+  }
+  
+  .DiaryItem span {
+    margin-right: 0.694vw;
+  }
+  .DiaryItem .content {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    font-size: 3vw;
+    padding: 0.694vw;
+    height: 20vw;
+    border: 1px solid #c8c8c8;
+    text-align: center;
+    line-height: 5vw;
+  }
+  
+  .DiaryItem textarea {
+    /* margin-top: 2vw; */
+    /* margin-bottom: 1vw; */
+    width: 100%;
+    font-size: 3vw;
+    padding: 0.694vw;
+    height: 20vw;
+    text-align: center;
+    line-height: 5vw;
+  }
+  .DiaryItem textarea:focus{
+    outline: none;
+  }
+  
+  .DiaryItem .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .DiaryItem .itemTitle{
+    font-size: 4vw;
+    margin-bottom: 0.4vw;
+    margin-top: 5vw;
+  }
+  .DiaryItem .btn{
+    display: flex;
+    justify-content: right;
+    /* margin-right: 9vw; */
+  }
+  .DiaryItem button{
+    color: #3c427d;
+    border-bottom: 1px solid #3c427d;
+    padding-bottom: 0.7vw;
+    text-align: center;
+    margin-right: 0.7vw;
+    width: 7.5vw;
+    font-weight: 600;
+    font-size: 2vw;
+  }
 }

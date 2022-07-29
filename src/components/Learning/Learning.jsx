@@ -2,10 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import LearningModule from "./LearningModule";
 import LearnNav from "./LearnNav";
-import PeopleSkill from "./PeopleSkill";
-import SelfManage from "./SelfManage";
-import Understand from "./Understand";
-import WorkSkill from "./WorkSkill";
+import ModuleListPage from "./ModuleListPage";
 import styles from "./css/learning.module.css";
 import uData from "../../data/understandData.json";
 import wData from "../../data/workskillData.json";
@@ -15,32 +12,36 @@ import sData from "../../data/selfmanageData.json";
 const Learning = () => {
     return (
         <div className={styles.learningWrapper}>
+            {/* 역량학습 타이틀 */}
             <div className={styles.main}>
                 <div className={styles.mainTxt}>
                     <span>역량학습</span>
                     <span>
                         컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
-                        <br></br>
+                        <br />
                         컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
                     </span>
                 </div>
                 <img
                     className={styles.mainImg}
-                    src={"/chemiverse_img/img-pop-cardnews.png"}
+                    src={"/chemiverse_img/group 230.png"}
                     alt="img-pop-cardnews"
                 />
             </div>
+            {/* 역량학습 탭 */}
             <LearnNav />
-            <h1>역량학습 페이지</h1>
             <Routes>
-                <Route path="/" element={<Understand module={uData} />}></Route>
+                <Route
+                    path="/"
+                    element={<ModuleListPage module={uData} />}
+                ></Route>
                 <Route
                     path="/:id"
                     element={<LearningModule module={uData} />}
                 ></Route>
                 <Route
                     path="workskill"
-                    element={<WorkSkill module={wData} />}
+                    element={<ModuleListPage module={wData} />}
                 ></Route>
                 <Route
                     path="/workskill/:id"
@@ -48,7 +49,7 @@ const Learning = () => {
                 ></Route>
                 <Route
                     path="peopleskill"
-                    element={<PeopleSkill module={pData} />}
+                    element={<ModuleListPage module={pData} />}
                 ></Route>
                 <Route
                     path="/peopleskill/:id"
@@ -56,7 +57,7 @@ const Learning = () => {
                 ></Route>
                 <Route
                     path="selfmanage"
-                    element={<SelfManage module={sData} />}
+                    element={<ModuleListPage module={sData} />}
                 ></Route>
                 <Route
                     path="/selfmanage/:id"
