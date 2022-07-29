@@ -28,7 +28,7 @@ const Header = ({ title, auth, setAuth }) => {
         <header className={headerStyle.mainHeaderBox}>
             <div className={headerStyle.inner}>
                 <ul className={headerStyle.login}>
-                    <NavLink to="./mypage">마이페이지</NavLink>
+                    <span>마이페이지</span>
                     <div className={headerStyle.login_btn}>
                         {auth ? (
                             <span onClick={() => setAuth(false)}>로그아웃</span>
