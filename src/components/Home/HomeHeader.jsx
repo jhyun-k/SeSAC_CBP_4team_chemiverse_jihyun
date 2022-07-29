@@ -16,7 +16,7 @@ const HomeHeader = () => {
                     expert
                 </Link>
                 <div className={styles.title}>Chemiverse Connect With</div>
-                {/* <ul className={styles.homeNav}>
+                <ul className={styles.homeNav}>
               {homeList.map((element, index) => {
                 return (
                   <li className={styles.navlist} key={index}>
@@ -24,7 +24,7 @@ const HomeHeader = () => {
                   </li>
                 );
               })}
-            </ul> */}
+            </ul> 
                 <button className={styles.onup_btn}>
                     <Link to="/login">Chemiverse On & Up</Link>
                 </button>

@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./css/index.module.css";
 import { BsCheckLg } from "react-icons/bs";
-import { MdArrowForwardIos } from "react-icons/md";
-import pData from "../../data/peopleskillData.json";
+import pData from "../../data/chemiStory.json";
 
 const WhatIsChemiStory = () => {
   return (
@@ -37,20 +36,7 @@ const WhatIsChemiStory = () => {
             );
           })}
         </ul>
-        {/* <div class={styles.modulePurpose}>
-          <p class={styles.purpose}>
-            <MdArrowForwardIos color="#6f76c1" /> 집합교육, 이러닝, 독서, 설문,
-            평가, 역량진단 등 교육에 필요한 모든 기능을 통합하는 시스템
-          </p>
-          <p class={styles.purpose}>
-            <MdArrowForwardIos color="#6f76c1" /> 교육 담당자의 변경에 따라 생길
-            수 있는 HRD업무의 혼란을 최소화
-          </p>
-          <p class={styles.purpose}>
-            <MdArrowForwardIos color="#6f76c1" /> 교육 담당자의 운영 관리 고민
-            끝! 시간은 절반, 효과는 두배
-          </p>
-        </div> */}
+
         <div className={styles.subTitle}>
           <img
             className={styles.img}

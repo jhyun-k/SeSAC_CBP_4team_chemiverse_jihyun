@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "기능 통합",
+        "engName": "Functional integration",
+        "goal": "집합교육, 이러닝, 독서, 설문, 평가, 역량진단 등 교육에 필요한 모든 기능을 통합하는 시스템",
+        "basic": "집합교육, 이러닝, 독서, 설문, 평가, 역량진단 등 교육에 필요한 모든 기능을 통합하는 시스템이다.",
+        "img": "https://images.unsplash.com/photo-1556484687-30636164638b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    {
+        "id": 2,
+        "name": "혼란 최소화",
+        "engName": "Minimize confusion",
+        "goal": "교육 담당자의 변경에 따라 생길 수 있는 HRD업무의 혼란을 최소화",
+        "basic": "교육 담당자의 변경에 따라 생길 수 있는 HRD업무의 혼란을 최소화할 수 있다.",
+        "img": "https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+    },
+    {
+        "id": 3,
+        "name": "고민 해결",
+        "engName": "Problem solved",
+        "goal": "교육 담당자의 운영 관리 고민 끝! 시간은 절반, 효과는 두배",
+        "basic": "교육 담당자의 운영 관리 고민 끝! 시간은 절반, 효과는 두배",
+        "img": "https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    }
+]
