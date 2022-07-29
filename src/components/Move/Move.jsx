@@ -11,7 +11,6 @@ const Move = () => {
 
 const classData = [...data]
 
-console.log('데이터',classData)
 ;
 
   return (

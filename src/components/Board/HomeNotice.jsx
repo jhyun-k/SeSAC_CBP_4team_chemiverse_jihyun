@@ -31,7 +31,6 @@ const HomeNotice = () => {
     e.preventDefault();
     const search = searchRef.current.value;
     const postLatest = [...data].reverse();
-    console.log(category);
     if (search === null || search === '') {
       setLists(postLatest);
     } else if (category === '전체' || category === undefined) {

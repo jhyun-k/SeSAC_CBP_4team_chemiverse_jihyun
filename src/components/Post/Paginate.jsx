@@ -35,7 +35,6 @@ const Paginate = ({ total, page, setPage, LIST_PER_PAGE }) => {
     setPage(wholePagesNumArray.length);
     setPagesArrStartNum(wholePagesNumArray.length - 5);
     setPagesArrEndNum(wholePagesNumArray.length);
-    console.log(pagesArrStartNum, pagesArrEndNum);
   };
 
   const pagesNumArray = wholePagesNumArray.fill().map((arr, index) => {

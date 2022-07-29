@@ -16,7 +16,6 @@ const Loginok = ({setAuth,setIsOpen,auth}) => {
     e.preventDefault()
     if(inputId === 'expert' && inputPw === 'password'){
       setSubmit(true)
-    console.log('로그인테스트',{auth});
     setAuth(true)
     navigate('/main')
 }else{

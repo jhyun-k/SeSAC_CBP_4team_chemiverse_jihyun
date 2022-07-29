@@ -7,7 +7,6 @@ function Diary() {
   const [data,setData] = useState([]);
   const dataId = useRef(0);
   const onCreate = (arr) =>{
-    console.log(arr)
     // const newItem = {
     //   // author:author,
     //   content:content,
@@ -16,7 +15,6 @@ function Diary() {
     // }
     dataId.current +=1;
     setData(...data,arr);
-    console.log('데이타',data)
    
   }
 
