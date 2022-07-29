@@ -1,90 +1,189 @@
 .connectMain {
     margin: 0 0.5vw;
-}
-
-.slidingList {
-    display: flex;
-    justify-content: space-around;
-}
-
-.slidingItem {
-    display: block;
-    width: 16vw;
-    height: 80vh;
-    border-radius: 10px;
-    overflow: hidden;
-    // flex-grow: 1;
-    position: relative;
-    transition: width 0.4s cubic-bezier(0.65, 0, 0.35, 1);
-    &.on {
-        text-align: left;
-        // flex-grow: 5;
-        width: 40vw;
-        transition: width 0.4s cubic-bezier(0.65, 0, 0.35, 1);
-        transform: translateY(-50px);
-        box-shadow: rgba(0, 0, 0, 0.15) 15px 15px 15px;
-        background-color: #fff;
-        border: 1px solid #e6e0ec;
-        .connectTitle {
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding: 3.472vw;
-            font-size: 2.083vw;
-        }
-        .popImg {
-            width: 23vw;
-            float: right;
-            position: relative;
-            right: -0.3vw;
-            top: -0.3vw;
+    .slidingList {
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        .slidingItem {
+            width: 16vw;
+            height: 75vh;
             display: block;
-        }
-        .connectDesc {
-            display: block;
+            border-radius: 10px;
+            overflow: hidden;
             position: relative;
-            clear: both;
-            padding: 0 6.944vw 2.083vw 3.472vw;
+            transition: width 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+            .popImg {
+                display: none;
+            }
+            .bgImg {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .connectTitle {
+                font-size: 2vw;
+                width: 80%;
+                padding: 2.778vw 1.389vw 1.389vw;
+                margin: auto;
+                word-break: keep-all;
+                line-height: 1.5;
+                color: rgba(0, 0, 0, 0.75);
+                text-align: right;
+            }
+            .connectSubTitle {
+                font-size: 1vw;
+                width: 80%;
+                padding: 0 1.389vw;
+                margin: auto;
+                word-break: keep-all;
+                line-height: 1.5;
+                color: rgba(72, 72, 72, 0.75);
+                text-align: right;
+            }
+            .connectDesc {
+                display: none;
+            }
+            .linkBtn {
+                display: none;
+            }
         }
-        .linkBtn {
-            background-color: #e3eafd;
-            border-radius: 5px;
-            width: 6.944vw;
-            height: 2.778vw;
-            line-height: 2.778vw;
-            display: inline-block;
-            text-align: center;
-            margin-left: 3.472vw;
+        .welcomeSlide {
+            background-color: #ffefca;
+        }
+        .introduceSlide {
+            background-color: #eee8aa;
+        }
+        .readySlide {
+            background-color: #d2edec;
+        }
+        .homeNoticeSlide {
+            background-color: #cfd3ff;
+        }
+        .on {
+            width: 40vw;
+            text-align: left;
+            background: #fff;
+            border: 1px solid #e6e0ec;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.042vw 1.042vw 1.042vw;
+            transition: width 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+            transform: translateY(-2.778vw);
+            .connectTitle {
+                position: absolute;
+                right: 10%;
+                top: 6.944vw;
+            }
+            &.readySlide {
+                .connectTitle {
+                    right: 5%;
+                }
+            }
+            .connectSubTitle {
+                display: none;
+            }
+            .popImg {
+                width: 23vw;
+                float: right;
+                position: relative;
+                right: -0.3vw;
+                top: -0.3vw;
+                display: block;
+            }
+            .bgImg {
+                display: none;
+            }
+            .descArea {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                position: absolute;
+                bottom: 0;
+                padding-bottom: 2.083vw;
+            }
+            .connectDesc {
+                display: block;
+                width: 70%;
+                font-size: 1.25vw;
+                line-height: 1.4;
+            }
+            .linkBtn {
+                font-size: 2.083vw;
+                display: block;
+                &:hover {
+                    color: #93b0ff;
+                    transition: 0.2s;
+                }
+            }
         }
     }
-    .connectTitle {
-        font-size: 2.083vw;
-        position: relative;
-        top: 50%;
-    }
-    .popImg {
-        display: none;
-    }
-    .connectDesc {
-        display: none;
-    }
-    .linkBtn {
-        display: none;
-    }
-}
-
-.welcomeSlide {
-    background-color: #f5f9ff;
-}
-.introduceSlide {
-    background-color: #e3eafd;
-}
-.readySlide {
-    background-color: #e0f4fc;
-}
-.homeNoticeSlide {
-    background-color: #efe1fd;
 }
 
 @media (max-width: 720px) {
+    .connectMain {
+        .slidingList {
+            display: block;
+            .slidingItem {
+                width: 90vw;
+                margin: auto;
+                height: 15vh;
+                margin-top: -3.472vw;
+                .connectTitle {
+                    display: flex;
+                    font-size: 4.167vw;
+                    justify-content: space-between;
+                    padding: 0;
+                    margin: 0;
+                    width: 95%;
+                    svg {
+                        font-size: 10vw;
+                        color: white;
+                        height: 7.5vh;
+                    }
+                    p {
+                        line-height: 11vw;
+                    }
+                }
+            }
+            .on {
+                transform: translateY(0);
+                box-shadow: none;
+                height: 50vh;
+                .connectTitle {
+                    font-size: 4.167vw;
+                    top: 11.111vw;
+                    right: 5.556vw;
+                    svg {
+                        opacity: 0;
+                    }
+                }
+                .popImg {
+                    width: 34.722vw;
+                }
+                .descArea {
+                    flex-direction: column-reverse;
+                    margin: 4.083vw;
+                }
+                .connectDesc {
+                    font-size: 16px;
+                    width: 60%;
+                    padding-top: 3.944vw;
+                }
+                .linkBtn {
+                    font-size: 4.167vw;
+                    top: 40%;
+                    left: 2.778vw;
+                }
+                &.readySlide {
+                    .connectTitle {
+                        right: 0.833vw;
+                    }
+                }
+            }
+            .welcomeSlide {
+                margin-top: 4.167vw;
+            }
+        }
+    }
 }

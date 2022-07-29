@@ -2,21 +2,20 @@ import React from "react";
 import YouTube from "react-youtube";
 import styles from "./css/learning.module.css";
 
-const ModalContent2 = () => {
+const ModalVideo = () => {
     return (
         <div className={styles.youtube}>
             <YouTube
-                videoId="dGpYuTshhuA"
+                videoId="eZYJ1rglPUs"
                 opts={{
                     width: "889",
                     height: "500",
                     playerVars: {
-                        autoplay: 1, //자동재생 O
-                        rel: 0, //관련 동영상 표시하지 않음 (근데 별로 쓸모 없는듯..)
-                        modestbranding: 1, // 컨트롤 바에 youtube 로고를 표시하지 않음
+                        autoplay: 1,
+                        rel: 0,
+                        modestbranding: 1,
                     },
                 }}
-                //이벤트 리스너
                 onEnd={(e) => {
                     e.target.stopVideo(0);
                 }}
@@ -25,4 +24,4 @@ const ModalContent2 = () => {
     );
 };
 
-export default ModalContent2;
+export default ModalVideo;

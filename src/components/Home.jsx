@@ -1,9 +1,9 @@
-import React from 'react';
-import HomeHeader from './HomeHeader';
-import Welcome from './Welcome';
-import Introduce from './Introduce';
-import Ready from './Ready';
-import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import HomeHeader from "./HomeHeader";
+import Welcome from "./Welcome";
+import Introduce from "./Introduce";
+import Ready from "./Ready";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
 
 const Home = () => {

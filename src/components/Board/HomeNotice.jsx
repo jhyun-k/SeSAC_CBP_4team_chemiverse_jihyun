@@ -5,6 +5,7 @@ import PostList from '../Post/PostList';
 import SearchHeader from '../Post/SearchHeader';
 import Paginate from '../Post/Paginate';
 import data from '../../data/noticeData.json';
+import { BsCheckLg } from 'react-icons/bs';
 
 const HomeNotice = () => {
   const [lists, setLists] = useState([]);
@@ -59,21 +60,29 @@ const HomeNotice = () => {
     }
   };
   return (
-    <div className={styles.post}>
-      <SearchHeader
-        data={lists}
-        onChangeSearch={onChangeSearch}
-        searchRef={searchRef}
-        onChangeCategory={onChangeCategory}
-      />
-      <PostList lists={lists} startNum={startNum} endNum={endNum} />
-      <Paginate
-        total={lists.length}
-        page={page}
-        setPage={setPage}
-        LIST_PER_PAGE={LIST_PER_PAGE}
-      />
-    </div>
+    <>
+      <div className={styles.menuTitleBanner}>
+        <p className={styles.pin}>
+          <BsCheckLg />
+        </p>
+        <h1 className={styles.title}>공지사항</h1>
+      </div>
+      <div className={styles.post}>
+        <SearchHeader
+          data={lists}
+          onChangeSearch={onChangeSearch}
+          searchRef={searchRef}
+          onChangeCategory={onChangeCategory}
+        />
+        <PostList lists={lists} startNum={startNum} endNum={endNum} />
+        <Paginate
+          total={lists.length}
+          page={page}
+          setPage={setPage}
+          LIST_PER_PAGE={LIST_PER_PAGE}
+        />
+      </div>
+    </>
   );
 };
 

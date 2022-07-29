@@ -1,23 +1,42 @@
 [
     {
         "id": 1,
-        "name": "회사이해1",
-        "goal": "모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다.",
-        "basic": "환경권의 내용과 행사에 관하여는 법률로 정한다. 행정각부의 설치·조직과 직무범위는 법률로 정한다. 국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 대통령의 선거에 관한 사항은 법률로 정한다. 국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 언론·출판은 타인의 명예나 권리 또는 공중도덕이나 사회윤리를 침해하여서는 아니된다. 언론·출판이 타인의 명예나 권리를 침해한 때에는 피해자는 이에 대한 피해의 배상을 청구할 수 있다.",
-        "img": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        "name": "갈등관리",
+        "engName": "conflict management",
+        "goal": "조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.",
+        "basic": "조직의 발전단계에서 갈등을 해결하는 절차. 여기에서는 조직 성원들이 그들의 상호 관계 성격을 규정하고, 의사소통의 장벽을 제거하며, 그들의 상호 의존적인 곳을 규정하고, 문제와 자원을 확인하며, 특별한 문제를 해결하기 위해 함께 노력하도록 도움을 받는다.",
+        "img": "https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcGFueXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 2,
-        "name": "회사이해2",
-        "goal": "학습목표2",
-        "basic": "기본개념2",
-        "img": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        "name": "다양성 이해",
+        "engName": "diversity understanding",
+        "goal": "유형 진단을 통해 나와 타인의 다름을 인정하고 타인과 맞춰갈 수 있는 행동적 특징을 파악할 수 있습니다.",
+        "basic": "문화다양성은 개인이나 집단의 창조적 사고, 사회 발전의 원천으로서 생물다양성이 환경에 미치는 것과 같이 인간에게 반드시 필요한 요소이다.",
+        "img": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXBhbnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 3,
-        "name": "회사이해3",
-        "goal": "학습목표3",
-        "basic": "기본개념3",
-        "img": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        "name": "커뮤니케이션",
+        "engName": "communication",
+        "goal": "논리적 사고를 통한 보고법을 습득하여 탁월한 팔로워의 역할을 수행하도록 합니다.",
+        "basic": "사람들끼리 상호작용하는 의사표현. 몸짓, 그림, 기호 등의 수단을 통해 서로의 의사나 감정, 생각을 주고 받는 일을 말한다. 라틴어의 ‘나누다’를 의미하는 'communicare'가 어원이며 우리말로 ‘의사소통’이라고 표현한다. 원활한 커뮤니케이션을 위해서는 누가(전달자), 무엇을(전달내용), 어떤 방법으로(통로), 누구에게(수신자), 무엇을 기대하고 의사를 전하려는 지의 다섯 가지 요소가 구비되어야 한다. ",
+        "img": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGNvbW11bmljYXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 4,
+        "name": "팔로워십",
+        "engName": "followership",
+        "goal": "조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.",
+        "basic": "리더십에 반대되는 말로서 추종자 정신, 추종력 등을 가리킨다. 즉 조직 구성원이 사회적 역할과 조직 목적 달성에 필요한 역량을 구비하고, 조직의 권위와 규범에 따라 주어진 과업과 임무를 달성하기 위하여 바람직한 자세와 역할을 하도록 제반 활동 과정을 의미한다. ",
+        "img": "https://images.unsplash.com/photo-1598015132635-131afe3ba07f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNvbW11bmljYXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 5,
+        "name": "협업 마인드",
+        "engName": "collaboration mind",
+        "goal": "조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.",
+        "basic": "경영에 있어서 협업의 형태는 다수의 노동자가 각각 별개로 동일 종류의 완성품을 만드는 경우인 단순협업과, 각 노동자가 행하는 개별적인 생산활동이 모두 종류를 달리하거나 또는 그 일부가 상이하여 각 노동자가 행하는 개별적인 생산활동의 전과정을 거쳐서 비로소 최종적인 완성품을 만들어내는 복잡협업으로 구분할 수 있다.",
+        "img": "https://images.unsplash.com/photo-1562087523-1f8a41e38ed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc5fHxjb21tdW5pY2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
 ]

@@ -1,281 +1,592 @@
 /* Learning.jsx */
-.learningWrapper {
-  .main {
-    padding-left: 6.944vw;
-    padding-right: 6.25vw;
-    margin-bottom: 3.472vw;
-    width: 100vw;
-    height: 11.806vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 90%;
-  }
-  .mainTxt {
-    display: flex;
-    align-items: center;
-  }
-  .mainTxt span {
-    display: inline-block;
-    color: #fff;
-    &:first-child {
-      font-size: 3.333vw;
-      font-weight: 700;
-      margin-right: 2.083vw;
-    }
-    &:last-child {
-      font-size: 0.833vw;
-      line-height: 1.5;
-      font-weight: 500;
-    }
-  }
-  .mainImg {
-    width: 15.833vw;
-    height: auto;
-  }
+a {
+    text-decoration: none !important;
 }
-.learning {
-  background-color: black;
-  font-size: 100px;
+
+/* 타이틀 */
+.learningWrapper {
+    .pin {
+        font-size: 1.389vw;
+        margin-bottom: 1.034vw;
+        color: rgba(75, 80, 132, 0.721);
+    }
+    .title {
+        display: inline-block;
+        text-align: center;
+        width: 69.44vw;
+        color: #6f76c1;
+        font-size: 2.083vw;
+        // border-bottom: 2px solid #c8c8c8;
+        padding-bottom: 5.556vw;
+    }
+    .main {
+        padding-left: 6.944vw;
+        padding-right: 6.25vw;
+        margin-bottom: 3.472vw;
+        width: 100vw;
+        height: 11.806vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 90%;
+    }
+    .mainTxt {
+        display: flex;
+        align-items: center;
+    }
+    .mainTxt span {
+        display: inline-block;
+        color: #fff;
+        &:first-child {
+            font-size: 3.333vw;
+            font-weight: 700;
+            margin-right: 2.083vw;
+        }
+        &:last-child {
+            font-size: 0.833vw;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+    .mainImg {
+        width: 15.833vw;
+        height: auto;
+    }
 }
 
 /* learnNav */
-.learnNav ul li {
-  color: #6f76c1;
-  border: 0.139vw solid #6f76c1;
-  margin-bottom: 50px;
-  width: 17.361vw;
-  height: 3.125vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.181vw;
-  font-weight: 500;
-  * {
-    text-decoration: none;
-  }
-  &:first-child {
-    border-top-left-radius: 0.347vw;
-    border-bottom-left-radius: 0.347vw;
-    border-right: none;
-  }
-  &:nth-child(2) {
-    border-right: none;
-  }
-  &:last-child {
-    border-top-right-radius: 0.347vw;
-    border-bottom-right-radius: 0.347vw;
-    border-left: none;
-  }
-}
-.navbtn {
-  &.on {
-    color: #424888;
-    font-weight: 900;
-    font-size: 1.25vw;
-  }
+.learnNav {
+    position: sticky;
+    top: 6vw;
+    z-index: 2;
+    background-color: white;
+    ul li {
+        color: #6f76c1;
+        border: 0.139vw solid #6f76c1;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 17.361vw;
+        height: 3.125vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.181vw;
+        font-weight: 500;
+        * {
+            text-decoration: none;
+        }
+        &:first-child {
+            border-top-left-radius: 0.347vw;
+            border-bottom-left-radius: 0.347vw;
+            border-right: none;
+        }
+        &:nth-child(2) {
+            border-right: none;
+        }
+        &:last-child {
+            border-top-right-radius: 0.347vw;
+            border-bottom-right-radius: 0.347vw;
+            border-left: none;
+        }
+    }
+    .navbtn {
+        &.on {
+            color: #424888;
+            font-weight: 900;
+            font-size: 1.25vw;
+        }
+    }
 }
 
-/* Understand.jsx */
+/* ModuleListPage.jsx */
 .inner {
-  width: 83.333vw;
-  margin: auto;
+    width: 69.444vw;
+    margin: auto;
 }
 .moduleList {
-  // display: block;
-  .moduleListItem {
-    margin: 1.389vw;
-    .imgBox {
-      position: relative;
-      height: 31.25vw;
-      overflow: hidden;
-      img {
-        overflow: hidden;
-        width: 23.403vw;
-        height: 31.25vw;
-        border-radius: 0.694vw;
-      }
-      .hover {
-        position: absolute;
-        top: 32.639vw;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(230, 224, 236, 0.9);
-        width: 44.444vw;
-        height: 20.833vw;
-        transition: 0.4s;
-        opacity: 0;
-        border-radius: 50%;
-        padding: 4.167vw 13.889vw;
-        font-size: 1.111vw;
-        line-height: 1.5;
-      }
+    display: block;
+    .moduleListItem {
+        display: inline-block;
+        margin: 0 0.833vw;
+        .imgBox {
+            position: relative;
+            width: 20vw;
+            height: 20vw;
+            overflow: hidden;
+            margin: 1.389vw 0;
+            border-radius: 0.694vw;
+            img {
+                overflow: hidden;
+                height: 100%;
+
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .hover {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: absolute;
+                top: 32.639vw;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgb(111, 118, 193, 0.9);
+                color: white;
+                width: 44.444vw;
+                height: 20.833vw;
+                transition: 0.4s;
+                opacity: 0;
+                border-radius: 50%;
+                padding: 4.167vw 13.889vw 8vw;
+                font-size: 1.111vw;
+                line-height: 1.5;
+                font-size: 0.833vw;
+                align-items: flex-end;
+                .moreBtn {
+                    background-color: #fff;
+                    border-radius: 0.347vw;
+                    height: 2.431vw;
+                    line-height: 2.431vw;
+                    font-weight: bold;
+                    width: 6.944vw;
+                    color: black;
+                }
+            }
+        }
+        .moduleName {
+            font-size: 1.389vw;
+            margin: 0.694vw 2.389vw;
+            text-align: left;
+            font-weight: bold;
+        }
+        .moduleEngName {
+            font-size: 0.903vw;
+            margin: 0 2.389vw 2.389vw;
+            text-align: left;
+            text-transform: capitalize;
+            color: #aaa;
+        }
+        &:hover {
+            .hover {
+                top: 5.694vw;
+                opacity: 1;
+            }
+            .moduleName {
+                color: #6f76c1;
+            }
+        }
     }
     .moduleName {
-      font-size: 1.389vw;
-      margin: 1.389vw;
-      text-align: left;
+        font-size: 1.389vw;
+        margin: 1.389vw;
+        text-align: left;
     }
 
     &:hover .hover {
-      top: 15.694vw;
-      opacity: 1;
+        top: 15.694vw;
+        opacity: 1;
     }
-  }
 }
-
 /* LearningModule.jsx */
 .moduleBox {
-  width: 83.333vw; // 이너 대신..
-  margin: auto;
-  .moduleDesc {
-    display: flex;
-    padding: 1.389vw;
-    .moduleImgBox {
-      img {
-        width: 17.708vw;
-        height: 23.611vw;
-        border-radius: 0.694vw;
-      }
-      margin-right: 2.083vw;
+    margin: auto;
+    .moduleDesc {
+        display: flex;
+        padding: 1.389vw;
+        .moduleImgBox {
+            margin: auto;
+            width: 17.708vw;
+            overflow: hidden;
+            border-radius: 0.694vw;
+            position: relative;
+            img {
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            margin-right: 2.083vw;
+        }
+        .moduleTextBox {
+            width: 55.556vw;
+            text-align: left;
+            margin: auto;
+            padding: 2.083vw 2.778vw;
+            height: 23.611vw;
+            overflow: scroll;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+            &::-webkit-scrollbar {
+                display: none; /* Chrome, Safari, Opera*/
+            }
+            .moduleTitle {
+                font-size: 2.292vw;
+                color: #555;
+                span {
+                    margin-left: 1.042vw;
+                    font-size: 1.389vw;
+                    color: #aaa;
+                    font-weight: normal;
+                }
+            }
+            .descTitle {
+                font-size: 1.042vw;
+            }
+            dt {
+                margin-top: 1.389vw;
+                margin-bottom: 0.694vw;
+                font-weight: bold;
+            }
+            dt:first-child {
+                margin: 0;
+                padding-bottom: 1.389vw;
+                border-bottom: 3px solid #d9d9d9;
+            }
+            dd {
+                line-height: 1.5;
+                font-size: 1.111vw;
+                position: relative;
+                padding-left: 1.389vw;
+                &::before {
+                    content: "";
+                    width: 0.347vw;
+                    height: 0.347vw;
+                    background-color: #6f76c1;
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0.347vw;
+                    top: 0.694vw;
+                }
+            }
+        }
     }
     .moduleTextBox {
-      width: 55.556vw;
-      text-align: left;
-      padding: 2.083vw 2.778vw;
-      height: 23.611vw;
-      .moduleTitle {
-        font-size: 2.292vw;
-      }
-      .descTitle {
-        font-size: 1.042vw;
-      }
-      dt {
-        margin-top: 1.389vw;
-        margin-bottom: 0.694vw;
-        font-weight: bold;
-      }
-      dt:first-child {
-        margin: 0;
-        padding-bottom: 1.389vw;
-        border-bottom: 3px solid #d9d9d9;
-      }
-      dd {
-        font-size: 1.111vw;
-      }
-    }
-  }
-  .moduleLearning {
-    .learningContents {
-      display: flex;
-      justify-content: space-around;
-      .imgBox {
-        > img {
-          width: 31.25vw;
-          height: 17.361vw;
-          border-radius: 0.694vw;
+        width: 55.556vw;
+        text-align: left;
+        padding: 2.083vw 2.778vw;
+        height: 23.611vw;
+        .moduleTitle {
+            font-size: 2.292vw;
         }
-      }
+        .descTitle {
+            font-size: 1.042vw;
+        }
+        dt {
+            margin-top: 1.389vw;
+            margin-bottom: 0.694vw;
+            font-weight: bold;
+        }
+        dt:first-child {
+            margin: 0;
+            padding-bottom: 1.389vw;
+            border-bottom: 3px solid #d9d9d9;
+        }
+        dd {
+            font-size: 1.111vw;
+        }
     }
-  }
+}
+.moduleLearning {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 1.736vw;
+    .sectionTitleArea {
+        margin: auto;
+    }
+    .learningContents {
+        margin: 2.778vw auto;
+        display: flex;
+        justify-content: space-around;
+        .learningContent {
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            border-radius: 0.8vw;
+            background-color: #fff;
+            // background: linear-gradient(
+            //     to bottom,
+            //     rgba(111, 118, 193, 0.5) 0%,
+            //     rgba(111, 118, 193, 0.1) 30%,
+            //     rgba(255, 255, 255, 1) 100%
+            // );
+            width: 21.25vw;
+            height: 12.361vw;
+            overflow: hidden;
+            &:hover {
+                width: 40vw;
+                transition: 0.5s;
+                .textBox {
+                    display: flex;
+                }
+            }
+            .imgBox {
+                cursor: pointer;
+                > img {
+                    width: 21.25vw;
+                    height: 12.361vw;
+                    border-radius: 0.694vw;
+                }
+            }
+            .textBox {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 10px 10px 0;
+                width: 100%;
+                height: 100%;
+                margin-left: -10px;
+                border: 2px solid rgb(111, 118, 193);
+                border-left: none;
+                top: 50%;
+            }
+        }
+    }
 }
 
-.sectionTitle {
-  margin: 2.083vw 0;
-  padding-bottom: 1.042vw;
-  text-align: left;
-  color: #6f76c1;
-  font-size: 2.083vw;
-  line-height: 3.472vw;
-  border-bottom: 1px solid #d9d9d9;
-  display: flex;
-  .sectionIcon {
-    width: 3.472vw;
-    margin-right: 0.694vw;
-  }
-  p {
-    margin-top: 0.694vw;
-    margin-left: 1.389vw;
-    font-size: 0.764vw;
-    font-weight: normal;
-  }
+.sectionTitleArea {
+    margin: 2.083vw 0;
+    text-align: left;
+    h3 {
+        margin: 1.042vw;
+        color: #6f76c1;
+        font-size: 2.083vw;
+    }
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    .subTitle {
+        font-size: 0.764vw;
+        font-weight: normal;
+        margin: 2.083vw 1.042vw;
+    }
+    .sectionIcon {
+        width: 5vw;
+        height: 100%;
+        margin-right: 0.694vw;
+    }
 }
 
 section {
-  margin: 6.944vw 0;
+    margin: 3.944vw 0;
 }
 
 /* Modal.jsx */
 .modalBackdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  .modalContent {
-    background-color: white;
-    background-image: url(./../../../../public/chemiverse_img/bg-login.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right -20px;
-    border-radius: 0.694vw;
-    padding: 2.389vw;
-    position: relative;
-    button {
-      // float: right;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    .modalContent {
+        background-color: white;
+        background-image: url(./../../../../public/chemiverse_img/bg-login.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right -1.389vw;
+        border-radius: 0.694vw;
+        padding: 2.389vw;
+        position: relative;
+        z-index: 100;
+        button {
+            // float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+        }
     }
-  }
-  .slide {
-    width: 69.444vw;
-    height: 34.722vw;
-    position: relative;
-    // padding: 3.472vw;
-    h1 {
-      text-align: left;
-      margin-left: 20px;
-      padding-bottom: 20px;
-      font-size: 20px;
-      color: #6f76c1;
+    .slide {
+        width: 69.444vw;
+        height: 30.722vw;
+        position: relative;
+        // padding: 3.472vw;
+        h1 {
+            text-align: left;
+            margin-left: 1.389vw;
+            padding-bottom: 1.389vw;
+            font-size: 1.389vw;
+            color: #6f76c1;
+        }
+        img {
+            height: 26.389vw;
+            margin: auto;
+        }
     }
-    img {
-      height: 26.389vw;
-      margin: auto;
+    .youtube {
+        position: relative;
+        margin: 2.083vw auto 0;
+        max-width: 62.5vw;
+        width: 69.444vw;
+        > div {
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+        > div iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
     }
-  }
-  .youtube {
-    position: relative;
-    margin: 30px auto 0;
-    max-width: 900px;
-    width: 69.444vw;
-    > div {
-      width: 100%;
-      padding-bottom: 56.25%;
+    .closeBtn {
+        img {
+            width: 1.389vw;
+            margin: 1.389vw;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    // .inner {
+    //     width: 100vw;
+    // }
+    //Nav
+    .learnNav {
+        z-index: 2;
+        ul li {
+            color: #6f76c1;
+            border: none;
+            margin-top: 0;
+            margin-bottom: 5vw;
+            width: 100%;
+            height: 8.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3vw;
+            font-weight: 500;
+        }
+        .navbtn {
+            &.on {
+                font-size: 3vw;
+                transition: all 0.2s;
+                border-bottom: 5px solid #424888;
+            }
+        }
+    }
+
+    .learningWrapper {
+        .pin {
+            font-size: 3vw;
+            margin-bottom: 1.5vw;
+            color: rgba(75, 80, 132, 0.721);
+        }
+        .title {
+            display: inline-block;
+            text-align: center;
+            width: 69.444vw;
+            color: #6f76c1;
+            font-size: 4.5vw;
+            padding-bottom: 8vw;
+        }
+    }
+
+    .moduleList {
+        .moduleListItem {
+            .imgBox {
+                width: 30vw;
+                height: 35vw;
+                // margin: 0 2vw;
+                img {
+                    width: 40vw;
+                }
+                .hover {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .moduleBox {
+        .moduleDesc {
+            background: none;
+            display: flex;
+            flex-direction: column;
+            .moduleImgBox {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .moduleTextBox {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .moduleLearning {
+            background: none;
+            background-color: #f7f7f7;
+            .learningContents {
+                flex-direction: column;
+                .learningContent {
+                    flex-direction: column;
+                    margin-top: 2.389vw;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    .imgBox {
+                        width: 101%;
+                        img {
+                            border-radius: 10px;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .textBox {
+                        display: flex;
+                        // height: 6.944vw;
+                        height: 13.889vw;
+                        border-left: 2px solid #6f76c1;
+                        border-top: none;
+                        border-radius: 0 0 10px 10px;
+                        margin-left: 0;
+                        margin-top: -5px;
+                    }
+                }
+            }
+        }
     }
     > div iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
-  }
-  .closeBtn {
-    img {
-      width: 20px;
-      margin: 20px;
+
+    .closeBtn {
+        img {
+            width: 1.389vw;
+            margin: 1.389vw;
+        }
     }
-  }
+    .modalContent {
+        width: 100%;
+        height: 80%;
+    }
+    .modalBackdrop {
+        .slide {
+            margin: auto;
+            > div {
+                width: 50vh;
+                margin: auto;
+                > button {
+                    margin: 0 -50px;
+                }
+            }
+        }
+    }
 }
