@@ -119,6 +119,7 @@ const CalendarDay = () => {
         eventDidMount={handleTooltip}
         eventBackgroundColor="#9498D1"
         eventBorderColor="#9498D1"
+        height="100%"
       />
 
       {/* <div className={calendar.eventBox}>
