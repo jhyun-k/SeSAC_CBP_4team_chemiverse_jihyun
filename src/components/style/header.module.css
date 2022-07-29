@@ -53,6 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 92vw;
   }
   .mainHeaderBox .inner .mainHeader h1 {
     font-size: 0px;
