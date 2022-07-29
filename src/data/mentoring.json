@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "자존감 향상",
+        "engName": "improvement in self-esteem",
+        "goal": "신입사원의 진입충격을 완화시켜주고 조직에 잘 적응해 자신의 능력을 개발하고 성장할 수 있도록 도움을 준다.",
+        "img": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+    },
+    {
+        "id": 2,
+        "name": "대인 관계 능력 증진",
+        "engName": "interpersonal skills",
+        "goal": "신입사원의 진입충격을 완화시켜주고 조직에 잘 적응해 자신의 능력을 개발하고 성장할 수 있도록 도움을 준다.",
+        "img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        "id": 3,
+        "name": "진로 계획",
+        "engName": "career planning",
+        "goal": "신입사원의 진입충격을 완화시켜주고 조직에 잘 적응해 자신의 능력을 개발하고 성장할 수 있도록 도움을 준다.",
+        "img": "https://images.unsplash.com/photo-1551836022-8b2858c9c69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        "id": 4,
+        "name": "업무에 대한 흥미",
+        "engName": "interest in work",
+        "goal": "신입사원의 진입충격을 완화시켜주고 조직에 잘 적응해 자신의 능력을 개발하고 성장할 수 있도록 도움을 준다.",
+        "img": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+    },
+    {
+        "id": 5,
+        "name": "자아 존중감",
+        "engName": "a sense of self-respect",
+        "goal": "신입사원의 진입충격을 완화시켜주고 조직에 잘 적응해 자신의 능력을 개발하고 성장할 수 있도록 도움을 준다.",
+        "img": "https://images.unsplash.com/photo-1644132246573-bc75ce0a2946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    }
+]
