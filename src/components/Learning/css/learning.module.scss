@@ -59,9 +59,6 @@ a {
 
 /* learnNav */
 .learnNav {
-    position: sticky;
-    top: 6vw;
-    z-index: 2;
     background-color: white;
     ul li {
         color: #6f76c1;
@@ -448,9 +445,6 @@ section {
 }
 
 @media (max-width: 720px) {
-    // .inner {
-    //     width: 100vw;
-    // }
     //Nav
     .learnNav {
         z-index: 2;

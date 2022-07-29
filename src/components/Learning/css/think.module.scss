@@ -1,7 +1,15 @@
 /* App */
+.cf::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
 
 .buttonArea {
     float: right;
+    margin-bottom: 20px;
 }
 
 /* editor */

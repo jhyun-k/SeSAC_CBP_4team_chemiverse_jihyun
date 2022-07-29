@@ -30,7 +30,7 @@ const ThinkEditor = ({ onCreate }) => {
     };
 
     return (
-        <div className={styles.ThinkEditor}>
+        <div className={`${styles.ThinkEditor} ${styles.cf}`}>
             <div className={styles.textareaDiv}>
                 <textarea
                     ref={contentInput}
