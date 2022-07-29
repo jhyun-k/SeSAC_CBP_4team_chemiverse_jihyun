@@ -42,62 +42,23 @@
   }
   .mainHeaderBox .inner .mainHeader {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    position: relative;
-  }
-  .mainHeaderBox .inner .mainHeader .login {
-    position: absolute;
-    top: 0.7vw;
-    right: 0.2vw;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.764vw;
-  }
-  .mainHeaderBox .inner .mainHeader .login * {
-    text-decoration: none;
-  }
-  .mainHeaderBox .inner .mainHeader .login li {
-    margin-left: 1vw;
-    color: #6c6c6c;
-    font-size: 0.82vw;
-    cursor: pointer;
-  }
-  .mainHeaderBox .inner .mainHeader .mainHeader {
-    display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .mainHeaderBox .inner .mainHeader .mainHeader h1 {
+  .mainHeaderBox .inner .mainHeader h1 {
     font-size: 0px;
   }
-  .mainHeaderBox .inner .mainHeader .mainHeader h1 a {
+  .mainHeaderBox .inner .mainHeader h1 a {
     display: block;
     width: 10.486vw;
     height: 2.639vw;
     background: url(../../../public/chemiverse_img/logo2.png) center;
     background-size: cover;
   }
-  .mainHeaderBox .inner .mainHeader .mainHeader .mainHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .mainHeaderBox .inner .mainHeader .mainHeader .mainHeader h1 {
-    font-size: 0px;
-  }
-  .mainHeaderBox .inner .mainHeader .mainHeader .mainHeader h1 a {
-    display: block;
-    width: 10.486vw;
-    height: 2.639vw;
-    background: url(../../../public/chemiverse_img/logo2.png) center;
-    background-size: cover;
-  }
-  .mainHeaderBox .searchIcon {
+  .searchIcon {
     display: none;
   }
-  .mainHeaderBox .searchBox {
+  .searchBox {
     padding: 0.5vw 1vw;
     border-radius: 0.5vw;
     background-color: #f3f3f3;
@@ -108,40 +69,41 @@
     width: 14.625vw;
     height: 2.083vw;
   }
-  .mainHeaderBox .searchBox input {
+  .searchBox input {
     width: 12.917vw;
     font-size: 0.347vw;
     background-color: #f3f3f3;
     outline: none;
     font-size: 0.5vw;
   }
-  .mainHeaderBox .searchBox button {
+  .searchBox button {
     width: 1.25vw;
     height: 1.25vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .mainHeaderBox .searchBox button * {
+  .searchBox button * {
     color: #838383;
   }
-  .mainHeaderBox .searchBox * {
+  .searchBox * {
     background-color: #f3f3f3;
   }
-  .mainHeaderBox .login_btn {
+  .login_btn {
     padding: 5px;
     margin: 0 5px;
     cursor: pointer;
   }
-  .mainHeaderBox .login_btn :hover {
+  .login_btn :hover {
     text-decoration: underline;
     font-weight: 700;
   }
-  .sidebar {
-    display: none;
-  }
 }
-@media screen and (min-width: 721px) and (max-width: 720px) {
+.sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
   .mainHeaderBox {
     height: 60px;
   }
