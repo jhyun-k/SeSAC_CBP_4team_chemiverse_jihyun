@@ -41,11 +41,6 @@
     "react-youtube": "^9.0.3",
     "reactstrap": "^9.1.2",
     "recharts": "^2.1.13",
-<<<<<<< HEAD
-    "resolve-url-loader": "^5.0.0",
-    "sass-loader": "^13.0.2",
-=======
->>>>>>> 2a889173026cdaf90a5bc41e2626efc5f3ea2ec9
     "slick-carousel": "^1.8.1",
     "source-map-js": "^1.0.2",
     "swiper": "^8.3.1",
