@@ -11,6 +11,11 @@ const TeacherCard = ({ teacherData }) => {
         <BsCheckLg />
       </p>
       <h1 className={styles.title}>강사소개</h1>
+      <h3 className={styles.subTitle}>
+        강사소개 설명 글 강사소개 설명 글 강사소개 설명 글 강사소개 설명 글
+        강사소개 설명 글<br></br>강사소개 설명 글 강사소개 설명 글 강사소개 설명
+        글 강사소개 설명 글
+      </h3>
       <ul className={teacher.teacherBox}>
         {teacherData.map((card, index) => (
           <li key={card.id} className={teacher.teacherList}>

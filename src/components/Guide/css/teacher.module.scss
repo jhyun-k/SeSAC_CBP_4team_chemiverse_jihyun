@@ -117,8 +117,8 @@
 .target {
   white-space: pre-wrap;
   width: 69.444vw;
-  height: 35.556vw;
-  margin: 0 auto;
+  height: 100vw;
+  margin: 0 auto 6vw;
   text-align: left;
   .profileBox {
     background: url(https://img.exc.co.kr/exc_home/common/pastor_bg.jpg)
@@ -243,6 +243,7 @@
   .target {
     .profileBox {
       .picture {
+        height: 37vw;
         img {
           border-bottom: 1px solid #d0d0d0;
         }

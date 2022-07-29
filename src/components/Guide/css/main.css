@@ -691,3 +691,8 @@ A HORIZONTAL event
   background: rgba(208, 208, 208, 0.3);
   background: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));
 }
+
+.fc-media-screen {
+  background-color: white;
+  padding: 1vw;
+}
