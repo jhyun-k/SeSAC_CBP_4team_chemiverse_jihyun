@@ -26,7 +26,7 @@ const ThinkItem = ({ onEdit, content, created_date, id }) => {
     };
 
     return (
-        <div className={styles.ThinkItem}>
+        <div className={`${styles.ThinkItem} ${styles.cf}`}>
             <div className={styles.content}>
                 {isEdit ? (
                     <>
