@@ -3,7 +3,7 @@
   position: relative;
   .messageBox {
     animation: fadein 4s;
-    width: 56vw;
+    width: 60vw;
     height: 28vw;
     margin: 5vw auto 0;
     position: relative;
@@ -23,7 +23,7 @@
     .message {
       font-size: 4.444vw;
       line-height: 1.7;
-      font-weight: 900;
+      font-weight: 700;
       color: #4d57c6;
       margin: 5vw 0;
       position: absolute;
@@ -96,9 +96,8 @@
         }
       }
       .message {
-        font-size: 7vw;
+        font-size: 6.5vw;
         line-height: 1.7;
-        font-weight: 900;
         color: #4d57c6;
         margin: 5vw 0;
         position: absolute;
