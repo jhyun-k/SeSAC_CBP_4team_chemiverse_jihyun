@@ -116,6 +116,7 @@ const LearningModule = ({ module }) => {
                             </div>
 
                             <div className={styles.textBox}>
+                                <FiYoutube />
                                 협업 시뮬레이션
                                 <br />
                                 in 메타버스

@@ -338,17 +338,17 @@ a {
   border-radius: 0 10px 10px 0;
   width: 100%;
   height: 100%;
-  margin-left: -10px;
+  margin-left: -0.694vw;
   border: 2px solid rgb(111, 118, 193);
   border-left: none;
   top: 50%;
-  font-size: 20px;
+  font-size: 1.389vw;
   flex-direction: column;
   line-height: 1;
 }
 .moduleLearning .learningContents .learningContent .textBox svg {
-  margin-bottom: 20px;
-  font-size: 50px;
+  margin-bottom: 1.389vw;
+  font-size: 3.472vw;
 }
 
 .sectionTitleArea {
@@ -516,10 +516,12 @@ section {
   }
   .moduleBox .moduleLearning .learningContents .learningContent {
     flex-direction: column;
-    margin-top: 2.389vw;
     border-radius: 10px;
     width: 100%;
     height: 100%;
+  }
+  .moduleBox .moduleLearning .learningContents .learningContent:nth-child(2) {
+    margin-top: 5vw;
   }
   .moduleBox .moduleLearning .learningContents .learningContent .imgBox {
     width: 101%;
@@ -537,6 +539,11 @@ section {
     border-radius: 0 0 10px 10px;
     margin-left: 0;
     margin-top: -5px;
+    flex-direction: row;
+  }
+  .moduleBox .moduleLearning .learningContents .learningContent .textBox svg {
+    margin-bottom: 0;
+    margin-right: 2.778vw;
   }
   > div iframe {
     width: 100%;
@@ -550,18 +557,25 @@ section {
     width: 1.389vw;
     margin: 1.389vw;
   }
-  .modalContent {
+  .modalBackdrop {
+    width: 100vw;
+    height: 100vh;
+  }
+  .modalBackdrop .modalContent {
     width: 100%;
-    height: 80%;
+    height: 110vw;
+    background-position: right -0.694vw top -0.694vw;
   }
-  .modalBackdrop .slide {
+  .modalBackdrop .modalContent .slide {
     margin: auto;
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
-  .modalBackdrop .slide > div {
-    width: 50vh;
-    margin: auto;
-  }
-  .modalBackdrop .slide > div > button {
-    margin: 0 -50px;
+  .modalBackdrop .modalContent .slide > div > button {
+    margin: 0 -3.472vw;
   }
 }/*# sourceMappingURL=learning.module.css.map */
