@@ -6,6 +6,7 @@ import SearchHeader from "../Post/SearchHeader";
 import Paginate from "../Post/Paginate";
 import data from "../../data/noticeData.json";
 import { BsCheckLg } from "react-icons/bs";
+import chemiStyle from "../ChemiStory/css/index.module.css";
 
 const Notice = () => {
   const [lists, setLists] = useState([]);
@@ -61,12 +62,12 @@ const Notice = () => {
   };
 
   return (
-    <div className={styles.post}>
-      <p className={styles.pin}>
+    <div className={`${styles.post} ${chemiStyle.JournalGoal}`}>
+      <p className={chemiStyle.pin}>
         <BsCheckLg />
       </p>
-      <h1 className={styles.title}>공지사항</h1>
-      <h3 className={styles.subTitle}>
+      <h1 className={chemiStyle.title}>공지사항</h1>
+      <h3 className={chemiStyle.subTitle}>
         공지사항 설명 글 공지사항 설명 글 공지사항 설명 글 공지사항 설명 글
         공지사항 설명 글<br></br>공지사항 설명 글 공지사항 설명 글 공지사항 설명
         글 공지사항 설명 글
