@@ -1,3 +1,25 @@
+button {
+  cursor: pointer;
+}
+
+.menuTitleBanner .pin {
+  font-size: 1.389vw;
+  margin-bottom: 1.034vw;
+  color: rgba(75, 80, 132, 0.721);
+}
+.menuTitleBanner .title {
+  display: inline-block;
+  text-align: center;
+  width: 69.444vw;
+  color: #6f76c1;
+  font-size: 2.083vw;
+  padding-bottom: 1.389vw;
+}
+.menuTitleBanner .subTitle {
+  padding-bottom: 5.556vw;
+  font-weight: 500;
+}
+
 /* PostTab */
 .main {
   padding-left: 6.944vw;
@@ -8,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-image: url(/public/chemiverse_img/bg-quiz-wrap.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 90%;
@@ -46,16 +68,20 @@
 }
 .post .writeBtn {
   float: right;
-  margin-top: 1.389vw;
-  width: 6.25vw;
-  height: 2.431vw;
-  background-color: #809cea;
-  color: #fff;
-  border-radius: 5px;
+  margin: 1.389vw 0.347vw 0.347vw;
+  width: 5.556vw;
+  padding: 0.694vw;
+  cursor: pointer;
+  border: 2px solid #6f76c1;
+  color: #6f76c1;
+  border-radius: 20px;
+  font-size: 0.9vw;
+  font-weight: 700;
 }
 .post .writeBtn:hover {
-  font-weight: 900;
-  transition: all 0.3s;
+  background-color: #6f76c1;
+  color: #fff;
+  transition: all 0.33s;
 }
 
 /* PostList */
@@ -77,6 +103,10 @@
   line-height: 3.472vw;
   border-bottom: 1px solid #e2e2e2;
 }
+.freePostList .null {
+  height: 34.72vw;
+  line-height: 34.72vw;
+}
 .freePostList .freePostTitle {
   background-color: #ececf7;
 }
@@ -92,6 +122,27 @@
   display: block;
   color: #333;
 }
+.freePostList .freePost .important {
+  color: red;
+  position: relative;
+  font-size: 0.972vw;
+}
+.freePostList .freePost .important::after {
+  content: "";
+  display: block;
+  width: 2.3vw;
+  height: 1.8vw;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.freePostList .freePost span.newText {
+  display: inline-block;
+  color: red;
+  margin-left: 1vw;
+}
 
 .postIndex {
   width: 3.472vw;
@@ -101,6 +152,9 @@
   width: 41.667vw;
   text-align: left;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .userName {
@@ -164,7 +218,7 @@
 
 /* pagination */
 .pagination {
-  margin-top: 6.944vw;
+  margin: 6.944vw 0;
 }
 .pagination .button {
   padding: 0 0.347vw;
@@ -205,7 +259,6 @@
 .postDetailWrap {
   width: 69.444vw;
   margin: auto;
-  height: 34.722vw;
   text-align: left;
   font-size: 1.042vw;
 }
@@ -254,7 +307,7 @@
   border: 2px solid #6f76c1;
   border-radius: 50px;
   color: #6f76c1;
-  margin: 5.208vw auto 0;
+  margin: 5.208vw auto 6.944vw;
   cursor: pointer;
 }
 .postDetailWrap .listBtn:hover {
@@ -279,13 +332,6 @@
   font-size: 1.042vw;
   border-radius: 5px;
 }
-.writeForm button {
-  width: 6.25vw;
-  height: 2.431vw;
-  background-color: #809cea;
-  color: #fff;
-  border-radius: 5px;
-}
 .writeForm .titleInput {
   width: 100%;
   height: 3.472vw;
@@ -293,8 +339,304 @@
 .writeForm .btnBox {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2.778vw;
+  margin: 2.778vw 0;
 }
-.writeForm .btnBox .submitBtn {
-  margin-left: 1.389vw;
+.writeForm .btnBox .radioWrap {
+  width: 5.556vw;
+  padding: 0.694vw;
+  margin: 0.347vw;
+  font-size: 0.9vw;
+  font-weight: 700;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.writeForm .btnBox .radioWrap input[type=checkbox],
+.writeForm .btnBox .radioWrap input[type=checkbox]:checked {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 0.5vw;
+}
+.writeForm .btnBox .submitBtn,
+.writeForm .btnBox .temporaryBtn {
+  margin: 0.347vw;
+  width: 5.556vw;
+  padding: 0.694vw;
+  cursor: pointer;
+  border: 2px solid #6f76c1;
+  color: #6f76c1;
+  border-radius: 20px;
+  font-size: 0.9vw;
+  font-weight: 700;
+}
+.writeForm .btnBox .submitBtn:hover,
+.writeForm .btnBox .temporaryBtn:hover {
+  background-color: #6f76c1;
+  color: #fff;
+  transition: all 0.33s;
+}
+
+@media screen and (max-width: 720px) {
+  .menuTitleBanner .pin {
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .menuTitleBanner .title {
+    display: inline-block;
+    text-align: center;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 4.5vw;
+    padding-bottom: 8vw;
+  }
+  .main {
+    padding-left: 6.944vw;
+    padding-right: 6.25vw;
+    margin-bottom: 0;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/public/chemiverse_img/bg-quiz-wrap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .mainTxt {
+    display: flex;
+    align-items: center;
+  }
+  .mainTxt span {
+    display: inline-block;
+    color: #fff;
+  }
+  .mainTxt span:first-child {
+    font-size: 6vw;
+    font-weight: 700;
+    margin-right: 2.083vw;
+  }
+  .mainTxt span:last-child {
+    display: none;
+  }
+  .mainImg {
+    width: 30vw;
+    height: auto;
+  }
+  /* post */
+  .post {
+    width: 100vw;
+  }
+  .post .writeBtn {
+    width: 20.833vw;
+    height: 8.333vw;
+    font-size: 2.778vw;
+    margin-right: 6.944vw;
+  }
+  /* postList */
+  .freePostList {
+    width: 90vw;
+    font-size: 3.333vw;
+  }
+  .freePostList li {
+    flex-direction: column;
+    height: 22.222vw;
+    line-height: normal;
+    padding: 4.167vw 0;
+  }
+  .freePostList .freePostTitle {
+    display: none;
+  }
+  .freePostList .freePost {
+    position: relative;
+  }
+  .freePostList .freePost .postIndex {
+    display: none;
+  }
+  .freePostList .freePost .postTitle {
+    width: 95%;
+  }
+  .freePostList .freePost .postTitle span.newText {
+    display: inline-block;
+    color: red;
+    margin-left: 1vw;
+  }
+  .freePostList .freePost .userName {
+    display: inline;
+    width: auto;
+    align-self: flex-start;
+    font-size: 2.5vw;
+  }
+  .freePostList .freePost .date {
+    display: inline;
+    width: auto;
+    align-self: flex-start;
+    font-size: 2.5vw;
+  }
+  .freePostList .freePost .view {
+    display: none;
+  }
+  .freePostList .freePost .like {
+    display: none;
+  }
+  .freePostList .freePost .postIndex.important {
+    display: block;
+    font-size: 2vw;
+    position: absolute;
+    top: 1.39vw;
+    width: 5vw;
+  }
+  .freePostList .freePost .postIndex.important::after {
+    display: none;
+  }
+  /* searchHeader */
+  .searchHeader {
+    width: 90vw;
+  }
+  .searchHeader .searchBarBox {
+    width: 100%;
+    margin-bottom: 2.083vw;
+  }
+  .searchHeader .searchBarBox .searchBar {
+    width: 100%;
+    height: 8.333vw;
+    display: flex;
+  }
+  .searchHeader .searchBarBox .searchBar .option {
+    width: 20%;
+    font-size: 2.5vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput {
+    width: 80%;
+    font-size: 3vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput::-moz-placeholder {
+    font-size: 3vw;
+    text-indent: 2.083vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput:-ms-input-placeholder {
+    font-size: 3vw;
+    text-indent: 2.083vw;
+  }
+  .searchHeader .searchBarBox .searchBar .searchInput::placeholder {
+    font-size: 3vw;
+    text-indent: 2.083vw;
+  }
+  .searchHeader .totalPost {
+    font-size: 2.361vw;
+  }
+  /* pagination */
+  .pagination {
+    margin-top: 13.889vw;
+  }
+  .pagination .button {
+    font-size: 4.861vw;
+    line-height: 4.861vw;
+    padding: 0 1.2vw;
+    margin: 0 1.2vw;
+  }
+  .pagination .angleBtn {
+    font-size: 4.861vw;
+    vertical-align: top;
+  }
+  /* PostDetail */
+  .postDetailWrap {
+    width: 90vw;
+    height: auto;
+    font-size: 3.472vw;
+  }
+  .postDetailWrap .headerBox {
+    height: auto;
+  }
+  .postDetailWrap .headerBox .title {
+    font-size: 3.472vw;
+    line-height: 1.3;
+  }
+  .postDetailWrap .headerBox .postInfo {
+    font-size: 2.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .postDetailWrap .headerBox .postInfo span {
+    margin-right: 2.5vw;
+  }
+  .postDetailWrap .fileBox {
+    font-size: 2.5vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  .postDetailWrap .listBtn {
+    width: 20.833vw;
+    height: 8.333vw;
+    font-size: 2.778vw;
+  }
+  /* WritePostPage */
+  .writeForm {
+    width: 90vw;
+    font-size: 2.778vw;
+  }
+  .writeForm .titleInput {
+    height: 8.333vw;
+    font-size: 2.778vw;
+  }
+  .writeForm .btnBox {
+    display: flex;
+    justify-content: center;
+  }
+  .writeForm .btnBox .radioWrap {
+    width: 20vw;
+    height: 7vw;
+    margin: 2vw;
+    font-size: 3vw;
+    font-weight: 700;
+  }
+  .writeForm .btnBox .submitBtn,
+.writeForm .btnBox .temporaryBtn {
+    width: 20vw;
+    height: 7vw;
+    padding: 0.694vw;
+    margin: 2vw;
+    cursor: pointer;
+    border: 3px solid #6f76c1;
+    border-radius: 5vw;
+    font-size: 3vw;
+    font-weight: 700;
+    background-color: #6f76c1;
+    color: #fff;
+    margin-bottom: 10vw;
+  }
+}
+/* secret */
+.secretPage {
+  font-size: 1.111vw;
+}
+.secretPage .message {
+  height: 10.417vw;
+  width: 34.722vw;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 5.208vw auto 0;
+  line-height: 10.417vw;
+}
+.secretPage .listBtn {
+  display: block;
+  width: 10.417vw;
+  height: 3.472vw;
+  font-size: 1.042vw;
+  background: #fff;
+  border: 2px solid #6f76c1;
+  border-radius: 50px;
+  color: #6f76c1;
+  margin: 5.208vw auto 0;
+  cursor: pointer;
+}
+.secretPage .listBtn:hover {
+  background-color: #6f76c1;
+  color: #fff;
+  transition: all 0.3s;
 }/*# sourceMappingURL=PostTab.module.css.map */

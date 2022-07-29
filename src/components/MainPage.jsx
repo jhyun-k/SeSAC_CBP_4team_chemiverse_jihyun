@@ -3,103 +3,194 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import Loginok from "./Login/Loginok";
 import { useState } from "react";
-import mainPageStyle from "./style/mainPage.module.css";
+import styles from "./style/mainPage.module.css";
+import { IoIosArrowForward } from "react-icons/io";
 
 const MainPage = () => {
-    const mainList = [
-        { content: "Connect With 바로가기", href: "/" },
-        { content: "교육장 이동", href: "./move" },
-        { content: "교육안내", href: "./guide" },
-        { content: "진단", href: "./diagnosis" },
-        { content: "역량학습", href: "./learning" },
-        { content: "ChemiStory", href: "./chemiStory" },
-        { content: "멘토링", href: "./mentoring" },
-        { content: "게시판", href: "./post" },
+    const mobileMenuList = [
+        {
+            name: "교육장 이동",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/img-login.png",
+            link: "./move",
+        },
+        {
+            name: "Connect With",
+            src:
+                process.env.PUBLIC_URL +
+                "/chemiverse_img/img-pop-checklist.png",
+            link: "/",
+        },
+        {
+            name: "교육 안내",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/img-pop-board.png",
+            link: "./guide",
+        },
+        {
+            name: "진단",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/Group 59 Copy.png",
+            link: "./diagnosis",
+        },
+        {
+            name: "역량학습",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/Group 230.png",
+            link: "./learning",
+        },
+        {
+            name: "ChemiStory",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/옷가게.png",
+            link: "./chemiStory",
+        },
+        {
+            name: "게시판",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/Group 254.png",
+            link: "./post/freepost",
+        },
+        {
+            name: "멘토링",
+            src: process.env.PUBLIC_URL + "/chemiverse_img/Group 227.png",
+            link: "./mentoring",
+        },
     ];
-
     return (
-        <div className={mainPageStyle.mainPage}>
-            <ul>
-                {mainList.map((element, index) => {
-                    return (
-                        <li key={index}>
-                            <Link to={element.href}>{element.content}</Link>
-                        </li>
-                    );
-                })}
-            </ul>
-            <img
-                src={process.env.PUBLIC_URL + "/chemiverse_img/img-main.png"}
-                usemap="#image-map"
-                alt=""
-            />
-            <map name="image-map">
-                <area
-                    target=""
-                    alt="ConnectWith"
-                    title="ConnectWith"
-                    href=""
-                    coords="860,239,950,172,947,89,874,36,803,85,759,55,711,92,744,178"
-                    shape="poly"
+        <>
+            <div className={styles.mainPage}>
+                <div className={styles.hoverBox}>
+                    <div className={`${styles.box1} ${styles.box}`}>
+                        <div
+                            className={`${styles.connectWith} ${styles.common}`}
+                        >
+                            <Link to="/">
+                                <p>Connect With 바로가기 설명글입니다.</p>
+                                <span>Connect With 바로가기</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box2} ${styles.box}`}>
+                        <div className={`${styles.move} ${styles.common}`}>
+                            <Link to="./move">
+                                <p>교육장 이동 설명글입니다.</p>
+                                <span>교육장 이동</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box3} ${styles.box}`}>
+                        <div className={`${styles.guide} ${styles.common}`}>
+                            <Link to="./guide">
+                                <p>교육 안내 설명글입니다.</p>
+                                <span>교육 안내</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box4} ${styles.box}`}>
+                        <div className={`${styles.learning} ${styles.common}`}>
+                            <Link to="./learning">
+                                <p>역량 학습 설명글입니다.</p>
+                                <span>역량 학습</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box5} ${styles.box}`}>
+                        <div
+                            className={`${styles.chemiStory} ${styles.common}`}
+                        >
+                            <Link to="./chemiStory">
+                                <p>Chemi Story 설명글입니다.</p>
+                                <span>Chemi Story</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box6} ${styles.box}`}>
+                        <div className={`${styles.post} ${styles.common}`}>
+                            <Link to="./post/freepost">
+                                <p>궁금한 점을 물어보세요.</p>
+                                <span>게시판</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box7} ${styles.box}`}>
+                        <div className={`${styles.mentoring} ${styles.common}`}>
+                            <Link to="./mentoring">
+                                <p>멘토링 설명글입니다.</p>
+                                <span>멘토링</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={`${styles.box8} ${styles.box}`}>
+                        <div className={`${styles.diagnosis} ${styles.common}`}>
+                            <Link to="./diagnosis">
+                                <p>진단 설명글입니다.</p>
+                                <span>진단</span>
+                                <IoIosArrowForward className={styles.icon} />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <img
+                    className={styles.img1}
+                    src={"/chemiverse_img/img-main-cloud03.png"}
+                    alt="img-main-cloud03"
                 />
-                <area
-                    target=""
-                    alt="move"
-                    title="move"
-                    href=""
-                    coords="483,266,308,369,428,471,601,365"
-                    shape="poly"
+                <img
+                    className={styles.img2}
+                    src={"/chemiverse_img/img-main-cloud03.png"}
+                    alt="img-main-cloud03"
                 />
-                <area
-                    target=""
-                    alt="guide"
-                    title="guide"
-                    href=""
-                    coords="1131,353,1213,321,1213,242,1092,171,1014,231,1016,293"
-                    shape="poly"
+                <img
+                    className={styles.img3}
+                    src={"/chemiverse_img/img-main-cloud03.png"}
+                    alt="img-main-cloud03"
                 />
-                <area
-                    target=""
-                    alt="diagnosis"
-                    title="diagnosis"
-                    href=""
-                    coords="1265,381,1370,320,1423,355,1412,470,1325,520,1256,493"
-                    shape="poly"
-                />
-                <area
-                    target=""
-                    alt="learning"
-                    title="learning"
-                    href=""
-                    coords="731,480,833,541,907,486,907,416,812,355,736,404"
-                    shape="poly"
-                />
-                <area
-                    target=""
-                    alt="chemiStory"
-                    title="chemiStory"
-                    href=""
-                    coords="628,461,496,537,494,623,548,651,674,593,676,517"
-                    shape="poly"
-                />
-                <area
-                    target=""
-                    alt="freepost"
-                    title="freepost"
-                    href=""
-                    coords="816,587,743,622,737,709,892,790,966,743,962,676"
-                    shape="poly"
-                />
-                <area
-                    target=""
-                    alt="mentoring"
-                    title="mentoring"
-                    href=""
-                    coords="956,398,957,600,1081,663,1131,647,1128,493"
-                    shape="poly"
-                />
-            </map>
-        </div>
+            </div>
+            <div className={styles.mobileMain}>
+                <div className={styles.mainBanner}>
+                    <img
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/chemiverse_img/bg-gnb-noshadow.png"
+                        }
+                        alt=""
+                    />
+                    <p>Chemiverse</p>
+                    <p>On & Up</p>
+                </div>
+                <div className={styles.menuList}>
+                    <ul>
+                        {mobileMenuList.map((ele, index) => {
+                            return (
+                                <li className={styles.menu} key={index}>
+                                    <Link to={ele.link}>
+                                        <p className={styles.menuName}>
+                                            {ele.name}
+                                        </p>
+                                        <p className={styles.menuIconBox}>
+                                            <img
+                                                src={ele.src}
+                                                alt=""
+                                                className={styles.menuIcon}
+                                            />
+                                            <img
+                                                src={
+                                                    process.env.PUBLIC_URL +
+                                                    "/chemiverse_img/ic-arrow-next.png"
+                                                }
+                                                alt=""
+                                            />
+                                        </p>
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            </div>
+        </>
     );
 };
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Main from "./components/Main";
@@ -7,10 +7,11 @@ import { useState, useEffect } from "react";
 import Welcome from "./components/Home/Welcome";
 import Ready from "./components/Home/Ready";
 import Introduce from "./components/Home/Introduce";
-import HomeNotice from "./components/HomeNotice/HomeNotice";
 import Loginok from "./components/Login/Loginok";
 import FindID from "./components/Login/FindID";
 import DetailRedirect from "./components/Login/DetailRedirect";
+import Board from "./components/Board/Board";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -49,7 +50,6 @@ function App() {
             window.removeEventListener("scroll", handleFollow);
         };
     });
-
     useEffect(() => {}, [auth]);
 
     return (
@@ -57,19 +57,19 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route
+                        path="main/*"
+                        element={<DetailRedirect auth={auth} />}
+                    />
+                    <Route
                         path="/main/*"
                         element={<Main auth={auth} setAuth={setAuth} />}
                     ></Route>
-                    <Route
-                        path="main/*"
-                        element={<DetailRedirect auth={auth} />}
-                    />{" "}
                     {/* 대체 어떻게 props를 내릴 수 있단말인가 */}
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/welcome" element={<Welcome />}></Route>
                     <Route path="/introduce" element={<Introduce />}></Route>
                     <Route path="/ready" element={<Ready />}></Route>
-                    <Route path="board/notice" element={<HomeNotice />}></Route>
+                    <Route path="/board/*" element={<Board />}></Route>
                     <Route
                         path="/login"
                         element={
@@ -86,6 +86,7 @@ function App() {
                         setIsOpen={setIsOpen}
                     />
                 </Routes>
+                <Footer />
             </BrowserRouter>
             {/* <button>top</button> */}
             <button

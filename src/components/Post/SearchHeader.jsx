@@ -6,15 +6,14 @@ const SearchHeader = ({
   data,
   onChangeSearch,
   searchRef,
-  onChangeSearchCategory,
+  onChangeCategory,
 }) => {
   return (
     <div className={styles.searchHeader}>
       <SearchBar
-        data={data}
         onChangeSearch={onChangeSearch}
         searchRef={searchRef}
-        onChangeSearchCategory={onChangeSearchCategory}
+        onChangeCategory={onChangeCategory}
       />
       <p className={styles.totalPost}>총 게시물 {data.length}개</p>
     </div>

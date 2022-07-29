@@ -1,0 +1,36 @@
+.main {
+  padding-left: 6.944vw;
+  padding-right: 6.25vw;
+  margin-bottom: 3.472vw;
+  width: 100vw;
+  height: 11.806vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../../../public/chemiverse_img/bg-quiz-wrap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+.mainTxt {
+  display: flex;
+  align-items: center;
+}
+.mainTxt span {
+  display: inline-block;
+  color: #fff;
+  &:first-child {
+    font-size: 3.333vw;
+    font-weight: 700;
+    margin-right: 2.083vw;
+  }
+  &:last-child {
+    font-size: 0.833vw;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+}
+.mainImg {
+  width: 15.833vw;
+  height: auto;
+}

@@ -2,18 +2,42 @@ import React from 'react';
 import styles from './css/idpw.module.css';
 import { useState } from 'react';
 import PwFind from './PwFind';
+import Header from '../Header';
 
 const FindID = ({ setIsOpen }) => {
   const [modalShown, toggleModal] = useState(false);
+  const [submit,setSubmit]= useState(true);
+  const [inputName, setInputName] = useState()
+  const [inputTel, setInputTel] = useState()
+
+  const findId = (e) =>{
+    e.preventDefault()
+    if(inputName === '김제트' && inputTel === '010'){
+      alert('입력하신 번호로 아이디가 전송되었습니다.')
+      setSubmit(true)
+      
+    }else{
+        setSubmit(false)
+        return false
+      }
+    }
+
+    const onchangeName = (e)=>{
+      setInputName(e.currentTarget.value);
+    }
+    const onchangeTel = (e)=>{
+      setInputTel(e.target.value);
+    }
 
   return (
+    <div>
+      <Header />
     <div className={styles.inner}>
       <div className={styles.main}>
         <div className={styles.mainTxt}>
           <span>아이디 찾기 / 비밀번호 변경</span>
           <span>
-            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글<br></br>
-            컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글 컨텐츠 설명글
+            아이디 찾기 및 비밀번호 변경
           </span>
         </div>
         <img
@@ -40,6 +64,7 @@ const FindID = ({ setIsOpen }) => {
                 type='text'
                 placeholder='이름을 입력해주세요'
                 id='이름'
+                onChange={onchangeName} value={inputName|| ''}
               />
             </div>
             <div className={styles.mini_unit}>
@@ -51,9 +76,11 @@ const FindID = ({ setIsOpen }) => {
                 type='text'
                 placeholder='전화번호를 입력해주세요'
                 id='전화번호'
+                onChange={onchangeTel} value={inputTel|| ''}
               />
             </div>
-            <button className={styles.find_btn}>아이디 찾기</button>
+            <button className={styles.find_btn} onClick={(e)=>{findId(e)}}>아이디 찾기</button>
+            <h5 className={submit===true?`${styles.login_alert}`:`${styles.login_alert_view}`}>입력한 정보가 올바르지 않습니다.</h5>
           </div>
         </div>{' '}
         {/* 아이디찾기 */}
@@ -117,6 +144,7 @@ const FindID = ({ setIsOpen }) => {
           toggleModal(false);
         }}
       ></PwFind>
+    </div>
     </div>
   );
 };

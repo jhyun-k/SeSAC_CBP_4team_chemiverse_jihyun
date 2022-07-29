@@ -10,9 +10,7 @@ function Diary() {
     const created_date = new Date().getTime();
 
     const newItem = {
-      author,
       content,
-      emotion,
       created_date,
       id : dataId.current
     }
@@ -21,7 +19,6 @@ function Diary() {
   }
 
   const onRemove = (targetId)=>{
-    console.log(`${targetId+1}번째 일기가 삭제되었습니다.`);
     const newDataList = data.filter((it)=>it.id !==targetId);
     setData(newDataList);
   }

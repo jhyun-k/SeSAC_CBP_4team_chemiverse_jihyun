@@ -43,40 +43,17 @@
 }
 
 //ChemiNav
-.nav ul li{
-    color:#6F76C1;
-    border: 0.139vw solid #6F76C1;
-    margin-bottom: 3.472vw;
-    width: 17.361vw;
-    height: 3.125vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.181vw;
-    font-weight: 500;
-    *{
-      text-decoration: none;
-    }
-    &:first-child{
-      border-top-left-radius: 0.347vw;
-      border-bottom-left-radius: 0.347vw;
-      border-right: none;
-    }
-    &:nth-child(2){
-      border-right: none;
-    }
-    &:last-child{
-      border-top-right-radius: 0.347vw;
-      border-bottom-right-radius: 0.347vw;
-      border-left: none;
-    }
-    :hover{
-      color:#424888;
-      transition: all 0.2s;
-    }
-  }
-
-.navbtn {
+.nav ul li {
+  color: #6f76c1;
+  border: 2px solid #6f76c1;
+  margin-bottom: 3.472vw;
+  width: 17.361vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.181vw;
+  font-weight: 500;
   a {
     display: block;
     width: 100%;
@@ -85,32 +62,56 @@
     justify-content: center;
     align-items: center;
   }
+  * {
+    text-decoration: none;
+  }
+  &:first-child {
+    border-top-left-radius: 0.347vw;
+    border-bottom-left-radius: 0.347vw;
+    border-right: none;
+  }
+  &:nth-child(2) {
+    border-right: none;
+  }
+  &:last-child {
+    border-top-right-radius: 0.347vw;
+    border-bottom-right-radius: 0.347vw;
+    border-left: none;
+  }
+  :hover {
+    color: #424888;
+    transition: all 0.2s;
+  }
+}
+
+.navbtn {
   &.on {
     color: #424888;
     font-weight: 900;
     font-size: 1.25vw;
+    transition: all 0.2s;
   }
 }
 
 //WhatIsChemiStory
-.WhatIsChemiStory{
-  width: 83.333vw;
+.WhatIsChemiStory {
+  width: 69.444vw;
   margin: 0.694vw auto;
-  .pin{
+  .pin {
     font-size: 1.389vw;
     margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
-  .title{
+  .title {
     display: inline-block;
     text-align: center;
-    width: 83.333vw;
-    color: #6F76C1;
+    width: 69.444vw;
+    color: #6f76c1;
     font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
     padding-bottom: 5.556vw;
   }
-  .content{
+  .content {
     width: 69.444vw;
     height: 20.833vw;
     background-color: #f4f4f4;
@@ -120,24 +121,24 @@
     align-items: center;
     justify-content: center;
   }
-  .subTitle{
+  .subTitle {
     display: flex;
     align-items: center;
     line-height: 1.5;
     border-bottom: 1px solid #c8c8c8;
     padding-bottom: 1.389vw;
     margin-bottom: 2.778vw;
-    .img{
+    .img {
       display: flex;
       justify-content: flex-start;
       width: 3.472vw;
       height: auto;
       margin-right: 0.694vw;
     }
-    .module{
+    .module {
       flex-direction: column;
       align-items: flex-start;
-      h1{
+      h1 {
         font-size: 1.667vw;
         font-weight: 700;
       }
@@ -146,19 +147,19 @@
 }
 
 //WriteChemiStory
-.WriteChemiStory{
-  width: 83.333vw;
+.WriteChemiStory {
+  width: 69.444vw;
   margin: 0.694vw auto;
-  .subFlex{
+  .subFlex {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #c8c8c8;
     padding-bottom: 1.389vw;
     margin-bottom: 2.778vw;
     align-items: baseline;
-    .printBtn{
+    .printBtn {
       display: inline-block;
-      background-color: #6F76C1;
+      background-color: #6f76c1;
       width: 4.167vw;
       height: 1.736vw;
       color: #fff;
@@ -166,61 +167,61 @@
       border-radius: 0.347vw;
       font-size: 0.87vw;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: rgba(119, 125, 199, 0.721);
       }
     }
   }
-  .pin{
+  .pin {
     font-size: 1.389vw;
     margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
-  .title{
+  .title {
     display: inline-block;
     text-align: center;
-    width: 83.333vw;
-    color: #6F76C1;
+    width: 69.444vw;
+    color: #6f76c1;
     font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
     padding-bottom: 5.556vw;
   }
-  .subTitle{
+  .subTitle {
     display: flex;
     align-items: center;
     line-height: 1.5;
-    .img{
+    .img {
       display: flex;
       justify-content: flex-start;
       width: 3.472vw;
       height: auto;
       margin-right: 0.694vw;
     }
-    .module{
+    .module {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      h1{
+      h1 {
         font-size: 1.667vw;
         font-weight: 700;
       }
-      h2{
+      h2 {
         font-size: 1.034vw;
         font-weight: 500;
       }
     }
   }
-  .roadMap{
+  .roadMap {
     margin-top: 4.861vw;
     display: inline-block;
     display: flex;
     align-items: center;
     justify-content: left;
-    .year{
+    .year {
       width: 14.861vw;
-      height: 3.750vw;
+      height: 3.75vw;
       border-radius: 2.083vw;
-      background-color: #6F76C1;
+      background-color: #6f76c1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -229,34 +230,284 @@
       color: #fff;
       margin-right: 1.389vw;
     }
-    .yearContent{
+    .yearContent {
       font-size: 1.389vw;
       font-weight: 700;
-      color: #565DAB;
+      color: #565dab;
     }
   }
 }
 
 //Journal,Goal
-.JournalGoal{
-  width: 83.333vw;
+.JournalGoal {
+  width: 69.444vw;
   margin: 0.694vw auto;
-  .pin{
+  .pin {
     font-size: 1.389vw;
     margin-bottom: 1.034vw;
     color: rgba(75, 80, 132, 0.721);
   }
-  .title{
+  .title {
     display: inline-block;
     text-align: center;
-    width: 83.333vw;
-    color: #6F76C1;
+    width: 69.444vw;
+    color: #6f76c1;
     font-size: 2.083vw;
     // border-bottom: 2px solid #c8c8c8;
     padding-bottom: 1.389vw;
   }
-  .subTitle{
+  .subTitle {
     padding-bottom: 5.556vw;
     font-weight: 500;
+  }
+}
+
+//반응형***************************************************************
+
+@media screen and (max-width: 719px) {
+  //ChemiStory
+  .chemistory {
+    .main {
+      padding-left: 6.944vw;
+      padding-right: 6.25vw;
+      margin-bottom: 0;
+      width: 100vw;
+      height: 20vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 90%;
+    }
+    .mainTxt {
+      display: flex;
+      align-items: center;
+    }
+    .mainTxt span {
+      display: inline-block;
+      color: #fff;
+      &:first-child {
+        font-size: 6vw;
+        font-weight: 700;
+        margin-right: 2.083vw;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+    .mainImg {
+      width: 30vw;
+      height: auto;
+    }
+  }
+
+  //ChemiNav
+  .nav ul li {
+    color: #6f76c1;
+    border: none;
+    margin-bottom: 5vw;
+    width: 100%;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 500;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    * {
+      text-decoration: none;
+    }
+  }
+
+  .navbtn {
+    &.on {
+      color: #424888;
+      font-weight: 700;
+      font-size: 3vw;
+      transition: all 0.2s;
+      border-bottom: 5px solid #424888;
+    }
+  }
+  //캐미스토리란?
+  .WhatIsChemiStory {
+    width: 83.333vw;
+    margin: 0.694vw auto;
+    .content {
+      width: 69.444vw;
+      height: 45vw;
+      background-color: #f4f4f4;
+      padding: 2vw;
+      margin: auto;
+      margin-bottom: 9vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2vw;
+    }
+    .subFlex {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #c8c8c8;
+      padding-bottom: 1.389vw;
+      margin-bottom: 2.778vw;
+      align-items: baseline;
+      .printBtn {
+        display: none;
+      }
+    }
+    .pin {
+      font-size: 3vw;
+      margin-bottom: 1.5vw;
+      color: rgba(75, 80, 132, 0.721);
+    }
+    .title {
+      display: inline-block;
+      text-align: center;
+      width: 69.444vw;
+      color: #6f76c1;
+      font-size: 4.5vw;
+      // border-bottom: 2px solid #c8c8c8;
+      padding-bottom: 8vw;
+    }
+    .subTitle {
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      .img {
+        display: flex;
+        justify-content: flex-start;
+        width: 10vw;
+        height: auto;
+        margin-right: 0.694vw;
+      }
+      .module {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+          font-size: 3.3vw;
+          font-weight: 700;
+        }
+        h2 {
+          font-size: 2.3vw;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  //캐미스토리 작성
+  .WriteChemiStory {
+    width: 83.333vw;
+    margin: 0.694vw auto;
+    .subFlex {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #c8c8c8;
+      padding-bottom: 1.389vw;
+      margin-bottom: 2.778vw;
+      align-items: baseline;
+      .printBtn {
+        display: none;
+      }
+    }
+    .pin {
+      font-size: 3vw;
+      margin-bottom: 1.5vw;
+      color: rgba(75, 80, 132, 0.721);
+    }
+    .title {
+      display: inline-block;
+      text-align: center;
+      width: 69.444vw;
+      color: #6f76c1;
+      font-size: 4.5vw;
+      // border-bottom: 2px solid #c8c8c8;
+      padding-bottom: 8vw;
+    }
+    .subTitle {
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      .img {
+        display: flex;
+        justify-content: flex-start;
+        width: 10vw;
+        height: auto;
+        margin-right: 0.694vw;
+      }
+      .module {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+          font-size: 3.3vw;
+          font-weight: 700;
+        }
+        h2 {
+          font-size: 2.3vw;
+          font-weight: 600;
+        }
+      }
+    }
+    .roadMap {
+      margin-top: 4.861vw;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // flex-direction: column;
+      .year {
+        width: 18vw;
+        height: 7vw;
+        border-radius: 5vw;
+        background-color: #6f76c1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vw;
+        font-weight: 700;
+        color: #fff;
+      }
+      .yearContent {
+        font-size: 2.5vw;
+        font-weight: 700;
+        color: #565dab;
+      }
+    }
+  }
+  //Journal,Goal
+  .JournalGoal {
+    width: 83.333vw;
+    margin: 0.694vw auto;
+    .pin {
+      font-size: 3vw;
+      margin-bottom: 1.5vw;
+      color: rgba(75, 80, 132, 0.721);
+    }
+    .title {
+      display: inline-block;
+      text-align: center;
+      width: 69.444vw;
+      color: #6f76c1;
+      font-size: 4.5vw;
+      // border-bottom: 2px solid #c8c8c8;
+      padding-bottom: 8vw;
+    }
+    .subTitle {
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      justify-content: center;
+      font-size: 2vw;
+    }
   }
 }
