@@ -2,6 +2,7 @@
   "name": "project04",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://choyj109.github.io/real-project/",
   "dependencies": {
     "@chartiful/react-chart-builder": "^0.1.6",
     "@chartiful/react-horizontal-bar-graph": "^0.1.6",
