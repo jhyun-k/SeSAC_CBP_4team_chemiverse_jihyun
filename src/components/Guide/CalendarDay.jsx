@@ -116,7 +116,6 @@ const CalendarDay = () => {
         selectable={true}
         select={handleDateSelect}
         eventClick={handleEventClick}
-        height="45vw"
         eventDidMount={handleTooltip}
         eventBackgroundColor="#9498D1"
         eventBorderColor="#9498D1"

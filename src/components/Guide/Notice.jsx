@@ -1,21 +1,22 @@
-import React from 'react';
-import styles from '../Post/css/PostTab.module.css';
-import { useRef, useState, useEffect } from 'react';
-import PostList from '../Post/PostList';
-import SearchHeader from '../Post/SearchHeader';
-import Paginate from '../Post/Paginate';
-import data from '../../data/noticeData.json';
+import React from "react";
+import styles from "../Post/css/PostTab.module.css";
+import { useRef, useState, useEffect } from "react";
+import PostList from "../Post/PostList";
+import SearchHeader from "../Post/SearchHeader";
+import Paginate from "../Post/Paginate";
+import data from "../../data/noticeData.json";
+import { BsCheckLg } from "react-icons/bs";
 
 const Notice = () => {
   const [lists, setLists] = useState([]);
   const [page, setPage] = useState(1);
-  const [category, setCategory] = useState('전체');
+  const [category, setCategory] = useState("전체");
 
   const LIST_PER_PAGE = 10;
   const startNum = (page - 1) * LIST_PER_PAGE;
   const endNum = startNum + LIST_PER_PAGE;
 
-  const searchRef = useRef('');
+  const searchRef = useRef("");
 
   useEffect(() => {
     const postLatest = [...data].reverse();
@@ -31,9 +32,9 @@ const Notice = () => {
     const search = searchRef.current.value;
     const postLatest = [...data].reverse();
 
-    if (search === null || search === '') {
+    if (search === null || search === "") {
       setLists(postLatest);
-    } else if (category === '전체' || category === undefined) {
+    } else if (category === "전체" || category === undefined) {
       const filterData = [...postLatest].filter(
         (ele) =>
           ele.title.includes(search) ||
@@ -41,17 +42,17 @@ const Notice = () => {
           ele.userId.includes(search)
       );
       setLists(filterData);
-    } else if (category === '제목') {
+    } else if (category === "제목") {
       const filterData = [...postLatest].filter((ele) =>
         ele.title.includes(search)
       );
       setLists(filterData);
-    } else if (category === '작성자') {
+    } else if (category === "작성자") {
       const filterData = [...postLatest].filter((ele) =>
         ele.userId.includes(search)
       );
       setLists(filterData);
-    } else if (category === '내용') {
+    } else if (category === "내용") {
       const filterData = [...postLatest].filter((ele) =>
         ele.body.includes(search)
       );
@@ -61,6 +62,15 @@ const Notice = () => {
 
   return (
     <div className={styles.post}>
+      <p className={styles.pin}>
+        <BsCheckLg />
+      </p>
+      <h1 className={styles.title}>공지사항</h1>
+      <h3 className={styles.subTitle}>
+        공지사항 설명 글 공지사항 설명 글 공지사항 설명 글 공지사항 설명 글
+        공지사항 설명 글<br></br>공지사항 설명 글 공지사항 설명 글 공지사항 설명
+        글 공지사항 설명 글
+      </h3>
       <SearchHeader
         data={lists}
         onChangeSearch={onChangeSearch}

@@ -7,7 +7,7 @@ import teacherData from "../../data/teacherData.json";
 
 const Teacher = () => {
   return (
-    <div className={styles.WhatIsChemiStory}>
+    <div className={styles.JournalGoal}>
       <Routes>
         <Route path="/" element={<TeacherCard teacherData={teacherData} />} />
         <Route
