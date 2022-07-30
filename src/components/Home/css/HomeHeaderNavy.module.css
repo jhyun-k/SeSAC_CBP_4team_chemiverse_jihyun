@@ -27,6 +27,11 @@
   background-color: #6f76c1;
   border: 1px solid transparent;
   box-shadow: 0 6px 6px -6px rgba(63, 63, 63, 0.485);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .blacklogo {
@@ -65,7 +70,8 @@
   font-weight: 900;
 }
 
-.homeNav a:before, .homeNav a:after {
+.homeNav a:before,
+.homeNav a:after {
   content: "";
   border-bottom: solid 0.208vw white;
   position: absolute;
@@ -81,11 +87,13 @@
   right: 0;
 }
 
-.homeNav a:hover:before, .homeNav a:hover:after {
+.homeNav a:hover:before,
+.homeNav a:hover:after {
   width: 50%;
 }
 
-.homeNav a:before, .homeNav a:after {
+.homeNav a:before,
+.homeNav a:after {
   transition: all 0.2s ease;
 }
 
@@ -243,9 +251,9 @@
     padding-left: 6vw;
   }
   /*   .hamburger{
-      display: block;
-      font-size: 10vw;
-      margin-right: 5vw;
-      color: #B1B8C1;
-    } */
+    display: block;
+    font-size: 10vw;
+    margin-right: 5vw;
+    color: #B1B8C1;
+  } */
 }/*# sourceMappingURL=HomeHeaderNavy.module.css.map */
