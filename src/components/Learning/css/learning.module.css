@@ -447,6 +447,53 @@ section {
 }
 
 @media (max-width: 720px) {
+  .learningWrapper .main {
+    padding-left: 6.944vw;
+    padding-right: 6.25vw;
+    margin-bottom: 0;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./../../../../public/chemiverse_img/bg-quiz-wrap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+  .learningWrapper .mainTxt {
+    display: flex;
+    align-items: center;
+  }
+  .learningWrapper .mainTxt span {
+    display: inline-block;
+    color: #fff;
+  }
+  .learningWrapper .mainTxt span:first-child {
+    font-size: 6vw;
+    font-weight: 700;
+    margin-right: 2.083vw;
+  }
+  .learningWrapper .mainTxt span:last-child {
+    display: none;
+  }
+  .learningWrapper .mainImg {
+    width: 30vw;
+    height: auto;
+  }
+  .learningWrapper .pin {
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: rgba(75, 80, 132, 0.721);
+  }
+  .learningWrapper .title {
+    display: inline-block;
+    text-align: center;
+    width: 69.444vw;
+    color: #6f76c1;
+    font-size: 4.5vw;
+    padding-bottom: 8vw;
+  }
   .learnNav {
     z-index: 2;
   }
@@ -467,19 +514,6 @@ section {
     font-size: 3vw;
     transition: all 0.2s;
     border-bottom: 5px solid #424888;
-  }
-  .learningWrapper .pin {
-    font-size: 3vw;
-    margin-bottom: 1.5vw;
-    color: rgba(75, 80, 132, 0.721);
-  }
-  .learningWrapper .title {
-    display: inline-block;
-    text-align: center;
-    width: 69.444vw;
-    color: #6f76c1;
-    font-size: 4.5vw;
-    padding-bottom: 8vw;
   }
   .moduleList .moduleListItem .imgBox {
     width: 30vw;
