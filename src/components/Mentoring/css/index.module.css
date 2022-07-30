@@ -357,6 +357,7 @@
     display: flex;
     align-items: center;
     line-height: 1.5;
+    justify-content: center;
   }
   .WhatIsMentoring .subTitle .img,
 .WritePlan .subTitle .img,

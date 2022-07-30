@@ -47,12 +47,18 @@ const WhatIsChemiStory = () => {
             <h1>사용방법</h1>
           </div>
         </div>
-        <div className={styles.content}>
-          콘텐츠 기획 후 삽입 예정콘텐츠 기획 후 삽입 예정콘텐츠 기획 후 삽입
-          예정 콘텐츠 기획 후 삽입 예정 콘텐츠 기획 후 삽입 예정 콘텐츠 기획 후
-          삽입 예정 콘텐츠<br></br>콘텐츠 기획 후 삽입 예정 콘텐츠 기획 후 삽입
-          예정 콘텐츠 기획 후 삽입 예정 콘텐츠 기획 후 삽입 예정 콘텐츠 기획 후
-          삽입 예정{" "}
+        <div className={styles.video}>
+          <div className={styles.videoContainer}>
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/QlNpm_mvuFE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
