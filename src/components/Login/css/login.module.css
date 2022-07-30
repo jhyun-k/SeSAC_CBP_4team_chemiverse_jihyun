@@ -270,7 +270,4 @@
     position: absolute;
     top: 1vw;
   }
-  input[id=menuicon_header] + label {
-    display: none;
-  }
 }/*# sourceMappingURL=login.module.css.map */
