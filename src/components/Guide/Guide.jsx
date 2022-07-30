@@ -1,10 +1,12 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import TimeTable from "./TimeTable";
-import Teacher from "./Teacher";
-import GuideNav from "./GuideNav";
-import Notice from "./Notice";
-import styles from "../ChemiStory/css/index.module.css";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import TimeTable from './TimeTable';
+import Teacher from './Teacher';
+import GuideNav from './GuideNav';
+import Notice from './Notice';
+import styles from '../ChemiStory/css/index.module.css';
+import PostDetail from '../Post/PostDetail';
+import noticeData from '../../data/noticeData.json';
 
 const Guide = () => {
   return (
@@ -19,15 +21,16 @@ const Guide = () => {
         </div>
         <img
           className={styles.mainImg}
-          src={"/chemiverse_img/img-pop-cardnews.png"}
-          alt="img-pop-cardnews"
+          src={'/chemiverse_img/img-pop-cardnews.png'}
+          alt='img-pop-cardnews'
         />
       </div>
       <GuideNav />
       <Routes>
-        <Route path="/" element={<Notice />}></Route>
-        <Route path="timetable" element={<TimeTable />}></Route>
-        <Route path="teacher/*" element={<Teacher />}></Route>
+        <Route path='/' element={<Notice />}></Route>
+        <Route path='/:post' element={<PostDetail data={noticeData} />} />
+        <Route path='timetable' element={<TimeTable />}></Route>
+        <Route path='teacher/*' element={<Teacher />}></Route>
       </Routes>
     </div>
   );
