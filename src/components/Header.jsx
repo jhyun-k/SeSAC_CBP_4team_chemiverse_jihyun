@@ -23,7 +23,7 @@ const Header = ({ title, auth, setAuth }) => {
     ];
 
     const [check, setCheck] = useState();
-
+    console.log(check);
     return (
         <header className={headerStyle.mainHeaderBox}>
             <div className={headerStyle.inner}>
@@ -39,16 +39,16 @@ const Header = ({ title, auth, setAuth }) => {
                 </ul>
                 <div className={`${headerStyle.mainHeader} ${headerStyle.on}`}>
                     <h1>
-                        <Link to="/main">{title}</Link>
+                        <Link to="/main" onClick={() => setCheck(false)}>{title}</Link>
                     </h1>
                     <Nav />
                     <input
                         type="checkbox"
-                        id="menuicon"
+                        id="menuicon_header"
                         checked={check}
-                        onClick={() => setCheck(true)}
+                        onClick={() => setCheck(check===true?false:true)}
                     />
-                    <label htmlFor="menuicon">
+                    <label htmlFor="menuicon_header">
                         <span></span>
                         <span></span>
                         <span></span>

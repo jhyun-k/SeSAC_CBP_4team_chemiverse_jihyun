@@ -150,10 +150,10 @@
     top: 5vw;
     z-index: 2;
   }
-  input[id=menuicon] {
+  input[id=menuicon_header] {
     display: none;
   }
-  input[id=menuicon] + label {
+  input[id=menuicon_header] + label {
     display: block;
     width: 30px;
     height: 30px;
@@ -162,33 +162,33 @@
     margin-right: 5vw;
     z-index: 2;
   }
-  input[id=menuicon] + label span {
+  input[id=menuicon_header] + label span {
     display: block;
     position: absolute;
     width: 100%;
     height: 5px;
     border-radius: 30px;
-    background-color: #e3e3e3;
+    background-color: #fff;
     transition: all 0.35s;
   }
-  input[id=menuicon] + label span:nth-child(1) {
+  input[id=menuicon_header] + label span:nth-child(1) {
     top: 0;
   }
-  input[id=menuicon] + label span:nth-child(2) {
+  input[id=menuicon_header] + label span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
   }
-  input[id=menuicon] + label span:nth-child(3) {
+  input[id=menuicon_header] + label span:nth-child(3) {
     bottom: 0;
   }
-  input[id=menuicon]:checked + label span:nth-child(1) {
+  input[id=menuicon_header]:checked + label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
-  input[id=menuicon]:checked + label span:nth-child(2) {
+  input[id=menuicon_header]:checked + label span:nth-child(2) {
     opacity: 0;
   }
-  input[id=menuicon]:checked + label span:nth-child(3) {
+  input[id=menuicon_header]:checked + label span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
   }
@@ -203,7 +203,7 @@
     z-index: 1;
     transition: all 0.35s;
   }
-  input[id=menuicon]:checked + label + div {
+  input[id=menuicon_header]:checked + label + div {
     right: 0;
   }
   .navlist_white {
@@ -216,5 +216,8 @@
     padding-left: 7vw;
     line-height: 3vw;
     font-weight: 700;
+  }
+  .login_btn {
+    padding: 0 5px;
   }
 }/*# sourceMappingURL=header.module.css.map */
