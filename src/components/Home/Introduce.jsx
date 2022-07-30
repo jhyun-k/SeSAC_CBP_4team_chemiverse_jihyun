@@ -21,7 +21,7 @@ const Introduce = () => {
                 <div className={styles.contentBox}>
                     <div className={styles.name_meaning}>
                         <h1>Excellence & PERformance & Transformation</h1>
-                        <p>엑스퍼트컨설팅은 우리나라 기업교육의 발전에 뜻을 같이하는 컨설턴트, 전문강사, HR전문가들의 공동출자로 설립하여국내조직의 경영혁신 및 인재육성의 엑설런스 추구를 위한 여러 영역별 사업 활동을 전개해 오고 있습니다.</p>
+                        <p>엑스퍼트컨설팅은 우리나라 기업교육의 발전에 뜻을 같이하는 컨설턴트, 전문강사, HR 전문가들의 공동출자로 설립하여국내조직의 경영혁신 및 인재육성의 엑설런스 추구를 위한 여러 영역별 사업 활동을 전개해 오고 있습니다.</p>
                     </div>
                     <div className={styles.infoBox}>
                         <div className={styles.info_left}>
@@ -52,7 +52,9 @@ const Introduce = () => {
             <div className={styles.value}>
             <p className={styles.pin}><BsCheckLg /><strong className={styles.tit}>가치체계
 						 </strong></p>
+                <div className={styles.value_img}>
                 <img src="/chemiverse_img/introduce_img_squre.png" alt="" />
+                </div>
             </div>
         </div>
         </div>

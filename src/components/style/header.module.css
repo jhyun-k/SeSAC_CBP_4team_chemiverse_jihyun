@@ -100,7 +100,7 @@
     background-color: #f3f3f3;
   }
 }
-#menuicon {
+input[id=menuicon_header] {
   display: none;
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import headerStyle from "./style/header.module.css";
 import { useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
