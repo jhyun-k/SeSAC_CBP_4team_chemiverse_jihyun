@@ -1,6 +1,9 @@
 ## Expert Chemiverse
 - 기업에서 원하는 기획안에 맞춰 사이트를 리뉴얼하는 프로젝트입니다.
 
+## 구동페이지
+https://expert-chemiverse.netlify.app/
+
 ## 사이트설명
 Chemiversㄷ : 케미버스는 기업에 입사한 신입사원의 안정적 온보딩을 지원하는 온라인 온보딩 플랫폼입니다.
 1. Connect With : 기업에 합격하고, 입사하기 전 connect with 페이지에서 기업에 대한 기본 정보와 동기 간 네트워킹을 형성하게 됩니다.
