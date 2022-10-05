@@ -5,7 +5,7 @@
 https://expert-chemiverse.netlify.app/
 
 ## 사이트설명
-Chemiversㄷ : 케미버스는 기업에 입사한 신입사원의 안정적 온보딩을 지원하는 온라인 온보딩 플랫폼입니다.
+Chemivers : 케미버스는 기업에 입사한 신입사원의 안정적 온보딩을 지원하는 온라인 온보딩 플랫폼입니다.
 1. Connect With : 기업에 합격하고, 입사하기 전 connect with 페이지에서 기업에 대한 기본 정보와 동기 간 네트워킹을 형성하게 됩니다.
 2. On & Up : 입사 후 사번을 받게 되면 On & Up 페이지로 이동이 가능하게 됩니다. 신입사원 교육과 연계되어 온라인 플랫폼으로써 활용됩니다.
 
@@ -43,3 +43,17 @@ Chemiversㄷ : 케미버스는 기업에 입사한 신입사원의 안정적 온
 
 - 클릭하면 check / uncheck 바뀌게 구성
 - 확인버튼 누르면 제출되었습니다 alert창 나옴
+
+### 담당 components
+- Home
+  - Home.jsx
+  - HomeHeader.jsx
+  - HomeHeaderNavy.jsx
+  - Ready.jsx
+  - Introduce.jsx
+- Login
+  - DetailRedirect.jsx
+  - FindID.jsx
+  - Loginok.jsx
+  - PwFind.jsx
+- Header.jsx
